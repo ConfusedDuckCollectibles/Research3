@@ -1,0 +1,78 @@
+{
+  "status": "downloaded_pinned_public_pretrained_models",
+  "models": {
+    "sender": {
+      "id": "distilbert/distilgpt2",
+      "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+      "files": {
+        "config.json": {
+          "sha256": "4ec5947c1d59fee6212cdf3b0ec1a53eac02092554c5ff0a733488cbd2c64f3a",
+          "bytes": 762
+        },
+        "generation_config.json": {
+          "sha256": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+          "bytes": 124
+        },
+        "merges.txt": {
+          "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+          "bytes": 456318
+        },
+        "model.safetensors": {
+          "sha256": "e1ff18884359fe8beb795a5f414feb85a6ce3d929ad019c0d958c039d2b94a1b",
+          "bytes": 352824413
+        },
+        "tokenizer.json": {
+          "sha256": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+          "bytes": 1355256
+        },
+        "tokenizer_config.json": {
+          "sha256": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+          "bytes": 26
+        },
+        "vocab.json": {
+          "sha256": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783",
+          "bytes": 1042301
+        }
+      },
+      "download_seconds": 3.6858661640000037
+    },
+    "receiver": {
+      "id": "EleutherAI/pythia-14m",
+      "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+      "files": {
+        "config.json": {
+          "sha256": "f97f966a66c444890ed461fff2a51eefb15d74303df05b948124719f199b0b17",
+          "bytes": 698
+        },
+        "generation_config.json": {
+          "sha256": "494cbba887cc299273f0c54d7612596918e74c7881a27cbd95e4e7e2464ea090",
+          "bytes": 111
+        },
+        "model.safetensors": {
+          "sha256": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1",
+          "bytes": 28143920
+        },
+        "special_tokens_map.json": {
+          "sha256": "10b8c8852c1e1f70b54d9aff61728408c28971c0e97a6c5a7b2debbd1d3e9c0c",
+          "bytes": 441
+        },
+        "tokenizer.json": {
+          "sha256": "870f4e2baa6b683221fa52004d5d6f40ab8c9d31961617304b78c910c2c3caf2",
+          "bytes": 2114042
+        },
+        "tokenizer_config.json": {
+          "sha256": "eee017c5bd133137f45907bd0a6e781e2ccd1a533734b7ed2a2f2f4446659809",
+          "bytes": 4834
+        }
+      },
+      "download_seconds": 0.919872857999998
+    }
+  },
+  "python": "3.11.18",
+  "platform": "Linux-7.0.0-1020-azure-x86_64-with-glibc2.43",
+  "github_commit": "9df6e71a74ee2ffce4e52c51ee453e52e4adc74c",
+  "github_run_id": "45325792109",
+  "remote_code_allowed": false,
+  "hub_credentials_used": false,
+  "design_sha256": "adf98dda5744ba6bfa662d2079e79aa97e41ae6e03446e56090c526e508aaf33"
+}

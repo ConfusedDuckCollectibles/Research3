@@ -1,0 +1,72 @@
+{
+  "generator_command": [
+    "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+    "-m",
+    "latent_bridge.private_counterfactual",
+    "--output",
+    "/home/runner/work/Research3/Research3/local_data/counterfactual",
+    "--seed",
+    "20261124",
+    "--train-families",
+    "128",
+    "--validation-families",
+    "32",
+    "--test-families",
+    "32"
+  ],
+  "runner_command": [
+    "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+    "-m",
+    "latent_bridge.counterfactual_runner",
+    "--sender-model",
+    "/home/runner/work/Research3/Research3/local_models/sender",
+    "--receiver-model",
+    "/home/runner/work/Research3/Research3/local_models/receiver",
+    "--data-dir",
+    "/home/runner/work/Research3/Research3/local_data/counterfactual",
+    "--output",
+    "/home/runner/work/Research3/Research3/checkpoints/counterfactual-study",
+    "--seeds",
+    "101",
+    "202",
+    "303",
+    "--epochs",
+    "8",
+    "--batch-size",
+    "16",
+    "--slots",
+    "2",
+    "--bottleneck",
+    "8",
+    "--learning-rate",
+    "0.001",
+    "--max-length",
+    "192",
+    "--threads",
+    "2",
+    "--model-manifest",
+    "/home/runner/work/Research3/Research3/checkpoints/counterfactual-study/model_manifest.json"
+  ],
+  "wall_seconds_including_downloads": 121.830981627,
+  "models": {
+    "sender": {
+      "id": "distilbert/distilgpt2",
+      "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+    },
+    "receiver": {
+      "id": "EleutherAI/pythia-14m",
+      "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac"
+    }
+  },
+  "run_kind": "prespecified_three_seed_counterfactual_validity_study",
+  "design_sha256": "adf98dda5744ba6bfa662d2079e79aa97e41ae6e03446e56090c526e508aaf33",
+  "raw_predictions": {
+    "sha256": "a7026c75d039260367f7e027bdffba8c5af6d12a738e61f8c3c2b006689339c9",
+    "bytes": 7491872
+  },
+  "compressed_predictions": {
+    "sha256": "0ac17194c557e6ec6ddc80623e5a257bc16d66980ebbfdd23cd4aab780031379",
+    "bytes": 483495
+  },
+  "report_sha256": "0f3e94a07b8b21170bbe92c7d21e50ade449ff180a5e42b1d0bae603383ed0a7"
+}

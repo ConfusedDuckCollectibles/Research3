@@ -11,6 +11,13 @@ equally trained control with no private facts. No novel scientific result is
 claimed. Its posthoc formatting diagnosis is separate from the original
 primary outcome.
 
+A subsequent [three-seed paired-fact study](../results/counterfactual_study/README.md)
+uses fixed-choice scoring and equal task adaptation. It detects a small
+correct-versus-shuffled message effect, but the latent bridge remains far
+below the adapted full-text baseline and reacts poorly to irrelevant edits.
+Its design, primary contrast, family-cluster uncertainty and all outcomes are
+preserved separately. This does not change the first pilot's negative result.
+
 The long-term objective is a better tradeoff between task success and total
 computation/communication. Merely avoiding English does not establish that
 tradeoff.

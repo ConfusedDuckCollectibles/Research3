@@ -2,11 +2,20 @@
 
 A research prototype for passing a small continuous message between a sender
 and a receiver. This repository contains **an executed synthetic experiment**
-and **an executed pretrained-model pilot with a negative result**. It does not
+and **executed pretrained-model studies with explicit causal controls**. It does not
 claim a new universal language, an LLM efficiency breakthrough, or a replication
 of LatentMAS or Interlat.
 
 ## What is working
+
+The latest [three-seed fact-change study](results/counterfactual_study/README.md)
+finds a small source-specific effect: correct latent messages achieve 3.65%
+paired accuracy versus 0.78% for wrong-family messages. The primary difference
+is +2.86 percentage points, with a family-bootstrap interval of +0.52 to +5.47
+points conditional on three fixed seeds. Adapted full text reaches 100%, while
+irrelevant fact edits frequently disrupt the latent method. This is a narrow
+controlled finding, not useful general communication or an efficiency claim.
+The earlier negative pilot remains unchanged below.
 
 - A NumPy sender/compressor/receiver bridge with manual gradients and Adam.
 - Distinct frozen sender and receiver coordinate systems, a learned bottleneck,

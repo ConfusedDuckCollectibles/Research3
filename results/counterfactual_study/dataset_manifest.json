@@ -1,0 +1,269 @@
+{
+  "task": "private_single_fact_counterfactual_v1",
+  "generation_seed": 20261124,
+  "objects": [
+    "apple",
+    "book",
+    "cup",
+    "lamp"
+  ],
+  "candidate_colors": [
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "black",
+    "white",
+    "purple",
+    "orange"
+  ],
+  "partitions": {
+    "train": {
+      "families": 128,
+      "query_pairs": 512,
+      "original_training_records_if_train": 512,
+      "original_plus_counterfactual_records": 1024,
+      "nuisance_records": 512,
+      "sha256": "a9ad6522c258ecd3214e070bb3d3433b6bf24f3b113df33304164698be257ffe",
+      "answer_counts_by_member": {
+        "original": {
+          "red": 65,
+          "blue": 61,
+          "green": 73,
+          "yellow": 68,
+          "black": 61,
+          "white": 55,
+          "purple": 59,
+          "orange": 70
+        },
+        "counterfactual": {
+          "red": 70,
+          "blue": 65,
+          "green": 61,
+          "yellow": 73,
+          "black": 68,
+          "white": 61,
+          "purple": 55,
+          "orange": 59
+        },
+        "nuisance": {
+          "red": 65,
+          "blue": 61,
+          "green": 73,
+          "yellow": 68,
+          "black": 61,
+          "white": 55,
+          "purple": 59,
+          "orange": 70
+        }
+      }
+    },
+    "validation": {
+      "families": 32,
+      "query_pairs": 128,
+      "original_training_records_if_train": null,
+      "original_plus_counterfactual_records": 256,
+      "nuisance_records": 128,
+      "sha256": "0cc714dc35c4d81b9afc87a28929479b9f5dc93c646e50c2d24f550bf5fc2604",
+      "answer_counts_by_member": {
+        "original": {
+          "red": 14,
+          "blue": 18,
+          "green": 11,
+          "yellow": 27,
+          "black": 14,
+          "white": 13,
+          "purple": 17,
+          "orange": 14
+        },
+        "counterfactual": {
+          "red": 14,
+          "blue": 14,
+          "green": 18,
+          "yellow": 11,
+          "black": 27,
+          "white": 14,
+          "purple": 13,
+          "orange": 17
+        },
+        "nuisance": {
+          "red": 14,
+          "blue": 18,
+          "green": 11,
+          "yellow": 27,
+          "black": 14,
+          "white": 13,
+          "purple": 17,
+          "orange": 14
+        }
+      }
+    },
+    "test_iid": {
+      "families": 32,
+      "query_pairs": 128,
+      "original_training_records_if_train": null,
+      "original_plus_counterfactual_records": 256,
+      "nuisance_records": 128,
+      "sha256": "209d35d37d115ceec37a862ae13c2cb3d9799562e8b4b6d2e4c6bee5a73370c0",
+      "answer_counts_by_member": {
+        "original": {
+          "red": 20,
+          "blue": 11,
+          "green": 10,
+          "yellow": 19,
+          "black": 17,
+          "white": 16,
+          "purple": 14,
+          "orange": 21
+        },
+        "counterfactual": {
+          "red": 21,
+          "blue": 20,
+          "green": 11,
+          "yellow": 10,
+          "black": 19,
+          "white": 17,
+          "purple": 16,
+          "orange": 14
+        },
+        "nuisance": {
+          "red": 20,
+          "blue": 11,
+          "green": 10,
+          "yellow": 19,
+          "black": 17,
+          "white": 16,
+          "purple": 14,
+          "orange": 21
+        }
+      }
+    },
+    "test_sender": {
+      "families": 32,
+      "query_pairs": 128,
+      "original_training_records_if_train": null,
+      "original_plus_counterfactual_records": 256,
+      "nuisance_records": 128,
+      "sha256": "8e69fda4756ce9fb601e4907c762a1cf21aa2257bccbe344c151c9ead220db7e",
+      "answer_counts_by_member": {
+        "original": {
+          "red": 20,
+          "blue": 11,
+          "green": 10,
+          "yellow": 19,
+          "black": 17,
+          "white": 16,
+          "purple": 14,
+          "orange": 21
+        },
+        "counterfactual": {
+          "red": 21,
+          "blue": 20,
+          "green": 11,
+          "yellow": 10,
+          "black": 19,
+          "white": 17,
+          "purple": 16,
+          "orange": 14
+        },
+        "nuisance": {
+          "red": 20,
+          "blue": 11,
+          "green": 10,
+          "yellow": 19,
+          "black": 17,
+          "white": 16,
+          "purple": 14,
+          "orange": 21
+        }
+      }
+    },
+    "test_query": {
+      "families": 32,
+      "query_pairs": 128,
+      "original_training_records_if_train": null,
+      "original_plus_counterfactual_records": 256,
+      "nuisance_records": 128,
+      "sha256": "44b6b9e7d4d19f245f2a932b39cbd110f7922fee907c6df6d79e4759c8efb323",
+      "answer_counts_by_member": {
+        "original": {
+          "red": 20,
+          "blue": 11,
+          "green": 10,
+          "yellow": 19,
+          "black": 17,
+          "white": 16,
+          "purple": 14,
+          "orange": 21
+        },
+        "counterfactual": {
+          "red": 21,
+          "blue": 20,
+          "green": 11,
+          "yellow": 10,
+          "black": 19,
+          "white": 17,
+          "purple": 16,
+          "orange": 14
+        },
+        "nuisance": {
+          "red": 20,
+          "blue": 11,
+          "green": 10,
+          "yellow": 19,
+          "black": 17,
+          "white": 16,
+          "purple": 14,
+          "orange": 21
+        }
+      }
+    },
+    "test_joint": {
+      "families": 32,
+      "query_pairs": 128,
+      "original_training_records_if_train": null,
+      "original_plus_counterfactual_records": 256,
+      "nuisance_records": 128,
+      "sha256": "0b2d06c950507dc77dc49c9763e04e86ea33950d8d7b07b3f523e522688a1fd4",
+      "answer_counts_by_member": {
+        "original": {
+          "red": 20,
+          "blue": 11,
+          "green": 10,
+          "yellow": 19,
+          "black": 17,
+          "white": 16,
+          "purple": 14,
+          "orange": 21
+        },
+        "counterfactual": {
+          "red": 21,
+          "blue": 20,
+          "green": 11,
+          "yellow": 10,
+          "black": 19,
+          "white": 17,
+          "purple": 16,
+          "orange": 14
+        },
+        "nuisance": {
+          "red": 20,
+          "blue": 11,
+          "green": 10,
+          "yellow": 19,
+          "black": 17,
+          "white": 16,
+          "purple": 14,
+          "orange": 21
+        }
+      }
+    }
+  },
+  "family_rule": "Reserve original world and its four one-key next-color edits; reject overlap with every previously chosen family, including across partitions.",
+  "training": "Use original member only, all four object queries per training family.",
+  "validation": "Select each trained arm checkpoint by mean restricted-eight-choice CE over original and targeted-counterfactual members.",
+  "test_views": "IID, source-only, query-only, joint. Same world families and answers across views; these are paired presentations, not independent datasets.",
+  "counterfactual": "Only the queried object's color advances one step in the fixed color cycle; the query and all other facts stay fixed.",
+  "nuisance": "Only the next unqueried object's color advances one step; queried answer stays fixed.",
+  "oracle": "Parse the complete symbolic facts and select query_key; task-solvability check only, not an LM baseline or performance claim."
+}
