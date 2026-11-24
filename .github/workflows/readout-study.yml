@@ -1,0 +1,57 @@
+name: Frozen-message readout diagnostic
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/readout-study.yml'
+      - 'scripts/run_readout_study.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: readout-study-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OPENBLAS_NUM_THREADS: '2'
+      OMP_NUM_THREADS: '2'
+      TOKENIZERS_PARALLELISM: 'false'
+      HF_HUB_DISABLE_IMPLICIT_TOKEN: '1'
+      HF_HUB_DISABLE_TELEMETRY: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11.18'
+      - name: Install the recorded CPU runtime
+        run: |
+          python -m pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install transformers==4.48.2 numpy==2.4.6 tokenizers==0.21.4 safetensors==0.8.0 huggingface-hub==0.36.2 -e .
+      - name: Verify reconstruction guards, fresh data and probe controls
+        env:
+          HF_HUB_OFFLINE: '1'
+          TRANSFORMERS_OFFLINE: '1'
+        run: |
+          python -c 'import torch; from transformers import GPT2LMHeadModel, GPTNeoXForCausalLM; print(torch.__version__)'
+          python -m unittest discover -s tests -v
+      - name: Reconstruct and execute the frozen diagnostic
+        run: python scripts/run_readout_study.py
+      - name: Preserve complete outputs and selected checkpoints
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: readout-study-complete
+          retention-days: 90
+          if-no-files-found: warn
+          compression-level: 6
+          path: checkpoints/readout-study/
