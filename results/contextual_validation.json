@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "scope": "pre-execution offline validation; no pretrained cohort or model download",
+  "repository": "ConfusedDuckCollectibles/Research3",
+  "source_commit": "5b532bc484c4142ffb032316c09b9eb244c8c5f9",
+  "frozen_design_commit": "c23a20ec420ba19680801a09ac8b053735807d38",
+  "design_sha256": "6f50e1d3faad3240033748d7434f088ec26b7ac6716511923892e66ac0e78a09",
+  "workflow": ".github/workflows/tests.yml",
+  "workflow_run_id": 45395737309,
+  "job_id": 138450896052,
+  "run_attempt": 1,
+  "run_number": 32,
+  "command": "python -m unittest discover -s tests -v",
+  "conclusion": "success",
+  "tests_run": 200,
+  "test_wall_seconds": 15.765,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "new_test_methods": 38,
+  "full_log_sha256": "73adff35e15ee17938987f4f669019ba90c6118262997bb68a06d464f43176a0",
+  "observed_package_install_lines": [
+    "Successfully set up CPython (3.11.18)",
+    "Successfully installed MarkupSafe-3.0.3 filelock-4.2.4 fsspec-2026.9.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.6.1 sympy-1.13.1 torch-2.6.0+cpu typing-extensions-4.16.0",
+    "Successfully installed certifi-2026.11.20 charset_normalizer-3.5.3 hf-xet-1.8.0 huggingface-hub-0.36.2 idna-3.20 numpy-2.4.6 packaging-26.4 pyyaml-6.0.4 regex-2026.11.23 requests-2.34.2 research3-latent-bridge-0.1.0 safetensors-0.8.0 tokenizers-0.21.4 tqdm-4.70.1 transformers-4.48.2 urllib3-2.8.0"
+  ],
+  "reviewed_source": {
+    "latent_bridge/information_recovery.py": {
+      "git_blob": "85227f645e3cda7004e262024eebd7e0da1e4bce",
+      "sha256": "8b44898683f13470a18f884b300e33f40c040a5922848a1f22de4552e0c8d3e1",
+      "bytes": 27935
+    },
+    "latent_bridge/contextual_information.py": {
+      "git_blob": "2771567dd9409d0105547f3fb7d85b01796c4f97",
+      "sha256": "f228aa821a7a87b6ef832b08bf8df3bf895bc8576899316c0658f1b8006afa3f",
+      "bytes": 72281
+    },
+    "scripts/run_contextual_information.py": {
+      "git_blob": "5a75e56420c8a0bf55f6512c59a3cebafe54d0dc",
+      "sha256": "a6cbfb13892aa3d25d4f24178423b732e8305d0785d1403d2c337e6f7fed3a76",
+      "bytes": 13264
+    },
+    "tests/test_information_recovery.py": {
+      "git_blob": "7f5a9cd3c06b3dfaccf1a6c04b519e355f2dfe48",
+      "sha256": "a2be07f72fa780deca9ba818056bb9d3293dad487f5a5d4e0993bad4e203ed5b",
+      "bytes": 15280
+    },
+    "tests/test_contextual_information.py": {
+      "git_blob": "f77f54434d0ad6f3ea5be2ea2cd044370d6d6793",
+      "sha256": "4f9555f29c06163ee5a5d7c93d9e6b2a91c8a7c9cfdbb2af52b5ce8451b2fd94",
+      "bytes": 38953
+    },
+    "tests/test_contextual_execution.py": {
+      "git_blob": "6a2f8d49e59942ce71ae287a8138983a8232094b",
+      "sha256": "e6569318ea42262abeb4529d9b9a0265b0654517bff88dca93d524a8d33d4d3e",
+      "bytes": 7889
+    },
+    ".github/workflows/tests.yml": {
+      "git_blob": "699b3a18cb68ca5864c427e91c87912cf1ef1963",
+      "sha256": "612496e01fd4315c86976e6ecc05954a6bf92869bde1a6ada54c25533a0f5e2c",
+      "bytes": 1037
+    }
+  },
+  "pretrained_model_calls": 0,
+  "scope_note": "Test model calls use a tiny random local configuration. Test success verifies implementation contracts, not the scientific hypothesis."
+}

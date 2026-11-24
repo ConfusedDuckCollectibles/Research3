@@ -6,7 +6,7 @@ The [information characterization](statebridge_information_recovery.md) is exact
 
 ## Before the one empirical run
 
-The implementation and independent offline tests are published before activation. Repository CI must pass first, with Python 3.11.18 and the same pinned Torch, transformers, NumPy, tokenizers, safetensors and huggingface-hub versions as the scientific workflow. The separately activated scientific workflow repeats the focused contracts before starting its child. Unit tests use fixed matrices and a tiny random local transformer configuration; they do not extract the planned pretrained cohort. The workspace executor is unavailable, so static review is not represented as local execution.
+The implementation and independent offline tests are published before activation. Repository CI must pass first, with Python 3.11.18 and the same pinned Torch, transformers, NumPy, tokenizers, safetensors and huggingface-hub versions as the scientific workflow. The separately activated scientific workflow repeats the focused contracts before starting its child. Unit tests use fixed matrices and a tiny random local transformer configuration; they do not extract the planned pretrained cohort. The workspace executor was unavailable during implementation; it reconnected before activation. The executed preflight evidence comes from GitHub Actions, and no local pretrained cohort is run.
 
 The worker will load exactly one pinned public Pythia-14M checkpoint, after checking all six files against the frozen byte hashes. It uses CPU float32, eager attention, evaluation mode and one numerical thread. The author's original Apache-licensed alignment source is preserved unchanged and only the target method's AST is executed. The GPTNeoX extraction adapter and numerical inverse are separate, explicitly reviewed code.
 
@@ -24,4 +24,6 @@ No timing or model-quality benefit is established by a successful process exit. 
 
 ## Current execution status
 
-At this checkpoint the implementation is under review. No pretrained cohort has been run, no numerical outcome has been inspected, and the empirical workflow has not been activated. The exact executed source and runtime, once available, must be recovered from the original workflow and preserved with its complete artifact.
+Source commit `5b532bc484c4142ffb032316c09b9eb244c8c5f9` passed all **200 tests in 15.765 seconds**, with zero failures, errors or skips, in [CI run45395737309](https://github.com/ConfusedDuckCollectibles/Research3/actions/runs/45395737309), job138450896052. The [validation receipt](../results/contextual_validation.json) records source hashes, package installation evidence and the complete retrieved log digest. All38 newly added test methods passed. These are offline contract tests, including a tiny random local transformer, not pretrained outcomes.
+
+The separately reviewed workflow is now being activated with those scientific Python bytes unchanged. No pretrained outcome has been inspected at this checkpoint. Its containing commit is the exact executed source; the original run identity, complete or partial evidence and independent audit must be recovered and published without empirical retries.

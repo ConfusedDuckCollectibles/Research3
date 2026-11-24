@@ -39,3 +39,7 @@ The bounded assay is now frozen in `docs/contextual_information_design.md`: 256 
 ## Contextual source validation gate
 
 The fixed assay implementation and independent offline tests are now published. Read `docs/contextual_execution_notes.md`. The source commit does not contain the empirical activation workflow. Recover the complete CI log and verify the exact pinned runtime, test count and zero failures/skips before adding `.github/workflows/contextual-information-v1.yml`. The study supervisor and worker both require the first original run/attempt, and no model outcome exists at this stage. A valid inverse rejection is a completed observation; operationally missing records remain missing. Source and final NPZ checkpoints use distinct immutable paths, with every retained array mapped to exact dtype, shape and digest.
+
+## Activated contextual assay
+
+The source-only gate passed: commit5b532bc484c4142ffb032316c09b9eb244c8c5f9, CI run45395737309/job138450896052,200tests in15.765s, zero skips/failures/errors. See `results/contextual_validation.json`. The reviewed `.github/workflows/contextual-information-v1.yml` is now activated without changing the validated scientific Python source. Recover the first original run and its artifact before other empirical work. No result is asserted at activation. Do not rerun the model cohort; publish incomplete or negative outcomes as observed. The local workspace reconnected before activation, but no local pretrained run is authorized by this checkpoint; the frozen scientific worker remains the sole empirical execution.
