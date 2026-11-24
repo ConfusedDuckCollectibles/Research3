@@ -307,10 +307,10 @@ $I(L;F\mid R)=I(L;G\mid R)$ whenever those quantities are defined. In the broade
 
 **Unknown reference.** Fixed reference side information is substantive, even if every candidate reference has full row rank. For $K=2,d=3,\lambda=1$, let
 
-$
+$$
 R_1=\begin{bmatrix}1&0&0\\0&1&0\end{bmatrix},\qquad
 R_2=\begin{bmatrix}3/2&-1/2&0\\-1/2&3/2&0\end{bmatrix}.
-$
+$$
 
 Use one shared vocabulary containing all four rows. Both references have mean $(e_1+e_2)/2$. Their reduced reference Grams are $1$ and $4$. Reduced source Grams $G_1=1$ and $G_2=2/5$ give whitened source Grams $2/3$ and $1/3$, while the corresponding reference values are $2/3$ and $4/3$. Equation (9) therefore gives $M_1=1$ and $M_2=1/2$. Both pre-prefixes equal $R_1$, so the complete calibrated and anchored outputs also coincide under the same vocabulary and parameters, despite different source Grams. Sources realizing these Grams exist, for example $S_i=H\sqrt{G_i}e_3^\top$. This is an exact arbitrary-matrix counterexample; it is not an observed pair of attainable transformer states. It shows why the conditional inverse must not be promoted to unconditional recovery from the original prefix alone.
 

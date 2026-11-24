@@ -148,7 +148,7 @@
   "rank_deficient_feasibility": "docs/rank_deficient_feasibility.md",
   "next_scientific_question": "For fixed token reference and full rank, exactly which source information is recoverable from the final normalized and anchored prefix, and how does finite precision affect that claim on real contextual activations?",
   "information_recovery_note": "docs/statebridge_information_recovery.md",
-  "information_recovery_note_sha256": "60c78ff192d3663d6b0ed84b3c7b5b2e32f577ed0ae72ad9538e2f130db37a45",
+  "information_recovery_note_sha256": "f78a41cee2b1ee90b349bcbee0fe00a588b9738863034172a8c8c09ddc3992d7",
   "information_recovery_status": "independently_reviewed_exact_arithmetic_no_measurement",
   "current_assay_design_status": "drafting_and_review_only"
 }
