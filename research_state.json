@@ -2,11 +2,11 @@
   "schema_version": 1,
   "status": "active",
   "worker_id": "chatgpt-active-research-20261124T052021Z",
-  "updated_at_utc": "2026-11-24T11:32:58Z",
-  "lease_expires_at_utc": "2026-11-24T13:32:58Z",
-  "current_task": "Publish the audited coefficient report and assess exact source-information preservation",
-  "stage": "coefficient_audited_report_and_information_feasibility",
-  "next_action": "The original coefficient execution is complete, audited and permanently published. Publish its final human report and the analytical rank-deficient feasibility note, then review the exact-information inverse and real-contextual-activation feasibility proposals. No new model or numerical assay is activated. Any further empirical work needs a separate frozen design, source before outcomes, and a bounded fresh or explicitly labeled retained-input cohort. Do not rerun completed studies.",
+  "updated_at_utc": "2026-11-24T11:48:08Z",
+  "lease_expires_at_utc": "2026-11-24T13:48:08Z",
+  "current_task": "Freeze a bounded authentic-state inverse-conditioning assay after the reviewed information characterization",
+  "stage": "information_recovery_theory_reviewed_contextual_assay_design_in_review",
+  "next_action": "Review and freeze docs/contextual_information_design.md before implementing any new assay. The analytical note docs/statebridge_information_recovery.md is independently reviewed in exact arithmetic. It conditionally recovers centered source Gram from known-reference outputs, including final postprocessing when actual pre-prefix rows are independent. It does not decode the upstream prefix-only channel without the reference IDs. The planned assay uses fixed public probe IDs and one pinned small homogeneous CPU model. No new model execution or empirical outcome exists yet.",
   "last_completed_study": "docs/coefficient_results.md",
   "last_completed_commit": "6172944a3d90180e1e95f521eed79a9ba02c6c25",
   "known_result": "Independently audited original coefficient TCP study:720/720 trials and300 diagnostics,9/9 all-row f64 fidelity gates. Both performance criteria failed:shaped coefficient/optimized Gram0.9802991311;loopback/hindsight1.2098053452;worst warm1.4859810967;cold/hindsight6.2290160665. Audit found0issues across233297integrity,106829report and17025scientific checks within its stated scope. Engineering success and breakthrough remain false.",
@@ -142,8 +142,13 @@
     "publication_files": 733,
     "publication_bytes": 110187599,
     "human_report": "docs/coefficient_results.md",
-    "human_report_status": "publication_in_this_checkpoint"
+    "human_report_status": "published",
+    "human_report_commit": "5490fe5431e528d979c87dbad4f556d3bbf3b1f6"
   },
   "rank_deficient_feasibility": "docs/rank_deficient_feasibility.md",
-  "next_scientific_question": "For fixed token reference and full rank, exactly which source information is recoverable from the final normalized and anchored prefix, and how does finite precision affect that claim on real contextual activations?"
+  "next_scientific_question": "For fixed token reference and full rank, exactly which source information is recoverable from the final normalized and anchored prefix, and how does finite precision affect that claim on real contextual activations?",
+  "information_recovery_note": "docs/statebridge_information_recovery.md",
+  "information_recovery_note_sha256": "60c78ff192d3663d6b0ed84b3c7b5b2e32f577ed0ae72ad9538e2f130db37a45",
+  "information_recovery_status": "independently_reviewed_exact_arithmetic_no_measurement",
+  "current_assay_design_status": "drafting_and_review_only"
 }

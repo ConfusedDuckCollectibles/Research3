@@ -29,3 +29,9 @@ Use the existing tools and bounded local or standard public CPU workflows. Prese
 ## Finding labels
 
 `discoveries/` indexes measured findings, including negative findings; the name does not assert that a method is new to science. `breakthroughs/` is reserved for a candidate supported by a precise claim, strong comparisons, appropriate independent replication, a relevant prior-art review, and reproducible evidence. Publication alone does not meet that threshold.
+
+## Reviewed information characterization
+
+Read `docs/statebridge_information_recovery.md`. At positive regularization, any exact orthogonal pre-calibration output determines the centered source Gram when the reference is known. Full row rank of the actual pre-prefix also permits inversion of calibration and anchoring for0<=alpha<1. In the centered unique-product regime with full uncentered reference rank, this is exact Gram equivalence. Nonunique completions may carry additional orientation. These statements are exact-arithmetic results, not bit-capacity or practical semantic claims. The upstream paper does not transmit the reference IDs, so the proposed inverse must not be represented as a decoder for its original prefix-only receiver.
+
+A bounded assay design is being reviewed using authentic activations from one pinned homogeneous Pythia14M model and predetermined public probe IDs. It will separate exact byte collisions from numerical inverse failures and include a float64 mathematical reference, output-only rounding and direct Gram controls. No implementation or execution is activated by this theoretical checkpoint. Preserve a future frozen design and source before observing any new model outcome.
