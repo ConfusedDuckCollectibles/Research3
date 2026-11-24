@@ -1,0 +1,27 @@
+{
+  "artifact_retention_days": 90,
+  "budget_seconds": 600,
+  "command": [
+    "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+    "-m",
+    "latent_bridge.contextual_information",
+    "--output",
+    "/home/runner/work/Research3/Research3/checkpoints/contextual-information"
+  ],
+  "design_sha256": "6f50e1d3faad3240033748d7434f088ec26b7ac6716511923892e66ac0e78a09",
+  "expected_records": 256,
+  "frozen_design_commit": "c23a20ec420ba19680801a09ac8b053735807d38",
+  "github_commit": "b541b69fbc95f2db8a4d6dc32d3a4ec2f744b66b",
+  "github_run_attempt": 1,
+  "github_run_id": "45396412531",
+  "github_run_number": 1,
+  "maximum_model_checkpoints": 1,
+  "model_calls_expected": 2048,
+  "primary_records": 128,
+  "scope": "fixed_homogeneous_pretrained_contextual_state_and_numerical_assay",
+  "threads": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

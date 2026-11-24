@@ -1,0 +1,9 @@
+{
+  "application_imported": false,
+  "body_modified": false,
+  "method_ast_sha256": "c9b205005601834b1760d1ffb5a3f0299e36720260b15e285ba80eba8769f17b",
+  "method_end_line": 299,
+  "method_line": 211,
+  "method_name": "_align_hidden_sequence",
+  "vendor_sha256": "415957df427eb79a4212e760af4d133cb4ce10cc4619f11447082117922f366d"
+}

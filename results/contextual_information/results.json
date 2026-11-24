@@ -1,0 +1,556 @@
+{
+  "cohorts": {
+    "repeated": {
+      "collisions": {
+        "alignment_created_witnesses": [],
+        "channels": {
+          "author_f32": {
+            "confirmed_collisions": 0,
+            "confirmed_distinct": 64,
+            "expected_pairs": 64,
+            "full_codebook_ceiling": 1.0,
+            "full_codebook_ceiling_bounds": [
+              1.0,
+              1.0
+            ],
+            "missing_or_invalid": 0,
+            "observed_only_ceiling": 1.0,
+            "observed_pair_denominator": 64
+          },
+          "direct_gram_f32": {
+            "confirmed_collisions": 0,
+            "confirmed_distinct": 64,
+            "expected_pairs": 64,
+            "full_codebook_ceiling": 1.0,
+            "full_codebook_ceiling_bounds": [
+              1.0,
+              1.0
+            ],
+            "missing_or_invalid": 0,
+            "observed_only_ceiling": 1.0,
+            "observed_pair_denominator": 64
+          },
+          "raw_state_f32": {
+            "confirmed_collisions": 0,
+            "confirmed_distinct": 64,
+            "expected_pairs": 64,
+            "full_codebook_ceiling": 1.0,
+            "full_codebook_ceiling_bounds": [
+              1.0,
+              1.0
+            ],
+            "missing_or_invalid": 0,
+            "observed_only_ceiling": 1.0,
+            "observed_pair_denominator": 64
+          },
+          "reference_f64_cast_f32": {
+            "confirmed_collisions": 0,
+            "confirmed_distinct": 64,
+            "expected_pairs": 64,
+            "full_codebook_ceiling": 1.0,
+            "full_codebook_ceiling_bounds": [
+              1.0,
+              1.0
+            ],
+            "missing_or_invalid": 0,
+            "observed_only_ceiling": 1.0,
+            "observed_pair_denominator": 64
+          },
+          "token_only_f32": {
+            "confirmed_collisions": 64,
+            "confirmed_distinct": 0,
+            "expected_pairs": 64,
+            "full_codebook_ceiling": 0.5,
+            "full_codebook_ceiling_bounds": [
+              0.5,
+              0.5
+            ],
+            "missing_or_invalid": 0,
+            "observed_only_ceiling": 0.5,
+            "observed_pair_denominator": 64
+          }
+        },
+        "exact_gram_loss_witnesses": [],
+        "exact_source_comparison_failures": [],
+        "preexisting_source_collision_count": 0,
+        "preexisting_source_collision_ids": []
+      },
+      "completed": 128,
+      "direct_gram_relative_error": {
+        "finite_count": 128,
+        "maximum": 3.323796783930796e-08,
+        "median": 2.6430738871138853e-08,
+        "minimum": 1.8019566536713112e-08,
+        "scope": "finite available estimates only; fixed-denominator counts are separate"
+      },
+      "forced_token_mean_log_probability": {
+        "finite_count": 128,
+        "maximum": -2.207990695650074,
+        "median": -2.2623389855820486,
+        "minimum": -2.3109340523378648,
+        "scope": "finite available estimates only; fixed-denominator counts are separate"
+      },
+      "missing": 0,
+      "native_readout": {
+        "accuracy": 0.171875,
+        "both_correct_pairs": 2,
+        "correct_records": 22,
+        "observed_complete_pairs": 64,
+        "observed_records": 128,
+        "paired_both_correct": 0.03125,
+        "planned_pair_denominator": 64,
+        "planned_record_denominator": 128,
+        "readouts_across_probes_are_duplicates_not_independent": true
+      },
+      "planned_records": 128,
+      "recorded": 128,
+      "recovery": {
+        "author_ideal_public64": {
+          "finite_relative_errors": {
+            "finite_count": 128,
+            "maximum": 0.004538085020871851,
+            "median": 0.0012827459730723994,
+            "minimum": 9.681791211332944e-05,
+            "scope": "finite available estimates only; fixed-denominator counts are separate"
+          },
+          "planned_denominator": 128,
+          "rejection_reasons": {},
+          "statuses": {
+            "estimated": 128,
+            "not_observed": 0
+          },
+          "success_counts": {
+            "0.0001": 1,
+            "0.001": 51,
+            "0.01": 128,
+            "1e-06": 0
+          }
+        },
+        "author_matched_public32": {
+          "finite_relative_errors": {
+            "finite_count": 128,
+            "maximum": 0.00444972830882,
+            "median": 0.0012192249481542475,
+            "minimum": 8.717976156097939e-05,
+            "scope": "finite available estimates only; fixed-denominator counts are separate"
+          },
+          "planned_denominator": 128,
+          "rejection_reasons": {},
+          "statuses": {
+            "estimated": 128,
+            "not_observed": 0
+          },
+          "success_counts": {
+            "0.0001": 2,
+            "0.001": 53,
+            "0.01": 128,
+            "1e-06": 0
+          }
+        },
+        "reference_f64": {
+          "finite_relative_errors": {
+            "finite_count": 128,
+            "maximum": 1.2739676596592245e-11,
+            "median": 3.200991260357393e-12,
+            "minimum": 2.3308331682427986e-13,
+            "scope": "finite available estimates only; fixed-denominator counts are separate"
+          },
+          "planned_denominator": 128,
+          "rejection_reasons": {},
+          "statuses": {
+            "estimated": 128,
+            "not_observed": 0
+          },
+          "success_counts": {
+            "0.0001": 128,
+            "0.001": 128,
+            "0.01": 128,
+            "1e-06": 128
+          }
+        },
+        "reference_f64_cast_f32": {
+          "finite_relative_errors": {
+            "finite_count": 128,
+            "maximum": 7.177538463039827e-05,
+            "median": 2.3338491263843955e-05,
+            "minimum": 2.7115871213426737e-06,
+            "scope": "finite available estimates only; fixed-denominator counts are separate"
+          },
+          "planned_denominator": 128,
+          "rejection_reasons": {},
+          "statuses": {
+            "estimated": 128,
+            "not_observed": 0
+          },
+          "success_counts": {
+            "0.0001": 128,
+            "0.001": 128,
+            "0.01": 128,
+            "1e-06": 0
+          }
+        }
+      },
+      "source_whitening_inverse_condition_factors": {
+        "finite_count": 896,
+        "maximum": 917.6313146747832,
+        "median": 2.9797027460386287,
+        "minimum": 1.0023182749475905,
+        "scope": "finite available estimates only; fixed-denominator counts are separate"
+      }
+    },
+    "unique": {
+      "collisions": {
+        "alignment_created_witnesses": [],
+        "channels": {
+          "author_f32": {
+            "confirmed_collisions": 0,
+            "confirmed_distinct": 64,
+            "expected_pairs": 64,
+            "full_codebook_ceiling": 1.0,
+            "full_codebook_ceiling_bounds": [
+              1.0,
+              1.0
+            ],
+            "missing_or_invalid": 0,
+            "observed_only_ceiling": 1.0,
+            "observed_pair_denominator": 64
+          },
+          "direct_gram_f32": {
+            "confirmed_collisions": 0,
+            "confirmed_distinct": 64,
+            "expected_pairs": 64,
+            "full_codebook_ceiling": 1.0,
+            "full_codebook_ceiling_bounds": [
+              1.0,
+              1.0
+            ],
+            "missing_or_invalid": 0,
+            "observed_only_ceiling": 1.0,
+            "observed_pair_denominator": 64
+          },
+          "raw_state_f32": {
+            "confirmed_collisions": 0,
+            "confirmed_distinct": 64,
+            "expected_pairs": 64,
+            "full_codebook_ceiling": 1.0,
+            "full_codebook_ceiling_bounds": [
+              1.0,
+              1.0
+            ],
+            "missing_or_invalid": 0,
+            "observed_only_ceiling": 1.0,
+            "observed_pair_denominator": 64
+          },
+          "reference_f64_cast_f32": {
+            "confirmed_collisions": 0,
+            "confirmed_distinct": 64,
+            "expected_pairs": 64,
+            "full_codebook_ceiling": 1.0,
+            "full_codebook_ceiling_bounds": [
+              1.0,
+              1.0
+            ],
+            "missing_or_invalid": 0,
+            "observed_only_ceiling": 1.0,
+            "observed_pair_denominator": 64
+          },
+          "token_only_f32": {
+            "confirmed_collisions": 64,
+            "confirmed_distinct": 0,
+            "expected_pairs": 64,
+            "full_codebook_ceiling": 0.5,
+            "full_codebook_ceiling_bounds": [
+              0.5,
+              0.5
+            ],
+            "missing_or_invalid": 0,
+            "observed_only_ceiling": 0.5,
+            "observed_pair_denominator": 64
+          }
+        },
+        "exact_gram_loss_witnesses": [],
+        "exact_source_comparison_failures": [],
+        "preexisting_source_collision_count": 0,
+        "preexisting_source_collision_ids": []
+      },
+      "completed": 128,
+      "direct_gram_relative_error": {
+        "finite_count": 128,
+        "maximum": 3.047144665932763e-08,
+        "median": 2.446291066969123e-08,
+        "minimum": 1.940310100827809e-08,
+        "scope": "finite available estimates only; fixed-denominator counts are separate"
+      },
+      "forced_token_mean_log_probability": {
+        "finite_count": 128,
+        "maximum": -4.284013240579332,
+        "median": -4.403155330748476,
+        "minimum": -4.5104786894908635,
+        "scope": "finite available estimates only; fixed-denominator counts are separate"
+      },
+      "missing": 0,
+      "native_readout": {
+        "accuracy": 0.171875,
+        "both_correct_pairs": 2,
+        "correct_records": 22,
+        "observed_complete_pairs": 64,
+        "observed_records": 128,
+        "paired_both_correct": 0.03125,
+        "planned_pair_denominator": 64,
+        "planned_record_denominator": 128,
+        "readouts_across_probes_are_duplicates_not_independent": true
+      },
+      "planned_records": 128,
+      "recorded": 128,
+      "recovery": {
+        "author_ideal_public64": {
+          "finite_relative_errors": {
+            "finite_count": 128,
+            "maximum": 0.006759869723581351,
+            "median": 0.0018005842169683474,
+            "minimum": 0.0001311037093492868,
+            "scope": "finite available estimates only; fixed-denominator counts are separate"
+          },
+          "planned_denominator": 128,
+          "rejection_reasons": {},
+          "statuses": {
+            "estimated": 128,
+            "not_observed": 0
+          },
+          "success_counts": {
+            "0.0001": 0,
+            "0.001": 39,
+            "0.01": 128,
+            "1e-06": 0
+          }
+        },
+        "author_matched_public32": {
+          "finite_relative_errors": {
+            "finite_count": 128,
+            "maximum": 0.007032234819189008,
+            "median": 0.001675940997751571,
+            "minimum": 0.000176589328021459,
+            "scope": "finite available estimates only; fixed-denominator counts are separate"
+          },
+          "planned_denominator": 128,
+          "rejection_reasons": {},
+          "statuses": {
+            "estimated": 128,
+            "not_observed": 0
+          },
+          "success_counts": {
+            "0.0001": 0,
+            "0.001": 39,
+            "0.01": 128,
+            "1e-06": 0
+          }
+        },
+        "reference_f64": {
+          "finite_relative_errors": {
+            "finite_count": 128,
+            "maximum": 1.3674644928344718e-11,
+            "median": 3.0236263255640903e-12,
+            "minimum": 1.956211850845752e-13,
+            "scope": "finite available estimates only; fixed-denominator counts are separate"
+          },
+          "planned_denominator": 128,
+          "rejection_reasons": {},
+          "statuses": {
+            "estimated": 128,
+            "not_observed": 0
+          },
+          "success_counts": {
+            "0.0001": 128,
+            "0.001": 128,
+            "0.01": 128,
+            "1e-06": 128
+          }
+        },
+        "reference_f64_cast_f32": {
+          "finite_relative_errors": {
+            "finite_count": 128,
+            "maximum": 2.2962115573262127e-05,
+            "median": 7.5019428755199816e-06,
+            "minimum": 1.3978728490069502e-06,
+            "scope": "finite available estimates only; fixed-denominator counts are separate"
+          },
+          "planned_denominator": 128,
+          "rejection_reasons": {},
+          "statuses": {
+            "estimated": 128,
+            "not_observed": 0
+          },
+          "success_counts": {
+            "0.0001": 128,
+            "0.001": 128,
+            "0.01": 128,
+            "1e-06": 0
+          }
+        }
+      },
+      "source_whitening_inverse_condition_factors": {
+        "finite_count": 896,
+        "maximum": 1033.7932610121813,
+        "median": 30.98194477291731,
+        "minimum": 6.3668887392969715,
+        "scope": "finite available estimates only; fixed-denominator counts are separate"
+      }
+    }
+  },
+  "completed_records": 256,
+  "empirical_retries": 0,
+  "error_records": 0,
+  "expected_model_forward_calls": 2048,
+  "forward_call_count_is_exact": true,
+  "missing_records": 0,
+  "model": {
+    "id": "EleutherAI/pythia-14m",
+    "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac"
+  },
+  "native_model_training": false,
+  "phase_seconds": {
+    "download_and_hash_verification": 0.5753025120000075,
+    "public_setup_and_retention": 4.270004662000019,
+    "tokenizer_model_loading_and_preflight": 0.18053104699998812
+  },
+  "planned_records": 256,
+  "primary_numerical_target": {
+    "available": true,
+    "interpretation": "fixed 0.1% numerical reporting target only",
+    "met": false,
+    "planned_denominator": 128,
+    "relative_frobenius_threshold": 0.001,
+    "required_successes": 122,
+    "success_fraction_planned": 0.3046875,
+    "successes": 39
+  },
+  "provenance": {
+    "all_match": true,
+    "design_sha256": "6f50e1d3faad3240033748d7434f088ec26b7ac6716511923892e66ac0e78a09",
+    "files": {
+      ".github/workflows/contextual-information-v1.yml": {
+        "bytes": 2696,
+        "sha256": "27a061caf58aff92c6a4d973a41959163eb79cdf33b5a19f8c18c55bb0471271"
+      },
+      ".github/workflows/tests.yml": {
+        "bytes": 1037,
+        "sha256": "612496e01fd4315c86976e6ecc05954a6bf92869bde1a6ada54c25533a0f5e2c"
+      },
+      "docs/contextual_information_design.md": {
+        "bytes": 31375,
+        "sha256": "6f50e1d3faad3240033748d7434f088ec26b7ac6716511923892e66ac0e78a09"
+      },
+      "docs/statebridge_information_recovery.md": {
+        "bytes": 18562,
+        "sha256": "f78a41cee2b1ee90b349bcbee0fe00a588b9738863034172a8c8c09ddc3992d7"
+      },
+      "latent_bridge/__init__.py": {
+        "bytes": 111,
+        "sha256": "740c636a9ebbfc9c219c7b9d590a84f130ea7ef2239407877e9ade07af95f8fa"
+      },
+      "latent_bridge/alignment_core.py": {
+        "bytes": 15305,
+        "sha256": "de8909692a928266c03e22d12b13c800b14e2495a8acad39ae6b95dfc46bfa53"
+      },
+      "latent_bridge/contextual_information.py": {
+        "bytes": 72281,
+        "sha256": "f228aa821a7a87b6ef832b08bf8df3bf895bc8576899316c0658f1b8006afa3f"
+      },
+      "latent_bridge/information_recovery.py": {
+        "bytes": 27935,
+        "sha256": "8b44898683f13470a18f884b300e33f40c040a5922848a1f22de4552e0c8d3e1"
+      },
+      "pyproject.toml": {
+        "bytes": 523,
+        "sha256": "4613df28c5bd415544437224eb4ac5e3e01d48def6dd727d70045878e955e85b"
+      },
+      "scripts/contextual_model_lock.json": {
+        "bytes": 1195,
+        "sha256": "6b0d893f7ef6f8bea7cb4af34f8ea9a22e9a860cc4cb010bc714fe85629e1cbb"
+      },
+      "scripts/run_alignment_numerical.py": {
+        "bytes": 9515,
+        "sha256": "40f806d39f24a721009d4d7599c8902f1b6720956065daa82e0f4b747ab7a4d4"
+      },
+      "scripts/run_contextual_information.py": {
+        "bytes": 13264,
+        "sha256": "a6cbfb13892aa3d25d4f24178423b732e8305d0785d1403d2c337e6f7fed3a76"
+      },
+      "tests/test_alignment_execution.py": {
+        "bytes": 3997,
+        "sha256": "2894c0bd146a2d234352ccba2374c9331da0d5e99ec0e6d68fe6e5d99330c963"
+      },
+      "tests/test_contextual_execution.py": {
+        "bytes": 7889,
+        "sha256": "e6569318ea42262abeb4529d9b9a0265b0654517bff88dca93d524a8d33d4d3e"
+      },
+      "tests/test_contextual_information.py": {
+        "bytes": 38953,
+        "sha256": "4f9555f29c06163ee5a5d7c93d9e6b2a91c8a7c9cfdbb2af52b5ce8451b2fd94"
+      },
+      "tests/test_information_recovery.py": {
+        "bytes": 15280,
+        "sha256": "a2be07f72fa780deca9ba818056bb9d3293dad487f5a5d4e0993bad4e203ed5b"
+      },
+      "third_party/statebridge/LICENSE": {
+        "bytes": 11357,
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      },
+      "third_party/statebridge/README.md": {
+        "bytes": 1024,
+        "sha256": "0e4e217445e3b7aa30d0407724b3fac697afbac74fccbd9018406d31e7f7b4a0"
+      },
+      "third_party/statebridge/state_bridge.py": {
+        "bytes": 51919,
+        "sha256": "415957df427eb79a4212e760af4d133cb4ce10cc4619f11447082117922f366d"
+      }
+    },
+    "frozen_design_commit": "c23a20ec420ba19680801a09ac8b053735807d38",
+    "github_commit": "b541b69fbc95f2db8a4d6dc32d3a4ec2f744b66b",
+    "github_run_id": "45396412531",
+    "schema_version": 1
+  },
+  "public_contexts_prepared_before_private_extraction": true,
+  "receiver_generation": false,
+  "recorded_records": 256,
+  "required_validation": {
+    "all_256_records_completed": true,
+    "exact_pair_arithmetic": {
+      "duplicate_pair_ids": [],
+      "expected_pairs": 128,
+      "extra_pair_ids": [],
+      "failed_ids": [],
+      "missing_exact_comparison_ids": [],
+      "passed": true,
+      "recorded_pairs": 128
+    },
+    "f64_reference": {
+      "eligibility_unknown_ids": [],
+      "eligible_count": 128,
+      "failed_ids": [],
+      "failure_can_be_numerical_conditioning_not_theorem_or_code_refutation": true,
+      "ineligible_count": 0,
+      "missing_primary_records": 0,
+      "passed": true,
+      "relative_threshold": 1e-08
+    },
+    "first_state_and_logits": {
+      "expected_checks": 128,
+      "failed_ids": [],
+      "observed": 128,
+      "passed": true
+    },
+    "public32_contract": {
+      "expected_checks": 256,
+      "failed_ids": [],
+      "observed": 256,
+      "passed": true
+    }
+  },
+  "required_validation_passed": true,
+  "retained_complete_extraction_forward_calls": 2048,
+  "schema_version": 1,
+  "scientific_wall_seconds": 60.45176675900001,
+  "study_complete": true,
+  "worker_wall_time_scope": "Elapsed before final summary/status writes and process teardown; supervisor execution.json records the complete scientific-child duration."
+}

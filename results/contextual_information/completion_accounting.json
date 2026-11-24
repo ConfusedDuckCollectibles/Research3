@@ -1,0 +1,16 @@
+{
+  "all_records_completed_successfully": true,
+  "all_slots_recorded": true,
+  "duplicate_ids": [],
+  "expected_records": 256,
+  "plan_status": "valid",
+  "planned_slots": 256,
+  "read_errors": [],
+  "recorded_slots": 256,
+  "status_counts": {
+    "completed": 256
+  },
+  "unexecuted_slots": [],
+  "unique_recorded_slots": 256,
+  "unknown_ids": []
+}

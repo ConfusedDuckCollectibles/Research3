@@ -1,0 +1,4259 @@
+{
+  "colors": [
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "purple",
+    "orange",
+    "black",
+    "white"
+  ],
+  "families": [
+    {
+      "family_id": "F000",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 0,
+      "partner_index": 1,
+      "question": "What color is the alder specimen?",
+      "target_index": 0,
+      "worlds": {
+        "original": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            1,
+            2,
+            0,
+            5,
+            3,
+            7,
+            6,
+            4
+          ],
+          "prompt": "Family F000.\nPrivate record:\nalder: blue\nbirch: green\ncedar: red\nelm: orange\nfir: yellow\nmaple: white\noak: black\nwillow: purple\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "12053764"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            2,
+            1,
+            0,
+            5,
+            3,
+            7,
+            6,
+            4
+          ],
+          "prompt": "Family F000.\nPrivate record:\nalder: green\nbirch: blue\ncedar: red\nelm: orange\nfir: yellow\nmaple: white\noak: black\nwillow: purple\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "21053764"
+        }
+      }
+    },
+    {
+      "family_id": "F001",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 1,
+      "partner_index": 2,
+      "question": "What color is the birch specimen?",
+      "target_index": 1,
+      "worlds": {
+        "original": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            3,
+            0,
+            2,
+            4,
+            6,
+            5,
+            1,
+            7
+          ],
+          "prompt": "Family F001.\nPrivate record:\nalder: yellow\nbirch: red\ncedar: green\nelm: purple\nfir: black\nmaple: orange\noak: blue\nwillow: white\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "30246517"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            3,
+            2,
+            0,
+            4,
+            6,
+            5,
+            1,
+            7
+          ],
+          "prompt": "Family F001.\nPrivate record:\nalder: yellow\nbirch: green\ncedar: red\nelm: purple\nfir: black\nmaple: orange\noak: blue\nwillow: white\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "32046517"
+        }
+      }
+    },
+    {
+      "family_id": "F002",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 2,
+      "partner_index": 3,
+      "question": "What color is the cedar specimen?",
+      "target_index": 2,
+      "worlds": {
+        "original": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            3,
+            2,
+            5,
+            4,
+            0,
+            6,
+            1,
+            7
+          ],
+          "prompt": "Family F002.\nPrivate record:\nalder: yellow\nbirch: green\ncedar: orange\nelm: purple\nfir: red\nmaple: black\noak: blue\nwillow: white\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "32540617"
+        },
+        "swapped": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            3,
+            2,
+            4,
+            5,
+            0,
+            6,
+            1,
+            7
+          ],
+          "prompt": "Family F002.\nPrivate record:\nalder: yellow\nbirch: green\ncedar: purple\nelm: orange\nfir: red\nmaple: black\noak: blue\nwillow: white\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "32450617"
+        }
+      }
+    },
+    {
+      "family_id": "F003",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 3,
+      "partner_index": 4,
+      "question": "What color is the elm specimen?",
+      "target_index": 3,
+      "worlds": {
+        "original": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            3,
+            2,
+            5,
+            7,
+            4,
+            0,
+            1,
+            6
+          ],
+          "prompt": "Family F003.\nPrivate record:\nalder: yellow\nbirch: green\ncedar: orange\nelm: white\nfir: purple\nmaple: red\noak: blue\nwillow: black\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "32574016"
+        },
+        "swapped": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            3,
+            2,
+            5,
+            4,
+            7,
+            0,
+            1,
+            6
+          ],
+          "prompt": "Family F003.\nPrivate record:\nalder: yellow\nbirch: green\ncedar: orange\nelm: purple\nfir: white\nmaple: red\noak: blue\nwillow: black\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "32547016"
+        }
+      }
+    },
+    {
+      "family_id": "F004",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 4,
+      "partner_index": 5,
+      "question": "What color is the fir specimen?",
+      "target_index": 4,
+      "worlds": {
+        "original": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            3,
+            0,
+            4,
+            7,
+            1,
+            2,
+            6,
+            5
+          ],
+          "prompt": "Family F004.\nPrivate record:\nalder: yellow\nbirch: red\ncedar: purple\nelm: white\nfir: blue\nmaple: green\noak: black\nwillow: orange\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "30471265"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            3,
+            0,
+            4,
+            7,
+            2,
+            1,
+            6,
+            5
+          ],
+          "prompt": "Family F004.\nPrivate record:\nalder: yellow\nbirch: red\ncedar: purple\nelm: white\nfir: green\nmaple: blue\noak: black\nwillow: orange\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "30472165"
+        }
+      }
+    },
+    {
+      "family_id": "F005",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 5,
+      "partner_index": 6,
+      "question": "What color is the maple specimen?",
+      "target_index": 5,
+      "worlds": {
+        "original": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            7,
+            6,
+            2,
+            5,
+            4,
+            1,
+            0,
+            3
+          ],
+          "prompt": "Family F005.\nPrivate record:\nalder: white\nbirch: black\ncedar: green\nelm: orange\nfir: purple\nmaple: blue\noak: red\nwillow: yellow\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "76254103"
+        },
+        "swapped": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            7,
+            6,
+            2,
+            5,
+            4,
+            0,
+            1,
+            3
+          ],
+          "prompt": "Family F005.\nPrivate record:\nalder: white\nbirch: black\ncedar: green\nelm: orange\nfir: purple\nmaple: red\noak: blue\nwillow: yellow\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "76254013"
+        }
+      }
+    },
+    {
+      "family_id": "F006",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 6,
+      "partner_index": 7,
+      "question": "What color is the oak specimen?",
+      "target_index": 6,
+      "worlds": {
+        "original": {
+          "answer": "yellow",
+          "answer_index": 3,
+          "permutation": [
+            2,
+            7,
+            6,
+            4,
+            1,
+            0,
+            3,
+            5
+          ],
+          "prompt": "Family F006.\nPrivate record:\nalder: green\nbirch: white\ncedar: black\nelm: purple\nfir: blue\nmaple: red\noak: yellow\nwillow: orange\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "27641035"
+        },
+        "swapped": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            2,
+            7,
+            6,
+            4,
+            1,
+            0,
+            5,
+            3
+          ],
+          "prompt": "Family F006.\nPrivate record:\nalder: green\nbirch: white\ncedar: black\nelm: purple\nfir: blue\nmaple: red\noak: orange\nwillow: yellow\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "27641053"
+        }
+      }
+    },
+    {
+      "family_id": "F007",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 7,
+      "partner_index": 0,
+      "question": "What color is the willow specimen?",
+      "target_index": 7,
+      "worlds": {
+        "original": {
+          "answer": "yellow",
+          "answer_index": 3,
+          "permutation": [
+            0,
+            2,
+            5,
+            6,
+            7,
+            4,
+            1,
+            3
+          ],
+          "prompt": "Family F007.\nPrivate record:\nalder: red\nbirch: green\ncedar: orange\nelm: black\nfir: white\nmaple: purple\noak: blue\nwillow: yellow\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "02567413"
+        },
+        "swapped": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            3,
+            2,
+            5,
+            6,
+            7,
+            4,
+            1,
+            0
+          ],
+          "prompt": "Family F007.\nPrivate record:\nalder: yellow\nbirch: green\ncedar: orange\nelm: black\nfir: white\nmaple: purple\noak: blue\nwillow: red\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "32567410"
+        }
+      }
+    },
+    {
+      "family_id": "F008",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 8,
+      "partner_index": 2,
+      "question": "What color is the alder specimen?",
+      "target_index": 0,
+      "worlds": {
+        "original": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            0,
+            5,
+            7,
+            6,
+            3,
+            2,
+            4,
+            1
+          ],
+          "prompt": "Family F008.\nPrivate record:\nalder: red\nbirch: orange\ncedar: white\nelm: black\nfir: yellow\nmaple: green\noak: purple\nwillow: blue\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "05763241"
+        },
+        "swapped": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            7,
+            5,
+            0,
+            6,
+            3,
+            2,
+            4,
+            1
+          ],
+          "prompt": "Family F008.\nPrivate record:\nalder: white\nbirch: orange\ncedar: red\nelm: black\nfir: yellow\nmaple: green\noak: purple\nwillow: blue\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "75063241"
+        }
+      }
+    },
+    {
+      "family_id": "F009",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 9,
+      "partner_index": 3,
+      "question": "What color is the birch specimen?",
+      "target_index": 1,
+      "worlds": {
+        "original": {
+          "answer": "yellow",
+          "answer_index": 3,
+          "permutation": [
+            1,
+            3,
+            0,
+            6,
+            7,
+            4,
+            5,
+            2
+          ],
+          "prompt": "Family F009.\nPrivate record:\nalder: blue\nbirch: yellow\ncedar: red\nelm: black\nfir: white\nmaple: purple\noak: orange\nwillow: green\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "13067452"
+        },
+        "swapped": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            1,
+            6,
+            0,
+            3,
+            7,
+            4,
+            5,
+            2
+          ],
+          "prompt": "Family F009.\nPrivate record:\nalder: blue\nbirch: black\ncedar: red\nelm: yellow\nfir: white\nmaple: purple\noak: orange\nwillow: green\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "16037452"
+        }
+      }
+    },
+    {
+      "family_id": "F010",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 10,
+      "partner_index": 4,
+      "question": "What color is the cedar specimen?",
+      "target_index": 2,
+      "worlds": {
+        "original": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            4,
+            0,
+            6,
+            7,
+            3,
+            5,
+            2,
+            1
+          ],
+          "prompt": "Family F010.\nPrivate record:\nalder: purple\nbirch: red\ncedar: black\nelm: white\nfir: yellow\nmaple: orange\noak: green\nwillow: blue\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "40673521"
+        },
+        "swapped": {
+          "answer": "yellow",
+          "answer_index": 3,
+          "permutation": [
+            4,
+            0,
+            3,
+            7,
+            6,
+            5,
+            2,
+            1
+          ],
+          "prompt": "Family F010.\nPrivate record:\nalder: purple\nbirch: red\ncedar: yellow\nelm: white\nfir: black\nmaple: orange\noak: green\nwillow: blue\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "40376521"
+        }
+      }
+    },
+    {
+      "family_id": "F011",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 11,
+      "partner_index": 5,
+      "question": "What color is the elm specimen?",
+      "target_index": 3,
+      "worlds": {
+        "original": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            7,
+            6,
+            1,
+            5,
+            0,
+            2,
+            4,
+            3
+          ],
+          "prompt": "Family F011.\nPrivate record:\nalder: white\nbirch: black\ncedar: blue\nelm: orange\nfir: red\nmaple: green\noak: purple\nwillow: yellow\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "76150243"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            7,
+            6,
+            1,
+            2,
+            0,
+            5,
+            4,
+            3
+          ],
+          "prompt": "Family F011.\nPrivate record:\nalder: white\nbirch: black\ncedar: blue\nelm: green\nfir: red\nmaple: orange\noak: purple\nwillow: yellow\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "76120543"
+        }
+      }
+    },
+    {
+      "family_id": "F012",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 12,
+      "partner_index": 6,
+      "question": "What color is the fir specimen?",
+      "target_index": 4,
+      "worlds": {
+        "original": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            2,
+            4,
+            5,
+            7,
+            6,
+            0,
+            1,
+            3
+          ],
+          "prompt": "Family F012.\nPrivate record:\nalder: green\nbirch: purple\ncedar: orange\nelm: white\nfir: black\nmaple: red\noak: blue\nwillow: yellow\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "24576013"
+        },
+        "swapped": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            2,
+            4,
+            5,
+            7,
+            1,
+            0,
+            6,
+            3
+          ],
+          "prompt": "Family F012.\nPrivate record:\nalder: green\nbirch: purple\ncedar: orange\nelm: white\nfir: blue\nmaple: red\noak: black\nwillow: yellow\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "24571063"
+        }
+      }
+    },
+    {
+      "family_id": "F013",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 13,
+      "partner_index": 7,
+      "question": "What color is the maple specimen?",
+      "target_index": 5,
+      "worlds": {
+        "original": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            3,
+            2,
+            1,
+            6,
+            5,
+            7,
+            4,
+            0
+          ],
+          "prompt": "Family F013.\nPrivate record:\nalder: yellow\nbirch: green\ncedar: blue\nelm: black\nfir: orange\nmaple: white\noak: purple\nwillow: red\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "32165740"
+        },
+        "swapped": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            3,
+            2,
+            1,
+            6,
+            5,
+            0,
+            4,
+            7
+          ],
+          "prompt": "Family F013.\nPrivate record:\nalder: yellow\nbirch: green\ncedar: blue\nelm: black\nfir: orange\nmaple: red\noak: purple\nwillow: white\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "32165047"
+        }
+      }
+    },
+    {
+      "family_id": "F014",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 14,
+      "partner_index": 0,
+      "question": "What color is the oak specimen?",
+      "target_index": 6,
+      "worlds": {
+        "original": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            2,
+            3,
+            1,
+            7,
+            5,
+            4,
+            6,
+            0
+          ],
+          "prompt": "Family F014.\nPrivate record:\nalder: green\nbirch: yellow\ncedar: blue\nelm: white\nfir: orange\nmaple: purple\noak: black\nwillow: red\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "23175460"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            6,
+            3,
+            1,
+            7,
+            5,
+            4,
+            2,
+            0
+          ],
+          "prompt": "Family F014.\nPrivate record:\nalder: black\nbirch: yellow\ncedar: blue\nelm: white\nfir: orange\nmaple: purple\noak: green\nwillow: red\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "63175420"
+        }
+      }
+    },
+    {
+      "family_id": "F015",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 15,
+      "partner_index": 1,
+      "question": "What color is the willow specimen?",
+      "target_index": 7,
+      "worlds": {
+        "original": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            7,
+            6,
+            3,
+            0,
+            4,
+            2,
+            1,
+            5
+          ],
+          "prompt": "Family F015.\nPrivate record:\nalder: white\nbirch: black\ncedar: yellow\nelm: red\nfir: purple\nmaple: green\noak: blue\nwillow: orange\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "76304215"
+        },
+        "swapped": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            7,
+            5,
+            3,
+            0,
+            4,
+            2,
+            1,
+            6
+          ],
+          "prompt": "Family F015.\nPrivate record:\nalder: white\nbirch: orange\ncedar: yellow\nelm: red\nfir: purple\nmaple: green\noak: blue\nwillow: black\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "75304216"
+        }
+      }
+    },
+    {
+      "family_id": "F016",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 16,
+      "partner_index": 3,
+      "question": "What color is the alder specimen?",
+      "target_index": 0,
+      "worlds": {
+        "original": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            1,
+            3,
+            7,
+            2,
+            4,
+            5,
+            6,
+            0
+          ],
+          "prompt": "Family F016.\nPrivate record:\nalder: blue\nbirch: yellow\ncedar: white\nelm: green\nfir: purple\nmaple: orange\noak: black\nwillow: red\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "13724560"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            2,
+            3,
+            7,
+            1,
+            4,
+            5,
+            6,
+            0
+          ],
+          "prompt": "Family F016.\nPrivate record:\nalder: green\nbirch: yellow\ncedar: white\nelm: blue\nfir: purple\nmaple: orange\noak: black\nwillow: red\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "23714560"
+        }
+      }
+    },
+    {
+      "family_id": "F017",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 17,
+      "partner_index": 4,
+      "question": "What color is the birch specimen?",
+      "target_index": 1,
+      "worlds": {
+        "original": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            5,
+            7,
+            2,
+            4,
+            1,
+            6,
+            0,
+            3
+          ],
+          "prompt": "Family F017.\nPrivate record:\nalder: orange\nbirch: white\ncedar: green\nelm: purple\nfir: blue\nmaple: black\noak: red\nwillow: yellow\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "57241603"
+        },
+        "swapped": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            5,
+            1,
+            2,
+            4,
+            7,
+            6,
+            0,
+            3
+          ],
+          "prompt": "Family F017.\nPrivate record:\nalder: orange\nbirch: blue\ncedar: green\nelm: purple\nfir: white\nmaple: black\noak: red\nwillow: yellow\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "51247603"
+        }
+      }
+    },
+    {
+      "family_id": "F018",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 18,
+      "partner_index": 5,
+      "question": "What color is the cedar specimen?",
+      "target_index": 2,
+      "worlds": {
+        "original": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            3,
+            2,
+            0,
+            4,
+            6,
+            7,
+            5,
+            1
+          ],
+          "prompt": "Family F018.\nPrivate record:\nalder: yellow\nbirch: green\ncedar: red\nelm: purple\nfir: black\nmaple: white\noak: orange\nwillow: blue\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "32046751"
+        },
+        "swapped": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            3,
+            2,
+            7,
+            4,
+            6,
+            0,
+            5,
+            1
+          ],
+          "prompt": "Family F018.\nPrivate record:\nalder: yellow\nbirch: green\ncedar: white\nelm: purple\nfir: black\nmaple: red\noak: orange\nwillow: blue\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "32746051"
+        }
+      }
+    },
+    {
+      "family_id": "F019",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 19,
+      "partner_index": 6,
+      "question": "What color is the elm specimen?",
+      "target_index": 3,
+      "worlds": {
+        "original": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            3,
+            0,
+            2,
+            6,
+            4,
+            5,
+            1,
+            7
+          ],
+          "prompt": "Family F019.\nPrivate record:\nalder: yellow\nbirch: red\ncedar: green\nelm: black\nfir: purple\nmaple: orange\noak: blue\nwillow: white\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "30264517"
+        },
+        "swapped": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            3,
+            0,
+            2,
+            1,
+            4,
+            5,
+            6,
+            7
+          ],
+          "prompt": "Family F019.\nPrivate record:\nalder: yellow\nbirch: red\ncedar: green\nelm: blue\nfir: purple\nmaple: orange\noak: black\nwillow: white\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "30214567"
+        }
+      }
+    },
+    {
+      "family_id": "F020",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 20,
+      "partner_index": 7,
+      "question": "What color is the fir specimen?",
+      "target_index": 4,
+      "worlds": {
+        "original": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            7,
+            4,
+            5,
+            0,
+            6,
+            2,
+            1,
+            3
+          ],
+          "prompt": "Family F020.\nPrivate record:\nalder: white\nbirch: purple\ncedar: orange\nelm: red\nfir: black\nmaple: green\noak: blue\nwillow: yellow\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "74506213"
+        },
+        "swapped": {
+          "answer": "yellow",
+          "answer_index": 3,
+          "permutation": [
+            7,
+            4,
+            5,
+            0,
+            3,
+            2,
+            1,
+            6
+          ],
+          "prompt": "Family F020.\nPrivate record:\nalder: white\nbirch: purple\ncedar: orange\nelm: red\nfir: yellow\nmaple: green\noak: blue\nwillow: black\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "74503216"
+        }
+      }
+    },
+    {
+      "family_id": "F021",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 21,
+      "partner_index": 0,
+      "question": "What color is the maple specimen?",
+      "target_index": 5,
+      "worlds": {
+        "original": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            7,
+            4,
+            5,
+            3,
+            2,
+            0,
+            6,
+            1
+          ],
+          "prompt": "Family F021.\nPrivate record:\nalder: white\nbirch: purple\ncedar: orange\nelm: yellow\nfir: green\nmaple: red\noak: black\nwillow: blue\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "74532061"
+        },
+        "swapped": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            0,
+            4,
+            5,
+            3,
+            2,
+            7,
+            6,
+            1
+          ],
+          "prompt": "Family F021.\nPrivate record:\nalder: red\nbirch: purple\ncedar: orange\nelm: yellow\nfir: green\nmaple: white\noak: black\nwillow: blue\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "04532761"
+        }
+      }
+    },
+    {
+      "family_id": "F022",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 22,
+      "partner_index": 1,
+      "question": "What color is the oak specimen?",
+      "target_index": 6,
+      "worlds": {
+        "original": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            6,
+            5,
+            7,
+            2,
+            0,
+            1,
+            4,
+            3
+          ],
+          "prompt": "Family F022.\nPrivate record:\nalder: black\nbirch: orange\ncedar: white\nelm: green\nfir: red\nmaple: blue\noak: purple\nwillow: yellow\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "65720143"
+        },
+        "swapped": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            6,
+            4,
+            7,
+            2,
+            0,
+            1,
+            5,
+            3
+          ],
+          "prompt": "Family F022.\nPrivate record:\nalder: black\nbirch: purple\ncedar: white\nelm: green\nfir: red\nmaple: blue\noak: orange\nwillow: yellow\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "64720153"
+        }
+      }
+    },
+    {
+      "family_id": "F023",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 23,
+      "partner_index": 2,
+      "question": "What color is the willow specimen?",
+      "target_index": 7,
+      "worlds": {
+        "original": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            5,
+            3,
+            4,
+            0,
+            1,
+            2,
+            7,
+            6
+          ],
+          "prompt": "Family F023.\nPrivate record:\nalder: orange\nbirch: yellow\ncedar: purple\nelm: red\nfir: blue\nmaple: green\noak: white\nwillow: black\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "53401276"
+        },
+        "swapped": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            5,
+            3,
+            6,
+            0,
+            1,
+            2,
+            7,
+            4
+          ],
+          "prompt": "Family F023.\nPrivate record:\nalder: orange\nbirch: yellow\ncedar: black\nelm: red\nfir: blue\nmaple: green\noak: white\nwillow: purple\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "53601274"
+        }
+      }
+    },
+    {
+      "family_id": "F024",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 24,
+      "partner_index": 4,
+      "question": "What color is the alder specimen?",
+      "target_index": 0,
+      "worlds": {
+        "original": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            5,
+            4,
+            0,
+            2,
+            6,
+            7,
+            3,
+            1
+          ],
+          "prompt": "Family F024.\nPrivate record:\nalder: orange\nbirch: purple\ncedar: red\nelm: green\nfir: black\nmaple: white\noak: yellow\nwillow: blue\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "54026731"
+        },
+        "swapped": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            6,
+            4,
+            0,
+            2,
+            5,
+            7,
+            3,
+            1
+          ],
+          "prompt": "Family F024.\nPrivate record:\nalder: black\nbirch: purple\ncedar: red\nelm: green\nfir: orange\nmaple: white\noak: yellow\nwillow: blue\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "64025731"
+        }
+      }
+    },
+    {
+      "family_id": "F025",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 25,
+      "partner_index": 5,
+      "question": "What color is the birch specimen?",
+      "target_index": 1,
+      "worlds": {
+        "original": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            0,
+            7,
+            5,
+            3,
+            4,
+            1,
+            2,
+            6
+          ],
+          "prompt": "Family F025.\nPrivate record:\nalder: red\nbirch: white\ncedar: orange\nelm: yellow\nfir: purple\nmaple: blue\noak: green\nwillow: black\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "07534126"
+        },
+        "swapped": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            0,
+            1,
+            5,
+            3,
+            4,
+            7,
+            2,
+            6
+          ],
+          "prompt": "Family F025.\nPrivate record:\nalder: red\nbirch: blue\ncedar: orange\nelm: yellow\nfir: purple\nmaple: white\noak: green\nwillow: black\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "01534726"
+        }
+      }
+    },
+    {
+      "family_id": "F026",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 26,
+      "partner_index": 6,
+      "question": "What color is the cedar specimen?",
+      "target_index": 2,
+      "worlds": {
+        "original": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            5,
+            7,
+            2,
+            1,
+            0,
+            4,
+            6,
+            3
+          ],
+          "prompt": "Family F026.\nPrivate record:\nalder: orange\nbirch: white\ncedar: green\nelm: blue\nfir: red\nmaple: purple\noak: black\nwillow: yellow\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "57210463"
+        },
+        "swapped": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            5,
+            7,
+            6,
+            1,
+            0,
+            4,
+            2,
+            3
+          ],
+          "prompt": "Family F026.\nPrivate record:\nalder: orange\nbirch: white\ncedar: black\nelm: blue\nfir: red\nmaple: purple\noak: green\nwillow: yellow\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "57610423"
+        }
+      }
+    },
+    {
+      "family_id": "F027",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 27,
+      "partner_index": 7,
+      "question": "What color is the elm specimen?",
+      "target_index": 3,
+      "worlds": {
+        "original": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            2,
+            5,
+            0,
+            7,
+            1,
+            3,
+            4,
+            6
+          ],
+          "prompt": "Family F027.\nPrivate record:\nalder: green\nbirch: orange\ncedar: red\nelm: white\nfir: blue\nmaple: yellow\noak: purple\nwillow: black\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "25071346"
+        },
+        "swapped": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            2,
+            5,
+            0,
+            6,
+            1,
+            3,
+            4,
+            7
+          ],
+          "prompt": "Family F027.\nPrivate record:\nalder: green\nbirch: orange\ncedar: red\nelm: black\nfir: blue\nmaple: yellow\noak: purple\nwillow: white\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "25061347"
+        }
+      }
+    },
+    {
+      "family_id": "F028",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 28,
+      "partner_index": 0,
+      "question": "What color is the fir specimen?",
+      "target_index": 4,
+      "worlds": {
+        "original": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            4,
+            6,
+            5,
+            0,
+            1,
+            3,
+            7,
+            2
+          ],
+          "prompt": "Family F028.\nPrivate record:\nalder: purple\nbirch: black\ncedar: orange\nelm: red\nfir: blue\nmaple: yellow\noak: white\nwillow: green\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "46501372"
+        },
+        "swapped": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            1,
+            6,
+            5,
+            0,
+            4,
+            3,
+            7,
+            2
+          ],
+          "prompt": "Family F028.\nPrivate record:\nalder: blue\nbirch: black\ncedar: orange\nelm: red\nfir: purple\nmaple: yellow\noak: white\nwillow: green\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "16504372"
+        }
+      }
+    },
+    {
+      "family_id": "F029",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 29,
+      "partner_index": 1,
+      "question": "What color is the maple specimen?",
+      "target_index": 5,
+      "worlds": {
+        "original": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            7,
+            6,
+            4,
+            2,
+            0,
+            1,
+            5,
+            3
+          ],
+          "prompt": "Family F029.\nPrivate record:\nalder: white\nbirch: black\ncedar: purple\nelm: green\nfir: red\nmaple: blue\noak: orange\nwillow: yellow\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "76420153"
+        },
+        "swapped": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            7,
+            1,
+            4,
+            2,
+            0,
+            6,
+            5,
+            3
+          ],
+          "prompt": "Family F029.\nPrivate record:\nalder: white\nbirch: blue\ncedar: purple\nelm: green\nfir: red\nmaple: black\noak: orange\nwillow: yellow\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "71420653"
+        }
+      }
+    },
+    {
+      "family_id": "F030",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 30,
+      "partner_index": 2,
+      "question": "What color is the oak specimen?",
+      "target_index": 6,
+      "worlds": {
+        "original": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            6,
+            2,
+            5,
+            1,
+            4,
+            0,
+            7,
+            3
+          ],
+          "prompt": "Family F030.\nPrivate record:\nalder: black\nbirch: green\ncedar: orange\nelm: blue\nfir: purple\nmaple: red\noak: white\nwillow: yellow\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "62514073"
+        },
+        "swapped": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            6,
+            2,
+            7,
+            1,
+            4,
+            0,
+            5,
+            3
+          ],
+          "prompt": "Family F030.\nPrivate record:\nalder: black\nbirch: green\ncedar: white\nelm: blue\nfir: purple\nmaple: red\noak: orange\nwillow: yellow\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "62714053"
+        }
+      }
+    },
+    {
+      "family_id": "F031",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 31,
+      "partner_index": 3,
+      "question": "What color is the willow specimen?",
+      "target_index": 7,
+      "worlds": {
+        "original": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            6,
+            2,
+            4,
+            0,
+            7,
+            1,
+            3,
+            5
+          ],
+          "prompt": "Family F031.\nPrivate record:\nalder: black\nbirch: green\ncedar: purple\nelm: red\nfir: white\nmaple: blue\noak: yellow\nwillow: orange\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "62407135"
+        },
+        "swapped": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            6,
+            2,
+            4,
+            5,
+            7,
+            1,
+            3,
+            0
+          ],
+          "prompt": "Family F031.\nPrivate record:\nalder: black\nbirch: green\ncedar: purple\nelm: orange\nfir: white\nmaple: blue\noak: yellow\nwillow: red\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "62457130"
+        }
+      }
+    },
+    {
+      "family_id": "F032",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 32,
+      "partner_index": 5,
+      "question": "What color is the alder specimen?",
+      "target_index": 0,
+      "worlds": {
+        "original": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            7,
+            5,
+            6,
+            3,
+            1,
+            4,
+            0,
+            2
+          ],
+          "prompt": "Family F032.\nPrivate record:\nalder: white\nbirch: orange\ncedar: black\nelm: yellow\nfir: blue\nmaple: purple\noak: red\nwillow: green\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "75631402"
+        },
+        "swapped": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            4,
+            5,
+            6,
+            3,
+            1,
+            7,
+            0,
+            2
+          ],
+          "prompt": "Family F032.\nPrivate record:\nalder: purple\nbirch: orange\ncedar: black\nelm: yellow\nfir: blue\nmaple: white\noak: red\nwillow: green\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "45631702"
+        }
+      }
+    },
+    {
+      "family_id": "F033",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 33,
+      "partner_index": 6,
+      "question": "What color is the birch specimen?",
+      "target_index": 1,
+      "worlds": {
+        "original": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            3,
+            5,
+            7,
+            0,
+            1,
+            4,
+            2,
+            6
+          ],
+          "prompt": "Family F033.\nPrivate record:\nalder: yellow\nbirch: orange\ncedar: white\nelm: red\nfir: blue\nmaple: purple\noak: green\nwillow: black\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "35701426"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            3,
+            2,
+            7,
+            0,
+            1,
+            4,
+            5,
+            6
+          ],
+          "prompt": "Family F033.\nPrivate record:\nalder: yellow\nbirch: green\ncedar: white\nelm: red\nfir: blue\nmaple: purple\noak: orange\nwillow: black\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "32701456"
+        }
+      }
+    },
+    {
+      "family_id": "F034",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 34,
+      "partner_index": 7,
+      "question": "What color is the cedar specimen?",
+      "target_index": 2,
+      "worlds": {
+        "original": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            7,
+            4,
+            1,
+            2,
+            5,
+            0,
+            6,
+            3
+          ],
+          "prompt": "Family F034.\nPrivate record:\nalder: white\nbirch: purple\ncedar: blue\nelm: green\nfir: orange\nmaple: red\noak: black\nwillow: yellow\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "74125063"
+        },
+        "swapped": {
+          "answer": "yellow",
+          "answer_index": 3,
+          "permutation": [
+            7,
+            4,
+            3,
+            2,
+            5,
+            0,
+            6,
+            1
+          ],
+          "prompt": "Family F034.\nPrivate record:\nalder: white\nbirch: purple\ncedar: yellow\nelm: green\nfir: orange\nmaple: red\noak: black\nwillow: blue\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "74325061"
+        }
+      }
+    },
+    {
+      "family_id": "F035",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 35,
+      "partner_index": 0,
+      "question": "What color is the elm specimen?",
+      "target_index": 3,
+      "worlds": {
+        "original": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            0,
+            7,
+            3,
+            1,
+            2,
+            5,
+            4,
+            6
+          ],
+          "prompt": "Family F035.\nPrivate record:\nalder: red\nbirch: white\ncedar: yellow\nelm: blue\nfir: green\nmaple: orange\noak: purple\nwillow: black\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "07312546"
+        },
+        "swapped": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            1,
+            7,
+            3,
+            0,
+            2,
+            5,
+            4,
+            6
+          ],
+          "prompt": "Family F035.\nPrivate record:\nalder: blue\nbirch: white\ncedar: yellow\nelm: red\nfir: green\nmaple: orange\noak: purple\nwillow: black\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "17302546"
+        }
+      }
+    },
+    {
+      "family_id": "F036",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 36,
+      "partner_index": 1,
+      "question": "What color is the fir specimen?",
+      "target_index": 4,
+      "worlds": {
+        "original": {
+          "answer": "yellow",
+          "answer_index": 3,
+          "permutation": [
+            1,
+            2,
+            7,
+            5,
+            3,
+            0,
+            6,
+            4
+          ],
+          "prompt": "Family F036.\nPrivate record:\nalder: blue\nbirch: green\ncedar: white\nelm: orange\nfir: yellow\nmaple: red\noak: black\nwillow: purple\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "12753064"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            1,
+            3,
+            7,
+            5,
+            2,
+            0,
+            6,
+            4
+          ],
+          "prompt": "Family F036.\nPrivate record:\nalder: blue\nbirch: yellow\ncedar: white\nelm: orange\nfir: green\nmaple: red\noak: black\nwillow: purple\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "13752064"
+        }
+      }
+    },
+    {
+      "family_id": "F037",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 37,
+      "partner_index": 2,
+      "question": "What color is the maple specimen?",
+      "target_index": 5,
+      "worlds": {
+        "original": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            7,
+            1,
+            2,
+            6,
+            4,
+            5,
+            0,
+            3
+          ],
+          "prompt": "Family F037.\nPrivate record:\nalder: white\nbirch: blue\ncedar: green\nelm: black\nfir: purple\nmaple: orange\noak: red\nwillow: yellow\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "71264503"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            7,
+            1,
+            5,
+            6,
+            4,
+            2,
+            0,
+            3
+          ],
+          "prompt": "Family F037.\nPrivate record:\nalder: white\nbirch: blue\ncedar: orange\nelm: black\nfir: purple\nmaple: green\noak: red\nwillow: yellow\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "71564203"
+        }
+      }
+    },
+    {
+      "family_id": "F038",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 38,
+      "partner_index": 3,
+      "question": "What color is the oak specimen?",
+      "target_index": 6,
+      "worlds": {
+        "original": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            7,
+            5,
+            3,
+            0,
+            4,
+            1,
+            2,
+            6
+          ],
+          "prompt": "Family F038.\nPrivate record:\nalder: white\nbirch: orange\ncedar: yellow\nelm: red\nfir: purple\nmaple: blue\noak: green\nwillow: black\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "75304126"
+        },
+        "swapped": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            7,
+            5,
+            3,
+            2,
+            4,
+            1,
+            0,
+            6
+          ],
+          "prompt": "Family F038.\nPrivate record:\nalder: white\nbirch: orange\ncedar: yellow\nelm: green\nfir: purple\nmaple: blue\noak: red\nwillow: black\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "75324106"
+        }
+      }
+    },
+    {
+      "family_id": "F039",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 39,
+      "partner_index": 4,
+      "question": "What color is the willow specimen?",
+      "target_index": 7,
+      "worlds": {
+        "original": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            3,
+            1,
+            5,
+            6,
+            2,
+            0,
+            4,
+            7
+          ],
+          "prompt": "Family F039.\nPrivate record:\nalder: yellow\nbirch: blue\ncedar: orange\nelm: black\nfir: green\nmaple: red\noak: purple\nwillow: white\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "31562047"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            3,
+            1,
+            5,
+            6,
+            7,
+            0,
+            4,
+            2
+          ],
+          "prompt": "Family F039.\nPrivate record:\nalder: yellow\nbirch: blue\ncedar: orange\nelm: black\nfir: white\nmaple: red\noak: purple\nwillow: green\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "31567042"
+        }
+      }
+    },
+    {
+      "family_id": "F040",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 40,
+      "partner_index": 6,
+      "question": "What color is the alder specimen?",
+      "target_index": 0,
+      "worlds": {
+        "original": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            7,
+            0,
+            5,
+            4,
+            1,
+            2,
+            6,
+            3
+          ],
+          "prompt": "Family F040.\nPrivate record:\nalder: white\nbirch: red\ncedar: orange\nelm: purple\nfir: blue\nmaple: green\noak: black\nwillow: yellow\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "70541263"
+        },
+        "swapped": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            6,
+            0,
+            5,
+            4,
+            1,
+            2,
+            7,
+            3
+          ],
+          "prompt": "Family F040.\nPrivate record:\nalder: black\nbirch: red\ncedar: orange\nelm: purple\nfir: blue\nmaple: green\noak: white\nwillow: yellow\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "60541273"
+        }
+      }
+    },
+    {
+      "family_id": "F041",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 41,
+      "partner_index": 7,
+      "question": "What color is the birch specimen?",
+      "target_index": 1,
+      "worlds": {
+        "original": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            2,
+            6,
+            3,
+            4,
+            1,
+            0,
+            7,
+            5
+          ],
+          "prompt": "Family F041.\nPrivate record:\nalder: green\nbirch: black\ncedar: yellow\nelm: purple\nfir: blue\nmaple: red\noak: white\nwillow: orange\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "26341075"
+        },
+        "swapped": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            2,
+            5,
+            3,
+            4,
+            1,
+            0,
+            7,
+            6
+          ],
+          "prompt": "Family F041.\nPrivate record:\nalder: green\nbirch: orange\ncedar: yellow\nelm: purple\nfir: blue\nmaple: red\noak: white\nwillow: black\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "25341076"
+        }
+      }
+    },
+    {
+      "family_id": "F042",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 42,
+      "partner_index": 0,
+      "question": "What color is the cedar specimen?",
+      "target_index": 2,
+      "worlds": {
+        "original": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            4,
+            1,
+            5,
+            7,
+            3,
+            2,
+            0,
+            6
+          ],
+          "prompt": "Family F042.\nPrivate record:\nalder: purple\nbirch: blue\ncedar: orange\nelm: white\nfir: yellow\nmaple: green\noak: red\nwillow: black\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "41573206"
+        },
+        "swapped": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            5,
+            1,
+            4,
+            7,
+            3,
+            2,
+            0,
+            6
+          ],
+          "prompt": "Family F042.\nPrivate record:\nalder: orange\nbirch: blue\ncedar: purple\nelm: white\nfir: yellow\nmaple: green\noak: red\nwillow: black\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "51473206"
+        }
+      }
+    },
+    {
+      "family_id": "F043",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 43,
+      "partner_index": 1,
+      "question": "What color is the elm specimen?",
+      "target_index": 3,
+      "worlds": {
+        "original": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            4,
+            6,
+            5,
+            1,
+            2,
+            7,
+            0,
+            3
+          ],
+          "prompt": "Family F043.\nPrivate record:\nalder: purple\nbirch: black\ncedar: orange\nelm: blue\nfir: green\nmaple: white\noak: red\nwillow: yellow\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "46512703"
+        },
+        "swapped": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            4,
+            1,
+            5,
+            6,
+            2,
+            7,
+            0,
+            3
+          ],
+          "prompt": "Family F043.\nPrivate record:\nalder: purple\nbirch: blue\ncedar: orange\nelm: black\nfir: green\nmaple: white\noak: red\nwillow: yellow\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "41562703"
+        }
+      }
+    },
+    {
+      "family_id": "F044",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 44,
+      "partner_index": 2,
+      "question": "What color is the fir specimen?",
+      "target_index": 4,
+      "worlds": {
+        "original": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            7,
+            0,
+            2,
+            1,
+            4,
+            6,
+            5,
+            3
+          ],
+          "prompt": "Family F044.\nPrivate record:\nalder: white\nbirch: red\ncedar: green\nelm: blue\nfir: purple\nmaple: black\noak: orange\nwillow: yellow\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "70214653"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            7,
+            0,
+            4,
+            1,
+            2,
+            6,
+            5,
+            3
+          ],
+          "prompt": "Family F044.\nPrivate record:\nalder: white\nbirch: red\ncedar: purple\nelm: blue\nfir: green\nmaple: black\noak: orange\nwillow: yellow\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "70412653"
+        }
+      }
+    },
+    {
+      "family_id": "F045",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 45,
+      "partner_index": 3,
+      "question": "What color is the maple specimen?",
+      "target_index": 5,
+      "worlds": {
+        "original": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            3,
+            4,
+            1,
+            2,
+            0,
+            5,
+            6,
+            7
+          ],
+          "prompt": "Family F045.\nPrivate record:\nalder: yellow\nbirch: purple\ncedar: blue\nelm: green\nfir: red\nmaple: orange\noak: black\nwillow: white\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "34120567"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            3,
+            4,
+            1,
+            5,
+            0,
+            2,
+            6,
+            7
+          ],
+          "prompt": "Family F045.\nPrivate record:\nalder: yellow\nbirch: purple\ncedar: blue\nelm: orange\nfir: red\nmaple: green\noak: black\nwillow: white\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "34150267"
+        }
+      }
+    },
+    {
+      "family_id": "F046",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 46,
+      "partner_index": 4,
+      "question": "What color is the oak specimen?",
+      "target_index": 6,
+      "worlds": {
+        "original": {
+          "answer": "yellow",
+          "answer_index": 3,
+          "permutation": [
+            1,
+            2,
+            0,
+            7,
+            4,
+            5,
+            3,
+            6
+          ],
+          "prompt": "Family F046.\nPrivate record:\nalder: blue\nbirch: green\ncedar: red\nelm: white\nfir: purple\nmaple: orange\noak: yellow\nwillow: black\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "12074536"
+        },
+        "swapped": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            1,
+            2,
+            0,
+            7,
+            3,
+            5,
+            4,
+            6
+          ],
+          "prompt": "Family F046.\nPrivate record:\nalder: blue\nbirch: green\ncedar: red\nelm: white\nfir: yellow\nmaple: orange\noak: purple\nwillow: black\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "12073546"
+        }
+      }
+    },
+    {
+      "family_id": "F047",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 47,
+      "partner_index": 5,
+      "question": "What color is the willow specimen?",
+      "target_index": 7,
+      "worlds": {
+        "original": {
+          "answer": "blue",
+          "answer_index": 1,
+          "permutation": [
+            5,
+            2,
+            3,
+            4,
+            0,
+            7,
+            6,
+            1
+          ],
+          "prompt": "Family F047.\nPrivate record:\nalder: orange\nbirch: green\ncedar: yellow\nelm: purple\nfir: red\nmaple: white\noak: black\nwillow: blue\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "52340761"
+        },
+        "swapped": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            5,
+            2,
+            3,
+            4,
+            0,
+            1,
+            6,
+            7
+          ],
+          "prompt": "Family F047.\nPrivate record:\nalder: orange\nbirch: green\ncedar: yellow\nelm: purple\nfir: red\nmaple: blue\noak: black\nwillow: white\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "52340167"
+        }
+      }
+    },
+    {
+      "family_id": "F048",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 48,
+      "partner_index": 7,
+      "question": "What color is the alder specimen?",
+      "target_index": 0,
+      "worlds": {
+        "original": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            0,
+            2,
+            6,
+            3,
+            7,
+            1,
+            5,
+            4
+          ],
+          "prompt": "Family F048.\nPrivate record:\nalder: red\nbirch: green\ncedar: black\nelm: yellow\nfir: white\nmaple: blue\noak: orange\nwillow: purple\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "02637154"
+        },
+        "swapped": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            4,
+            2,
+            6,
+            3,
+            7,
+            1,
+            5,
+            0
+          ],
+          "prompt": "Family F048.\nPrivate record:\nalder: purple\nbirch: green\ncedar: black\nelm: yellow\nfir: white\nmaple: blue\noak: orange\nwillow: red\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "42637150"
+        }
+      }
+    },
+    {
+      "family_id": "F049",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 49,
+      "partner_index": 0,
+      "question": "What color is the birch specimen?",
+      "target_index": 1,
+      "worlds": {
+        "original": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            3,
+            0,
+            7,
+            5,
+            1,
+            6,
+            2,
+            4
+          ],
+          "prompt": "Family F049.\nPrivate record:\nalder: yellow\nbirch: red\ncedar: white\nelm: orange\nfir: blue\nmaple: black\noak: green\nwillow: purple\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "30751624"
+        },
+        "swapped": {
+          "answer": "yellow",
+          "answer_index": 3,
+          "permutation": [
+            0,
+            3,
+            7,
+            5,
+            1,
+            6,
+            2,
+            4
+          ],
+          "prompt": "Family F049.\nPrivate record:\nalder: red\nbirch: yellow\ncedar: white\nelm: orange\nfir: blue\nmaple: black\noak: green\nwillow: purple\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "03751624"
+        }
+      }
+    },
+    {
+      "family_id": "F050",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 50,
+      "partner_index": 1,
+      "question": "What color is the cedar specimen?",
+      "target_index": 2,
+      "worlds": {
+        "original": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            1,
+            2,
+            6,
+            0,
+            3,
+            5,
+            7,
+            4
+          ],
+          "prompt": "Family F050.\nPrivate record:\nalder: blue\nbirch: green\ncedar: black\nelm: red\nfir: yellow\nmaple: orange\noak: white\nwillow: purple\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "12603574"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            1,
+            6,
+            2,
+            0,
+            3,
+            5,
+            7,
+            4
+          ],
+          "prompt": "Family F050.\nPrivate record:\nalder: blue\nbirch: black\ncedar: green\nelm: red\nfir: yellow\nmaple: orange\noak: white\nwillow: purple\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "16203574"
+        }
+      }
+    },
+    {
+      "family_id": "F051",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 51,
+      "partner_index": 2,
+      "question": "What color is the elm specimen?",
+      "target_index": 3,
+      "worlds": {
+        "original": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            5,
+            4,
+            6,
+            0,
+            2,
+            3,
+            1,
+            7
+          ],
+          "prompt": "Family F051.\nPrivate record:\nalder: orange\nbirch: purple\ncedar: black\nelm: red\nfir: green\nmaple: yellow\noak: blue\nwillow: white\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "54602317"
+        },
+        "swapped": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            5,
+            4,
+            0,
+            6,
+            2,
+            3,
+            1,
+            7
+          ],
+          "prompt": "Family F051.\nPrivate record:\nalder: orange\nbirch: purple\ncedar: red\nelm: black\nfir: green\nmaple: yellow\noak: blue\nwillow: white\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "54062317"
+        }
+      }
+    },
+    {
+      "family_id": "F052",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 52,
+      "partner_index": 3,
+      "question": "What color is the fir specimen?",
+      "target_index": 4,
+      "worlds": {
+        "original": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            2,
+            7,
+            5,
+            0,
+            4,
+            6,
+            1,
+            3
+          ],
+          "prompt": "Family F052.\nPrivate record:\nalder: green\nbirch: white\ncedar: orange\nelm: red\nfir: purple\nmaple: black\noak: blue\nwillow: yellow\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "27504613"
+        },
+        "swapped": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            2,
+            7,
+            5,
+            4,
+            0,
+            6,
+            1,
+            3
+          ],
+          "prompt": "Family F052.\nPrivate record:\nalder: green\nbirch: white\ncedar: orange\nelm: purple\nfir: red\nmaple: black\noak: blue\nwillow: yellow\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "27540613"
+        }
+      }
+    },
+    {
+      "family_id": "F053",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 53,
+      "partner_index": 4,
+      "question": "What color is the maple specimen?",
+      "target_index": 5,
+      "worlds": {
+        "original": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            3,
+            6,
+            2,
+            5,
+            7,
+            0,
+            1,
+            4
+          ],
+          "prompt": "Family F053.\nPrivate record:\nalder: yellow\nbirch: black\ncedar: green\nelm: orange\nfir: white\nmaple: red\noak: blue\nwillow: purple\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "36257014"
+        },
+        "swapped": {
+          "answer": "white",
+          "answer_index": 7,
+          "permutation": [
+            3,
+            6,
+            2,
+            5,
+            0,
+            7,
+            1,
+            4
+          ],
+          "prompt": "Family F053.\nPrivate record:\nalder: yellow\nbirch: black\ncedar: green\nelm: orange\nfir: red\nmaple: white\noak: blue\nwillow: purple\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "36250714"
+        }
+      }
+    },
+    {
+      "family_id": "F054",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 54,
+      "partner_index": 5,
+      "question": "What color is the oak specimen?",
+      "target_index": 6,
+      "worlds": {
+        "original": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            3,
+            7,
+            1,
+            6,
+            0,
+            2,
+            4,
+            5
+          ],
+          "prompt": "Family F054.\nPrivate record:\nalder: yellow\nbirch: white\ncedar: blue\nelm: black\nfir: red\nmaple: green\noak: purple\nwillow: orange\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "37160245"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            3,
+            7,
+            1,
+            6,
+            0,
+            4,
+            2,
+            5
+          ],
+          "prompt": "Family F054.\nPrivate record:\nalder: yellow\nbirch: white\ncedar: blue\nelm: black\nfir: red\nmaple: purple\noak: green\nwillow: orange\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "37160425"
+        }
+      }
+    },
+    {
+      "family_id": "F055",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 55,
+      "partner_index": 6,
+      "question": "What color is the willow specimen?",
+      "target_index": 7,
+      "worlds": {
+        "original": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            5,
+            2,
+            3,
+            6,
+            7,
+            1,
+            4,
+            0
+          ],
+          "prompt": "Family F055.\nPrivate record:\nalder: orange\nbirch: green\ncedar: yellow\nelm: black\nfir: white\nmaple: blue\noak: purple\nwillow: red\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "52367140"
+        },
+        "swapped": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            5,
+            2,
+            3,
+            6,
+            7,
+            1,
+            0,
+            4
+          ],
+          "prompt": "Family F055.\nPrivate record:\nalder: orange\nbirch: green\ncedar: yellow\nelm: black\nfir: white\nmaple: blue\noak: red\nwillow: purple\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "52367104"
+        }
+      }
+    },
+    {
+      "family_id": "F056",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 56,
+      "partner_index": 1,
+      "question": "What color is the alder specimen?",
+      "target_index": 0,
+      "worlds": {
+        "original": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            6,
+            5,
+            7,
+            0,
+            3,
+            4,
+            1,
+            2
+          ],
+          "prompt": "Family F056.\nPrivate record:\nalder: black\nbirch: orange\ncedar: white\nelm: red\nfir: yellow\nmaple: purple\noak: blue\nwillow: green\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "65703412"
+        },
+        "swapped": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            5,
+            6,
+            7,
+            0,
+            3,
+            4,
+            1,
+            2
+          ],
+          "prompt": "Family F056.\nPrivate record:\nalder: orange\nbirch: black\ncedar: white\nelm: red\nfir: yellow\nmaple: purple\noak: blue\nwillow: green\nQuestion: What color is the alder specimen?\nAnswer:",
+          "world_id": "56703412"
+        }
+      }
+    },
+    {
+      "family_id": "F057",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 57,
+      "partner_index": 2,
+      "question": "What color is the birch specimen?",
+      "target_index": 1,
+      "worlds": {
+        "original": {
+          "answer": "yellow",
+          "answer_index": 3,
+          "permutation": [
+            2,
+            3,
+            4,
+            7,
+            5,
+            0,
+            6,
+            1
+          ],
+          "prompt": "Family F057.\nPrivate record:\nalder: green\nbirch: yellow\ncedar: purple\nelm: white\nfir: orange\nmaple: red\noak: black\nwillow: blue\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "23475061"
+        },
+        "swapped": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            2,
+            4,
+            3,
+            7,
+            5,
+            0,
+            6,
+            1
+          ],
+          "prompt": "Family F057.\nPrivate record:\nalder: green\nbirch: purple\ncedar: yellow\nelm: white\nfir: orange\nmaple: red\noak: black\nwillow: blue\nQuestion: What color is the birch specimen?\nAnswer:",
+          "world_id": "24375061"
+        }
+      }
+    },
+    {
+      "family_id": "F058",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 58,
+      "partner_index": 3,
+      "question": "What color is the cedar specimen?",
+      "target_index": 2,
+      "worlds": {
+        "original": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            2,
+            4,
+            5,
+            0,
+            6,
+            1,
+            7,
+            3
+          ],
+          "prompt": "Family F058.\nPrivate record:\nalder: green\nbirch: purple\ncedar: orange\nelm: red\nfir: black\nmaple: blue\noak: white\nwillow: yellow\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "24506173"
+        },
+        "swapped": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            2,
+            4,
+            0,
+            5,
+            6,
+            1,
+            7,
+            3
+          ],
+          "prompt": "Family F058.\nPrivate record:\nalder: green\nbirch: purple\ncedar: red\nelm: orange\nfir: black\nmaple: blue\noak: white\nwillow: yellow\nQuestion: What color is the cedar specimen?\nAnswer:",
+          "world_id": "24056173"
+        }
+      }
+    },
+    {
+      "family_id": "F059",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 59,
+      "partner_index": 4,
+      "question": "What color is the elm specimen?",
+      "target_index": 3,
+      "worlds": {
+        "original": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            1,
+            0,
+            5,
+            6,
+            4,
+            7,
+            3,
+            2
+          ],
+          "prompt": "Family F059.\nPrivate record:\nalder: blue\nbirch: red\ncedar: orange\nelm: black\nfir: purple\nmaple: white\noak: yellow\nwillow: green\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "10564732"
+        },
+        "swapped": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            1,
+            0,
+            5,
+            4,
+            6,
+            7,
+            3,
+            2
+          ],
+          "prompt": "Family F059.\nPrivate record:\nalder: blue\nbirch: red\ncedar: orange\nelm: purple\nfir: black\nmaple: white\noak: yellow\nwillow: green\nQuestion: What color is the elm specimen?\nAnswer:",
+          "world_id": "10546732"
+        }
+      }
+    },
+    {
+      "family_id": "F060",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 60,
+      "partner_index": 5,
+      "question": "What color is the fir specimen?",
+      "target_index": 4,
+      "worlds": {
+        "original": {
+          "answer": "black",
+          "answer_index": 6,
+          "permutation": [
+            0,
+            7,
+            4,
+            5,
+            6,
+            2,
+            1,
+            3
+          ],
+          "prompt": "Family F060.\nPrivate record:\nalder: red\nbirch: white\ncedar: purple\nelm: orange\nfir: black\nmaple: green\noak: blue\nwillow: yellow\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "07456213"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            0,
+            7,
+            4,
+            5,
+            2,
+            6,
+            1,
+            3
+          ],
+          "prompt": "Family F060.\nPrivate record:\nalder: red\nbirch: white\ncedar: purple\nelm: orange\nfir: green\nmaple: black\noak: blue\nwillow: yellow\nQuestion: What color is the fir specimen?\nAnswer:",
+          "world_id": "07452613"
+        }
+      }
+    },
+    {
+      "family_id": "F061",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 61,
+      "partner_index": 6,
+      "question": "What color is the maple specimen?",
+      "target_index": 5,
+      "worlds": {
+        "original": {
+          "answer": "purple",
+          "answer_index": 4,
+          "permutation": [
+            7,
+            5,
+            1,
+            0,
+            6,
+            4,
+            2,
+            3
+          ],
+          "prompt": "Family F061.\nPrivate record:\nalder: white\nbirch: orange\ncedar: blue\nelm: red\nfir: black\nmaple: purple\noak: green\nwillow: yellow\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "75106423"
+        },
+        "swapped": {
+          "answer": "green",
+          "answer_index": 2,
+          "permutation": [
+            7,
+            5,
+            1,
+            0,
+            6,
+            2,
+            4,
+            3
+          ],
+          "prompt": "Family F061.\nPrivate record:\nalder: white\nbirch: orange\ncedar: blue\nelm: red\nfir: black\nmaple: green\noak: purple\nwillow: yellow\nQuestion: What color is the maple specimen?\nAnswer:",
+          "world_id": "75106243"
+        }
+      }
+    },
+    {
+      "family_id": "F062",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 62,
+      "partner_index": 7,
+      "question": "What color is the oak specimen?",
+      "target_index": 6,
+      "worlds": {
+        "original": {
+          "answer": "yellow",
+          "answer_index": 3,
+          "permutation": [
+            2,
+            6,
+            4,
+            5,
+            1,
+            7,
+            3,
+            0
+          ],
+          "prompt": "Family F062.\nPrivate record:\nalder: green\nbirch: black\ncedar: purple\nelm: orange\nfir: blue\nmaple: white\noak: yellow\nwillow: red\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "26451730"
+        },
+        "swapped": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            2,
+            6,
+            4,
+            5,
+            1,
+            7,
+            0,
+            3
+          ],
+          "prompt": "Family F062.\nPrivate record:\nalder: green\nbirch: black\ncedar: purple\nelm: orange\nfir: blue\nmaple: white\noak: red\nwillow: yellow\nQuestion: What color is the oak specimen?\nAnswer:",
+          "world_id": "26451703"
+        }
+      }
+    },
+    {
+      "family_id": "F063",
+      "generation": {
+        "draws": 1,
+        "rejected_original_reserved": 0,
+        "rejected_swapped_reserved": 0
+      },
+      "index": 63,
+      "partner_index": 0,
+      "question": "What color is the willow specimen?",
+      "target_index": 7,
+      "worlds": {
+        "original": {
+          "answer": "orange",
+          "answer_index": 5,
+          "permutation": [
+            0,
+            6,
+            3,
+            7,
+            1,
+            4,
+            2,
+            5
+          ],
+          "prompt": "Family F063.\nPrivate record:\nalder: red\nbirch: black\ncedar: yellow\nelm: white\nfir: blue\nmaple: purple\noak: green\nwillow: orange\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "06371425"
+        },
+        "swapped": {
+          "answer": "red",
+          "answer_index": 0,
+          "permutation": [
+            5,
+            6,
+            3,
+            7,
+            1,
+            4,
+            2,
+            0
+          ],
+          "prompt": "Family F063.\nPrivate record:\nalder: orange\nbirch: black\ncedar: yellow\nelm: white\nfir: blue\nmaple: purple\noak: green\nwillow: red\nQuestion: What color is the willow specimen?\nAnswer:",
+          "world_id": "56371420"
+        }
+      }
+    }
+  ],
+  "generation": {
+    "accepted_families": 64,
+    "reserved_world_count": 128,
+    "total_candidates": 64
+  },
+  "reservation_hash_encoding": "canonical ASCII JSON of lexicographically sorted integer lists",
+  "reserved_worlds": [
+    [
+      0,
+      1,
+      5,
+      3,
+      4,
+      7,
+      2,
+      6
+    ],
+    [
+      0,
+      2,
+      5,
+      6,
+      7,
+      4,
+      1,
+      3
+    ],
+    [
+      0,
+      2,
+      6,
+      3,
+      7,
+      1,
+      5,
+      4
+    ],
+    [
+      0,
+      3,
+      7,
+      5,
+      1,
+      6,
+      2,
+      4
+    ],
+    [
+      0,
+      4,
+      5,
+      3,
+      2,
+      7,
+      6,
+      1
+    ],
+    [
+      0,
+      5,
+      7,
+      6,
+      3,
+      2,
+      4,
+      1
+    ],
+    [
+      0,
+      6,
+      3,
+      7,
+      1,
+      4,
+      2,
+      5
+    ],
+    [
+      0,
+      7,
+      3,
+      1,
+      2,
+      5,
+      4,
+      6
+    ],
+    [
+      0,
+      7,
+      4,
+      5,
+      2,
+      6,
+      1,
+      3
+    ],
+    [
+      0,
+      7,
+      4,
+      5,
+      6,
+      2,
+      1,
+      3
+    ],
+    [
+      0,
+      7,
+      5,
+      3,
+      4,
+      1,
+      2,
+      6
+    ],
+    [
+      1,
+      0,
+      5,
+      4,
+      6,
+      7,
+      3,
+      2
+    ],
+    [
+      1,
+      0,
+      5,
+      6,
+      4,
+      7,
+      3,
+      2
+    ],
+    [
+      1,
+      2,
+      0,
+      5,
+      3,
+      7,
+      6,
+      4
+    ],
+    [
+      1,
+      2,
+      0,
+      7,
+      3,
+      5,
+      4,
+      6
+    ],
+    [
+      1,
+      2,
+      0,
+      7,
+      4,
+      5,
+      3,
+      6
+    ],
+    [
+      1,
+      2,
+      6,
+      0,
+      3,
+      5,
+      7,
+      4
+    ],
+    [
+      1,
+      2,
+      7,
+      5,
+      3,
+      0,
+      6,
+      4
+    ],
+    [
+      1,
+      3,
+      0,
+      6,
+      7,
+      4,
+      5,
+      2
+    ],
+    [
+      1,
+      3,
+      7,
+      2,
+      4,
+      5,
+      6,
+      0
+    ],
+    [
+      1,
+      3,
+      7,
+      5,
+      2,
+      0,
+      6,
+      4
+    ],
+    [
+      1,
+      6,
+      0,
+      3,
+      7,
+      4,
+      5,
+      2
+    ],
+    [
+      1,
+      6,
+      2,
+      0,
+      3,
+      5,
+      7,
+      4
+    ],
+    [
+      1,
+      6,
+      5,
+      0,
+      4,
+      3,
+      7,
+      2
+    ],
+    [
+      1,
+      7,
+      3,
+      0,
+      2,
+      5,
+      4,
+      6
+    ],
+    [
+      2,
+      1,
+      0,
+      5,
+      3,
+      7,
+      6,
+      4
+    ],
+    [
+      2,
+      3,
+      1,
+      7,
+      5,
+      4,
+      6,
+      0
+    ],
+    [
+      2,
+      3,
+      4,
+      7,
+      5,
+      0,
+      6,
+      1
+    ],
+    [
+      2,
+      3,
+      7,
+      1,
+      4,
+      5,
+      6,
+      0
+    ],
+    [
+      2,
+      4,
+      0,
+      5,
+      6,
+      1,
+      7,
+      3
+    ],
+    [
+      2,
+      4,
+      3,
+      7,
+      5,
+      0,
+      6,
+      1
+    ],
+    [
+      2,
+      4,
+      5,
+      0,
+      6,
+      1,
+      7,
+      3
+    ],
+    [
+      2,
+      4,
+      5,
+      7,
+      1,
+      0,
+      6,
+      3
+    ],
+    [
+      2,
+      4,
+      5,
+      7,
+      6,
+      0,
+      1,
+      3
+    ],
+    [
+      2,
+      5,
+      0,
+      6,
+      1,
+      3,
+      4,
+      7
+    ],
+    [
+      2,
+      5,
+      0,
+      7,
+      1,
+      3,
+      4,
+      6
+    ],
+    [
+      2,
+      5,
+      3,
+      4,
+      1,
+      0,
+      7,
+      6
+    ],
+    [
+      2,
+      6,
+      3,
+      4,
+      1,
+      0,
+      7,
+      5
+    ],
+    [
+      2,
+      6,
+      4,
+      5,
+      1,
+      7,
+      0,
+      3
+    ],
+    [
+      2,
+      6,
+      4,
+      5,
+      1,
+      7,
+      3,
+      0
+    ],
+    [
+      2,
+      7,
+      5,
+      0,
+      4,
+      6,
+      1,
+      3
+    ],
+    [
+      2,
+      7,
+      5,
+      4,
+      0,
+      6,
+      1,
+      3
+    ],
+    [
+      2,
+      7,
+      6,
+      4,
+      1,
+      0,
+      3,
+      5
+    ],
+    [
+      2,
+      7,
+      6,
+      4,
+      1,
+      0,
+      5,
+      3
+    ],
+    [
+      3,
+      0,
+      2,
+      1,
+      4,
+      5,
+      6,
+      7
+    ],
+    [
+      3,
+      0,
+      2,
+      4,
+      6,
+      5,
+      1,
+      7
+    ],
+    [
+      3,
+      0,
+      2,
+      6,
+      4,
+      5,
+      1,
+      7
+    ],
+    [
+      3,
+      0,
+      4,
+      7,
+      1,
+      2,
+      6,
+      5
+    ],
+    [
+      3,
+      0,
+      4,
+      7,
+      2,
+      1,
+      6,
+      5
+    ],
+    [
+      3,
+      0,
+      7,
+      5,
+      1,
+      6,
+      2,
+      4
+    ],
+    [
+      3,
+      1,
+      5,
+      6,
+      2,
+      0,
+      4,
+      7
+    ],
+    [
+      3,
+      1,
+      5,
+      6,
+      7,
+      0,
+      4,
+      2
+    ],
+    [
+      3,
+      2,
+      0,
+      4,
+      6,
+      5,
+      1,
+      7
+    ],
+    [
+      3,
+      2,
+      0,
+      4,
+      6,
+      7,
+      5,
+      1
+    ],
+    [
+      3,
+      2,
+      1,
+      6,
+      5,
+      0,
+      4,
+      7
+    ],
+    [
+      3,
+      2,
+      1,
+      6,
+      5,
+      7,
+      4,
+      0
+    ],
+    [
+      3,
+      2,
+      4,
+      5,
+      0,
+      6,
+      1,
+      7
+    ],
+    [
+      3,
+      2,
+      5,
+      4,
+      0,
+      6,
+      1,
+      7
+    ],
+    [
+      3,
+      2,
+      5,
+      4,
+      7,
+      0,
+      1,
+      6
+    ],
+    [
+      3,
+      2,
+      5,
+      6,
+      7,
+      4,
+      1,
+      0
+    ],
+    [
+      3,
+      2,
+      5,
+      7,
+      4,
+      0,
+      1,
+      6
+    ],
+    [
+      3,
+      2,
+      7,
+      0,
+      1,
+      4,
+      5,
+      6
+    ],
+    [
+      3,
+      2,
+      7,
+      4,
+      6,
+      0,
+      5,
+      1
+    ],
+    [
+      3,
+      4,
+      1,
+      2,
+      0,
+      5,
+      6,
+      7
+    ],
+    [
+      3,
+      4,
+      1,
+      5,
+      0,
+      2,
+      6,
+      7
+    ],
+    [
+      3,
+      5,
+      7,
+      0,
+      1,
+      4,
+      2,
+      6
+    ],
+    [
+      3,
+      6,
+      2,
+      5,
+      0,
+      7,
+      1,
+      4
+    ],
+    [
+      3,
+      6,
+      2,
+      5,
+      7,
+      0,
+      1,
+      4
+    ],
+    [
+      3,
+      7,
+      1,
+      6,
+      0,
+      2,
+      4,
+      5
+    ],
+    [
+      3,
+      7,
+      1,
+      6,
+      0,
+      4,
+      2,
+      5
+    ],
+    [
+      4,
+      0,
+      3,
+      7,
+      6,
+      5,
+      2,
+      1
+    ],
+    [
+      4,
+      0,
+      6,
+      7,
+      3,
+      5,
+      2,
+      1
+    ],
+    [
+      4,
+      1,
+      5,
+      6,
+      2,
+      7,
+      0,
+      3
+    ],
+    [
+      4,
+      1,
+      5,
+      7,
+      3,
+      2,
+      0,
+      6
+    ],
+    [
+      4,
+      2,
+      6,
+      3,
+      7,
+      1,
+      5,
+      0
+    ],
+    [
+      4,
+      5,
+      6,
+      3,
+      1,
+      7,
+      0,
+      2
+    ],
+    [
+      4,
+      6,
+      5,
+      0,
+      1,
+      3,
+      7,
+      2
+    ],
+    [
+      4,
+      6,
+      5,
+      1,
+      2,
+      7,
+      0,
+      3
+    ],
+    [
+      5,
+      1,
+      2,
+      4,
+      7,
+      6,
+      0,
+      3
+    ],
+    [
+      5,
+      1,
+      4,
+      7,
+      3,
+      2,
+      0,
+      6
+    ],
+    [
+      5,
+      2,
+      3,
+      4,
+      0,
+      1,
+      6,
+      7
+    ],
+    [
+      5,
+      2,
+      3,
+      4,
+      0,
+      7,
+      6,
+      1
+    ],
+    [
+      5,
+      2,
+      3,
+      6,
+      7,
+      1,
+      0,
+      4
+    ],
+    [
+      5,
+      2,
+      3,
+      6,
+      7,
+      1,
+      4,
+      0
+    ],
+    [
+      5,
+      3,
+      4,
+      0,
+      1,
+      2,
+      7,
+      6
+    ],
+    [
+      5,
+      3,
+      6,
+      0,
+      1,
+      2,
+      7,
+      4
+    ],
+    [
+      5,
+      4,
+      0,
+      2,
+      6,
+      7,
+      3,
+      1
+    ],
+    [
+      5,
+      4,
+      0,
+      6,
+      2,
+      3,
+      1,
+      7
+    ],
+    [
+      5,
+      4,
+      6,
+      0,
+      2,
+      3,
+      1,
+      7
+    ],
+    [
+      5,
+      6,
+      3,
+      7,
+      1,
+      4,
+      2,
+      0
+    ],
+    [
+      5,
+      6,
+      7,
+      0,
+      3,
+      4,
+      1,
+      2
+    ],
+    [
+      5,
+      7,
+      2,
+      1,
+      0,
+      4,
+      6,
+      3
+    ],
+    [
+      5,
+      7,
+      2,
+      4,
+      1,
+      6,
+      0,
+      3
+    ],
+    [
+      5,
+      7,
+      6,
+      1,
+      0,
+      4,
+      2,
+      3
+    ],
+    [
+      6,
+      0,
+      5,
+      4,
+      1,
+      2,
+      7,
+      3
+    ],
+    [
+      6,
+      2,
+      4,
+      0,
+      7,
+      1,
+      3,
+      5
+    ],
+    [
+      6,
+      2,
+      4,
+      5,
+      7,
+      1,
+      3,
+      0
+    ],
+    [
+      6,
+      2,
+      5,
+      1,
+      4,
+      0,
+      7,
+      3
+    ],
+    [
+      6,
+      2,
+      7,
+      1,
+      4,
+      0,
+      5,
+      3
+    ],
+    [
+      6,
+      3,
+      1,
+      7,
+      5,
+      4,
+      2,
+      0
+    ],
+    [
+      6,
+      4,
+      0,
+      2,
+      5,
+      7,
+      3,
+      1
+    ],
+    [
+      6,
+      4,
+      7,
+      2,
+      0,
+      1,
+      5,
+      3
+    ],
+    [
+      6,
+      5,
+      7,
+      0,
+      3,
+      4,
+      1,
+      2
+    ],
+    [
+      6,
+      5,
+      7,
+      2,
+      0,
+      1,
+      4,
+      3
+    ],
+    [
+      7,
+      0,
+      2,
+      1,
+      4,
+      6,
+      5,
+      3
+    ],
+    [
+      7,
+      0,
+      4,
+      1,
+      2,
+      6,
+      5,
+      3
+    ],
+    [
+      7,
+      0,
+      5,
+      4,
+      1,
+      2,
+      6,
+      3
+    ],
+    [
+      7,
+      1,
+      2,
+      6,
+      4,
+      5,
+      0,
+      3
+    ],
+    [
+      7,
+      1,
+      4,
+      2,
+      0,
+      6,
+      5,
+      3
+    ],
+    [
+      7,
+      1,
+      5,
+      6,
+      4,
+      2,
+      0,
+      3
+    ],
+    [
+      7,
+      4,
+      1,
+      2,
+      5,
+      0,
+      6,
+      3
+    ],
+    [
+      7,
+      4,
+      3,
+      2,
+      5,
+      0,
+      6,
+      1
+    ],
+    [
+      7,
+      4,
+      5,
+      0,
+      3,
+      2,
+      1,
+      6
+    ],
+    [
+      7,
+      4,
+      5,
+      0,
+      6,
+      2,
+      1,
+      3
+    ],
+    [
+      7,
+      4,
+      5,
+      3,
+      2,
+      0,
+      6,
+      1
+    ],
+    [
+      7,
+      5,
+      0,
+      6,
+      3,
+      2,
+      4,
+      1
+    ],
+    [
+      7,
+      5,
+      1,
+      0,
+      6,
+      2,
+      4,
+      3
+    ],
+    [
+      7,
+      5,
+      1,
+      0,
+      6,
+      4,
+      2,
+      3
+    ],
+    [
+      7,
+      5,
+      3,
+      0,
+      4,
+      1,
+      2,
+      6
+    ],
+    [
+      7,
+      5,
+      3,
+      0,
+      4,
+      2,
+      1,
+      6
+    ],
+    [
+      7,
+      5,
+      3,
+      2,
+      4,
+      1,
+      0,
+      6
+    ],
+    [
+      7,
+      5,
+      6,
+      3,
+      1,
+      4,
+      0,
+      2
+    ],
+    [
+      7,
+      6,
+      1,
+      2,
+      0,
+      5,
+      4,
+      3
+    ],
+    [
+      7,
+      6,
+      1,
+      5,
+      0,
+      2,
+      4,
+      3
+    ],
+    [
+      7,
+      6,
+      2,
+      5,
+      4,
+      0,
+      1,
+      3
+    ],
+    [
+      7,
+      6,
+      2,
+      5,
+      4,
+      1,
+      0,
+      3
+    ],
+    [
+      7,
+      6,
+      3,
+      0,
+      4,
+      2,
+      1,
+      5
+    ],
+    [
+      7,
+      6,
+      4,
+      2,
+      0,
+      1,
+      5,
+      3
+    ]
+  ],
+  "reserved_worlds_sha256": "6ecb0e2aff9e5381062807edced5be7f51bc48e4c4ce0396a5c60553afca7555",
+  "schema_version": 1,
+  "seed": 41029,
+  "trees": [
+    "alder",
+    "birch",
+    "cedar",
+    "elm",
+    "fir",
+    "maple",
+    "oak",
+    "willow"
+  ]
+}

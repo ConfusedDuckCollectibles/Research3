@@ -1,0 +1,86 @@
+{
+  "all_match": true,
+  "design_sha256": "6f50e1d3faad3240033748d7434f088ec26b7ac6716511923892e66ac0e78a09",
+  "files": {
+    ".github/workflows/contextual-information-v1.yml": {
+      "bytes": 2696,
+      "sha256": "27a061caf58aff92c6a4d973a41959163eb79cdf33b5a19f8c18c55bb0471271"
+    },
+    ".github/workflows/tests.yml": {
+      "bytes": 1037,
+      "sha256": "612496e01fd4315c86976e6ecc05954a6bf92869bde1a6ada54c25533a0f5e2c"
+    },
+    "docs/contextual_information_design.md": {
+      "bytes": 31375,
+      "sha256": "6f50e1d3faad3240033748d7434f088ec26b7ac6716511923892e66ac0e78a09"
+    },
+    "docs/statebridge_information_recovery.md": {
+      "bytes": 18562,
+      "sha256": "f78a41cee2b1ee90b349bcbee0fe00a588b9738863034172a8c8c09ddc3992d7"
+    },
+    "latent_bridge/__init__.py": {
+      "bytes": 111,
+      "sha256": "740c636a9ebbfc9c219c7b9d590a84f130ea7ef2239407877e9ade07af95f8fa"
+    },
+    "latent_bridge/alignment_core.py": {
+      "bytes": 15305,
+      "sha256": "de8909692a928266c03e22d12b13c800b14e2495a8acad39ae6b95dfc46bfa53"
+    },
+    "latent_bridge/contextual_information.py": {
+      "bytes": 72281,
+      "sha256": "f228aa821a7a87b6ef832b08bf8df3bf895bc8576899316c0658f1b8006afa3f"
+    },
+    "latent_bridge/information_recovery.py": {
+      "bytes": 27935,
+      "sha256": "8b44898683f13470a18f884b300e33f40c040a5922848a1f22de4552e0c8d3e1"
+    },
+    "pyproject.toml": {
+      "bytes": 523,
+      "sha256": "4613df28c5bd415544437224eb4ac5e3e01d48def6dd727d70045878e955e85b"
+    },
+    "scripts/contextual_model_lock.json": {
+      "bytes": 1195,
+      "sha256": "6b0d893f7ef6f8bea7cb4af34f8ea9a22e9a860cc4cb010bc714fe85629e1cbb"
+    },
+    "scripts/run_alignment_numerical.py": {
+      "bytes": 9515,
+      "sha256": "40f806d39f24a721009d4d7599c8902f1b6720956065daa82e0f4b747ab7a4d4"
+    },
+    "scripts/run_contextual_information.py": {
+      "bytes": 13264,
+      "sha256": "a6cbfb13892aa3d25d4f24178423b732e8305d0785d1403d2c337e6f7fed3a76"
+    },
+    "tests/test_alignment_execution.py": {
+      "bytes": 3997,
+      "sha256": "2894c0bd146a2d234352ccba2374c9331da0d5e99ec0e6d68fe6e5d99330c963"
+    },
+    "tests/test_contextual_execution.py": {
+      "bytes": 7889,
+      "sha256": "e6569318ea42262abeb4529d9b9a0265b0654517bff88dca93d524a8d33d4d3e"
+    },
+    "tests/test_contextual_information.py": {
+      "bytes": 38953,
+      "sha256": "4f9555f29c06163ee5a5d7c93d9e6b2a91c8a7c9cfdbb2af52b5ce8451b2fd94"
+    },
+    "tests/test_information_recovery.py": {
+      "bytes": 15280,
+      "sha256": "a2be07f72fa780deca9ba818056bb9d3293dad487f5a5d4e0993bad4e203ed5b"
+    },
+    "third_party/statebridge/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "third_party/statebridge/README.md": {
+      "bytes": 1024,
+      "sha256": "0e4e217445e3b7aa30d0407724b3fac697afbac74fccbd9018406d31e7f7b4a0"
+    },
+    "third_party/statebridge/state_bridge.py": {
+      "bytes": 51919,
+      "sha256": "415957df427eb79a4212e760af4d133cb4ce10cc4619f11447082117922f366d"
+    }
+  },
+  "frozen_design_commit": "c23a20ec420ba19680801a09ac8b053735807d38",
+  "github_commit": "b541b69fbc95f2db8a4d6dc32d3a4ec2f744b66b",
+  "github_run_id": "45396412531",
+  "schema_version": 1
+}
