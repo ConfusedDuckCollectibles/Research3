@@ -2,11 +2,11 @@
   "schema_version": 1,
   "status": "active",
   "worker_id": "chatgpt-active-research-20261124T052021Z",
-  "updated_at_utc": "2026-11-24T10:59:31Z",
-  "lease_expires_at_utc": "2026-11-24T12:59:31Z",
-  "current_task": "Run the complete repository CI gate on reviewed coefficient source before activating the one-shot study",
-  "stage": "coefficient_source_published_for_validation",
-  "next_action": "Inspect the Tests workflow for the commit introducing these source blobs. Recover its completed logs and test count. No coefficient measurement workflow is active yet. Fix any source/test issues before outcomes, preserving failed CI. After the source gate passes, publish and activate the reviewed coefficient-packet-v2 workflow once; retain its complete/partial original artifact. Never rerun the completed alignment or prior model studies.",
+  "updated_at_utc": "2026-11-24T11:02:37Z",
+  "lease_expires_at_utc": "2026-11-24T13:02:37Z",
+  "current_task": "Monitor and recover the one preregistered coefficient packet TCP study",
+  "stage": "coefficient_original_measurement_activated",
+  "next_action": "Recover the original coefficient-packet-v2 workflow and its artifact, even if incomplete or negative. Its scientific child is capped at300seconds and permits only run1/attempt1. Do not rerun or tune the fixed cohort. Preserve raw evidence, independently audit retained frames/arrays/statistics, and publish the original artifact and scope-correct report.",
   "last_completed_study": "docs/alignment_results.md",
   "last_completed_commit": "9bd33818226839934d04c8275d6e205672f83f6e",
   "known_result": "Original alignment study passed 15,759 required checks and the independent retained-array audit. Dual core paired speedups versus thin-SVD were 1.17–3.02x on 12 fixed CPU fixtures. Original Gram total arithmetic was 1.86–2.29x dual-direct. One accepted nonunique canonical float32 packet had 35.89% final relative error despite unchanged nearest IDs. No model-quality, complete communication-latency or breakthrough claim.",
@@ -18,7 +18,7 @@
   "design_sha256": "b8307677f5320c3413b5a1007bdfe26230a844c57503d53b4443e5fc542647ba",
   "frozen_design_commit": "49cfba7261326d58e174e51c8ddf5abba6f4a966",
   "source_commit": null,
-  "workflow_path": null,
+  "workflow_path": ".github/workflows/coefficient-packet-v2.yml",
   "execution_environment": "Workspace disconnected before results publication; GitHub API and standard CPU Actions remain available",
   "completed_alignment": {
     "design_commit": "e7c467f2b097666dc474a3dbb6e273bf253e785f",
@@ -65,7 +65,7 @@
   "validation_workflow_path": ".github/workflows/tests.yml",
   "planned_study_workflow_path": ".github/workflows/coefficient-packet-v2.yml",
   "execution_note": "docs/coefficient_execution_notes.md",
-  "source_commit_note": "This checkpoint accompanies source publication; the exact source commit is recoverable from this commit and its Tests run. Record the validated commit before activating measurement.",
+  "source_commit_note": "The activation commit containing this checkpoint is the workflow source; recover and record its GITHUB_SHA from the original workflow.",
   "reviewed_source_files": {
     "latent_bridge/coefficient_packet.py": {
       "blob_sha": "fef093170faa5d5ff98fc771d5a3ad32c089c614",
@@ -103,5 +103,11 @@
       "bytes": 4510
     }
   },
-  "source_review_scope": "Independent static code/contract reviews only at this checkpoint; no local test pass or coefficient study outcome is asserted."
+  "source_review_scope": "Independent static code/contract reviews only at this checkpoint; no local test pass or coefficient study outcome is asserted.",
+  "validated_python_source_commit": "367d81a6306e670ff39397c0747848cfd5a1de13",
+  "last_validation_run": 45380063999,
+  "last_validation_job": 138396467220,
+  "last_validation_result": "All 162 repository tests passed in12.513seconds with0skips/errors/failures before the scientific workflow was activated.",
+  "validation_receipt": "results/coefficient_validation.json",
+  "publication_workflow_path": null
 }

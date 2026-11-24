@@ -12,7 +12,7 @@ The [complete alignment report](docs/alignment_results.md) found a **1.17–3.02
 
 The full packet result is mixed: the largest float64 Gram packet was 31.89× smaller than a direct prefix, but the original Gram route used 1.86–2.29× the arithmetic time of the fast dual-direct route. A nonunique canonical float32 packet also showed **35.89% relative vector error despite unchanged nearest token IDs**. This is a bounded numerical result, with material rank, setup and precision limits.
 
-The next [preregistered coefficient-packet study](docs/coefficient_packet_design.md) compares actual TCP completion against both efficient direct routes and an independently improved Gram codec, including cold setup and full-vector checks. Its design was published before implementation or outcomes. The reviewed source is now published for the complete repository CI gate; the measurement workflow remains inactive until that gate passes. No coefficient-transport outcome, model-quality gain or complete agent-speed improvement is established.
+The next [preregistered coefficient-packet study](docs/coefficient_packet_design.md) compares actual TCP completion against both efficient direct routes and an independently improved Gram codec, including cold setup and full-vector checks. Its design was published before implementation or outcomes. All 162 repository tests passed on the reviewed source; the single preregistered measurement workflow is now activated. No coefficient-transport outcome, model-quality gain or complete agent-speed improvement is established.
 
 The separate [lossless-predictor feasibility assessment](docs/lossless_predictor_feasibility.md) records why a further model study on vocabulary-byte XOR compression is not justified by the current artifacts.
 

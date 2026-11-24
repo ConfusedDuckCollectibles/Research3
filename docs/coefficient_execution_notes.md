@@ -35,3 +35,9 @@ The worker source commit is the exact workflow `GITHUB_SHA`. The launch manifest
 Actual complete transaction wall time is the primary endpoint. Phase medians are explanatory; their sums do not replace a measured transaction. The strongest primary comparison includes an explicitly retrospective per-case envelope over dual-direct, thin-direct and the optimized Gram codec. It is not a deployable free selector.
 
 All-row primary float64 output fidelity, complete fixed-grid accounting, the declared shaped-link gain, and the unshaped/worst-case overhead limits must all pass for the narrow engineering criterion. Cold first-message cost and descriptive float32 distortions remain separate and visible. A successful synthetic loopback result would still require independent replication and a task-quality evaluation before supporting a broader agent-efficiency claim.
+
+## Pre-execution CI observed
+
+The complete reviewed implementation was published at `367d81a6306e670ff39397c0747848cfd5a1de13`. [Tests run 45380063999, job 138396467220](https://github.com/ConfusedDuckCollectibles/Research3/actions/runs/45380063999/job/138396467220) passed all **162 tests in 12.513 seconds**, with no skips, errors or failures. This includes 36 new coefficient tests and the existing 126-test suite. The [validation receipt](../results/coefficient_validation.json) preserves the retrieved-log SHA256 and observed counts. No coefficient study grid was run by that CI gate.
+
+The separately reviewed measurement workflow is now activated once. Its own runtime and focused contracts must pass before the 300-second scientific child. The exact executed source identity will be retained as the workflow `GITHUB_SHA`; this activation does not alter the validated Python implementation.
