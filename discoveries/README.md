@@ -26,3 +26,8 @@ loss, a useful communication method, or scientific novelty.
 ## Binding-sensitive training
 
 [Complete audited findings](../docs/binding_results.md): matched CE-only and auxiliary-trained latent arms both answered 0 of 1,536 fresh target pairs correctly, while adapted full text answered 1,529. All 18 fits and 86,016 fresh records completed. The auxiliary arm's 99.61% nuisance stability and large zero-message intervention effect did not establish useful private-information transfer. The two-byte task-specific oracle remained exact. The fixed auxiliary comparison failed; all original evidence and the independent audit are retained in [the result directory](../results/binding_study/).
+
+
+## Alignment computation and packet limits
+
+[Complete audited findings](../docs/alignment_results.md): the guarded dual core was 1.17–3.02x faster than the efficient thin-SVD baseline over twelve CPU fixtures. All 15,759 required checks passed. The original Gram packet reduced warm bytes but cost 1.86–2.29x the arithmetic time of fast dual-direct; one accepted nonunique canonical float32 packet had 35.89% relative vector error despite unchanged nearest IDs. The independent audit and every original outcome are preserved. This is a scoped numerical implementation result, with no model-quality, complete agent-speed or novelty claim. The next [coefficient-packet TCP design](../docs/coefficient_packet_design.md) is separately preregistered before outcomes.

@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "review": "postpublication_readonly_descriptive_review",
+  "source_publication_commit": "9bd33818226839934d04c8275d6e205672f83f6e",
+  "source_files": {
+    "results/alignment_numerical/cases.jsonl": {
+      "sha256": "b924ff3b480044525c33a6996a71915fe96cb0d7685b5c59cf11e8a7f8a4bda2",
+      "bytes": 8793847,
+      "rows": 2558,
+      "read_from": "cases.jsonl.gz",
+      "compression": "gzip",
+      "validation": "gzip CRC32 and exact uncompressed SHA256"
+    },
+    "results/alignment_numerical/timings.jsonl": {
+      "sha256": "bf8d4243cccd29b3f9bc55ef81e30ac8b419639f42eca123169f088a7029eb48",
+      "bytes": 423721,
+      "rows": 2064,
+      "read_from": "timings.jsonl.gz",
+      "validation": "gzip CRC32 and exact uncompressed SHA256"
+    },
+    "results/alignment_numerical/results.json": {
+      "sha256": "8118b4994b5de1434e44dabf5692337c19112e469567be7c1c48d59a0ab51675",
+      "bytes": 141386
+    }
+  },
+  "scope": {
+    "new_fixture_generation": 0,
+    "new_model_calls": 0,
+    "new_timing_measurements": 0,
+    "new_packet_decodes": 0,
+    "description": "JavaScript aggregation of original JSON records and arithmetic recomputation of all 144 composed phase totals. This is additional read-only checking, separate from the Python retained-array audit."
+  },
+  "phase_totals": {
+    "checks": 144,
+    "issues": [],
+    "source": "verified original results.json; arithmetic only, no timing rerun"
+  },
+  "packet_error_summary": {
+    "A/dual/float64": {
+      "n": 120,
+      "fallback": 0,
+      "decoded": 120,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0,
+      "max_final_rel": 0,
+      "max_direct_abs": 0,
+      "max_direct_rel": 0,
+      "max_case": null
+    },
+    "A/dual/float32": {
+      "n": 120,
+      "fallback": 0,
+      "decoded": 120,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0.00013841842600504137,
+      "max_final_rel": 0.000011845838684984292,
+      "max_direct_abs": 6.536753459527234e-7,
+      "max_direct_rel": 2.8443050607161053e-8,
+      "max_case": "A-k4-seed303-spectrum1-lambda0.001"
+    },
+    "A/canonical/float64": {
+      "n": 120,
+      "fallback": 0,
+      "decoded": 120,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0,
+      "max_final_rel": 0,
+      "max_direct_abs": 0,
+      "max_direct_rel": 0,
+      "max_case": null
+    },
+    "A/canonical/float32": {
+      "n": 120,
+      "fallback": 0,
+      "decoded": 120,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0.00013841842600269646,
+      "max_final_rel": 0.000011845838684783615,
+      "max_direct_abs": 6.536753556530017e-7,
+      "max_direct_rel": 2.8443049788057796e-8,
+      "max_case": "A-k4-seed303-spectrum1-lambda0.001"
+    },
+    "B/dual/float64": {
+      "n": 27,
+      "fallback": 27,
+      "decoded": 27,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0,
+      "max_final_rel": 0,
+      "max_direct_abs": 0,
+      "max_direct_rel": 0,
+      "max_case": null
+    },
+    "B/dual/float32": {
+      "n": 27,
+      "fallback": 27,
+      "decoded": 27,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 3.172662498369867e-7,
+      "max_final_rel": 2.800276934164696e-8,
+      "max_direct_abs": 3.172662498369867e-7,
+      "max_direct_rel": 2.800276934164696e-8,
+      "max_case": "B-geometry7-lambda0.001"
+    },
+    "B/canonical/float64": {
+      "n": 27,
+      "fallback": 0,
+      "decoded": 27,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0,
+      "max_final_rel": 0,
+      "max_direct_abs": 0,
+      "max_direct_rel": 0,
+      "max_case": null
+    },
+    "B/canonical/float32": {
+      "n": 27,
+      "fallback": 9,
+      "decoded": 27,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 4.243878297066677,
+      "max_final_rel": 0.35892477226530944,
+      "max_direct_abs": 3.2669295929073973e-7,
+      "max_direct_rel": 2.972032013552398e-8,
+      "max_case": "B-geometry7-lambda0.1"
+    },
+    "C/dual/float64": {
+      "n": 8,
+      "fallback": 6,
+      "decoded": 8,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0,
+      "max_final_rel": 0,
+      "max_direct_abs": 0,
+      "max_direct_rel": 0,
+      "max_case": null
+    },
+    "C/dual/float32": {
+      "n": 8,
+      "fallback": 7,
+      "decoded": 8,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 2.939424528255788e-7,
+      "max_final_rel": 2.622128166565385e-8,
+      "max_direct_abs": 2.9892734234355845e-7,
+      "max_direct_rel": 2.622128166565385e-8,
+      "max_case": "C-side0-ratio1e-05"
+    },
+    "C/canonical/float64": {
+      "n": 8,
+      "fallback": 7,
+      "decoded": 8,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0,
+      "max_final_rel": 0,
+      "max_direct_abs": 0,
+      "max_direct_rel": 0,
+      "max_case": null
+    },
+    "C/canonical/float32": {
+      "n": 8,
+      "fallback": 8,
+      "decoded": 8,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 2.9892037829921516e-7,
+      "max_final_rel": 2.622128166565385e-8,
+      "max_direct_abs": 2.9892037829921516e-7,
+      "max_direct_rel": 2.622128166565385e-8,
+      "max_case": "C-side1-ratio0.0001"
+    },
+    "D/dual/float64": {
+      "n": 5,
+      "fallback": 5,
+      "decoded": 5,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0,
+      "max_final_rel": 0,
+      "max_direct_abs": 0,
+      "max_direct_rel": 0,
+      "max_case": null
+    },
+    "D/dual/float32": {
+      "n": 5,
+      "fallback": 5,
+      "decoded": 5,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 5.0114226400676694e-8,
+      "max_final_rel": 2.744732169738182e-8,
+      "max_direct_abs": 5.0114226400676694e-8,
+      "max_direct_rel": 2.744732169738182e-8,
+      "max_case": "D-dimension-k4-d4"
+    },
+    "D/canonical/float64": {
+      "n": 5,
+      "fallback": 5,
+      "decoded": 5,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0,
+      "max_final_rel": 0,
+      "max_direct_abs": 0,
+      "max_direct_rel": 0,
+      "max_case": null
+    },
+    "D/canonical/float32": {
+      "n": 5,
+      "fallback": 5,
+      "decoded": 5,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 5.0114226400676694e-8,
+      "max_final_rel": 2.744732169738182e-8,
+      "max_direct_abs": 5.0114226400676694e-8,
+      "max_direct_rel": 2.744732169738182e-8,
+      "max_case": "D-dimension-k4-d4"
+    },
+    "T/dual/float64": {
+      "n": 12,
+      "fallback": 0,
+      "decoded": 12,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0,
+      "max_final_rel": 0,
+      "max_direct_abs": 0,
+      "max_direct_rel": 0,
+      "max_case": null
+    },
+    "T/dual/float32": {
+      "n": 12,
+      "fallback": 0,
+      "decoded": 12,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 3.547657747579882e-7,
+      "max_final_rel": 3.4421699241474683e-9,
+      "max_direct_abs": 0.000004295744687914236,
+      "max_direct_rel": 2.5891526897222348e-8,
+      "max_case": "T-k64-d1024"
+    },
+    "T/canonical/float64": {
+      "n": 12,
+      "fallback": 0,
+      "decoded": 12,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 0,
+      "max_final_rel": 0,
+      "max_direct_abs": 0,
+      "max_direct_rel": 0,
+      "max_case": null
+    },
+    "T/canonical/float32": {
+      "n": 12,
+      "fallback": 0,
+      "decoded": 12,
+      "nearest_changes": 0,
+      "direct_nearest_changes": 0,
+      "max_final_abs": 3.547657749889774e-7,
+      "max_final_rel": 3.442170127166441e-9,
+      "max_direct_abs": 0.000004295744689112226,
+      "max_direct_rel": 2.5891526918212708e-8,
+      "max_case": "T-k64-d1024"
+    }
+  },
+  "highlight": {
+    "case": "B-geometry7-lambda0.1",
+    "K": 8,
+    "d": 32,
+    "source_rank": 7,
+    "receiver_rank": 3,
+    "cross_rank": 3,
+    "unique_product": false,
+    "canonical_float32": {
+      "mode": "canonical",
+      "fallback": false,
+      "packet_bytes": 200,
+      "final_error": {
+        "absolute": 4.243878297066677,
+        "relative": 0.35892477226530944,
+        "reference_norm": 11.82386568160777
+      },
+      "final_nearest_id_changes": 0
+    },
+    "matched_direct_float32": {
+      "packet_bytes": 1080,
+      "final_error": {
+        "absolute": 3.1506023209097913e-7,
+        "relative": 2.664612746583047e-8
+      }
+    },
+    "interpretation": "The reduced-precision nonunique canonical path is not fidelity-certified. No change in nearest token IDs establishes full-prefix equality. The original design made float32 distortion descriptive, so this large error is compatible with zero failed required float64 checks."
+  },
+  "caveats": [
+    "Errors are relative to the original chosen method, not a guarantee of historical upstream bytes or model behavior.",
+    "Float32 error values and packet diagnostics were recorded by the original harness; the independent retained-array audit did not reexecute packet decoding or postprocessing.",
+    "A successful float64 reconstruction in this runtime does not establish cross-platform bit identity."
+  ]
+}

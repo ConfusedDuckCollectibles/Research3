@@ -6,7 +6,17 @@ and **executed pretrained-model studies with explicit causal controls**. It does
 claim a new universal language, an LLM efficiency breakthrough, or a replication
 of LatentMAS or Interlat.
 
-## Latest: binding-sensitive training
+## Latest: audited alignment results
+
+The [complete alignment report](docs/alignment_results.md) found a **1.17–3.02× faster alignment core** than the efficient thin-SVD baseline across twelve fixed CPU fixtures. All 15,759 required checks passed, and an independent audit of the retained matrices and timing records passed. The [permanent evidence](results/alignment_numerical/) preserves the original arrays, case records, timings and provenance.
+
+The full packet result is mixed: the largest float64 Gram packet was 31.89× smaller than a direct prefix, but the original Gram route used 1.86–2.29× the arithmetic time of the fast dual-direct route. A nonunique canonical float32 packet also showed **35.89% relative vector error despite unchanged nearest token IDs**. This is a bounded numerical result, with material rank, setup and precision limits.
+
+The next [preregistered coefficient-packet study](docs/coefficient_packet_design.md) compares actual TCP completion against both efficient direct routes and an independently improved Gram codec, including cold setup and full-vector checks. Its design is published before implementation or outcomes. No model-quality or complete agent-speed improvement is established.
+
+The separate [lossless-predictor feasibility assessment](docs/lossless_predictor_feasibility.md) records why a further model study on vocabulary-byte XOR compression is not justified by the current artifacts.
+
+## Previous binding-sensitive training
 
 The [complete audited binding study](docs/binding_results.md) found **0% target-pair correctness** for both the matched CE-only and auxiliary-trained latent bridges, versus **99.54%** for adapted full text. All 18 fits and 86,016 fresh records completed. An independent auditor reconstructed the dataset and reported statistics and passed 1,056,048 consistency checks; its scope and limits are recorded in the [permanent evidence](results/binding_study/).
 
@@ -30,16 +40,6 @@ in the compressed message. This is a measured diagnostic, not a breakthrough.
 The complete predictions, selected-state records and bounded NPZ exports are
 retained in [the result directory](results/readout_study/).
 
-## Current investigation: compact alignment
-
-The [original numerical run](https://github.com/ConfusedDuckCollectibles/Research3/actions/runs/45369667584) completed all 242 algebraic cases, 2,304 synthetic applicability sequences and 12 timing fixtures. Its 15,759 required checks passed, after all 36 focused tests passed. The complete repository CI also passed all 126 tests at the same source commit. The independent retained-array audit and permanent evidence publication are now pending.
-
-The guarded dual calculation was 1.17–3.02 times faster than the efficient thin-SVD baseline across the twelve fixed sizes, using medians of eight paired timing ratios per size on one CPU host. The packet experiment also exposes a cost: sender preflight repeats substantial reconstruction/postprocessing later performed by the receiver. Core acceleration alone is not a communication-latency result.
-
-See the [fixed design](docs/alignment_numerical_design.md), [mathematical assumptions and prior art](docs/alignment_geometry.md), and [execution record](docs/alignment_execution_notes.md). Canonical nonunique outputs may differ from the original SVD completion. These numerical results do not establish model accuracy, a new semantic language, general novelty, or a breakthrough.
-
-The separate [lossless-predictor feasibility assessment](docs/lossless_predictor_feasibility.md) records why a further model study on vocabulary-byte XOR compression is not justified by the current evidence.
-
 ## Previous query study and implemented controls
 
 The preceding [public-query-conditioning study](results/query_conditioned_study/README.md)
@@ -62,8 +62,8 @@ comparisons.
 
 The [preceding fact-change study](results/counterfactual_study/README.md) and
 [first negative pilot](results/pretrained_pilot/README.md) remain unchanged.
-No executed study establishes useful general communication or an efficiency
-advantage. Designs, all seeds and controls, raw predictions, model/data hashes
+No executed model study establishes useful general communication or a complete
+agent-efficiency advantage. Designs, all seeds and controls, raw predictions, model/data hashes
 and interpretation limits are retained with each result.
 
 - A NumPy sender/compressor/receiver bridge with manual gradients and Adam.
