@@ -56,3 +56,6 @@ local_data/
 !/results/binding_study/selected/303/private_constant.npz
 !/results/binding_study/selected/303/symbolic.npz
 !/results/binding_study/selected/303/text.npz
+
+# Bounded original arrays from the frozen alignment numerical study.
+!/results/alignment_numerical/arrays.npz

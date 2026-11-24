@@ -32,7 +32,9 @@ retained in [the result directory](results/readout_study/).
 
 ## Current investigation: compact alignment
 
-The [frozen numerical study](docs/alignment_numerical_design.md) investigates a small-matrix implementation and compact representation of per-message alignment. The [mathematical note](docs/alignment_geometry.md) gives the assumptions, counterexample and known prior art. Numerical equivalence, timing and packet-size claims remain unverified until the specified study executes. A canonical solution can differ from an author's chosen SVD completion when the optimal output is nonunique. This is a bounded implementation investigation, not an assertion of faster or more capable language models.
+The [frozen numerical study](docs/alignment_numerical_design.md) investigates a small-matrix implementation and compact representation of per-message alignment. The [mathematical note](docs/alignment_geometry.md) gives the assumptions, counterexample and known prior art. The reviewed [implementation and execution record](docs/alignment_execution_notes.md) is published for a single bounded CPU run, with 36 focused tests before the worker. Numerical equivalence, timing and packet-size claims remain unverified until the specified study executes. A canonical solution can differ from an author's chosen SVD completion when the optimal output is nonunique. This is a bounded implementation investigation, not an assertion of faster or more capable language models.
+
+The separate [lossless-predictor feasibility assessment](docs/lossless_predictor_feasibility.md) records why a further model study on vocabulary-byte XOR compression is not justified by the current evidence.
 
 ## Previous query study and implemented controls
 
