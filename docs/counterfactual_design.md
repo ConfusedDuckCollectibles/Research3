@@ -123,7 +123,14 @@ and all held-out conditions regardless of this gate.
 changed-fact answers must both be correct. This distinguishes correct tracking
 from arbitrary prediction changes.
 
-Secondary outcomes: per-record accuracy; nuisance-pair both-correct accuracy;
+**Primary contrast and view:** on the original-template test view, compare
+latent target-pair both-correct accuracy against latent-shuffled accuracy,
+averaging across the three fixed seeds. Its paired family-bootstrap interval
+is the primary interval. Other views, arms and metrics are descriptive
+secondary analyses, with no unadjusted multiple-comparison success claim.
+Use the same source-family shuffle mapping across the four paired views.
+
+Secondary outcomes: original/target per-record accuracy; nuisance-pair both-correct accuracy;
 nuisance prediction invariance; target change sensitivity; matched-versus-
 shuffled paired differences; original-versus-shifted view differences; and
 validation cross-entropy history. Report all conditions and views.
