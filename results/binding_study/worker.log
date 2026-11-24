@@ -1,0 +1,194 @@
+Starting runtime_and_source_preflight
+Starting download_pinned_public_models
+Downloading sender: distilbert/distilgpt2 @ 2290a62682d06624634c1f46a6ad5be0f47f38aa
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s]Fetching 7 files:  57%|█████▋    | 4/7 [00:00<00:00, 30.57it/s]Fetching 7 files: 100%|██████████| 7/7 [00:00<00:00,  8.96it/s]
+Downloading receiver: EleutherAI/pythia-14m @ cf967c0a9a04383db6f7b1108d86b2962634b4ac
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files:  50%|█████     | 3/6 [00:00<00:00, 29.50it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 21.41it/s]Fetching 6 files: 100%|██████████| 6/6 [00:00<00:00, 21.39it/s]
+Starting generate_frozen_data
+{"audit": {"test": 512, "train": 512, "validation": 256}, "reserved_worlds": 4640, "status": "generated"}
+Starting fit_gate_and_evaluate
+The `GPTNeoXSdpaAttention` class is deprecated in favor of simply modifying the `config._attn_implementation`attribute of the `GPTNeoXAttention` class! It will be removed in v4.48
+{"phase": "fitting", "seed": 101, "arm": "text", "epoch": 1, "validation_ce": 1.3231413021567278, "updates": 128}
+{"phase": "fitting", "seed": 101, "arm": "text", "epoch": 2, "validation_ce": 0.552138473445666, "updates": 256}
+{"phase": "fitting", "seed": 101, "arm": "text", "epoch": 3, "validation_ce": 0.41578496252623154, "updates": 384}
+{"phase": "fitting", "seed": 101, "arm": "text", "epoch": 4, "validation_ce": 0.24143826427462045, "updates": 512}
+{"phase": "fitting", "seed": 101, "arm": "text", "epoch": 5, "validation_ce": 0.19870296709450486, "updates": 640}
+{"phase": "fitting", "seed": 101, "arm": "text", "epoch": 6, "validation_ce": 0.1819194449681163, "updates": 768}
+{"phase": "fitting", "seed": 101, "arm": "text", "epoch": 7, "validation_ce": 0.17793207809700107, "updates": 896}
+{"phase": "fitting", "seed": 101, "arm": "text", "epoch": 8, "validation_ce": 0.1876112686268243, "updates": 1024}
+{"phase": "fitting", "seed": 202, "arm": "text", "epoch": 1, "validation_ce": 0.6491156986958231, "updates": 128}
+{"phase": "fitting", "seed": 202, "arm": "text", "epoch": 2, "validation_ce": 0.20998948654050764, "updates": 256}
+{"phase": "fitting", "seed": 202, "arm": "text", "epoch": 3, "validation_ce": 0.17294067188777262, "updates": 384}
+{"phase": "fitting", "seed": 202, "arm": "text", "epoch": 4, "validation_ce": 0.15632982754141267, "updates": 512}
+{"phase": "fitting", "seed": 202, "arm": "text", "epoch": 5, "validation_ce": 0.15039687802163826, "updates": 640}
+{"phase": "fitting", "seed": 202, "arm": "text", "epoch": 6, "validation_ce": 0.1478664497808495, "updates": 768}
+{"phase": "fitting", "seed": 202, "arm": "text", "epoch": 7, "validation_ce": 0.14639882444134855, "updates": 896}
+{"phase": "fitting", "seed": 202, "arm": "text", "epoch": 8, "validation_ce": 0.14624265916427248, "updates": 1024}
+{"phase": "fitting", "seed": 303, "arm": "text", "epoch": 1, "validation_ce": 0.8840958270448027, "updates": 128}
+{"phase": "fitting", "seed": 303, "arm": "text", "epoch": 2, "validation_ce": 0.45539741242828313, "updates": 256}
+{"phase": "fitting", "seed": 303, "arm": "text", "epoch": 3, "validation_ce": 0.3012687553127762, "updates": 384}
+{"phase": "fitting", "seed": 303, "arm": "text", "epoch": 4, "validation_ce": 0.1730525638340623, "updates": 512}
+{"phase": "fitting", "seed": 303, "arm": "text", "epoch": 5, "validation_ce": 0.1513641701258166, "updates": 640}
+{"phase": "fitting", "seed": 303, "arm": "text", "epoch": 6, "validation_ce": 0.14477575371165585, "updates": 768}
+{"phase": "fitting", "seed": 303, "arm": "text", "epoch": 7, "validation_ce": 0.14205205127291265, "updates": 896}
+{"phase": "fitting", "seed": 303, "arm": "text", "epoch": 8, "validation_ce": 0.1361155615941243, "updates": 1024}
+{"phase": "fitting", "seed": 101, "arm": "aware_ce", "epoch": 1, "validation_ce": 2.1121778269298375, "updates": 128}
+{"phase": "fitting", "seed": 101, "arm": "aware_ce", "epoch": 2, "validation_ce": 2.093260462046601, "updates": 256}
+{"phase": "fitting", "seed": 101, "arm": "aware_ce", "epoch": 3, "validation_ce": 2.0973869127919897, "updates": 384}
+{"phase": "fitting", "seed": 101, "arm": "aware_ce", "epoch": 4, "validation_ce": 2.093097892473452, "updates": 512}
+{"phase": "fitting", "seed": 101, "arm": "aware_ce", "epoch": 5, "validation_ce": 2.0885615970473737, "updates": 640}
+{"phase": "fitting", "seed": 101, "arm": "aware_ce", "epoch": 6, "validation_ce": 2.0903404793934897, "updates": 768}
+{"phase": "fitting", "seed": 101, "arm": "aware_ce", "epoch": 7, "validation_ce": 2.086400532745756, "updates": 896}
+{"phase": "fitting", "seed": 101, "arm": "aware_ce", "epoch": 8, "validation_ce": 2.0886853942647576, "updates": 1024}
+{"phase": "fitting", "seed": 101, "arm": "aware_aux", "epoch": 1, "validation_ce": 2.119314695126377, "updates": 128}
+{"phase": "fitting", "seed": 101, "arm": "aware_aux", "epoch": 2, "validation_ce": 2.0937063803430647, "updates": 256}
+{"phase": "fitting", "seed": 101, "arm": "aware_aux", "epoch": 3, "validation_ce": 2.099272955209017, "updates": 384}
+{"phase": "fitting", "seed": 101, "arm": "aware_aux", "epoch": 4, "validation_ce": 2.0939347544917837, "updates": 512}
+{"phase": "fitting", "seed": 101, "arm": "aware_aux", "epoch": 5, "validation_ce": 2.088270064210519, "updates": 640}
+{"phase": "fitting", "seed": 101, "arm": "aware_aux", "epoch": 6, "validation_ce": 2.0884687467478216, "updates": 768}
+{"phase": "fitting", "seed": 101, "arm": "aware_aux", "epoch": 7, "validation_ce": 2.0901483377674595, "updates": 896}
+{"phase": "fitting", "seed": 101, "arm": "aware_aux", "epoch": 8, "validation_ce": 2.0924850702285767, "updates": 1024}
+{"phase": "fitting", "seed": 101, "arm": "blind_ce", "epoch": 1, "validation_ce": 2.123557884595357, "updates": 128}
+{"phase": "fitting", "seed": 101, "arm": "blind_ce", "epoch": 2, "validation_ce": 2.108701701159589, "updates": 256}
+{"phase": "fitting", "seed": 101, "arm": "blind_ce", "epoch": 3, "validation_ce": 2.099096772260964, "updates": 384}
+{"phase": "fitting", "seed": 101, "arm": "blind_ce", "epoch": 4, "validation_ce": 2.0989606094080955, "updates": 512}
+{"phase": "fitting", "seed": 101, "arm": "blind_ce", "epoch": 5, "validation_ce": 2.0906647973461077, "updates": 640}
+{"phase": "fitting", "seed": 101, "arm": "blind_ce", "epoch": 6, "validation_ce": 2.09290925913956, "updates": 768}
+{"phase": "fitting", "seed": 101, "arm": "blind_ce", "epoch": 7, "validation_ce": 2.0874554882757366, "updates": 896}
+{"phase": "fitting", "seed": 101, "arm": "blind_ce", "epoch": 8, "validation_ce": 2.087972442386672, "updates": 1024}
+{"phase": "fitting", "seed": 101, "arm": "private_constant", "epoch": 1, "validation_ce": 2.1045466389041394, "updates": 128}
+{"phase": "fitting", "seed": 101, "arm": "private_constant", "epoch": 2, "validation_ce": 2.090775698889047, "updates": 256}
+{"phase": "fitting", "seed": 101, "arm": "private_constant", "epoch": 3, "validation_ce": 2.088255736627616, "updates": 384}
+{"phase": "fitting", "seed": 101, "arm": "private_constant", "epoch": 4, "validation_ce": 2.0889167666900903, "updates": 512}
+{"phase": "fitting", "seed": 101, "arm": "private_constant", "epoch": 5, "validation_ce": 2.0857267209794372, "updates": 640}
+{"phase": "fitting", "seed": 101, "arm": "private_constant", "epoch": 6, "validation_ce": 2.0879854410886765, "updates": 768}
+{"phase": "fitting", "seed": 101, "arm": "private_constant", "epoch": 7, "validation_ce": 2.0857506692409515, "updates": 896}
+{"phase": "fitting", "seed": 101, "arm": "private_constant", "epoch": 8, "validation_ce": 2.0864138329634443, "updates": 1024}
+{"phase": "fitting", "seed": 101, "arm": "symbolic", "epoch": 1, "validation_ce": 2.192202757811174, "updates": 128}
+{"phase": "fitting", "seed": 101, "arm": "symbolic", "epoch": 2, "validation_ce": 2.093954585143365, "updates": 256}
+{"phase": "fitting", "seed": 101, "arm": "symbolic", "epoch": 3, "validation_ce": 2.088972789235413, "updates": 384}
+{"phase": "fitting", "seed": 101, "arm": "symbolic", "epoch": 4, "validation_ce": 2.086926247458905, "updates": 512}
+{"phase": "fitting", "seed": 101, "arm": "symbolic", "epoch": 5, "validation_ce": 2.0890759675530717, "updates": 640}
+{"phase": "fitting", "seed": 101, "arm": "symbolic", "epoch": 6, "validation_ce": 2.0860801010858268, "updates": 768}
+{"phase": "fitting", "seed": 101, "arm": "symbolic", "epoch": 7, "validation_ce": 2.093342552194372, "updates": 896}
+{"phase": "fitting", "seed": 101, "arm": "symbolic", "epoch": 8, "validation_ce": 2.085821981774643, "updates": 1024}
+{"phase": "fitting", "seed": 202, "arm": "aware_ce", "epoch": 1, "validation_ce": 2.1153865810483694, "updates": 128}
+{"phase": "fitting", "seed": 202, "arm": "aware_ce", "epoch": 2, "validation_ce": 2.096681238617748, "updates": 256}
+{"phase": "fitting", "seed": 202, "arm": "aware_ce", "epoch": 3, "validation_ce": 2.0891743834363297, "updates": 384}
+{"phase": "fitting", "seed": 202, "arm": "aware_ce", "epoch": 4, "validation_ce": 2.102088015060872, "updates": 512}
+{"phase": "fitting", "seed": 202, "arm": "aware_ce", "epoch": 5, "validation_ce": 2.089744042023085, "updates": 640}
+{"phase": "fitting", "seed": 202, "arm": "aware_ce", "epoch": 6, "validation_ce": 2.0864011227386072, "updates": 768}
+{"phase": "fitting", "seed": 202, "arm": "aware_ce", "epoch": 7, "validation_ce": 2.08797393378336, "updates": 896}
+{"phase": "fitting", "seed": 202, "arm": "aware_ce", "epoch": 8, "validation_ce": 2.0879695795010775, "updates": 1024}
+{"phase": "fitting", "seed": 202, "arm": "aware_aux", "epoch": 1, "validation_ce": 2.1151359400246292, "updates": 128}
+{"phase": "fitting", "seed": 202, "arm": "aware_aux", "epoch": 2, "validation_ce": 2.096933529013768, "updates": 256}
+{"phase": "fitting", "seed": 202, "arm": "aware_aux", "epoch": 3, "validation_ce": 2.08909261203371, "updates": 384}
+{"phase": "fitting", "seed": 202, "arm": "aware_aux", "epoch": 4, "validation_ce": 2.1019294200232252, "updates": 512}
+{"phase": "fitting", "seed": 202, "arm": "aware_aux", "epoch": 5, "validation_ce": 2.089757345034741, "updates": 640}
+{"phase": "fitting", "seed": 202, "arm": "aware_aux", "epoch": 6, "validation_ce": 2.086426296737045, "updates": 768}
+{"phase": "fitting", "seed": 202, "arm": "aware_aux", "epoch": 7, "validation_ce": 2.0879647835390642, "updates": 896}
+{"phase": "fitting", "seed": 202, "arm": "aware_aux", "epoch": 8, "validation_ce": 2.08798001462128, "updates": 1024}
+{"phase": "fitting", "seed": 202, "arm": "blind_ce", "epoch": 1, "validation_ce": 2.10735291428864, "updates": 128}
+{"phase": "fitting", "seed": 202, "arm": "blind_ce", "epoch": 2, "validation_ce": 2.103762990911491, "updates": 256}
+{"phase": "fitting", "seed": 202, "arm": "blind_ce", "epoch": 3, "validation_ce": 2.0886698341928422, "updates": 384}
+{"phase": "fitting", "seed": 202, "arm": "blind_ce", "epoch": 4, "validation_ce": 2.105197994154878, "updates": 512}
+{"phase": "fitting", "seed": 202, "arm": "blind_ce", "epoch": 5, "validation_ce": 2.0935056431917474, "updates": 640}
+{"phase": "fitting", "seed": 202, "arm": "blind_ce", "epoch": 6, "validation_ce": 2.0864057400031015, "updates": 768}
+{"phase": "fitting", "seed": 202, "arm": "blind_ce", "epoch": 7, "validation_ce": 2.0875332829309627, "updates": 896}
+{"phase": "fitting", "seed": 202, "arm": "blind_ce", "epoch": 8, "validation_ce": 2.088016833178699, "updates": 1024}
+{"phase": "fitting", "seed": 202, "arm": "private_constant", "epoch": 1, "validation_ce": 2.119042090023868, "updates": 128}
+{"phase": "fitting", "seed": 202, "arm": "private_constant", "epoch": 2, "validation_ce": 2.1071281454060227, "updates": 256}
+{"phase": "fitting", "seed": 202, "arm": "private_constant", "epoch": 3, "validation_ce": 2.0982338363537565, "updates": 384}
+{"phase": "fitting", "seed": 202, "arm": "private_constant", "epoch": 4, "validation_ce": 2.100149346748367, "updates": 512}
+{"phase": "fitting", "seed": 202, "arm": "private_constant", "epoch": 5, "validation_ce": 2.095946188666858, "updates": 640}
+{"phase": "fitting", "seed": 202, "arm": "private_constant", "epoch": 6, "validation_ce": 2.0894679301418364, "updates": 768}
+{"phase": "fitting", "seed": 202, "arm": "private_constant", "epoch": 7, "validation_ce": 2.0874648683238775, "updates": 896}
+{"phase": "fitting", "seed": 202, "arm": "private_constant", "epoch": 8, "validation_ce": 2.091079308418557, "updates": 1024}
+{"phase": "fitting", "seed": 202, "arm": "symbolic", "epoch": 1, "validation_ce": 2.1262719633523375, "updates": 128}
+{"phase": "fitting", "seed": 202, "arm": "symbolic", "epoch": 2, "validation_ce": 2.1082039123866707, "updates": 256}
+{"phase": "fitting", "seed": 202, "arm": "symbolic", "epoch": 3, "validation_ce": 2.1067281489958987, "updates": 384}
+{"phase": "fitting", "seed": 202, "arm": "symbolic", "epoch": 4, "validation_ce": 2.116000273032114, "updates": 512}
+{"phase": "fitting", "seed": 202, "arm": "symbolic", "epoch": 5, "validation_ce": 2.1049002436921, "updates": 640}
+{"phase": "fitting", "seed": 202, "arm": "symbolic", "epoch": 6, "validation_ce": 2.105985506554134, "updates": 768}
+{"phase": "fitting", "seed": 202, "arm": "symbolic", "epoch": 7, "validation_ce": 2.102785400347784, "updates": 896}
+{"phase": "fitting", "seed": 202, "arm": "symbolic", "epoch": 8, "validation_ce": 2.1033719209954143, "updates": 1024}
+{"phase": "fitting", "seed": 303, "arm": "aware_ce", "epoch": 1, "validation_ce": 2.129048682167195, "updates": 128}
+{"phase": "fitting", "seed": 303, "arm": "aware_ce", "epoch": 2, "validation_ce": 2.1137720490805805, "updates": 256}
+{"phase": "fitting", "seed": 303, "arm": "aware_ce", "epoch": 3, "validation_ce": 2.107892647269182, "updates": 384}
+{"phase": "fitting", "seed": 303, "arm": "aware_ce", "epoch": 4, "validation_ce": 2.0933626813348383, "updates": 512}
+{"phase": "fitting", "seed": 303, "arm": "aware_ce", "epoch": 5, "validation_ce": 2.0941814007237554, "updates": 640}
+{"phase": "fitting", "seed": 303, "arm": "aware_ce", "epoch": 6, "validation_ce": 2.086271529085934, "updates": 768}
+{"phase": "fitting", "seed": 303, "arm": "aware_ce", "epoch": 7, "validation_ce": 2.08749971317593, "updates": 896}
+{"phase": "fitting", "seed": 303, "arm": "aware_ce", "epoch": 8, "validation_ce": 2.083603691891767, "updates": 1024}
+{"phase": "fitting", "seed": 303, "arm": "aware_aux", "epoch": 1, "validation_ce": 2.116801430587657, "updates": 128}
+{"phase": "fitting", "seed": 303, "arm": "aware_aux", "epoch": 2, "validation_ce": 2.097641642438248, "updates": 256}
+{"phase": "fitting", "seed": 303, "arm": "aware_aux", "epoch": 3, "validation_ce": 2.094504939741455, "updates": 384}
+{"phase": "fitting", "seed": 303, "arm": "aware_aux", "epoch": 4, "validation_ce": 2.093976267846301, "updates": 512}
+{"phase": "fitting", "seed": 303, "arm": "aware_aux", "epoch": 5, "validation_ce": 2.0903265816159546, "updates": 640}
+{"phase": "fitting", "seed": 303, "arm": "aware_aux", "epoch": 6, "validation_ce": 2.0857957786647603, "updates": 768}
+{"phase": "fitting", "seed": 303, "arm": "aware_aux", "epoch": 7, "validation_ce": 2.0869785882532597, "updates": 896}
+{"phase": "fitting", "seed": 303, "arm": "aware_aux", "epoch": 8, "validation_ce": 2.0834368660580367, "updates": 1024}
+{"phase": "fitting", "seed": 303, "arm": "blind_ce", "epoch": 1, "validation_ce": 2.126135753467679, "updates": 128}
+{"phase": "fitting", "seed": 303, "arm": "blind_ce", "epoch": 2, "validation_ce": 2.0989691704744473, "updates": 256}
+{"phase": "fitting", "seed": 303, "arm": "blind_ce", "epoch": 3, "validation_ce": 2.0968449539504945, "updates": 384}
+{"phase": "fitting", "seed": 303, "arm": "blind_ce", "epoch": 4, "validation_ce": 2.0998712768778205, "updates": 512}
+{"phase": "fitting", "seed": 303, "arm": "blind_ce", "epoch": 5, "validation_ce": 2.088538133422844, "updates": 640}
+{"phase": "fitting", "seed": 303, "arm": "blind_ce", "epoch": 6, "validation_ce": 2.0921540005365387, "updates": 768}
+{"phase": "fitting", "seed": 303, "arm": "blind_ce", "epoch": 7, "validation_ce": 2.0914797770092264, "updates": 896}
+{"phase": "fitting", "seed": 303, "arm": "blind_ce", "epoch": 8, "validation_ce": 2.084311939892359, "updates": 1024}
+{"phase": "fitting", "seed": 303, "arm": "private_constant", "epoch": 1, "validation_ce": 2.1127115233102813, "updates": 128}
+{"phase": "fitting", "seed": 303, "arm": "private_constant", "epoch": 2, "validation_ce": 2.0960523867979646, "updates": 256}
+{"phase": "fitting", "seed": 303, "arm": "private_constant", "epoch": 3, "validation_ce": 2.0946066534379497, "updates": 384}
+{"phase": "fitting", "seed": 303, "arm": "private_constant", "epoch": 4, "validation_ce": 2.1202474321471527, "updates": 512}
+{"phase": "fitting", "seed": 303, "arm": "private_constant", "epoch": 5, "validation_ce": 2.0870387406321242, "updates": 640}
+{"phase": "fitting", "seed": 303, "arm": "private_constant", "epoch": 6, "validation_ce": 2.088338500005193, "updates": 768}
+{"phase": "fitting", "seed": 303, "arm": "private_constant", "epoch": 7, "validation_ce": 2.0876112282276154, "updates": 896}
+{"phase": "fitting", "seed": 303, "arm": "private_constant", "epoch": 8, "validation_ce": 2.0836326013086364, "updates": 1024}
+{"phase": "fitting", "seed": 303, "arm": "symbolic", "epoch": 1, "validation_ce": 2.1361049878178164, "updates": 128}
+{"phase": "fitting", "seed": 303, "arm": "symbolic", "epoch": 2, "validation_ce": 2.102008881047368, "updates": 256}
+{"phase": "fitting", "seed": 303, "arm": "symbolic", "epoch": 3, "validation_ce": 2.09797252190765, "updates": 384}
+{"phase": "fitting", "seed": 303, "arm": "symbolic", "epoch": 4, "validation_ce": 2.112654631608166, "updates": 512}
+{"phase": "fitting", "seed": 303, "arm": "symbolic", "epoch": 5, "validation_ce": 2.0977143542841077, "updates": 640}
+{"phase": "fitting", "seed": 303, "arm": "symbolic", "epoch": 6, "validation_ce": 2.0926538290223107, "updates": 768}
+{"phase": "fitting", "seed": 303, "arm": "symbolic", "epoch": 7, "validation_ce": 2.091089404071681, "updates": 896}
+{"phase": "fitting", "seed": 303, "arm": "symbolic", "epoch": 8, "validation_ce": 2.090468851616606, "updates": 1024}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "aware_ce", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "aware_aux", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "blind_ce", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "private_constant", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "text", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "symbolic", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "aware_ce_wrong_source", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "aware_ce_wrong_question", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "aware_ce_zero", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "aware_aux_wrong_source", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "aware_aux_wrong_question", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "aware_aux_zero", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 101, "condition": "frozen_no_channel", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "aware_ce", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "aware_aux", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "blind_ce", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "private_constant", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "text", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "symbolic", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "aware_ce_wrong_source", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "aware_ce_wrong_question", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "aware_ce_zero", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "aware_aux_wrong_source", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "aware_aux_wrong_question", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "aware_aux_zero", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 202, "condition": "frozen_no_channel", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "aware_ce", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "aware_aux", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "blind_ce", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "private_constant", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "text", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "symbolic", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "aware_ce_wrong_source", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "aware_ce_wrong_question", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "aware_ce_zero", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "aware_aux_wrong_source", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "aware_aux_wrong_question", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "aware_aux_zero", "records": 2048}
+{"phase": "fresh_condition_complete", "seed": 303, "condition": "frozen_no_channel", "records": 2048}
+{"status": "complete", "prediction_records": 86016, "primary_difference": 0.0, "advancement": {"components": {"text_validation_gate": true, "fresh_paired_at_least_80_percent": false, "fresh_nuisance_stability_at_least_90_percent": true, "fresh_reorder_stability_at_least_90_percent": true, "positive_mean_correct_vs_wrong_source_pair_difference": false}, "practical_advance": false, "primary_interval_strictly_positive": false, "supported_comparative_improvement": false, "breakthrough_claim": false}}

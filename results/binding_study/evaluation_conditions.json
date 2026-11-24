@@ -1,0 +1,530 @@
+[
+  {
+    "condition": "aware_ce",
+    "seconds": 0.5957507179999766,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.25003296544309705,
+      "hinge": 0.24999622849281877,
+      "nuisance_distance": 2.88740592044312e-06,
+      "objective": 2.0852872859686613,
+      "reorder_distance": 7.058467309128957e-05,
+      "restricted_ce": 2.0852872768300585,
+      "target_distance": 3.7701076875396033e-06
+    }
+  },
+  {
+    "condition": "aware_aux",
+    "seconds": 0.5885278800000151,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.250031434930861,
+      "hinge": 0.2499982522567734,
+      "nuisance_distance": 1.47573172115667e-06,
+      "objective": 2.3347705509513617,
+      "reorder_distance": 6.488916750058138e-05,
+      "restricted_ce": 2.0847391222487204,
+      "target_distance": 1.7478339298104828e-06
+    }
+  },
+  {
+    "condition": "blind_ce",
+    "seconds": 0.5887575389999711,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.25017022201791406,
+      "hinge": 0.24999369913712144,
+      "nuisance_distance": 5.815271685971624e-06,
+      "objective": 2.0848686080425978,
+      "reorder_distance": 0.0003472248015441437,
+      "restricted_ce": 2.084868624981027,
+      "target_distance": 6.300850762919197e-06
+    }
+  },
+  {
+    "condition": "private_constant",
+    "seconds": 0.5362220009999419,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.0811775168403983,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.081177513289731,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "text",
+    "seconds": 1.8552607089999356,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 0.18198150669923052,
+      "reorder_distance": 0.0,
+      "restricted_ce": 0.18198150767875632,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "symbolic",
+    "seconds": 1.6691660879999972,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.0880829207599163,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.088082920294255,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "aware_ce_wrong_source",
+    "seconds": 0.5913431060000676,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.25003296544309705,
+      "hinge": 0.24999622849281877,
+      "nuisance_distance": 2.88740592044312e-06,
+      "objective": 2.0852897753939033,
+      "reorder_distance": 7.058467309128957e-05,
+      "restricted_ce": 2.085289764101617,
+      "target_distance": 3.7701076875396033e-06
+    }
+  },
+  {
+    "condition": "aware_ce_wrong_question",
+    "seconds": 0.6047945320000281,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.2500329668400809,
+      "hinge": 0.24999622942414135,
+      "nuisance_distance": 2.8872253136080772e-06,
+      "objective": 2.0852876333519816,
+      "reorder_distance": 7.058467335063767e-05,
+      "restricted_ce": 2.0852876388235018,
+      "target_distance": 3.7695490833766776e-06
+    }
+  },
+  {
+    "condition": "aware_ce_zero",
+    "seconds": 0.6010043549999864,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.384652132168412,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.3846521266386844,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "aware_aux_wrong_source",
+    "seconds": 0.5983662590000449,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.250031434930861,
+      "hinge": 0.2499982522567734,
+      "nuisance_distance": 1.47573172115667e-06,
+      "objective": 2.3347656950354576,
+      "reorder_distance": 6.488916750058138e-05,
+      "restricted_ce": 2.0847342606284656,
+      "target_distance": 1.7478339298104828e-06
+    }
+  },
+  {
+    "condition": "aware_aux_wrong_question",
+    "seconds": 0.597420095000075,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.2500314333010465,
+      "hinge": 0.24999825248960406,
+      "nuisance_distance": 1.4758144028514941e-06,
+      "objective": 2.3347675129771233,
+      "reorder_distance": 6.488916642410913e-05,
+      "restricted_ce": 2.084736070013605,
+      "target_distance": 1.7475291994584197e-06
+    }
+  },
+  {
+    "condition": "aware_aux_zero",
+    "seconds": 0.5931903989999228,
+    "seed": 101,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.608407497406006,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.3584074861428235,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "frozen_no_channel",
+    "seconds": 0.42333326799996485,
+    "seed": 101,
+    "terms": {
+      "restricted_ce": 2.254791880841367
+    }
+  },
+  {
+    "condition": "aware_ce",
+    "seconds": 0.5930250490000617,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.2500367754837498,
+      "hinge": 0.24999805528204888,
+      "nuisance_distance": 1.6210036564712205e-06,
+      "objective": 2.082389896735549,
+      "reorder_distance": 7.582108909520713e-05,
+      "restricted_ce": 2.082389907038305,
+      "target_distance": 1.9450346871452417e-06
+    }
+  },
+  {
+    "condition": "aware_aux",
+    "seconds": 0.589948055999912,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.25001126783899963,
+      "hinge": 0.24999881477560848,
+      "nuisance_distance": 9.021547814347386e-07,
+      "objective": 2.3324276208877563,
+      "reorder_distance": 2.4001152569397277e-05,
+      "restricted_ce": 2.0824163781362586,
+      "target_distance": 1.1860842339950217e-06
+    }
+  },
+  {
+    "condition": "blind_ce",
+    "seconds": 0.5845037830000592,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.25004654575604945,
+      "hinge": 0.24999705760274082,
+      "nuisance_distance": 2.877360419040187e-06,
+      "objective": 2.0821937238797545,
+      "reorder_distance": 9.609902691387617e-05,
+      "restricted_ce": 2.082193716079928,
+      "target_distance": 2.942273690798025e-06
+    }
+  },
+  {
+    "condition": "private_constant",
+    "seconds": 0.5412930400000278,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.0837934287264943,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.0837934321025386,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "text",
+    "seconds": 1.8499292449999984,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 0.1448767781839706,
+      "reorder_distance": 0.0,
+      "restricted_ce": 0.1448767783194853,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "symbolic",
+    "seconds": 1.6659525359999634,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.0882441122084856,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.088244116457645,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "aware_ce_wrong_source",
+    "seconds": 0.5925060459999258,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.2500367754837498,
+      "hinge": 0.24999805528204888,
+      "nuisance_distance": 1.6210036564712205e-06,
+      "objective": 2.082396352663636,
+      "reorder_distance": 7.582108909520713e-05,
+      "restricted_ce": 2.082396362500731,
+      "target_distance": 1.9450346871452417e-06
+    }
+  },
+  {
+    "condition": "aware_ce_wrong_question",
+    "seconds": 0.5868858499999305,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.25003677571658045,
+      "hinge": 0.2499980553984642,
+      "nuisance_distance": 1.6210177636727385e-06,
+      "objective": 2.0823893174529076,
+      "reorder_distance": 7.582108977643998e-05,
+      "restricted_ce": 2.0823893121560104,
+      "target_distance": 1.9451273967630023e-06
+    }
+  },
+  {
+    "condition": "aware_ce_zero",
+    "seconds": 0.5866052749998971,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.3185558123514056,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.3185558085679077,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "aware_aux_wrong_source",
+    "seconds": 0.5944122600000128,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.25001126783899963,
+      "hinge": 0.24999881477560848,
+      "nuisance_distance": 9.021547814347386e-07,
+      "objective": 2.3324283994734287,
+      "reorder_distance": 2.4001152569397277e-05,
+      "restricted_ce": 2.0824171317508444,
+      "target_distance": 1.1860842339950217e-06
+    }
+  },
+  {
+    "condition": "aware_aux_wrong_question",
+    "seconds": 0.5903095050000502,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.250011267256923,
+      "hinge": 0.24999881454277784,
+      "nuisance_distance": 9.021894192551283e-07,
+      "objective": 2.3324255496263504,
+      "reorder_distance": 2.4001152568953188e-05,
+      "restricted_ce": 2.082414293603506,
+      "target_distance": 1.186133320840721e-06
+    }
+  },
+  {
+    "condition": "aware_aux_zero",
+    "seconds": 0.5884313730000486,
+    "seed": 202,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.568649396300316,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.318649413820822,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "frozen_no_channel",
+    "seconds": 0.41872154499992575,
+    "seed": 202,
+    "terms": {
+      "restricted_ce": 2.254791880841367
+    }
+  },
+  {
+    "condition": "aware_ce",
+    "seconds": 0.5886194749999731,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.2500000932486728,
+      "hinge": 0.2499999775318429,
+      "nuisance_distance": 2.1843032867695233e-08,
+      "objective": 2.08433791808784,
+      "reorder_distance": 2.200243125333179e-07,
+      "restricted_ce": 2.0843379022553563,
+      "target_distance": 2.5693163620971182e-08
+    }
+  },
+  {
+    "condition": "aware_aux",
+    "seconds": 0.585223271000018,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.250000461935997,
+      "hinge": 0.24999995552934706,
+      "nuisance_distance": 4.054780456536067e-08,
+      "objective": 2.3339346386492252,
+      "reorder_distance": 9.747899680223604e-07,
+      "restricted_ce": 2.083934169379063,
+      "target_distance": 4.7543190934487556e-08
+    }
+  },
+  {
+    "condition": "blind_ce",
+    "seconds": 0.5851049880000119,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.25003396114334464,
+      "hinge": 0.24999705119989812,
+      "nuisance_distance": 2.4779245733769217e-06,
+      "objective": 2.0863065449520946,
+      "reorder_distance": 7.13434470100971e-05,
+      "restricted_ce": 2.0863065439625643,
+      "target_distance": 2.9484315662298144e-06
+    }
+  },
+  {
+    "condition": "private_constant",
+    "seconds": 0.5359973099999706,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.079668652266264,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.07966864365153,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "text",
+    "seconds": 1.847896285000047,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 0.13684135806397535,
+      "reorder_distance": 0.0,
+      "restricted_ce": 0.13684135772200534,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "symbolic",
+    "seconds": 1.6689034830000082,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.0820685029029846,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.082068497315049,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "aware_ce_wrong_source",
+    "seconds": 0.5958985270000312,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.2500000932486728,
+      "hinge": 0.2499999775318429,
+      "nuisance_distance": 2.1843032867695233e-08,
+      "objective": 2.08433501701802,
+      "reorder_distance": 2.200243125333179e-07,
+      "restricted_ce": 2.0843350128852762,
+      "target_distance": 2.5693163620971182e-08
+    }
+  },
+  {
+    "condition": "aware_ce_wrong_question",
+    "seconds": 0.5885314569999309,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.25000009371433407,
+      "hinge": 0.24999997788108885,
+      "nuisance_distance": 2.1860111774560376e-08,
+      "objective": 2.08434194419533,
+      "reorder_distance": 2.2002431164513947e-07,
+      "restricted_ce": 2.0843419444863684,
+      "target_distance": 2.5763518341284652e-08
+    }
+  },
+  {
+    "condition": "aware_ce_zero",
+    "seconds": 0.587899382000046,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.268938479013741,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.2689384936820716,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "aware_aux_wrong_source",
+    "seconds": 0.5926229299999477,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.250000461935997,
+      "hinge": 0.24999995552934706,
+      "nuisance_distance": 4.054780456536067e-08,
+      "objective": 2.333933224901557,
+      "reorder_distance": 9.747899680223604e-07,
+      "restricted_ce": 2.0839327623252757,
+      "target_distance": 4.7543190934487556e-08
+    }
+  },
+  {
+    "condition": "aware_aux_wrong_question",
+    "seconds": 0.5931014100000311,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.250000461935997,
+      "hinge": 0.24999995552934706,
+      "nuisance_distance": 4.054872248734909e-08,
+      "objective": 2.333935707807541,
+      "reorder_distance": 9.747899650247582e-07,
+      "restricted_ce": 2.083935235568788,
+      "target_distance": 4.7544361361090415e-08
+    }
+  },
+  {
+    "condition": "aware_aux_zero",
+    "seconds": 0.5921452979999913,
+    "seed": 303,
+    "terms": {
+      "auxiliary": 0.25,
+      "hinge": 0.25,
+      "nuisance_distance": 0.0,
+      "objective": 2.53455295227468,
+      "reorder_distance": 0.0,
+      "restricted_ce": 2.2845529398182407,
+      "target_distance": 0.0
+    }
+  },
+  {
+    "condition": "frozen_no_channel",
+    "seconds": 0.42979012900002544,
+    "seed": 303,
+    "terms": {
+      "restricted_ce": 2.254791880841367
+    }
+  }
+]

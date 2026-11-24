@@ -1,0 +1,74 @@
+{
+  "101": {
+    "checkpoint": {
+      "bytes": 34501,
+      "path": "initial/101.npz",
+      "sha256": "b86b83c449ad2cf79eec8aa0541c72f1d3844e6a29d5089b2de9dd8a3c674100",
+      "state_sha256": "517765acefc8aba46667980f2cc87ff7074aeac389683bf789547bd795885069"
+    },
+    "control_state_sha256": "b0e6507c5e716c9d5e1b1b86da162171fb9b6a00a33a9d89b237e12f7d362392",
+    "epoch_order_sha256": [
+      "6299f2790ecdebcbd65141652975327b6284a690d84b7728816b29a973d00afb",
+      "ae6b30e9525bd7a280e8fe551b4feebdc4d5bd708716b372afd56fc48db99756",
+      "4845f517491c16f803cdc394bb962d970566b269f2751cede273bfb2f9d2acbc",
+      "0860178a34c93be98d66b362fa7265bafe1b67845e9b6aad4f9f4a2df7a91b79",
+      "4f241eb1aec393d5774931f60b824d7bd6855ace8853908b99f87010c0b8a84c",
+      "b7e4d407b1a2b38788ee8227b4bfe7572a86460a5bf35d5ff3dac31354fb68ae",
+      "ac7a71e5e3914062a57dad20fe6d0630a7e483ea1782e1a841569587eb79c605",
+      "0ece0e5017a120d161862dbac1169c8079c46b4705e02bc769eecf6136ca47cf"
+    ],
+    "fixed_private_sha256": "0eb4094babed217c6eb8ecfecc988b85cb42514bd08deac906fde0c23d272f8e",
+    "fixed_question_norm": 27.712671279907227,
+    "fixed_question_sha256": "f5f465e9edecb687357ac180eec1a010774747c94936639880744dc8c3f4a24d",
+    "state_sha256": "517765acefc8aba46667980f2cc87ff7074aeac389683bf789547bd795885069",
+    "trainable_parameters": 10378
+  },
+  "202": {
+    "checkpoint": {
+      "bytes": 34518,
+      "path": "initial/202.npz",
+      "sha256": "3835a5a3286255d2cca593292151cd3aa186b9919d57bef85298b1470a39c8db",
+      "state_sha256": "22a600a838735d1a9508ccdcb659d459102185a329f98cd6ece933468a7555e6"
+    },
+    "control_state_sha256": "746fab90fef4ed4d95b86ef9f3816516d88c87941873ae1f6ddb955ddbb5f5cc",
+    "epoch_order_sha256": [
+      "83d8597d65de1deceabf92cb12ca541d82f8092fcace655badcb678fda83631d",
+      "c858254bc7be226122bf49f632c968efe7361e03885fc340d379c042c96c9f55",
+      "5a257f4e3bdded126b73c4900d00a06c067d559ac8bf87ba50ad2359095382c4",
+      "c8322aa1a8642c23a86e7a2825bb8a67ded1104106e305c729a5cd424e1dfc66",
+      "b1285664faf33c6361ce0c142b9b7a7e2ad4d024eabef261e20f23ddbe6f1587",
+      "36386f86992074a0392947bcf30cd71aee711996c8eeca6f133dc3a3538dc9bc",
+      "48a1114dfec04061d0b78eeb4313cadc78a160c12844e24873f9d44c137539e4",
+      "fb48964c0add676a8d7e5e90b4bd3ad7408abc66aeca0926b01bc1102adf082d"
+    ],
+    "fixed_private_sha256": "df9f5ddf23f5d7e4dacff07f15f9bca21937fdbc0f208088b950ab29bd4752eb",
+    "fixed_question_norm": 27.712684631347656,
+    "fixed_question_sha256": "e24684ff35ba8f4f131abc4c1394c86c8d2190d95abe556ae303b1c9b8af0b53",
+    "state_sha256": "22a600a838735d1a9508ccdcb659d459102185a329f98cd6ece933468a7555e6",
+    "trainable_parameters": 10378
+  },
+  "303": {
+    "checkpoint": {
+      "bytes": 34501,
+      "path": "initial/303.npz",
+      "sha256": "2f907518a58addefddc8310c51cdc2ae283c2f884cc35e99e67796244ed5f166",
+      "state_sha256": "d50cce22b46cc36c1da62606f6259c0f10c19f96001b87a5ee9a53385cd78cf2"
+    },
+    "control_state_sha256": "a5a51eeca0a157d556f534d17f333e9f79329454a074f77808e4777b3c45acb8",
+    "epoch_order_sha256": [
+      "5e4b004a033d03749142529b74fc83fb82bf884cb79b129480e5f8792da1ccb0",
+      "fdc83390b1bbbc303eadc16c797945c25b53152f55730c55e07dc50793e11088",
+      "67e17ea1693d2730298219b5f871d112fba7eb0433863ea51174e9195e2a2d4e",
+      "92ac1bd239980bfd0e400ee638ad36e4c2548a95fa843ab1251ca9b268f4e8f4",
+      "406731d60462f4c974eaac167825611cc099876b123dd2675debc638f7f640c8",
+      "6498066c18e02364ed7dea300a25660aa49cb83e345c2c91a671b579ccfb9ce2",
+      "74de684b888c86d6c6bfb70a251a0b5dde33d18f9d4fd1429cfba80f728687ca",
+      "489d27ef437e06f6d68513fe2ea9006b1a1a3884c8a2bbcb054bdf2181993e2e"
+    ],
+    "fixed_private_sha256": "c7098bfbf017fb0022b189444df0f105e7f341ec8c062ca9e6573ee972749e3d",
+    "fixed_question_norm": 27.712675094604492,
+    "fixed_question_sha256": "c75d428c6e76fb4fa2652b7d1659cb49f5a98b851012022931db3d712a5d627a",
+    "state_sha256": "d50cce22b46cc36c1da62606f6259c0f10c19f96001b87a5ee9a53385cd78cf2",
+    "trainable_parameters": 10378
+  }
+}

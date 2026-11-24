@@ -1,0 +1,64 @@
+{
+  "archive_zip_independently_rehashed_by_publisher": false,
+  "artifact_retention_days": 90,
+  "audit_receipt": {
+    "bytes": 106345,
+    "sha256": "a7106870dda3a576d41a1d842e19c9e0c28144fa94bbf42314d6ee42b4fd4a00"
+  },
+  "audit_script": {
+    "file": {
+      "bytes": 78507,
+      "sha256": "bd480de1cffc45920e8fc09c80de7fca08b9eefacf08cd0939bcf17c1859a067"
+    },
+    "git_blob": "fedf79a135417f0d588d99ec0a1b4126abc69ff7",
+    "path": "scripts/audit_binding_outputs.py"
+  },
+  "benchmark_invocations": 0,
+  "classification": "complete_study",
+  "fixed_publication_manifest_sha256": "f68e4e9d509c7eea65a1d4043d39cf83fd64de124f7cbe450d402ce8a6dc9b09",
+  "frozen_design_commit": "dfce06b5dfb2860414af166ef4441eefd9548afc",
+  "kind": "packaging_existing_binding_evidence_without_model_execution",
+  "models_imported_or_executed": 0,
+  "omission_rule": "Only an independently rehashed gzip of identical raw bytes replaces a duplicate in Git; raw bytes remain in the original artifact.",
+  "omitted_raw_predictions": {
+    "predictions.jsonl": {
+      "gzip": "predictions.jsonl.gz",
+      "raw": {
+        "bytes": 14595080,
+        "sha256": "a25d35f0bb04b349d1268bd5075ec8d37ffb3680b39206cc79eff64b8a7089f2"
+      }
+    },
+    "validation_predictions.jsonl": {
+      "gzip": "validation_predictions.jsonl.gz",
+      "raw": {
+        "bytes": 2794316,
+        "sha256": "540e9d01c0d8bcb2e818a07da4ec8d7cf10ee86f47481c3962ab44df9c1c2039"
+      }
+    }
+  },
+  "original_artifact": {
+    "digest": "sha256:04b07caadf59babdafa900f54193931cc7a637b64c36181817459507738c20cc",
+    "id": 14902482655,
+    "name": "binding-study-45355476489-attempt-1",
+    "size_in_bytes": 4762525
+  },
+  "original_execution_failure": null,
+  "original_execution_sha256": "5d3c5e45edf8ab147881493f5274bcfc06ab80eea74220b9e2731fb849a97dc3",
+  "original_execution_status": "worker_finished",
+  "original_file_bytes_preserved": true,
+  "original_scientific_status": "executed_binding_competence_study",
+  "original_worker_returncode": 0,
+  "primary_complete_study_claim_permitted": true,
+  "publication_configuration_commit": "167b2beafade9cd2c2ef7339d62840ba138d1665",
+  "publication_run_id": "45359713696",
+  "published_study_files_independently_rehashed": true,
+  "study_commit": "3cfbf2b02f70235f089d86d429da33ee818818d8",
+  "study_job_id": 138312106145,
+  "study_run_id": 45355476489,
+  "top_level_test_log": {
+    "artifact_path": "binding-study-tests.log",
+    "independent_file_hash_claimed": false,
+    "published_to_git": false,
+    "retained_in_original_fixed_id_archive": true
+  }
+}

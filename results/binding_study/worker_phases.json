@@ -1,0 +1,9 @@
+{
+  "completed_seconds": {
+    "download_pinned_public_models": 1.520800505000011,
+    "fit_gate_and_evaluate": 513.390483866,
+    "generate_frozen_data": 0.4535354159999656,
+    "runtime_and_source_preflight": 0.0187063539999599
+  },
+  "current": null
+}

@@ -1,0 +1,339 @@
+{
+  "bag_sha256": "3881cca6bd7ef94d9105bcbfe1b82fd74ec6a991e9a6c98da94043c67fed81a9",
+  "candidate_colors": [
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "black",
+    "white",
+    "purple",
+    "orange"
+  ],
+  "candidate_token_ids": [
+    2502,
+    4797,
+    4759,
+    8862,
+    2806,
+    3168,
+    19445,
+    13735
+  ],
+  "passed": true,
+  "private_and_complete_conditional_token_multisets_equal": true,
+  "receiver_separator": "\n",
+  "test_access": "data-only tokenization and consistency; no model features or predictions",
+  "token_lengths": {
+    "receiver/test": {
+      "frozen_no_channel": {
+        "count": 2048,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 12288
+      },
+      "latent_receiver": {
+        "count": 2048,
+        "max": 8,
+        "mean": 8.0,
+        "min": 8,
+        "sum": 16384
+      },
+      "private_symbolic": {
+        "count": 2048,
+        "max": 43,
+        "mean": 43.0,
+        "min": 43,
+        "sum": 88064
+      },
+      "private_text": {
+        "count": 2048,
+        "max": 48,
+        "mean": 48.0,
+        "min": 48,
+        "sum": 98304
+      },
+      "query": {
+        "count": 2048,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 12288
+      },
+      "symbolic_receiver": {
+        "count": 2048,
+        "max": 52,
+        "mean": 52.0,
+        "min": 52,
+        "sum": 106496
+      },
+      "text_receiver": {
+        "count": 2048,
+        "max": 57,
+        "mean": 57.0,
+        "min": 57,
+        "sum": 116736
+      }
+    },
+    "receiver/train": {
+      "frozen_no_channel": {
+        "count": 2048,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 12288
+      },
+      "latent_receiver": {
+        "count": 2048,
+        "max": 8,
+        "mean": 8.0,
+        "min": 8,
+        "sum": 16384
+      },
+      "private_symbolic": {
+        "count": 2048,
+        "max": 43,
+        "mean": 43.0,
+        "min": 43,
+        "sum": 88064
+      },
+      "private_text": {
+        "count": 2048,
+        "max": 48,
+        "mean": 48.0,
+        "min": 48,
+        "sum": 98304
+      },
+      "query": {
+        "count": 2048,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 12288
+      },
+      "symbolic_receiver": {
+        "count": 2048,
+        "max": 52,
+        "mean": 52.0,
+        "min": 52,
+        "sum": 106496
+      },
+      "text_receiver": {
+        "count": 2048,
+        "max": 57,
+        "mean": 57.0,
+        "min": 57,
+        "sum": 116736
+      }
+    },
+    "receiver/validation": {
+      "frozen_no_channel": {
+        "count": 1024,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 6144
+      },
+      "latent_receiver": {
+        "count": 1024,
+        "max": 8,
+        "mean": 8.0,
+        "min": 8,
+        "sum": 8192
+      },
+      "private_symbolic": {
+        "count": 1024,
+        "max": 43,
+        "mean": 43.0,
+        "min": 43,
+        "sum": 44032
+      },
+      "private_text": {
+        "count": 1024,
+        "max": 48,
+        "mean": 48.0,
+        "min": 48,
+        "sum": 49152
+      },
+      "query": {
+        "count": 1024,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 6144
+      },
+      "symbolic_receiver": {
+        "count": 1024,
+        "max": 52,
+        "mean": 52.0,
+        "min": 52,
+        "sum": 53248
+      },
+      "text_receiver": {
+        "count": 1024,
+        "max": 57,
+        "mean": 57.0,
+        "min": 57,
+        "sum": 58368
+      }
+    },
+    "sender/test": {
+      "frozen_no_channel": {
+        "count": 2048,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 12288
+      },
+      "latent_receiver": {
+        "count": 2048,
+        "max": 8,
+        "mean": 8.0,
+        "min": 8,
+        "sum": 16384
+      },
+      "private_symbolic": {
+        "count": 2048,
+        "max": 43,
+        "mean": 43.0,
+        "min": 43,
+        "sum": 88064
+      },
+      "private_text": {
+        "count": 2048,
+        "max": 48,
+        "mean": 48.0,
+        "min": 48,
+        "sum": 98304
+      },
+      "query": {
+        "count": 2048,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 12288
+      },
+      "symbolic_receiver": {
+        "count": 2048,
+        "max": 52,
+        "mean": 52.0,
+        "min": 52,
+        "sum": 106496
+      },
+      "text_receiver": {
+        "count": 2048,
+        "max": 57,
+        "mean": 57.0,
+        "min": 57,
+        "sum": 116736
+      }
+    },
+    "sender/train": {
+      "frozen_no_channel": {
+        "count": 2048,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 12288
+      },
+      "latent_receiver": {
+        "count": 2048,
+        "max": 8,
+        "mean": 8.0,
+        "min": 8,
+        "sum": 16384
+      },
+      "private_symbolic": {
+        "count": 2048,
+        "max": 43,
+        "mean": 43.0,
+        "min": 43,
+        "sum": 88064
+      },
+      "private_text": {
+        "count": 2048,
+        "max": 48,
+        "mean": 48.0,
+        "min": 48,
+        "sum": 98304
+      },
+      "query": {
+        "count": 2048,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 12288
+      },
+      "symbolic_receiver": {
+        "count": 2048,
+        "max": 52,
+        "mean": 52.0,
+        "min": 52,
+        "sum": 106496
+      },
+      "text_receiver": {
+        "count": 2048,
+        "max": 57,
+        "mean": 57.0,
+        "min": 57,
+        "sum": 116736
+      }
+    },
+    "sender/validation": {
+      "frozen_no_channel": {
+        "count": 1024,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 6144
+      },
+      "latent_receiver": {
+        "count": 1024,
+        "max": 8,
+        "mean": 8.0,
+        "min": 8,
+        "sum": 8192
+      },
+      "private_symbolic": {
+        "count": 1024,
+        "max": 43,
+        "mean": 43.0,
+        "min": 43,
+        "sum": 44032
+      },
+      "private_text": {
+        "count": 1024,
+        "max": 48,
+        "mean": 48.0,
+        "min": 48,
+        "sum": 49152
+      },
+      "query": {
+        "count": 1024,
+        "max": 6,
+        "mean": 6.0,
+        "min": 6,
+        "sum": 6144
+      },
+      "symbolic_receiver": {
+        "count": 1024,
+        "max": 52,
+        "mean": 52.0,
+        "min": 52,
+        "sum": 53248
+      },
+      "text_receiver": {
+        "count": 1024,
+        "max": 57,
+        "mean": 57.0,
+        "min": 57,
+        "sum": 58368
+      }
+    }
+  },
+  "tokenizer_unique_strings": {
+    "receiver": 14928,
+    "sender": 14928
+  }
+}

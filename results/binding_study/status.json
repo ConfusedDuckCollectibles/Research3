@@ -1,0 +1,323 @@
+{
+  "active_arm": "symbolic",
+  "active_condition": "rank_codec_oracle",
+  "active_seed": 303,
+  "complete": true,
+  "completed_conditions": [
+    {
+      "condition": "aware_ce",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "aware_aux",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "blind_ce",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "private_constant",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "text",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "symbolic",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "aware_ce_wrong_source",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "aware_ce_wrong_question",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "aware_ce_zero",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "aware_aux_wrong_source",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "aware_aux_wrong_question",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "aware_aux_zero",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "frozen_no_channel",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "rank_codec_oracle",
+      "records": 2048,
+      "seed": 101
+    },
+    {
+      "condition": "aware_ce",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "aware_aux",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "blind_ce",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "private_constant",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "text",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "symbolic",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "aware_ce_wrong_source",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "aware_ce_wrong_question",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "aware_ce_zero",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "aware_aux_wrong_source",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "aware_aux_wrong_question",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "aware_aux_zero",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "frozen_no_channel",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "rank_codec_oracle",
+      "records": 2048,
+      "seed": 202
+    },
+    {
+      "condition": "aware_ce",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "aware_aux",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "blind_ce",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "private_constant",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "text",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "symbolic",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "aware_ce_wrong_source",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "aware_ce_wrong_question",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "aware_ce_zero",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "aware_aux_wrong_source",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "aware_aux_wrong_question",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "aware_aux_zero",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "frozen_no_channel",
+      "records": 2048,
+      "seed": 303
+    },
+    {
+      "condition": "rank_codec_oracle",
+      "records": 2048,
+      "seed": 303
+    }
+  ],
+  "completed_fits": [
+    {
+      "arm": "text",
+      "seed": 101
+    },
+    {
+      "arm": "text",
+      "seed": 202
+    },
+    {
+      "arm": "text",
+      "seed": 303
+    },
+    {
+      "arm": "aware_ce",
+      "seed": 101
+    },
+    {
+      "arm": "aware_aux",
+      "seed": 101
+    },
+    {
+      "arm": "blind_ce",
+      "seed": 101
+    },
+    {
+      "arm": "private_constant",
+      "seed": 101
+    },
+    {
+      "arm": "symbolic",
+      "seed": 101
+    },
+    {
+      "arm": "aware_ce",
+      "seed": 202
+    },
+    {
+      "arm": "aware_aux",
+      "seed": 202
+    },
+    {
+      "arm": "blind_ce",
+      "seed": 202
+    },
+    {
+      "arm": "private_constant",
+      "seed": 202
+    },
+    {
+      "arm": "symbolic",
+      "seed": 202
+    },
+    {
+      "arm": "aware_ce",
+      "seed": 303
+    },
+    {
+      "arm": "aware_aux",
+      "seed": 303
+    },
+    {
+      "arm": "blind_ce",
+      "seed": 303
+    },
+    {
+      "arm": "private_constant",
+      "seed": 303
+    },
+    {
+      "arm": "symbolic",
+      "seed": 303
+    }
+  ],
+  "config": {
+    "auxiliary_weight": 1.0,
+    "bootstrap_resamples": 2000,
+    "bootstrap_seed": 66173,
+    "bottleneck": 8,
+    "epochs": 8,
+    "fixed_question_seed_offset": 17291,
+    "gradient_clip_norm": 1.0,
+    "learning_rate": 0.001,
+    "margin": 0.25,
+    "max_length": 192,
+    "message_coordinates": 16,
+    "private_control_seed_offset": 9841,
+    "quartets_per_batch": 4,
+    "query_normalization_epsilon": 1e-05,
+    "receiver_separator": "\n",
+    "records_per_batch": 16,
+    "seeds": [
+      101,
+      202,
+      303
+    ],
+    "slots": 2,
+    "threads": 2,
+    "weight_decay": 0.01
+  },
+  "epoch": 8,
+  "fresh_test_model_cases_loaded": true,
+  "phase": "complete",
+  "scientific_status": "executed_binding_competence_study",
+  "updates": 1024
+}

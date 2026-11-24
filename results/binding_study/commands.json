@@ -1,0 +1,36 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+        "-m",
+        "latent_bridge.binding_data",
+        "--output",
+        "/home/runner/work/Research3/Research3/checkpoints/binding-study/data"
+      ],
+      "phase": "generate_frozen_data"
+    },
+    {
+      "argv": [
+        "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+        "-m",
+        "latent_bridge.binding_study",
+        "--sender-model",
+        "/home/runner/work/Research3/Research3/local_models/binding_sender",
+        "--receiver-model",
+        "/home/runner/work/Research3/Research3/local_models/binding_receiver",
+        "--data-dir",
+        "/home/runner/work/Research3/Research3/checkpoints/binding-study/data",
+        "--output",
+        "/home/runner/work/Research3/Research3/checkpoints/binding-study",
+        "--model-manifest",
+        "/home/runner/work/Research3/Research3/checkpoints/binding-study/model_manifest.json",
+        "--code-manifest",
+        "/home/runner/work/Research3/Research3/checkpoints/binding-study/code_manifest.json",
+        "--threads",
+        "2"
+      ],
+      "phase": "fit_gate_and_evaluate"
+    }
+  ]
+}

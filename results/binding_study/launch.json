@@ -1,0 +1,15 @@
+{
+  "budget_seconds": 1800,
+  "command": [
+    "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+    "/home/runner/work/Research3/Research3/scripts/run_binding_study.py",
+    "--worker"
+  ],
+  "frozen_design_commit": "dfce06b5dfb2860414af166ef4441eefd9548afc",
+  "github_commit": "3cfbf2b02f70235f089d86d429da33ee818818d8",
+  "github_run_attempt": "1",
+  "github_run_id": "45355476489",
+  "github_run_number": "1",
+  "threads": 2,
+  "time_budget_scope": "All worker imports, downloads, data preparation, fits and fresh scoring."
+}

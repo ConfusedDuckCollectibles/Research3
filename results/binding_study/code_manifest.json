@@ -1,0 +1,114 @@
+{
+  "all_match": true,
+  "design_sha256": "64b78771d18b8888d81fe1032935fe3a65d057c197eda208c6af4c8651b97ae3",
+  "expected_design_sha256": "64b78771d18b8888d81fe1032935fe3a65d057c197eda208c6af4c8651b97ae3",
+  "files": {
+    ".github/workflows/binding-study.yml": {
+      "bytes": 2323,
+      "sha256": "d9c576399ff23f5c31234278d4953f664a39bbb6b953e94f0d4cdf072e5de9a8"
+    },
+    ".github/workflows/binding-validation.yml": {
+      "bytes": 1864,
+      "sha256": "61a4a46c995c9a3a8b031f3ac41145a11ecfd7b6493269c43638014ad582a123"
+    },
+    "docs/binding_design.md": {
+      "bytes": 23476,
+      "sha256": "64b78771d18b8888d81fe1032935fe3a65d057c197eda208c6af4c8651b97ae3"
+    },
+    "latent_bridge/binding_core.py": {
+      "bytes": 21005,
+      "sha256": "539e02d44d793050de03586f2fe8ad118044632218bc5e8b0ae9caff61fe2a23"
+    },
+    "latent_bridge/binding_data.py": {
+      "bytes": 15526,
+      "sha256": "6c0fc10ebd40e57d6a9736b8b93815a1e6074f29f419e475eb6fd32923e95982"
+    },
+    "latent_bridge/binding_study.py": {
+      "bytes": 44365,
+      "sha256": "9dbf42e1f37118adcd8041c69dec7cdcf9d07b4b18fa028c4f54f7f5aa3a6882"
+    },
+    "latent_bridge/counterfactual_runner.py": {
+      "bytes": 33447,
+      "sha256": "4bf35ae4844777a2ea0c6d48d1e8da146f1b29a1788d8c00f4b1bd06a5bb47cb"
+    },
+    "latent_bridge/private_counterfactual.py": {
+      "bytes": 11353,
+      "sha256": "af127ff0743664bea4b9b71a65943d3bf830c30e61b361be5b410adc31892b1f"
+    },
+    "latent_bridge/private_lookup.py": {
+      "bytes": 5362,
+      "sha256": "7542ee3f652e015eeb5f589550b5d448c70e24c45dbf12a1e4121cff8a5efe70"
+    },
+    "latent_bridge/query_conditioned.py": {
+      "bytes": 40381,
+      "sha256": "7eb5b129b1ceb96cf5e7a92388019579765d3af392bf163c8bee943ed8b73849"
+    },
+    "latent_bridge/query_conditioned_data.py": {
+      "bytes": 9348,
+      "sha256": "211b71d497ec83c6f91481557ef18bc498024fb51e4ada433e5aa6f05777d4fc"
+    },
+    "latent_bridge/transformers_runner.py": {
+      "bytes": 26472,
+      "sha256": "997ca1a94b113e44cdbb2df3f35e1a95b71360ea5b985a2e504a5d0a6d4ad920"
+    },
+    "pyproject.toml": {
+      "bytes": 523,
+      "sha256": "4613df28c5bd415544437224eb4ac5e3e01d48def6dd727d70045878e955e85b"
+    },
+    "scripts/run_binding_study.py": {
+      "bytes": 17058,
+      "sha256": "d034c08d9d4297b6ac25741769261eeb59b926d6f401a28adb5e4d9ad4897bf4"
+    },
+    "scripts/run_pretrained_pilot.py": {
+      "bytes": 4975,
+      "sha256": "4829e83ed741e7b060512dc753ea022c9595b35339d28a2c713260e5a0488775"
+    },
+    "tests/test_binding_core.py": {
+      "bytes": 19328,
+      "sha256": "64a3c44cba2b7de181c270c3fb5cc0563ff3259188851e45e075b93c88487f6c"
+    },
+    "tests/test_binding_data.py": {
+      "bytes": 31691,
+      "sha256": "89914acb98f0ddc470a99f442db363115ed775019186be820b4047f289d65aed"
+    },
+    "tests/test_binding_execution.py": {
+      "bytes": 8105,
+      "sha256": "4016a04d28a18dce26e0941e0010c4b75080b069877e433911c280063a36f49c"
+    }
+  },
+  "frozen_design_commit": "dfce06b5dfb2860414af166ef4441eefd9548afc",
+  "github_commit": "3cfbf2b02f70235f089d86d429da33ee818818d8",
+  "github_run_id": "45355476489",
+  "historical_helper_commit": "9eb4478fae1ad373234eb2a725345b66c8c63c57",
+  "historical_helpers": {
+    "latent_bridge/counterfactual_runner.py": {
+      "actual_sha256": "4bf35ae4844777a2ea0c6d48d1e8da146f1b29a1788d8c00f4b1bd06a5bb47cb",
+      "expected_sha256": "4bf35ae4844777a2ea0c6d48d1e8da146f1b29a1788d8c00f4b1bd06a5bb47cb"
+    },
+    "latent_bridge/private_counterfactual.py": {
+      "actual_sha256": "af127ff0743664bea4b9b71a65943d3bf830c30e61b361be5b410adc31892b1f",
+      "expected_sha256": "af127ff0743664bea4b9b71a65943d3bf830c30e61b361be5b410adc31892b1f"
+    },
+    "latent_bridge/private_lookup.py": {
+      "actual_sha256": "7542ee3f652e015eeb5f589550b5d448c70e24c45dbf12a1e4121cff8a5efe70",
+      "expected_sha256": "7542ee3f652e015eeb5f589550b5d448c70e24c45dbf12a1e4121cff8a5efe70"
+    },
+    "latent_bridge/query_conditioned.py": {
+      "actual_sha256": "7eb5b129b1ceb96cf5e7a92388019579765d3af392bf163c8bee943ed8b73849",
+      "expected_sha256": "7eb5b129b1ceb96cf5e7a92388019579765d3af392bf163c8bee943ed8b73849"
+    },
+    "latent_bridge/query_conditioned_data.py": {
+      "actual_sha256": "211b71d497ec83c6f91481557ef18bc498024fb51e4ada433e5aa6f05777d4fc",
+      "expected_sha256": "211b71d497ec83c6f91481557ef18bc498024fb51e4ada433e5aa6f05777d4fc"
+    },
+    "latent_bridge/transformers_runner.py": {
+      "actual_sha256": "997ca1a94b113e44cdbb2df3f35e1a95b71360ea5b985a2e504a5d0a6d4ad920",
+      "expected_sha256": "997ca1a94b113e44cdbb2df3f35e1a95b71360ea5b985a2e504a5d0a6d4ad920"
+    },
+    "scripts/run_pretrained_pilot.py": {
+      "actual_sha256": "4829e83ed741e7b060512dc753ea022c9595b35339d28a2c713260e5a0488775",
+      "expected_sha256": "4829e83ed741e7b060512dc753ea022c9595b35339d28a2c713260e5a0488775"
+    }
+  },
+  "verification": "Expected design and historical helper bytes come from immutable git commits."
+}

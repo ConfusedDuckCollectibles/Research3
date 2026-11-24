@@ -1,0 +1,46 @@
+{
+  "actual_encoded_sequences": {
+    "question": 8,
+    "source": 2340
+  },
+  "actual_encoder_forward_calls": {
+    "question": 1,
+    "source": 147
+  },
+  "encoding_seconds": {
+    "question": 0.024117525999997724,
+    "receiver_embedding": 0.29122759400564746,
+    "source": 35.47591463299972
+  },
+  "logical_cache_requests": {
+    "question": 451584,
+    "receiver_embedding": 540672,
+    "source": 285696
+  },
+  "logical_requests_are_not_latency_measurements": true,
+  "question": {
+    "bytes": 24576,
+    "ordered_content_sha256": "7e650ed466efa96122fdf304a0ed4215a8d8c13afdd737655a720ef54fcdbe3c",
+    "unique_entries": 8
+  },
+  "question_norms": {
+    "The color of the apple is": 27.712806701660156,
+    "The color of the ball is": 27.712806701660156,
+    "The color of the book is": 27.712806701660156,
+    "The color of the cup is": 27.712806701660156,
+    "The color of the key is": 27.712804794311523,
+    "The color of the lamp is": 27.712806701660156,
+    "The color of the plate is": 27.71280860900879,
+    "The color of the shoe is": 27.712806701660156
+  },
+  "receiver_embeddings": {
+    "bytes": 275275776,
+    "ordered_content_sha256": "2760507a1659187b136b2eb4fcb4ae94a744d8503215975b96d3b33ac7d96c85",
+    "unique_entries": 10248
+  },
+  "source": {
+    "bytes": 345047040,
+    "ordered_content_sha256": "4567b870220cd313f482d26ef5fb25975c9ad90c66a7dc17703905d196bbfdb1",
+    "unique_entries": 2340
+  }
+}

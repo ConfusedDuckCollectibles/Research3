@@ -1,0 +1,91 @@
+{
+  "failed_seeds": [],
+  "fresh_test_scoring_started": false,
+  "other_arms_started": false,
+  "passed": true,
+  "per_seed": [
+    {
+      "passed": true,
+      "seed": 101,
+      "selected_epoch": 7,
+      "state_sha256": "13e6d8bbf093cb3417986ec01f57aa845f62baf8c5da983af3237994919c58c5",
+      "validation": {
+        "counts": {
+          "nuisance_stable": 253,
+          "record_correct": 1020,
+          "reorder_stable": 255,
+          "target_paired_both_correct": 256
+        },
+        "metrics": {
+          "nuisance_both_correct": 0.98828125,
+          "nuisance_stability": 0.98828125,
+          "record_accuracy": 0.99609375,
+          "reorder_both_correct": 0.99609375,
+          "reorder_stability": 0.99609375,
+          "restricted_ce": 0.17793207809700107,
+          "target_answer_change": 1.0,
+          "target_paired_both_correct": 1.0
+        },
+        "quartets": 256,
+        "records": 1024
+      }
+    },
+    {
+      "passed": true,
+      "seed": 202,
+      "selected_epoch": 8,
+      "state_sha256": "ef2f9c01c6ef737359e4c6850565f952eedddbdc4bb14327b5c88d54932b14fe",
+      "validation": {
+        "counts": {
+          "nuisance_stable": 256,
+          "record_correct": 1024,
+          "reorder_stable": 256,
+          "target_paired_both_correct": 256
+        },
+        "metrics": {
+          "nuisance_both_correct": 1.0,
+          "nuisance_stability": 1.0,
+          "record_accuracy": 1.0,
+          "reorder_both_correct": 1.0,
+          "reorder_stability": 1.0,
+          "restricted_ce": 0.14624265916427248,
+          "target_answer_change": 1.0,
+          "target_paired_both_correct": 1.0
+        },
+        "quartets": 256,
+        "records": 1024
+      }
+    },
+    {
+      "passed": true,
+      "seed": 303,
+      "selected_epoch": 8,
+      "state_sha256": "fea9f31610a15136b16dea2d5769be372b75d7ea24672122ab0e330b5c7e70d8",
+      "validation": {
+        "counts": {
+          "nuisance_stable": 256,
+          "record_correct": 1023,
+          "reorder_stable": 256,
+          "target_paired_both_correct": 255
+        },
+        "metrics": {
+          "nuisance_both_correct": 1.0,
+          "nuisance_stability": 1.0,
+          "record_accuracy": 0.9990234375,
+          "reorder_both_correct": 1.0,
+          "reorder_stability": 1.0,
+          "restricted_ce": 0.1361155615941243,
+          "target_answer_change": 1.0,
+          "target_paired_both_correct": 0.99609375
+        },
+        "quartets": 256,
+        "records": 1024
+      }
+    }
+  ],
+  "thresholds": {
+    "nuisance_stability": 0.9,
+    "reorder_stability": 0.9,
+    "target_paired_both_correct": 0.8
+  }
+}
