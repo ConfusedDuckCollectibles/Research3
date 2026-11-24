@@ -68,3 +68,9 @@ It permits its first run and first attempt only, repeats the complete tests
 before starting the study, and gives all download/data/model work one global
 1,800-second deadline inside a 35-minute CPU job. Later workflow attempts are
 rejected. No empirical outcome was inspected to choose these source changes.
+
+## Completed execution and independent publication
+
+The single empirical run [45355476489](https://github.com/ConfusedDuckCollectibles/Research3/actions/runs/45355476489) completed successfully from commit `3cfbf2b02f70235f089d86d429da33ee818818d8`. All three text competence gates passed, all 18 fits and 86,016 fresh records completed, and the worker used 515.51 seconds of its 1,800-second budget. Both primary latent arms scored zero target pairs correctly; full text scored 99.54%. No empirical fitting or scoring was rerun.
+
+The separate NumPy-only [publication run 45359713696](https://github.com/ConfusedDuckCollectibles/Research3/actions/runs/45359713696) passed its auditor self-test and 1,056,048 consistency checks with zero errors. It preserved the original bytes at commit `ae436255f412b827d5d6c19350616f021516c982`. The full audit receipt is permanent. See [the human results report](binding_results.md) for outcomes, costs, hashes and limits. An integrity audit does not establish novelty or independently repeat model inference.

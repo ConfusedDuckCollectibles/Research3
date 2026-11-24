@@ -6,7 +6,13 @@ and **executed pretrained-model studies with explicit causal controls**. It does
 claim a new universal language, an LLM efficiency breakthrough, or a replication
 of LatentMAS or Interlat.
 
-## Latest frozen-message diagnostic
+## Latest: binding-sensitive training
+
+The [complete audited binding study](docs/binding_results.md) found **0% target-pair correctness** for both the matched CE-only and auxiliary-trained latent bridges, versus **99.54%** for adapted full text. All 18 fits and 86,016 fresh records completed. An independent auditor reconstructed the dataset and reported statistics and passed 1,056,048 consistency checks; its scope and limits are recorded in the [permanent evidence](results/binding_study/).
+
+The new cohort holds the available words constant while changing which object has which color. High answer stability did not imply successful transfer: the auxiliary arm was 99.61% stable under irrelevant changes, but only 12.43% of those pairs were both correct. Zeroing its message changed 5,632 of 6,144 choices despite zero correctly answered target pairs. The fixed auxiliary-loss hypothesis failed; no practical advance or breakthrough is claimed.
+
+## Previous frozen-message diagnostic
 
 The [readout diagnostic](docs/readout_results.md) reproduced all 41,472 earlier
 prediction records exactly, then tested additional readers on 32 fresh families.
@@ -24,15 +30,9 @@ in the compressed message. This is a measured diagnostic, not a breakthrough.
 The complete predictions, selected-state records and bounded NPZ exports are
 retained in [the result directory](results/readout_study/).
 
-## Current preregistered follow-up
+## Current investigation: compact alignment
 
-The [binding study](docs/binding_design.md) tests a fixed auxiliary training loss
-against an otherwise identical bridge with the same edited examples. Eight
-objects carry all eight colors in every world, with randomized fact positions
-and disjoint families. A full-text competence gate precedes latent fitting.
-Its implementation is published for a separate CPU validation gate before the
-first empirical execution. See the [current checkpoint](research_state.json)
-for execution status; no binding-study model outcome is asserted here.
+A separate numerical study is being specified to investigate a small-matrix implementation and compact representation of per-message alignment. The [mathematical note](docs/alignment_geometry.md) gives the assumptions, counterexample and known prior art. Numerical equivalence, timing and packet-size claims remain unverified until the specified study executes. A canonical solution can differ from an author's chosen SVD completion when the optimal output is nonunique. This is a bounded implementation investigation, not an assertion of faster or more capable language models.
 
 ## Previous query study and implemented controls
 

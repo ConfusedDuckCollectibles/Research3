@@ -22,3 +22,7 @@ source-state reader reached 82.03% on the original template and 0% under the
 source wording/order shift. These findings localize limitations of this
 implementation and its readers; they do not establish irreversible information
 loss, a useful communication method, or scientific novelty.
+
+## Binding-sensitive training
+
+[Complete audited findings](../docs/binding_results.md): matched CE-only and auxiliary-trained latent arms both answered 0 of 1,536 fresh target pairs correctly, while adapted full text answered 1,529. All 18 fits and 86,016 fresh records completed. The auxiliary arm's 99.61% nuisance stability and large zero-message intervention effect did not establish useful private-information transfer. The two-byte task-specific oracle remained exact. The fixed auxiliary comparison failed; all original evidence and the independent audit are retained in [the result directory](../results/binding_study/).
