@@ -2,11 +2,11 @@
   "schema_version": 1,
   "status": "active",
   "worker_id": "chatgpt-active-research-20261124T052021Z",
-  "updated_at_utc": "2026-11-24T12:08:08Z",
-  "lease_expires_at_utc": "2026-11-24T14:08:08Z",
-  "current_task": "Implement and independently review the fixed contextual information assay",
-  "stage": "contextual_information_design_frozen_before_implementation",
-  "next_action": "Implement the pure inverse/exact-Gram routines, fixed dataset/authentic cached extraction and author forward worker, supervisor, and independent offline tests. Publish all source before CI; after the complete test gate passes, activate exactly one 600-second public CPU study. Do not run the pretrained cohort before activation, tune against its outcomes, rerun it, or overwrite previous studies. The owner's existing autonomous research authorization applies; internal design/source/test gates do not require another user confirmation.",
+  "updated_at_utc": "2026-11-24T12:39:27Z",
+  "lease_expires_at_utc": "2026-11-24T14:39:27Z",
+  "current_task": "Validate the reviewed fixed contextual information source offline",
+  "stage": "contextual_information_source_published_pending_validation",
+  "next_action": "Recover the full CI result for this containing source commit. Do not activate the pretrained assay until all tests pass with the pinned runtime and zero missing optional-model tests. If a pre-outcome code correction is needed, publish and document it before activation. Then activate exactly one first-attempt 600-second public CPU workflow; preserve the complete or partial original artifact and do not rerun the cohort.",
   "last_completed_study": "docs/coefficient_results.md",
   "last_completed_commit": "6172944a3d90180e1e95f521eed79a9ba02c6c25",
   "known_result": "Independently audited original coefficient TCP study:720/720 trials and300 diagnostics,9/9 all-row f64 fidelity gates. Both performance criteria failed:shaped coefficient/optimized Gram0.9802991311;loopback/hindsight1.2098053452;worst warm1.4859810967;cold/hindsight6.2290160665. Audit found0issues across233297integrity,106829report and17025scientific checks within its stated scope. Engineering success and breakthrough remain false.",
@@ -14,9 +14,9 @@
   "active_workflow_run": null,
   "resume_instructions": "docs/continuation.md",
   "design_path": "docs/contextual_information_design.md",
-  "design_blob_sha": null,
+  "design_blob_sha": "125a1465eb0e6bb120cd7bbe94ffed58a0ae2101",
   "design_sha256": "6f50e1d3faad3240033748d7434f088ec26b7ac6716511923892e66ac0e78a09",
-  "frozen_design_commit": null,
+  "frozen_design_commit": "c23a20ec420ba19680801a09ac8b053735807d38",
   "source_commit": null,
   "workflow_path": ".github/workflows/contextual-information-v1.yml",
   "execution_environment": "Workspace disconnected before results publication; GitHub API and standard CPU Actions remain available",
@@ -64,12 +64,12 @@
   "closed_lossless_predictor_assessment": "docs/lossless_predictor_feasibility.md",
   "validation_workflow_path": ".github/workflows/tests.yml",
   "planned_study_workflow_path": ".github/workflows/contextual-information-v1.yml",
-  "execution_note": "docs/coefficient_execution_notes.md",
-  "source_review_scope": "Static implementation/contract reviews and executed162-test pre-execution CI. Original scientific execution completed once. Separate retained-byte/array/statistical audit completed; its solver reuse and nonprimary limitations remain explicit.",
-  "validated_python_source_commit": "367d81a6306e670ff39397c0747848cfd5a1de13",
-  "last_validation_run": 45380063999,
-  "last_validation_job": 138396467220,
-  "last_validation_result": "All 162 repository tests passed in12.513seconds with0skips/errors/failures before the scientific workflow was activated.",
+  "execution_note": "docs/contextual_execution_notes.md",
+  "source_review_scope": "Independent static review of pure public-input inverse, cached prediction-step extraction, unchanged author-method execution, exact pair witnesses, partial evidence, fixed denominators and offline tests. Executed source validation is pending; no new pretrained cohort outcome has been produced.",
+  "validated_python_source_commit": null,
+  "last_validation_run": null,
+  "last_validation_job": null,
+  "last_validation_result": "Pending for the current contextual information source. Prior coefficient validation remains recorded with its completed study.",
   "publication_workflow_path": null,
   "coefficient_original": {
     "design_commit": "49cfba7261326d58e174e51c8ddf5abba6f4a966",
@@ -123,9 +123,46 @@
     "precision": "CPU float32 source and actual author method; fixed float64 inverse and mathematical controls",
     "theory_commit": "ac53603c20de1d28e01cb697cb81b94f6c06db40",
     "theory_sha256": "f78a41cee2b1ee90b349bcbee0fe00a588b9738863034172a8c8c09ddc3992d7",
-    "state": "not_executed",
+    "state": "source_published_not_executed",
     "model_calls_observed": 0,
     "success_target": "At least 122 of all 128 primary records at relative Gram error <= 1e-3; a numerical reporting target only",
-    "evidence_destination": "results/contextual_information"
-  }
+    "evidence_destination": "results/contextual_information",
+    "design_commit": "c23a20ec420ba19680801a09ac8b053735807d38",
+    "design_sha256": "6f50e1d3faad3240033748d7434f088ec26b7ac6716511923892e66ac0e78a09",
+    "preexecution_validation_status": "pending",
+    "public_side_information": "Fixed unique or repeated teacher-forced token IDs, model/table and producing precision conventions",
+    "static_reviewed_source": {
+      "latent_bridge/information_recovery.py": {
+        "git_blob": "85227f645e3cda7004e262024eebd7e0da1e4bce",
+        "sha256": "8b44898683f13470a18f884b300e33f40c040a5922848a1f22de4552e0c8d3e1",
+        "bytes": 27935
+      },
+      "latent_bridge/contextual_information.py": {
+        "git_blob": "2771567dd9409d0105547f3fb7d85b01796c4f97",
+        "sha256": "f228aa821a7a87b6ef832b08bf8df3bf895bc8576899316c0658f1b8006afa3f",
+        "bytes": 72281
+      },
+      "scripts/run_contextual_information.py": {
+        "git_blob": "5a75e56420c8a0bf55f6512c59a3cebafe54d0dc",
+        "sha256": "a6cbfb13892aa3d25d4f24178423b732e8305d0785d1403d2c337e6f7fed3a76",
+        "bytes": 13264
+      },
+      "tests/test_information_recovery.py": {
+        "git_blob": "7f5a9cd3c06b3dfaccf1a6c04b519e355f2dfe48",
+        "sha256": "a2be07f72fa780deca9ba818056bb9d3293dad487f5a5d4e0993bad4e203ed5b",
+        "bytes": 15280
+      },
+      "tests/test_contextual_information.py": {
+        "git_blob": "f77f54434d0ad6f3ea5be2ea2cd044370d6d6793",
+        "sha256": "4f9555f29c06163ee5a5d7c93d9e6b2a91c8a7c9cfdbb2af52b5ce8451b2fd94",
+        "bytes": 38953
+      },
+      "tests/test_contextual_execution.py": {
+        "git_blob": "6a2f8d49e59942ce71ae287a8138983a8232094b",
+        "sha256": "e6569318ea42262abeb4529d9b9a0265b0654517bff88dca93d524a8d33d4d3e",
+        "bytes": 7889
+      }
+    }
+  },
+  "source_commit_note": "This checkpoint's containing commit publishes the reviewed source; record its SHA in the validation receipt and activation checkpoint."
 }

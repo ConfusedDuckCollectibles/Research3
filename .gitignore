@@ -63,3 +63,7 @@ local_data/
 
 # Bounded synthetic inputs for the separately frozen coefficient TCP study.
 !/results/coefficient_packet/fixtures.npz
+
+# Exact retained arrays from the fixed contextual information assay.
+!/results/contextual_information/*.npz
+!/results/contextual_information/**/*.npz
