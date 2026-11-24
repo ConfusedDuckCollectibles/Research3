@@ -1,0 +1,4538 @@
+/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/site-packages/numpy/__config__.py:155: UserWarning: Install `pyyaml` for better output
+  warnings.warn("Install `pyyaml` for better output", stacklevel=1)
+Algebraic cases completed: 40; failed required checks: 0
+Algebraic cases completed: 80; failed required checks: 0
+Algebraic cases completed: 120; failed required checks: 0
+Algebraic cases completed: 160; failed required checks: 0
+Algebraic cases completed: 200; failed required checks: 0
+Algebraic cases completed: 240; failed required checks: 0
+ALIGNMENT_RESULTS_BEGIN
+{
+  "applicability_by_seed": {
+    "K16/V256/uniform/seed101": {
+      "ambiguous": 0,
+      "eligible": 43,
+      "has_duplicates": 21,
+      "sequences": 64
+    },
+    "K16/V256/uniform/seed202": {
+      "ambiguous": 0,
+      "eligible": 41,
+      "has_duplicates": 23,
+      "sequences": 64
+    },
+    "K16/V256/uniform/seed303": {
+      "ambiguous": 0,
+      "eligible": 40,
+      "has_duplicates": 24,
+      "sequences": 64
+    },
+    "K16/V256/zipf_1.2/seed101": {
+      "ambiguous": 0,
+      "eligible": 0,
+      "has_duplicates": 64,
+      "sequences": 64
+    },
+    "K16/V256/zipf_1.2/seed202": {
+      "ambiguous": 0,
+      "eligible": 0,
+      "has_duplicates": 64,
+      "sequences": 64
+    },
+    "K16/V256/zipf_1.2/seed303": {
+      "ambiguous": 0,
+      "eligible": 0,
+      "has_duplicates": 64,
+      "sequences": 64
+    },
+    "K16/V32/uniform/seed101": {
+      "ambiguous": 0,
+      "eligible": 2,
+      "has_duplicates": 62,
+      "sequences": 64
+    },
+    "K16/V32/uniform/seed202": {
+      "ambiguous": 0,
+      "eligible": 3,
+      "has_duplicates": 61,
+      "sequences": 64
+    },
+    "K16/V32/uniform/seed303": {
+      "ambiguous": 0,
+      "eligible": 0,
+      "has_duplicates": 64,
+      "sequences": 64
+    },
+    "K16/V32/zipf_1.2/seed101": {
+      "ambiguous": 0,
+      "eligible": 0,
+      "has_duplicates": 64,
+      "sequences": 64
+    },
+    "K16/V32/zipf_1.2/seed202": {
+      "ambiguous": 0,
+      "eligible": 0,
+      "has_duplicates": 64,
+      "sequences": 64
+    },
+    "K16/V32/zipf_1.2/seed303": {
+      "ambiguous": 0,
+      "eligible": 0,
+      "has_duplicates": 64,
+      "sequences": 64
+    },
+    "K2/V256/uniform/seed101": {
+      "ambiguous": 0,
+      "eligible": 64,
+      "has_duplicates": 0,
+      "sequences": 64
+    },
+    "K2/V256/uniform/seed202": {
+      "ambiguous": 0,
+      "eligible": 64,
+      "has_duplicates": 0,
+      "sequences": 64
+    },
+    "K2/V256/uniform/seed303": {
+      "ambiguous": 0,
+      "eligible": 62,
+      "has_duplicates": 2,
+      "sequences": 64
+    },
+    "K2/V256/zipf_1.2/seed101": {
+      "ambiguous": 0,
+      "eligible": 62,
+      "has_duplicates": 2,
+      "sequences": 64
+    },
+    "K2/V256/zipf_1.2/seed202": {
+      "ambiguous": 0,
+      "eligible": 62,
+      "has_duplicates": 2,
+      "sequences": 64
+    },
+    "K2/V256/zipf_1.2/seed303": {
+      "ambiguous": 0,
+      "eligible": 60,
+      "has_duplicates": 4,
+      "sequences": 64
+    },
+    "K2/V32/uniform/seed101": {
+      "ambiguous": 0,
+      "eligible": 61,
+      "has_duplicates": 3,
+      "sequences": 64
+    },
+    "K2/V32/uniform/seed202": {
+      "ambiguous": 0,
+      "eligible": 64,
+      "has_duplicates": 0,
+      "sequences": 64
+    },
+    "K2/V32/uniform/seed303": {
+      "ambiguous": 0,
+      "eligible": 60,
+      "has_duplicates": 4,
+      "sequences": 64
+    },
+    "K2/V32/zipf_1.2/seed101": {
+      "ambiguous": 0,
+      "eligible": 56,
+      "has_duplicates": 8,
+      "sequences": 64
+    },
+    "K2/V32/zipf_1.2/seed202": {
+      "ambiguous": 0,
+      "eligible": 56,
+      "has_duplicates": 8,
+      "sequences": 64
+    },
+    "K2/V32/zipf_1.2/seed303": {
+      "ambiguous": 0,
+      "eligible": 53,
+      "has_duplicates": 11,
+      "sequences": 64
+    },
+    "K8/V256/uniform/seed101": {
+      "ambiguous": 0,
+      "eligible": 58,
+      "has_duplicates": 6,
+      "sequences": 64
+    },
+    "K8/V256/uniform/seed202": {
+      "ambiguous": 0,
+      "eligible": 55,
+      "has_duplicates": 9,
+      "sequences": 64
+    },
+    "K8/V256/uniform/seed303": {
+      "ambiguous": 0,
+      "eligible": 59,
+      "has_duplicates": 5,
+      "sequences": 64
+    },
+    "K8/V256/zipf_1.2/seed101": {
+      "ambiguous": 0,
+      "eligible": 14,
+      "has_duplicates": 50,
+      "sequences": 64
+    },
+    "K8/V256/zipf_1.2/seed202": {
+      "ambiguous": 0,
+      "eligible": 4,
+      "has_duplicates": 60,
+      "sequences": 64
+    },
+    "K8/V256/zipf_1.2/seed303": {
+      "ambiguous": 0,
+      "eligible": 12,
+      "has_duplicates": 52,
+      "sequences": 64
+    },
+    "K8/V32/uniform/seed101": {
+      "ambiguous": 0,
+      "eligible": 27,
+      "has_duplicates": 37,
+      "sequences": 64
+    },
+    "K8/V32/uniform/seed202": {
+      "ambiguous": 0,
+      "eligible": 25,
+      "has_duplicates": 39,
+      "sequences": 64
+    },
+    "K8/V32/uniform/seed303": {
+      "ambiguous": 0,
+      "eligible": 28,
+      "has_duplicates": 36,
+      "sequences": 64
+    },
+    "K8/V32/zipf_1.2/seed101": {
+      "ambiguous": 0,
+      "eligible": 2,
+      "has_duplicates": 62,
+      "sequences": 64
+    },
+    "K8/V32/zipf_1.2/seed202": {
+      "ambiguous": 0,
+      "eligible": 2,
+      "has_duplicates": 62,
+      "sequences": 64
+    },
+    "K8/V32/zipf_1.2/seed303": {
+      "ambiguous": 0,
+      "eligible": 0,
+      "has_duplicates": 64,
+      "sequences": 64
+    }
+  },
+  "design_commit": "e7c467f2b097666dc474a3dbb6e273bf253e785f",
+  "design_sha256": "c785e3fef3af9c8fac3bb7a04ccd7980ddfa51c121f3f11a9068eda3b7a70a5e",
+  "elapsed_seconds": 41.50066756800004,
+  "expected_counts": {
+    "A": 120,
+    "B": 27,
+    "C": 8,
+    "D": 31,
+    "E": 56,
+    "F": 2304,
+    "T": 12
+  },
+  "failed_required_checks": 0,
+  "failure_case_count": 0,
+  "failure_entry_count": 0,
+  "first_failures": [],
+  "limit_rows": [
+    {
+      "epsilon": 0.0,
+      "geometry": 0,
+      "id": "E-geometry0-eps0.0-lambda0.1",
+      "lambda": 0.1,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 4.791265565993259,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 4.367659063407687e-15,
+          "pre_error_to_R": 1.6495388883606268
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 4.7912655659932595,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 4.617288355141522e-15,
+          "pre_error_to_R": 1.6495388883606275
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 4.791265565993258,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 4.412383490714368e-15,
+          "pre_error_to_R": 1.6495388883606266
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 4.791265565993262,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 4.402541569507218e-15,
+          "pre_error_to_R": 1.6495388883606286
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 0,
+      "id": "E-geometry0-eps0.0-lambda0.01",
+      "lambda": 0.01,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 1.5243472717008686,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 4.912643452233208e-15,
+          "pre_error_to_R": 0.6050944729724094
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 1.5243472717008741,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 5.176855845889304e-15,
+          "pre_error_to_R": 0.6050944729724124
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 1.5243472717008657,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 4.969272462068806e-15,
+          "pre_error_to_R": 0.605094472972408
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 1.5243472717008755,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 5.326218041900216e-15,
+          "pre_error_to_R": 0.6050944729724117
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 0,
+      "id": "E-geometry0-eps0.0-lambda0.001",
+      "lambda": 0.001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.22305526759815603,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 5.198603718152117e-15,
+          "pre_error_to_R": 0.09302190429146708
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.22305526759815422,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 5.735054153559182e-15,
+          "pre_error_to_R": 0.0930219042914677
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 0.22305526759815306,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 5.5471257526282974e-15,
+          "pre_error_to_R": 0.09302190429146812
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 0.22305526759816052,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 5.582287902099187e-15,
+          "pre_error_to_R": 0.09302190429146985
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 0,
+      "id": "E-geometry0-eps0.0-lambda0.0001",
+      "lambda": 0.0001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.02352797302042928,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 5.444715022857357e-15,
+          "pre_error_to_R": 0.009880541150359008
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.023527973020414927,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 5.679582350619594e-15,
+          "pre_error_to_R": 0.00988054115035706
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 0.023527973020419576,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 5.731871201581102e-15,
+          "pre_error_to_R": 0.009880541150356048
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 0.023527973020421766,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 5.52231108384599e-15,
+          "pre_error_to_R": 0.009880541150354758
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 0,
+      "id": "E-geometry0-eps0.0-lambda1e-05",
+      "lambda": 1e-05,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.002365958237134338,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 5.418404060311185e-15,
+          "pre_error_to_R": 0.0009943071389958223
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.0023659582371103726,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 5.793894321607734e-15,
+          "pre_error_to_R": 0.000994307138986824
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 0.002365958237128959,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 5.5523774552229054e-15,
+          "pre_error_to_R": 0.0009943071389917205
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 0.0023659582371314382,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 5.396426674283144e-15,
+          "pre_error_to_R": 0.0009943071389926963
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 0,
+      "id": "E-geometry0-eps0.0-lambda1e-06",
+      "lambda": 1e-06,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.00023672844716983877,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 5.609964781425876e-15,
+          "pre_error_to_R": 9.94937544726116e-05
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.00023672844722284,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 5.722990439683529e-15,
+          "pre_error_to_R": 9.949375446670479e-05
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 0.00023672844720792096,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 5.3357432570994054e-15,
+          "pre_error_to_R": 9.949375448233627e-05
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 0.00023672844721223647,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 5.6106418024780484e-15,
+          "pre_error_to_R": 9.949375448479298e-05
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 0,
+      "id": "E-geometry0-eps1e-06-lambda0.1",
+      "lambda": 0.1,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 4.791265565993259,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 4.367659063407687e-15,
+          "pre_error_to_R": 1.6495388883606268
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 4.7912655659932595,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 4.617288355141522e-15,
+          "pre_error_to_R": 1.6495388883606275
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 4.791265565993258,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 4.412383490714368e-15,
+          "pre_error_to_R": 1.6495388883606266
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 4.791265565993262,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 4.402541569507218e-15,
+          "pre_error_to_R": 1.6495388883606286
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 0,
+      "id": "E-geometry0-eps1e-06-lambda0.01",
+      "lambda": 0.01,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 1.5243472717008686,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 4.912643452233208e-15,
+          "pre_error_to_R": 0.6050944729724094
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 1.5243472717008741,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 5.176855845889304e-15,
+          "pre_error_to_R": 0.6050944729724124
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 1.5243472717008657,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 4.969272462068806e-15,
+          "pre_error_to_R": 0.605094472972408
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 1.5243472717008755,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 5.326218041900216e-15,
+          "pre_error_to_R": 0.6050944729724117
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 0,
+      "id": "E-geometry0-eps1e-06-lambda0.001",
+      "lambda": 0.001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.22305526759815603,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 5.198603718152117e-15,
+          "pre_error_to_R": 0.09302190429146708
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.22305526759815422,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 5.735054153559182e-15,
+          "pre_error_to_R": 0.0930219042914677
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 0.22305526759815306,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 5.5471257526282974e-15,
+          "pre_error_to_R": 0.09302190429146812
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 0.22305526759816052,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 5.582287902099187e-15,
+          "pre_error_to_R": 0.09302190429146985
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 0,
+      "id": "E-geometry0-eps1e-06-lambda0.0001",
+      "lambda": 0.0001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.02352797302042928,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 5.444715022857357e-15,
+          "pre_error_to_R": 0.009880541150359008
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.023527973020414927,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 5.679582350619594e-15,
+          "pre_error_to_R": 0.00988054115035706
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 0.023527973020419576,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 5.731871201581102e-15,
+          "pre_error_to_R": 0.009880541150356048
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 0.023527973020421766,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 5.52231108384599e-15,
+          "pre_error_to_R": 0.009880541150354758
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 0,
+      "id": "E-geometry0-eps1e-06-lambda1e-05",
+      "lambda": 1e-05,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.002365958237134338,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 5.418404060311185e-15,
+          "pre_error_to_R": 0.0009943071389958223
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.0023659582371103726,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 5.793894321607734e-15,
+          "pre_error_to_R": 0.000994307138986824
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 0.002365958237128959,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 5.5523774552229054e-15,
+          "pre_error_to_R": 0.0009943071389917205
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 0.0023659582371314382,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 5.396426674283144e-15,
+          "pre_error_to_R": 0.0009943071389926963
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 0,
+      "id": "E-geometry0-eps1e-06-lambda1e-06",
+      "lambda": 1e-06,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.00023672844716983877,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 5.609964781425876e-15,
+          "pre_error_to_R": 9.94937544726116e-05
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.0002367284471689342,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 5.575019484491274e-15,
+          "pre_error_to_R": 9.949375449174486e-05
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 0.00023672844720792096,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 5.3357432570994054e-15,
+          "pre_error_to_R": 9.949375448233627e-05
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 0.00023672844721223647,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 5.6106418024780484e-15,
+          "pre_error_to_R": 9.949375448479298e-05
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 0,
+      "id": "E-geometry0-eps1e-06-lambda1e-08",
+      "lambda": 1e-08,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 2.367430492256161e-06,
+          "ideal_bound": 0.0007483314773547883,
+          "outside_target_span_norm": 5.552007461230129e-15,
+          "pre_error_to_R": 9.95006948784144e-07
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 2.3674305311912044e-06,
+          "ideal_bound": 0.0007483314773547883,
+          "outside_target_span_norm": 5.626569968175695e-15,
+          "pre_error_to_R": 9.95006965647902e-07
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 2.3674304670428904e-06,
+          "ideal_bound": 0.0007483314773547883,
+          "outside_target_span_norm": 5.564258751157453e-15,
+          "pre_error_to_R": 9.950069433736676e-07
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 2.3674304716631964e-06,
+          "ideal_bound": 0.0007483314773547883,
+          "outside_target_span_norm": 5.819032206753723e-15,
+          "pre_error_to_R": 9.950069486411927e-07
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 0,
+      "id": "E-geometry0-eps1e-06-lambda0.0",
+      "lambda": 0.0,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 1.3122357456072147e-13,
+          "ideal_bound": 0.0,
+          "outside_target_span_norm": 5.3587994070950516e-15,
+          "pre_error_to_R": 3.5847953317707566e-14
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 4.911806784021903e-13,
+          "ideal_bound": 0.0,
+          "outside_target_span_norm": 5.810164889837538e-15,
+          "pre_error_to_R": 1.5340185066631765e-13
+        },
+        "dual": {
+          "calibrated_error_to_calibrated_R": 1.0512984778421323e-14,
+          "ideal_bound": 0.0,
+          "outside_target_span_norm": 5.412519778129711e-15,
+          "pre_error_to_R": 3.652962823683337e-15
+        },
+        "thin": {
+          "calibrated_error_to_calibrated_R": 1.2094125940799268e-14,
+          "ideal_bound": 0.0,
+          "outside_target_span_norm": 5.5035092449974365e-15,
+          "pre_error_to_R": 4.217980042657908e-15
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 1,
+      "id": "E-geometry1-eps0.0-lambda0.1",
+      "lambda": 0.1,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 7.835759930504933,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 1.2143579565201421,
+          "pre_error_to_R": 2.115104811645109
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 7.995749910198143,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 1.2143579565201417,
+          "pre_error_to_R": 2.115104811645109
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 1,
+      "id": "E-geometry1-eps0.0-lambda0.01",
+      "lambda": 0.01,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 3.3574831140856665,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.5200044451429043,
+          "pre_error_to_R": 0.8318608527996039
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 3.408892515586836,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.5200044451429046,
+          "pre_error_to_R": 0.831860852799604
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 1,
+      "id": "E-geometry1-eps0.0-lambda0.001",
+      "lambda": 0.001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.8371958474440727,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.17705816607133762,
+          "pre_error_to_R": 0.2020657457901158
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.8455573340069924,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.17705816607133773,
+          "pre_error_to_R": 0.20206574579011308
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 1,
+      "id": "E-geometry1-eps0.0-lambda0.0001",
+      "lambda": 0.0001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.24104479067232087,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.05650905028074166,
+          "pre_error_to_R": 0.057440039594571765
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.24306221968529873,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.056509050280741505,
+          "pre_error_to_R": 0.057440039594566075
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 1,
+      "id": "E-geometry1-eps0.0-lambda1e-05",
+      "lambda": 1e-05,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.0753484999929469,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.01788665687648249,
+          "pre_error_to_R": 0.017916636944811267
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.07396908810379547,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.017886656876478262,
+          "pre_error_to_R": 0.017916636944797962
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 1,
+      "id": "E-geometry1-eps0.0-lambda1e-06",
+      "lambda": 1e-06,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.023801398216814183,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.0056567945612047595,
+          "pre_error_to_R": 0.005657744358850285
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.02388853291103689,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.005656794561169317,
+          "pre_error_to_R": 0.005657744358806125
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 1,
+      "id": "E-geometry1-eps1e-06-lambda0.1",
+      "lambda": 0.1,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 7.835759930504933,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 1.2143579565201421,
+          "pre_error_to_R": 2.115104811645109
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 7.995749910198143,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 1.2143579565201417,
+          "pre_error_to_R": 2.115104811645109
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 1,
+      "id": "E-geometry1-eps1e-06-lambda0.01",
+      "lambda": 0.01,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 3.3574831140856665,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.5200044451429043,
+          "pre_error_to_R": 0.8318608527996039
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 3.408892515586836,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.5200044451429046,
+          "pre_error_to_R": 0.831860852799604
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 1,
+      "id": "E-geometry1-eps1e-06-lambda0.001",
+      "lambda": 0.001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.8371958474440727,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.17705816607133762,
+          "pre_error_to_R": 0.2020657457901158
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.8455573340069924,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.17705816607133773,
+          "pre_error_to_R": 0.20206574579011308
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 1,
+      "id": "E-geometry1-eps1e-06-lambda0.0001",
+      "lambda": 0.0001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.24104479067232087,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.05650905028074166,
+          "pre_error_to_R": 0.057440039594571765
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.24306221968529873,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.056509050280741505,
+          "pre_error_to_R": 0.057440039594566075
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 1,
+      "id": "E-geometry1-eps1e-06-lambda1e-05",
+      "lambda": 1e-05,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.0753484999929469,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.01788665687648249,
+          "pre_error_to_R": 0.017916636944811267
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.07396908810379547,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.017886656876478262,
+          "pre_error_to_R": 0.017916636944797962
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 1,
+      "id": "E-geometry1-eps1e-06-lambda1e-06",
+      "lambda": 1e-06,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.023801398216814183,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.0056567945612047595,
+          "pre_error_to_R": 0.005657744358850285
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.02396004343186281,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.005656794561225668,
+          "pre_error_to_R": 0.005657744358862017
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 1,
+      "id": "E-geometry1-eps1e-06-lambda1e-08",
+      "lambda": 1e-08,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.0237981236241484,
+          "ideal_bound": 0.0007483314773547883,
+          "outside_target_span_norm": 0.005656853652589829,
+          "pre_error_to_R": 0.005656853747588959
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.02361834784157901,
+          "ideal_bound": 0.0007483314773547883,
+          "outside_target_span_norm": 0.005656853652589781,
+          "pre_error_to_R": 0.0056568537475887
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 1,
+      "id": "E-geometry1-eps1e-06-lambda0.0",
+      "lambda": 0.0,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.023798124491774746,
+          "ideal_bound": 0.0,
+          "outside_target_span_norm": 0.005656854249492413,
+          "pre_error_to_R": 0.005656854249492416
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.023635976954058596,
+          "ideal_bound": 0.0,
+          "outside_target_span_norm": 0.005656854249492388,
+          "pre_error_to_R": 0.0056568542494922665
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 2,
+      "id": "E-geometry2-eps0.0-lambda0.1",
+      "lambda": 0.1,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.011992769953805,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 1.6733200530681507,
+          "pre_error_to_R": 1.6733200530681507
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 7.936218805781477,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 1.6733200530681511,
+          "pre_error_to_R": 1.6733200530681511
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 2,
+      "id": "E-geometry2-eps0.0-lambda0.01",
+      "lambda": 0.01,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 3.5680787997101673,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.6834895101178466,
+          "pre_error_to_R": 0.6834895101178466
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 3.60642468804767,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.6834895101178465,
+          "pre_error_to_R": 0.6834895101178465
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 2,
+      "id": "E-geometry2-eps0.0-lambda0.001",
+      "lambda": 0.001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 1.241351415215745,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.23368310124314962,
+          "pre_error_to_R": 0.23368310124314962
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 1.2595998517010947,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.23368310124314975,
+          "pre_error_to_R": 0.23368310124314975
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 2,
+      "id": "E-geometry2-eps0.0-lambda0.0001",
+      "lambda": 0.0001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.39778679947378165,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.07473446718184927,
+          "pre_error_to_R": 0.07473446718184927
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.4047575582847672,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.07473446718184933,
+          "pre_error_to_R": 0.07473446718184933
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 2,
+      "id": "E-geometry2-eps0.0-lambda1e-05",
+      "lambda": 1e-05,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.12595868944231725,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.02366118122305864,
+          "pre_error_to_R": 0.02366118122305864
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.12602846781828242,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.02366118122305858,
+          "pre_error_to_R": 0.02366118122305858
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 2,
+      "id": "E-geometry2-eps0.0-lambda1e-06",
+      "lambda": 1e-06,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.03983605178966308,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.007483215488804743,
+          "pre_error_to_R": 0.007483215488804743
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.04037704512522734,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.007483215488804806,
+          "pre_error_to_R": 0.007483215488804806
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 2,
+      "id": "E-geometry2-eps1e-06-lambda0.1",
+      "lambda": 0.1,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.011992769953805,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 1.6733200530681507,
+          "pre_error_to_R": 1.6733200530681507
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 7.936218805781477,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 1.6733200530681511,
+          "pre_error_to_R": 1.6733200530681511
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 2,
+      "id": "E-geometry2-eps1e-06-lambda0.01",
+      "lambda": 0.01,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 3.5680787997101673,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.6834895101178466,
+          "pre_error_to_R": 0.6834895101178466
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 3.60642468804767,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.6834895101178465,
+          "pre_error_to_R": 0.6834895101178465
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 2,
+      "id": "E-geometry2-eps1e-06-lambda0.001",
+      "lambda": 0.001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 1.241351415215745,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.23368310124314962,
+          "pre_error_to_R": 0.23368310124314962
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 1.2595998517010947,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.23368310124314975,
+          "pre_error_to_R": 0.23368310124314975
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 2,
+      "id": "E-geometry2-eps1e-06-lambda0.0001",
+      "lambda": 0.0001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.39778679947378165,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.07473446718184927,
+          "pre_error_to_R": 0.07473446718184927
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.4047575582847672,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.07473446718184933,
+          "pre_error_to_R": 0.07473446718184933
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 2,
+      "id": "E-geometry2-eps1e-06-lambda1e-05",
+      "lambda": 1e-05,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.12595868944231725,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.02366118122305864,
+          "pre_error_to_R": 0.02366118122305864
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.12602846781828242,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.02366118122305858,
+          "pre_error_to_R": 0.02366118122305858
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 2,
+      "id": "E-geometry2-eps1e-06-lambda1e-06",
+      "lambda": 1e-06,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.03983605178966308,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.007483215488804743,
+          "pre_error_to_R": 0.007483215488804743
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.039969949116383345,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.007483215488804774,
+          "pre_error_to_R": 0.007483215488804775
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 2,
+      "id": "E-geometry2-eps1e-06-lambda1e-08",
+      "lambda": 1e-08,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.039836582618464206,
+          "ideal_bound": 0.0007483314773547883,
+          "outside_target_span_norm": 0.007483313780639534,
+          "pre_error_to_R": 0.007483313780639534
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.03974632720453154,
+          "ideal_bound": 0.0007483314773547883,
+          "outside_target_span_norm": 0.007483313780639431,
+          "pre_error_to_R": 0.007483313780639432
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 2,
+      "id": "E-geometry2-eps1e-06-lambda0.0",
+      "lambda": 0.0,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 0.03983658798070801,
+          "ideal_bound": 0.0,
+          "outside_target_span_norm": 0.007483314773547891,
+          "pre_error_to_R": 0.007483314773547891
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 0.04028281362668778,
+          "ideal_bound": 0.0,
+          "outside_target_span_norm": 0.007483314773547949,
+          "pre_error_to_R": 0.007483314773547949
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 3,
+      "id": "E-geometry3-eps0.0-lambda0.1",
+      "lambda": 0.1,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 9.000343909048478,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 0.8425614766977886,
+          "pre_error_to_R": 2.983437879334582
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 9.360375922745394,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 0.816896762365623,
+          "pre_error_to_R": 3.0539804839529707
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 3,
+      "id": "E-geometry3-eps0.0-lambda0.01",
+      "lambda": 0.01,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.621252418157436,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.2780591906173925,
+          "pre_error_to_R": 2.8754666840914824
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.643432065689215,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.2775718093488172,
+          "pre_error_to_R": 2.880171707638688
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 3,
+      "id": "E-geometry3-eps0.0-lambda0.001",
+      "lambda": 0.001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.57730110893368,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.08832444200283199,
+          "pre_error_to_R": 2.8633534439339443
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.484523745112545,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.08938776668521127,
+          "pre_error_to_R": 2.8301638056887026
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 3,
+      "id": "E-geometry3-eps0.0-lambda0.0001",
+      "lambda": 0.0001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.573172029066559,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.027943205684786424,
+          "pre_error_to_R": 2.86212727889191
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.519170813665909,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.028104871572479578,
+          "pre_error_to_R": 2.846254018696414
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 3,
+      "id": "E-geometry3-eps0.0-lambda1e-05",
+      "lambda": 1e-05,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.572876518918491,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.008836815134914288,
+          "pre_error_to_R": 2.862004512074536
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.520743535307885,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.008886027590301935,
+          "pre_error_to_R": 2.8467264298551305
+        }
+      }
+    },
+    {
+      "epsilon": 0.0,
+      "geometry": 3,
+      "id": "E-geometry3-eps0.0-lambda1e-06",
+      "lambda": 1e-06,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.572884649853938,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.0027944588837852486,
+          "pre_error_to_R": 2.8619922338877384
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.487354310705676,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.0028270364709951914,
+          "pre_error_to_R": 2.8298170950810086
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 3,
+      "id": "E-geometry3-eps1e-06-lambda0.1",
+      "lambda": 0.1,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 9.000343909048478,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 0.8425614766977886,
+          "pre_error_to_R": 2.983437879334582
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 9.360375922745394,
+          "ideal_bound": 2.3664319132398464,
+          "outside_target_span_norm": 0.816896762365623,
+          "pre_error_to_R": 3.0539804839529707
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 3,
+      "id": "E-geometry3-eps1e-06-lambda0.01",
+      "lambda": 0.01,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.621252418157436,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.2780591906173925,
+          "pre_error_to_R": 2.8754666840914824
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.643432065689215,
+          "ideal_bound": 0.7483314773547883,
+          "outside_target_span_norm": 0.2775718093488172,
+          "pre_error_to_R": 2.880171707638688
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 3,
+      "id": "E-geometry3-eps1e-06-lambda0.001",
+      "lambda": 0.001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.57730110893368,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.08832444200283199,
+          "pre_error_to_R": 2.8633534439339443
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.484523745112545,
+          "ideal_bound": 0.23664319132398465,
+          "outside_target_span_norm": 0.08938776668521127,
+          "pre_error_to_R": 2.8301638056887026
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 3,
+      "id": "E-geometry3-eps1e-06-lambda0.0001",
+      "lambda": 0.0001,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.573172029066559,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.027943205684786424,
+          "pre_error_to_R": 2.86212727889191
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.519170813665909,
+          "ideal_bound": 0.07483314773547883,
+          "outside_target_span_norm": 0.028104871572479578,
+          "pre_error_to_R": 2.846254018696414
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 3,
+      "id": "E-geometry3-eps1e-06-lambda1e-05",
+      "lambda": 1e-05,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.572876518918491,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.008836815134914288,
+          "pre_error_to_R": 2.862004512074536
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.520743535307885,
+          "ideal_bound": 0.023664319132398467,
+          "outside_target_span_norm": 0.008886027590301935,
+          "pre_error_to_R": 2.8467264298551305
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 3,
+      "id": "E-geometry3-eps1e-06-lambda1e-06",
+      "lambda": 1e-06,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.572884649853938,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.0027944588837852486,
+          "pre_error_to_R": 2.8619922338877384
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.710313171797061,
+          "ideal_bound": 0.0074833147735478825,
+          "outside_target_span_norm": 0.0027540262877475043,
+          "pre_error_to_R": 2.9009204068877508
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 3,
+      "id": "E-geometry3-eps1e-06-lambda1e-08",
+      "lambda": 1e-08,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.572884649846479,
+          "ideal_bound": 0.0007483314773547883,
+          "outside_target_span_norm": 0.0027944602670420607,
+          "pre_error_to_R": 2.861992233889088
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.554212388093447,
+          "ideal_bound": 0.0007483314773547883,
+          "outside_target_span_norm": 0.002799970126282289,
+          "pre_error_to_R": 2.8566020117196373
+        }
+      }
+    },
+    {
+      "epsilon": 1e-06,
+      "geometry": 3,
+      "id": "E-geometry3-eps1e-06-lambda0.0",
+      "lambda": 0.0,
+      "methods": {
+        "canonical": {
+          "calibrated_error_to_calibrated_R": 8.572884649846403,
+          "ideal_bound": 0.0,
+          "outside_target_span_norm": 0.002794460281014344,
+          "pre_error_to_R": 2.8619922338891017
+        },
+        "dense": {
+          "calibrated_error_to_calibrated_R": 8.521990641461583,
+          "ideal_bound": 0.0,
+          "outside_target_span_norm": 0.0028096161402025124,
+          "pre_error_to_R": 2.8471152134494484
+        }
+      }
+    }
+  ],
+  "maximum_absolute_errors": {
+    "A/canonical/gram": 4.7468824032243376e-11,
+    "A/canonical/objective": 1.1766587704187259e-11,
+    "A/canonical/target_white": 3.150154561424624e-11,
+    "A/canonical/unique_pre": 2.856690647645408e-12,
+    "A/dense/gram": 1.5195485898964127e-13,
+    "A/dense/objective": 1.9895196601282805e-13,
+    "A/dense/target_white": 0.0,
+    "A/dense/unique_pre": 0.0,
+    "A/dual/gram": 4.7466882489691635e-11,
+    "A/dual/objective": 1.1851852832478471e-11,
+    "A/dual/target_white": 3.0760899495467494e-11,
+    "A/dual/unique_pre": 2.8415933198086695e-12,
+    "A/thin/gram": 4.748746380174593e-11,
+    "A/thin/objective": 1.1823431123048067e-11,
+    "A/thin/target_white": 3.0761134461672946e-11,
+    "A/thin/unique_pre": 2.8444604278258194e-12,
+    "B/canonical/gram": 1.7929925104819209e-12,
+    "B/canonical/objective": 2.05702122002549e-12,
+    "B/canonical/target_white": 4.199376430462664e-12,
+    "B/canonical/unique_pre": 2.24955963985955e-13,
+    "B/dense/gram": 2.5031528636403265e-14,
+    "B/dense/objective": 2.842170943040401e-14,
+    "B/dense/target_white": 0.0,
+    "B/dense/unique_pre": 0.0,
+    "C/canonical/gram": 3.3205245571209106e-13,
+    "C/canonical/objective": 3.3942626487259986e-11,
+    "C/canonical/target_white": 6.809971815953794e-14,
+    "C/canonical/unique_pre": 5.198326923128561e-12,
+    "C/dense/gram": 1.7760098608171182e-14,
+    "C/dense/objective": 3.197442310920451e-14,
+    "C/dense/target_white": 0.0,
+    "C/dense/unique_pre": 0.0,
+    "C/dual/gram": 3.3071746424459815e-08,
+    "C/dual/objective": 6.0975224869253e-11,
+    "C/dual/target_white": 8.110237928785109e-14,
+    "C/dual/unique_pre": 1.8958574009238637e-10,
+    "C/thin/gram": 4.032097569613456e-14,
+    "C/thin/objective": 7.105427357601002e-15,
+    "C/thin/target_white": 6.2442381837239e-14,
+    "C/thin/unique_pre": 8.411908636019685e-15,
+    "D/canonical/gram": 3.1818991885756986e-13,
+    "D/canonical/objective": 1.5920598173124745e-13,
+    "D/canonical/target_white": 9.324707997404756e-14,
+    "D/canonical/unique_pre": 1.124186200423205e-13,
+    "D/dense/gram": 2.8087984280308836e-14,
+    "D/dense/objective": 3.552713678800501e-14,
+    "D/dense/target_white": 0.0,
+    "D/dense/unique_pre": 0.0,
+    "D/dual/gram": 3.1818991885756986e-13,
+    "D/dual/objective": 1.5920598173124745e-13,
+    "D/dual/target_white": 6.849628653721316e-14,
+    "D/dual/unique_pre": 1.124186200423205e-13,
+    "D/thin/gram": 3.1730174043786974e-13,
+    "D/thin/objective": 1.5876189252139739e-13,
+    "D/thin/target_white": 6.73740210580789e-14,
+    "D/thin/unique_pre": 1.124186200423205e-13,
+    "E/canonical/gram": 1.4615070860239118e-12,
+    "E/canonical/objective": 1.7621459846850485e-12,
+    "E/canonical/target_white": 3.4839669385147737e-12,
+    "E/canonical/unique_pre": 1.693689058550058e-13,
+    "E/dense/gram": 2.6493187622866285e-14,
+    "E/dense/objective": 3.552713678800501e-14,
+    "E/dense/target_white": 0.0,
+    "E/dense/unique_pre": 0.0,
+    "E/dual/gram": 1.158321726260301e-12,
+    "E/dual/objective": 5.968558980384842e-13,
+    "E/dual/target_white": 2.1922352766954824e-12,
+    "E/dual/unique_pre": 1.5276147230933365e-13,
+    "E/thin/gram": 1.1707084012056184e-12,
+    "E/thin/objective": 6.110667527536862e-13,
+    "E/thin/target_white": 2.1910803965886694e-12,
+    "E/thin/unique_pre": 1.535236238580291e-13,
+    "T/canonical/gram": 4.771755217029892e-12,
+    "T/canonical/objective": 9.094947017729282e-12,
+    "T/canonical/target_white": 3.4565313876388682e-12,
+    "T/canonical/unique_pre": 1.8681213210042453e-13,
+    "T/dense/gram": 1.1758890706832298e-12,
+    "T/dense/objective": 9.094947017729282e-12,
+    "T/dense/target_white": 0.0,
+    "T/dense/unique_pre": 0.0,
+    "T/dual/gram": 5.7263145726865134e-12,
+    "T/dual/objective": 9.094947017729282e-12,
+    "T/dual/target_white": 3.451529861284131e-12,
+    "T/dual/unique_pre": 1.7602889726705337e-13,
+    "T/thin/gram": 4.7333300773827116e-12,
+    "T/thin/objective": 9.094947017729282e-12,
+    "T/thin/target_white": 3.4468173109281865e-12,
+    "T/thin/unique_pre": 1.8243865795581895e-13
+  },
+  "maximum_error_scope": "Keys are suite/method/metric; suite C is descriptive stress, kept separate.",
+  "notes": [
+    "Float64 independent reference; not upstream float32 bit identity.",
+    "Canonical nonunique outputs are a separate optimum.",
+    "Stress cases and float32 packet errors are descriptive.",
+    "Unexpected unsupported required cases count as failures.",
+    "Close/tied vocabulary choices retain final-vector differences without a false equality guarantee.",
+    "Synthetic applicability rates are not language-model measurements.",
+    "Dense and thin-SVD baselines are both reported; this is not new Procrustes mathematics.",
+    "Token-only bytes and asymmetric cold vocabulary requirements are retained.",
+    "No end-to-end model latency, model accuracy, or English-bandwidth claim."
+  ],
+  "observed_counts": {
+    "A": 120,
+    "B": 27,
+    "C": 8,
+    "D": 31,
+    "E": 56,
+    "F": 2304,
+    "T": 12
+  },
+  "packet_aggregate": {
+    "A/canonical/float32/direct_bytes": 237120,
+    "A/canonical/float32/gram": 120,
+    "A/canonical/float32/packet_bytes": 28920,
+    "A/canonical/float64/direct_bytes": 467520,
+    "A/canonical/float64/gram": 120,
+    "A/canonical/float64/packet_bytes": 47520,
+    "A/dual/float32/direct_bytes": 237120,
+    "A/dual/float32/gram": 120,
+    "A/dual/float32/packet_bytes": 28920,
+    "A/dual/float64/direct_bytes": 467520,
+    "A/dual/float64/gram": 120,
+    "A/dual/float64/packet_bytes": 47520,
+    "B/canonical/float32/direct_bytes": 29160,
+    "B/canonical/float32/fallback": 9,
+    "B/canonical/float32/gram": 18,
+    "B/canonical/float32/packet_bytes": 13320,
+    "B/canonical/float64/direct_bytes": 56808,
+    "B/canonical/float64/gram": 27,
+    "B/canonical/float64/packet_bytes": 8424,
+    "B/dual/float32/direct_bytes": 29160,
+    "B/dual/float32/fallback": 27,
+    "B/dual/float32/packet_bytes": 29160,
+    "B/dual/float64/direct_bytes": 56808,
+    "B/dual/float64/fallback": 27,
+    "B/dual/float64/packet_bytes": 56808,
+    "C/canonical/float32/direct_bytes": 8640,
+    "C/canonical/float32/fallback": 8,
+    "C/canonical/float32/packet_bytes": 8640,
+    "C/canonical/float64/direct_bytes": 16832,
+    "C/canonical/float64/fallback": 7,
+    "C/canonical/float64/gram": 1,
+    "C/canonical/float64/packet_bytes": 15040,
+    "C/dual/float32/direct_bytes": 8640,
+    "C/dual/float32/fallback": 7,
+    "C/dual/float32/gram": 1,
+    "C/dual/float32/packet_bytes": 7760,
+    "C/dual/float64/direct_bytes": 16832,
+    "C/dual/float64/fallback": 6,
+    "C/dual/float64/gram": 2,
+    "C/dual/float64/packet_bytes": 13248,
+    "D/canonical/float32/direct_bytes": 472,
+    "D/canonical/float32/fallback": 5,
+    "D/canonical/float32/packet_bytes": 472,
+    "D/canonical/float64/direct_bytes": 664,
+    "D/canonical/float64/fallback": 5,
+    "D/canonical/float64/packet_bytes": 664,
+    "D/dual/float32/direct_bytes": 472,
+    "D/dual/float32/fallback": 5,
+    "D/dual/float32/packet_bytes": 472,
+    "D/dual/float64/direct_bytes": 664,
+    "D/dual/float64/fallback": 5,
+    "D/dual/float64/packet_bytes": 664,
+    "T/canonical/float32/direct_bytes": 959136,
+    "T/canonical/float32/gram": 12,
+    "T/canonical/float32/packet_bytes": 42976,
+    "T/canonical/float64/direct_bytes": 1917600,
+    "T/canonical/float64/gram": 12,
+    "T/canonical/float64/packet_bytes": 83616,
+    "T/dual/float32/direct_bytes": 959136,
+    "T/dual/float32/gram": 12,
+    "T/dual/float32/packet_bytes": 42976,
+    "T/dual/float64/direct_bytes": 1917600,
+    "T/dual/float64/gram": 12,
+    "T/dual/float64/packet_bytes": 83616
+  },
+  "packet_aggregate_scope": "Keys are suite/variant/precision/measure; timed-fixture validation is suite T.",
+  "phase_seconds": {
+    "algebraic_seconds": 1.6701167509999664,
+    "applicability_seconds": 0.2623165509999694,
+    "timing_precheck_seconds": 4.415852735999977,
+    "timing_seconds": 34.753088504000004
+  },
+  "required_checks": 15759,
+  "retention": {
+    "arrays": 861,
+    "case_count": 243,
+    "npz_bytes": 9423338,
+    "phase": "all_algebraic_and_largest_timing_before_timing"
+  },
+  "stage": "complete",
+  "status": "verified",
+  "study": "alignment_numerical_v1",
+  "support_counts": {
+    "A/canonical/supported": 120,
+    "A/dense/supported": 120,
+    "A/dual/supported": 120,
+    "A/thin/supported": 120,
+    "B/canonical/supported": 27,
+    "B/dense/supported": 27,
+    "B/dual/unsupported": 27,
+    "B/thin/unsupported": 27,
+    "C/canonical/supported": 1,
+    "C/canonical/unsupported": 7,
+    "C/dense/supported": 8,
+    "C/dual/supported": 2,
+    "C/dual/unsupported": 6,
+    "C/thin/supported": 1,
+    "C/thin/unsupported": 7,
+    "D/canonical/supported": 25,
+    "D/canonical/unsupported": 4,
+    "D/dense/supported": 30,
+    "D/dual/supported": 23,
+    "D/dual/unsupported": 6,
+    "D/thin/supported": 23,
+    "D/thin/unsupported": 6,
+    "E/canonical/supported": 56,
+    "E/dense/supported": 56,
+    "E/dual/supported": 14,
+    "E/dual/unsupported": 42,
+    "E/thin/supported": 14,
+    "E/thin/unsupported": 42,
+    "T/canonical/supported": 12,
+    "T/dense/supported": 12,
+    "T/dual/supported": 12,
+    "T/thin/supported": 12
+  },
+  "timing": {
+    "T-k32-d1024": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 3741901.5,
+          "canonical/float64": 3743095.5,
+          "dense/float32": 814620896.0,
+          "dense/float64": 814622090.0,
+          "dual/float32": 2431129.0,
+          "dual/float64": 2432323.0,
+          "thin/float32": 4103436.5,
+          "thin/float64": 4104630.5
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 7212814.0,
+          "canonical/float64": 7192832.0,
+          "dual/float32": 4769481.0,
+          "dual/float64": 4774325.0
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 375.91558068411473,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 408.19823350566384,
+                "median": 375.91558068411473,
+                "minimum": 366.8109921832101,
+                "ratio_of_medians_separately": 378.7326206583963,
+                "ratios_in_repetition_order": [
+                  384.5622083520355,
+                  408.19823350566384,
+                  366.8109921832101,
+                  378.81369211113304,
+                  373.0174692570965,
+                  404.0068899090712,
+                  367.5665659979503,
+                  372.04585182934784
+                ]
+              },
+              "thin": {
+                "maximum": 1.2450414671722063,
+                "median": 1.1705444039412487,
+                "minimum": 1.09790192481691,
+                "ratio_of_medians_separately": 1.1684142318841795,
+                "ratios_in_repetition_order": [
+                  1.191230729709206,
+                  1.122507433170542,
+                  1.09790192481691,
+                  1.174405507208974,
+                  1.2450414671722063,
+                  1.1281285724024053,
+                  1.1666833006735233,
+                  1.225122985338571
+                ]
+              }
+            },
+            "thin_over_method": 1.1705444039412487
+          },
+          "dual": {
+            "dense_over_method": 971.7758625175488,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 1028.0221595392386,
+                "median": 971.7758625175488,
+                "minimum": 795.9676258102354,
+                "ratio_of_medians_separately": 972.6019575836929,
+                "ratios_in_repetition_order": [
+                  988.1222971486324,
+                  1028.0221595392386,
+                  858.235003238717,
+                  989.3836694534016,
+                  927.8530076550984,
+                  1024.3248863827116,
+                  795.9676258102354,
+                  955.4294278864652
+                ]
+              },
+              "thin": {
+                "maximum": 3.1461674608577264,
+                "median": 2.960554445298512,
+                "minimum": 2.526459756719908,
+                "ratio_of_medians_separately": 3.000538921690073,
+                "ratios_in_repetition_order": [
+                  3.06083546305408,
+                  2.8269659710098103,
+                  2.5687830574346786,
+                  3.0673063153372477,
+                  3.096947368904146,
+                  2.8602734275429444,
+                  2.526459756719908,
+                  3.1461674608577264
+                ]
+              }
+            },
+            "thin_over_method": 2.960554445298512
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 2274457,
+          "median_ns": 2146701.0,
+          "minimum_ns": 2026726
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 836014349,
+          "median_ns": 813025695.5,
+          "minimum_ns": 800276677
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 1050312,
+          "median_ns": 835928.5,
+          "minimum_ns": 804235
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 2699225,
+          "median_ns": 2508236.0,
+          "minimum_ns": 2275015
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 18363,
+          "median_ns": 17995.5,
+          "minimum_ns": 17738
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 19737,
+          "median_ns": 19034.0,
+          "minimum_ns": 18855
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 44823,
+          "median_ns": 18514.0,
+          "minimum_ns": 18095
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 20125,
+          "median_ns": 18669.5,
+          "minimum_ns": 18455
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 3597714,
+          "median_ns": 3544418.0,
+          "minimum_ns": 3448068
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 3603976,
+          "median_ns": 3550060.5,
+          "minimum_ns": 3527350
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 2305081,
+          "median_ns": 2286925.0,
+          "minimum_ns": 2255812
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 2328611,
+          "median_ns": 2286594.5,
+          "minimum_ns": 2267414
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 3705479,
+          "median_ns": 3668396.0,
+          "minimum_ns": 3644876
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 3677629,
+          "median_ns": 3642771.5,
+          "minimum_ns": 3621859
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 2547808,
+          "median_ns": 2482556.0,
+          "minimum_ns": 2437465
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 2528523,
+          "median_ns": 2487730.5,
+          "minimum_ns": 2439033
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 1601417,
+          "median_ns": 1558691.0,
+          "minimum_ns": 1513829
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 20925,
+          "median_ns": 16600.5,
+          "minimum_ns": 16221
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 9828,
+          "median_ns": 8646.5,
+          "minimum_ns": 8315
+        }
+      }
+    },
+    "T-k32-d128": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 903427.5,
+          "canonical/float64": 903199.0,
+          "dense/float32": 3446074.0,
+          "dense/float64": 3445845.5,
+          "dual/float32": 679480.0,
+          "dual/float64": 679251.5,
+          "thin/float32": 928475.0,
+          "thin/float64": 928246.5
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 2018820.5,
+          "canonical/float64": 2022173.0,
+          "dual/float32": 1538149.0,
+          "dual/float64": 1556631.0
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 4.6286589286174,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 4.829539881336874,
+                "median": 4.6286589286174,
+                "minimum": 4.366284093830158,
+                "ratio_of_medians_separately": 4.6154679077280525,
+                "ratios_in_repetition_order": [
+                  4.601225330654305,
+                  4.829539881336874,
+                  4.755766800084264,
+                  4.653381498118385,
+                  4.603936359116415,
+                  4.778495653919237,
+                  4.531437703972816,
+                  4.366284093830158
+                ]
+              },
+              "thin": {
+                "maximum": 1.0949740748632715,
+                "median": 1.0331455325828736,
+                "minimum": 0.9784668891600278,
+                "ratio_of_medians_separately": 1.0356158169917913,
+                "ratios_in_repetition_order": [
+                  1.0647231004056665,
+                  0.9784668891600278,
+                  1.0617773213491561,
+                  1.014762563550758,
+                  1.0949740748632715,
+                  1.005378210847548,
+                  1.051528501614989,
+                  0.9992780612663462
+                ]
+              }
+            },
+            "thin_over_method": 1.0331455325828736
+          },
+          "dual": {
+            "dense_over_method": 6.752556763508547,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 7.235287201806574,
+                "median": 6.752556763508547,
+                "minimum": 5.872060257938658,
+                "ratio_of_medians_separately": 6.771896315938259,
+                "ratios_in_repetition_order": [
+                  6.89885233164461,
+                  7.1572869878145795,
+                  5.872060257938658,
+                  6.23960593690181,
+                  6.664571226459714,
+                  7.235287201806574,
+                  5.899793559719183,
+                  6.840542300557381
+                ]
+              },
+              "thin": {
+                "maximum": 1.5963937681671814,
+                "median": 1.486173870252415,
+                "minimum": 1.3110021314258877,
+                "ratio_of_medians_separately": 1.5194738813093092,
+                "ratios_in_repetition_order": [
+                  1.5963937681671814,
+                  1.450069469527585,
+                  1.3110021314258877,
+                  1.360670411105831,
+                  1.5850637680086532,
+                  1.5222782709772449,
+                  1.3690580091722893,
+                  1.5655426218762452
+                ]
+              }
+            },
+            "thin_over_method": 1.486173870252415
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 731364,
+          "median_ns": 703269.0,
+          "minimum_ns": 668784
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 3269410,
+          "median_ns": 3245915.5,
+          "minimum_ns": 3193343
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 553620,
+          "median_ns": 479321.5,
+          "minimum_ns": 450798
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 770807,
+          "median_ns": 728316.5,
+          "minimum_ns": 654383
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 6888,
+          "median_ns": 6284.5,
+          "minimum_ns": 5919
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 6876,
+          "median_ns": 6340.5,
+          "minimum_ns": 5994
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 6744,
+          "median_ns": 6085.0,
+          "minimum_ns": 5752
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 6566,
+          "median_ns": 5800.5,
+          "minimum_ns": 5441
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 998335,
+          "median_ns": 963372.0,
+          "minimum_ns": 942867
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 991147,
+          "median_ns": 962259.5,
+          "minimum_ns": 940524
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 772023,
+          "median_ns": 719509.5,
+          "minimum_ns": 704305
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 791990,
+          "median_ns": 733640.5,
+          "minimum_ns": 702562
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 1128935,
+          "median_ns": 1055448.5,
+          "minimum_ns": 1022228
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 1102807,
+          "median_ns": 1059913.5,
+          "minimum_ns": 1031309
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 869181,
+          "median_ns": 818639.5,
+          "minimum_ns": 780166
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 879795,
+          "median_ns": 822990.5,
+          "minimum_ns": 791679
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 210007,
+          "median_ns": 187789.0,
+          "minimum_ns": 180269
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 8342,
+          "median_ns": 7068.0,
+          "minimum_ns": 6581
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 9640,
+          "median_ns": 8998.0,
+          "minimum_ns": 8619
+        }
+      }
+    },
+    "T-k32-d384": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 1650717.0,
+          "canonical/float64": 1650725.5,
+          "dense/float32": 37430729.5,
+          "dense/float64": 37430738.0,
+          "dual/float32": 1150386.5,
+          "dual/float64": 1150395.0,
+          "thin/float32": 1720669.5,
+          "thin/float64": 1720678.0
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 3418043.5,
+          "canonical/float64": 3444590.5,
+          "dual/float32": 2420275.5,
+          "dual/float64": 2437205.0
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 35.08212949092758,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 37.07679483009468,
+                "median": 35.08212949092758,
+                "minimum": 32.192413428913284,
+                "ratio_of_medians_separately": 34.55354991839025,
+                "ratios_in_repetition_order": [
+                  37.07679483009468,
+                  35.96087217689488,
+                  33.434139696949856,
+                  32.409654099052695,
+                  35.996613373468236,
+                  36.3844335117016,
+                  32.192413428913284,
+                  34.203386804960275
+                ]
+              },
+              "thin": {
+                "maximum": 1.1322569349274147,
+                "median": 1.051628675640106,
+                "minimum": 0.989930280455702,
+                "ratio_of_medians_separately": 1.0655996053848833,
+                "ratios_in_repetition_order": [
+                  1.1110125371762236,
+                  1.0344055811753576,
+                  1.0291001971353542,
+                  0.989930280455702,
+                  1.1322569349274147,
+                  1.0690879978572174,
+                  1.005868482826135,
+                  1.0688517701048545
+                ]
+              }
+            },
+            "thin_over_method": 1.051628675640106
+          },
+          "dual": {
+            "dense_over_method": 66.1425277155522,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 68.55242157222774,
+                "median": 66.1425277155522,
+                "minimum": 55.39675236235657,
+                "ratio_of_medians_separately": 65.09671480941654,
+                "ratios_in_repetition_order": [
+                  65.67135087770743,
+                  68.42041824225942,
+                  55.39675236235657,
+                  68.55242157222774,
+                  64.02074113652962,
+                  66.9218041926124,
+                  59.84974355210907,
+                  66.61370455339699
+                ]
+              },
+              "thin": {
+                "maximum": 2.0938859052771095,
+                "median": 1.9679748568057303,
+                "minimum": 1.705107692122264,
+                "ratio_of_medians_separately": 2.007522635925975,
+                "ratios_in_repetition_order": [
+                  1.9678533296305816,
+                  1.9680963839808787,
+                  1.705107692122264,
+                  2.0938859052771095,
+                  2.0137429979581536,
+                  1.9663710755387473,
+                  1.8700359597837521,
+                  2.0816703454294916
+                ]
+              }
+            },
+            "thin_over_method": 1.9679748568057303
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 1139988,
+          "median_ns": 1066355.5,
+          "minimum_ns": 1015502
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 38072900,
+          "median_ns": 36846368.0,
+          "minimum_ns": 36698965
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 663744,
+          "median_ns": 566025.0,
+          "minimum_ns": 536449
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 1160800,
+          "median_ns": 1136308.0,
+          "minimum_ns": 1085661
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 9966,
+          "median_ns": 9601.5,
+          "minimum_ns": 9285
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 10227,
+          "median_ns": 9777.5,
+          "minimum_ns": 9534
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 10213,
+          "median_ns": 9760.0,
+          "minimum_ns": 9358
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 10751,
+          "median_ns": 9592.5,
+          "minimum_ns": 9349
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 1725459,
+          "median_ns": 1641477.0,
+          "minimum_ns": 1617964
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 1698938,
+          "median_ns": 1665777.5,
+          "minimum_ns": 1616928
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 1175497,
+          "median_ns": 1140643.5,
+          "minimum_ns": 1125966
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 1192947,
+          "median_ns": 1169666.5,
+          "minimum_ns": 1121749
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 1927424,
+          "median_ns": 1776566.5,
+          "minimum_ns": 1737955
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 1808287,
+          "median_ns": 1778813.0,
+          "minimum_ns": 1757273
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 1309224,
+          "median_ns": 1279632.0,
+          "minimum_ns": 1230538
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 1321416,
+          "median_ns": 1267538.5,
+          "minimum_ns": 1239911
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 597605,
+          "median_ns": 565000.0,
+          "minimum_ns": 535742
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 29019,
+          "median_ns": 10178.0,
+          "minimum_ns": 9557
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 9089,
+          "median_ns": 8698.0,
+          "minimum_ns": 8299
+        }
+      }
+    },
+    "T-k32-d768": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 3065670.0,
+          "canonical/float64": 3067038.0,
+          "dense/float32": 331362929.0,
+          "dense/float64": 331364297.0,
+          "dual/float32": 2027580.0,
+          "dual/float64": 2028948.0,
+          "thin/float32": 3374334.5,
+          "thin/float64": 3375702.5
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 5725880.5,
+          "canonical/float64": 5751976.0,
+          "dual/float32": 3796819.0,
+          "dual/float64": 3779966.0
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 183.20303143579207,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 202.42640017190644,
+                "median": 183.20303143579207,
+                "minimum": 170.33570128665187,
+                "ratio_of_medians_separately": 183.00803103975244,
+                "ratios_in_repetition_order": [
+                  184.00362995235318,
+                  194.651559179902,
+                  175.63319495433387,
+                  184.8762403286712,
+                  182.402432919231,
+                  202.42640017190644,
+                  179.449349097048,
+                  170.33570128665187
+                ]
+              },
+              "thin": {
+                "maximum": 1.2785235335431884,
+                "median": 1.1706122153669978,
+                "minimum": 1.0831788728632967,
+                "ratio_of_medians_separately": 1.171123627617219,
+                "ratios_in_repetition_order": [
+                  1.167402226190006,
+                  1.0831788728632967,
+                  1.0989836483827253,
+                  1.2785235335431884,
+                  1.1705971018278183,
+                  1.2018336685906656,
+                  1.201893213684319,
+                  1.1706273289061775
+                ]
+              }
+            },
+            "thin_over_method": 1.1706122153669978
+          },
+          "dual": {
+            "dense_over_method": 432.7233925335536,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 505.6178245662163,
+                "median": 432.7233925335536,
+                "minimum": 344.3175753991599,
+                "ratio_of_medians_separately": 431.1317866968628,
+                "ratios_in_repetition_order": [
+                  433.14462099483393,
+                  473.25654687525537,
+                  351.19696378800563,
+                  391.8212383361116,
+                  432.3021640722733,
+                  505.6178245662163,
+                  344.3175753991599,
+                  434.9711601424994
+                ]
+              },
+              "thin": {
+                "maximum": 3.0019232890927143,
+                "median": 2.7288651518668865,
+                "minimum": 2.197532879049607,
+                "ratio_of_medians_separately": 2.758942430826155,
+                "ratios_in_repetition_order": [
+                  2.7480653231815704,
+                  2.633533967974729,
+                  2.197532879049607,
+                  2.7096649805522026,
+                  2.774369027199216,
+                  3.0019232890927143,
+                  2.306126822453305,
+                  2.9893270964490237
+                ]
+              }
+            },
+            "thin_over_method": 2.7288651518668865
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 1930359,
+          "median_ns": 1803751.5,
+          "minimum_ns": 1636341
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 339131021,
+          "median_ns": 330101010.5,
+          "minimum_ns": 312151302
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 970601,
+          "median_ns": 765661.5,
+          "minimum_ns": 670726
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 2262722,
+          "median_ns": 2112416.0,
+          "minimum_ns": 1772450
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 15283,
+          "median_ns": 14884.5,
+          "minimum_ns": 14383
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 19514,
+          "median_ns": 15817.5,
+          "minimum_ns": 15197
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 17177,
+          "median_ns": 14909.5,
+          "minimum_ns": 14455
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 38655,
+          "median_ns": 15344.5,
+          "minimum_ns": 15005
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 2780202,
+          "median_ns": 2752008.0,
+          "minimum_ns": 2702679
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 2763286,
+          "median_ns": 2736563.5,
+          "minimum_ns": 2686839
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 1887796,
+          "median_ns": 1807610.0,
+          "minimum_ns": 1783848
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 1815285,
+          "median_ns": 1793959.5,
+          "minimum_ns": 1758965
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 3134387,
+          "median_ns": 2973872.5,
+          "minimum_ns": 2895987
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 3656012,
+          "median_ns": 3015412.5,
+          "minimum_ns": 2899539
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 2090199,
+          "median_ns": 1989209.0,
+          "minimum_ns": 1968038
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 2121052,
+          "median_ns": 1986006.5,
+          "minimum_ns": 1966548
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 1257770,
+          "median_ns": 1232124.5,
+          "minimum_ns": 1196460
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 15343,
+          "median_ns": 13920.0,
+          "minimum_ns": 13283
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 9644,
+          "median_ns": 8934.0,
+          "minimum_ns": 8556
+        }
+      }
+    },
+    "T-k64-d1024": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 7416852.0,
+          "canonical/float64": 7440851.5,
+          "dense/float32": 824092525.0,
+          "dense/float64": 824116524.5,
+          "dual/float32": 4251964.5,
+          "dual/float64": 4275964.0,
+          "thin/float32": 8339228.5,
+          "thin/float64": 8363228.0
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 14703904.0,
+          "canonical/float64": 14722235.5,
+          "dual/float32": 8422855.5,
+          "dual/float64": 8430383.0
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 156.78125393203297,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 158.66536059575506,
+                "median": 156.78125393203297,
+                "minimum": 152.95233031260085,
+                "ratio_of_medians_separately": 156.06357815070683,
+                "ratios_in_repetition_order": [
+                  157.49507367800575,
+                  156.01650118250907,
+                  157.2075944570841,
+                  157.85147976465885,
+                  156.35491340698184,
+                  158.66536059575506,
+                  155.82350063661394,
+                  152.95233031260085
+                ]
+              },
+              "thin": {
+                "maximum": 1.2701180938194956,
+                "median": 1.1785204569114458,
+                "minimum": 1.1490597765892643,
+                "ratio_of_medians_separately": 1.1751331712462132,
+                "ratios_in_repetition_order": [
+                  1.190188188032994,
+                  1.1490597765892643,
+                  1.1793760734247858,
+                  1.2701180938194956,
+                  1.2061859636892873,
+                  1.1633488247194448,
+                  1.170236827973822,
+                  1.1776648403981058
+                ]
+              }
+            },
+            "thin_over_method": 1.1785204569114458
+          },
+          "dual": {
+            "dense_over_method": 393.5758855254612,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 411.3371058013778,
+                "median": 393.5758855254612,
+                "minimum": 376.5896218320162,
+                "ratio_of_medians_separately": 391.0608211187645,
+                "ratios_in_repetition_order": [
+                  403.75812311660866,
+                  411.3371058013778,
+                  377.02358972996666,
+                  376.5896218320162,
+                  397.2225403853976,
+                  399.89193419151326,
+                  379.1192622600787,
+                  389.9292306655248
+                ]
+              },
+              "thin": {
+                "maximum": 3.0643376804330917,
+                "median": 3.0158873079013224,
+                "minimum": 2.8284422414823642,
+                "ratio_of_medians_separately": 2.944623904673433,
+                "ratios_in_repetition_order": [
+                  3.0511947944367215,
+                  3.0294931581762348,
+                  2.8284422414823642,
+                  3.0301476637824587,
+                  3.0643376804330917,
+                  2.932043956599616,
+                  2.8471913484066804,
+                  3.0022814576264105
+                ]
+              }
+            },
+            "thin_over_method": 3.0158873079013224
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 5370331,
+          "median_ns": 5266715.0,
+          "minimum_ns": 5183741
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 833018170,
+          "median_ns": 821942388.0,
+          "minimum_ns": 820800696
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 2208463,
+          "median_ns": 2101827.5,
+          "minimum_ns": 1996836
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 6691969,
+          "median_ns": 6189091.5,
+          "minimum_ns": 6030499
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 45208,
+          "median_ns": 40355.0,
+          "minimum_ns": 31870
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 94188,
+          "median_ns": 57376.5,
+          "minimum_ns": 51175
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 63454,
+          "median_ns": 42895.0,
+          "minimum_ns": 33517
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 58515,
+          "median_ns": 49873.0,
+          "minimum_ns": 46862
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 7221213,
+          "median_ns": 7125854.5,
+          "minimum_ns": 7108818
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 7835668,
+          "median_ns": 7154226.5,
+          "minimum_ns": 7075334
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 4000690,
+          "median_ns": 3967902.0,
+          "minimum_ns": 3923868
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 4013537,
+          "median_ns": 3974325.0,
+          "minimum_ns": 3930627
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 7636186,
+          "median_ns": 7578049.5,
+          "minimum_ns": 7518222
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 7623063,
+          "median_ns": 7568009.0,
+          "minimum_ns": 7531513
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 4493124,
+          "median_ns": 4454953.5,
+          "minimum_ns": 4430427
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 4526122,
+          "median_ns": 4456058.0,
+          "minimum_ns": 4440495
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 2147162,
+          "median_ns": 2066887.0,
+          "minimum_ns": 2011130
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 73363,
+          "median_ns": 47179.0,
+          "minimum_ns": 44959
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 9774,
+          "median_ns": 8671.5,
+          "minimum_ns": 8195
+        }
+      }
+    },
+    "T-k64-d128": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 2162321.0,
+          "canonical/float64": 2162125.5,
+          "dense/float32": 4012873.5,
+          "dense/float64": 4012678.0,
+          "dual/float32": 1587937.5,
+          "dual/float64": 1587742.0,
+          "thin/float32": 2262436.5,
+          "thin/float64": 2262241.0
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 4557264.0,
+          "canonical/float64": 4494209.5,
+          "dual/float32": 3364295.0,
+          "dual/float64": 3386551.0
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 2.0095980098794555,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 2.0763898625072565,
+                "median": 2.0095980098794555,
+                "minimum": 1.9741733429199309,
+                "ratio_of_medians_separately": 2.003671799683531,
+                "ratios_in_repetition_order": [
+                  2.036261187578673,
+                  1.9741733429199309,
+                  1.9969114002913917,
+                  1.986112815135702,
+                  2.0763898625072565,
+                  2.0136233901087848,
+                  2.066888404005357,
+                  2.005572629650126
+                ]
+              },
+              "thin": {
+                "maximum": 1.097594607349832,
+                "median": 1.0651392026702022,
+                "minimum": 1.0058838988962948,
+                "ratio_of_medians_separately": 1.054298975068914,
+                "ratios_in_repetition_order": [
+                  1.0772308535599844,
+                  1.0058838988962948,
+                  1.05304755178042,
+                  1.04732311999546,
+                  1.0963288159317937,
+                  1.0314671552291224,
+                  1.0846683776696229,
+                  1.097594607349832
+                ]
+              }
+            },
+            "thin_over_method": 1.0651392026702022
+          },
+          "dual": {
+            "dense_over_method": 2.911632915289754,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 2.9974693091947637,
+                "median": 2.911632915289754,
+                "minimum": 2.8081254560820943,
+                "ratio_of_medians_separately": 2.9103024344591417,
+                "ratios_in_repetition_order": [
+                  2.9974693091947637,
+                  2.9553085357506124,
+                  2.850272143344009,
+                  2.856413509194137,
+                  2.885339484197464,
+                  2.9379263463820444,
+                  2.8081254560820943,
+                  2.94987634637075
+                ]
+              },
+              "thin": {
+                "maximum": 1.6143859974246815,
+                "median": 1.5060231005505185,
+                "minimum": 1.4736571538351142,
+                "ratio_of_medians_separately": 1.5313530261170838,
+                "ratios_in_repetition_order": [
+                  1.585732931590819,
+                  1.5057934416161822,
+                  1.5030572222775438,
+                  1.5062527594848547,
+                  1.5234522559514774,
+                  1.5049360996008605,
+                  1.4736571538351142,
+                  1.6143859974246815
+                ]
+              }
+            },
+            "thin_over_method": 1.5060231005505185
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 1872058,
+          "median_ns": 1843782.5,
+          "minimum_ns": 1776021
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 3759435,
+          "median_ns": 3694335.0,
+          "minimum_ns": 3674696
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 1316923,
+          "median_ns": 1269399.0,
+          "minimum_ns": 1250552
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 2021024,
+          "median_ns": 1943898.0,
+          "minimum_ns": 1883073
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 8144,
+          "median_ns": 7925.0,
+          "minimum_ns": 7549
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 10892,
+          "median_ns": 8183.0,
+          "minimum_ns": 7820
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 8937,
+          "median_ns": 8001.5,
+          "minimum_ns": 7742
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 8848,
+          "median_ns": 7548.0,
+          "minimum_ns": 7315
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 2271964,
+          "median_ns": 2192858.0,
+          "minimum_ns": 2133304
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 2385398,
+          "median_ns": 2157540.0,
+          "minimum_ns": 2116677
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 1708551,
+          "median_ns": 1605349.0,
+          "minimum_ns": 1538574
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 1729837,
+          "median_ns": 1606844.0,
+          "minimum_ns": 1557909
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 2411347,
+          "median_ns": 2364406.0,
+          "minimum_ns": 2312093
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 2364801,
+          "median_ns": 2336669.5,
+          "minimum_ns": 2298218
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 1794109,
+          "median_ns": 1758946.0,
+          "minimum_ns": 1727475
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 1811671,
+          "median_ns": 1779707.0,
+          "minimum_ns": 1746215
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 325706,
+          "median_ns": 302612.0,
+          "minimum_ns": 277083
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 10333,
+          "median_ns": 8924.0,
+          "minimum_ns": 8725
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 23558,
+          "median_ns": 9280.0,
+          "minimum_ns": 8491
+        }
+      }
+    },
+    "T-k64-d384": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 3702507.0,
+          "canonical/float64": 3703178.5,
+          "dense/float32": 40686859.5,
+          "dense/float64": 40687531.0,
+          "dual/float32": 2400347.0,
+          "dual/float64": 2401018.5,
+          "thin/float32": 3985982.0,
+          "thin/float64": 3986653.5
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 7482020.5,
+          "canonical/float64": 7472421.5,
+          "dual/float32": 4730091.0,
+          "dual/float64": 4793233.5
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 13.981596790209696,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 14.36940823607755,
+                "median": 13.981596790209696,
+                "minimum": 13.660581460284877,
+                "ratio_of_medians_separately": 13.987061520982364,
+                "ratios_in_repetition_order": [
+                  13.977917881497085,
+                  14.004864383683008,
+                  13.660581460284877,
+                  14.048619807339676,
+                  13.98527569892231,
+                  14.36940823607755,
+                  13.84737062232493,
+                  13.811406529444394
+                ]
+              },
+              "thin": {
+                "maximum": 1.1375831934311065,
+                "median": 1.0995394292684963,
+                "minimum": 1.0807529880990583,
+                "ratio_of_medians_separately": 1.0995422933160848,
+                "ratios_in_repetition_order": [
+                  1.101912829626325,
+                  1.0971660289106677,
+                  1.0906925465455,
+                  1.1375831934311065,
+                  1.0874317824242816,
+                  1.1108515618373538,
+                  1.0807529880990583,
+                  1.1166719742032996
+                ]
+              }
+            },
+            "thin_over_method": 1.0995394292684963
+          },
+          "dual": {
+            "dense_over_method": 25.773311476702904,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 27.049402274108505,
+                "median": 25.773311476702904,
+                "minimum": 24.234659530659034,
+                "ratio_of_medians_separately": 25.770901664666937,
+                "ratios_in_repetition_order": [
+                  26.264647035796617,
+                  27.049402274108505,
+                  25.1567840294325,
+                  25.606777764733582,
+                  25.939845188672226,
+                  25.43182509243384,
+                  24.234659530659034,
+                  26.40561637711583
+                ]
+              },
+              "thin": {
+                "maximum": 2.134931855566422,
+                "median": 2.0437351130395727,
+                "minimum": 1.891455166304025,
+                "ratio_of_medians_separately": 2.0258863003271492,
+                "ratios_in_repetition_order": [
+                  2.070505191095857,
+                  2.1190983692828986,
+                  2.0085760562775268,
+                  2.0735019114025315,
+                  2.016965034983288,
+                  1.9660505262404788,
+                  1.891455166304025,
+                  2.134931855566422
+                ]
+              }
+            },
+            "thin_over_method": 2.0437351130395727
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 2915212,
+          "median_ns": 2847784.5,
+          "minimum_ns": 2770615
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 39987530,
+          "median_ns": 39832137.0,
+          "minimum_ns": 39751412
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 1643496,
+          "median_ns": 1545624.5,
+          "minimum_ns": 1472665
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 3233049,
+          "median_ns": 3131259.5,
+          "minimum_ns": 3077742
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 18868,
+          "median_ns": 14945.0,
+          "minimum_ns": 14593
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 40723,
+          "median_ns": 15439.5,
+          "minimum_ns": 15066
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 15507,
+          "median_ns": 14929.0,
+          "minimum_ns": 14620
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 16188,
+          "median_ns": 15106.0,
+          "minimum_ns": 14917
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 3646122,
+          "median_ns": 3609087.5,
+          "minimum_ns": 3580739
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 3646048,
+          "median_ns": 3619730.0,
+          "minimum_ns": 3555160
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 2312494,
+          "median_ns": 2239105.0,
+          "minimum_ns": 2198529
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 2315379,
+          "median_ns": 2271997.0,
+          "minimum_ns": 2233212
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 4095575,
+          "median_ns": 3872933.0,
+          "minimum_ns": 3843803
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 3928899,
+          "median_ns": 3852691.5,
+          "minimum_ns": 3819848
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 2539280,
+          "median_ns": 2490986.0,
+          "minimum_ns": 2462860
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 2536211,
+          "median_ns": 2521236.5,
+          "minimum_ns": 2495828
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 862724,
+          "median_ns": 824848.5,
+          "minimum_ns": 802910
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 15412,
+          "median_ns": 13992.0,
+          "minimum_ns": 13646
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 9400,
+          "median_ns": 8845.5,
+          "minimum_ns": 8704
+        }
+      }
+    },
+    "T-k64-d768": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 5949016.5,
+          "canonical/float64": 5952952.5,
+          "dense/float32": 315401279.5,
+          "dense/float64": 315405215.5,
+          "dual/float32": 3557387.5,
+          "dual/float64": 3561323.5,
+          "thin/float32": 6656547.5,
+          "thin/float64": 6660483.5
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 11754578.0,
+          "canonical/float64": 11774045.0,
+          "dual/float32": 6849191.0,
+          "dual/float64": 6882999.5
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 73.74849064269574,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 74.39843628077544,
+                "median": 73.74849064269574,
+                "minimum": 73.3142025884048,
+                "ratio_of_medians_separately": 73.76103061031469,
+                "ratios_in_repetition_order": [
+                  73.84912564378683,
+                  74.39843628077544,
+                  73.65874136614677,
+                  73.83823991924473,
+                  73.62108903140789,
+                  73.84278172789811,
+                  73.3142025884048,
+                  73.40640250570424
+                ]
+              },
+              "thin": {
+                "maximum": 1.1792263234968754,
+                "median": 1.1586566969740395,
+                "minimum": 1.1407652708202645,
+                "ratio_of_medians_separately": 1.1663606665844501,
+                "ratios_in_repetition_order": [
+                  1.1792263234968754,
+                  1.1419968891577388,
+                  1.1637881089022715,
+                  1.1722495089333638,
+                  1.1717881368420164,
+                  1.1460717054857312,
+                  1.1535252850458073,
+                  1.1407652708202645
+                ]
+              }
+            },
+            "thin_over_method": 1.1586566969740395
+          },
+          "dual": {
+            "dense_over_method": 169.52935496612085,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 173.6170002844245,
+                "median": 169.52935496612085,
+                "minimum": 160.19792824122837,
+                "ratio_of_medians_separately": 168.5350123336873,
+                "ratios_in_repetition_order": [
+                  166.78785802025286,
+                  170.26319256480627,
+                  161.15679459874679,
+                  172.94230866781498,
+                  173.6170002844245,
+                  171.71711274463865,
+                  160.19792824122837,
+                  168.79551736743542
+                ]
+              },
+              "thin": {
+                "maximum": 2.763370441322784,
+                "median": 2.6432135983623875,
+                "minimum": 2.5205533759353345,
+                "ratio_of_medians_separately": 2.664992716368709,
+                "ratios_in_repetition_order": [
+                  2.6632763882112256,
+                  2.6134962771699692,
+                  2.546233586731168,
+                  2.745617130518975,
+                  2.763370441322784,
+                  2.6651233832105445,
+                  2.5205533759353345,
+                  2.6231508085135493
+                ]
+              }
+            },
+            "thin_over_method": 2.6432135983623875
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 4304659,
+          "median_ns": 4252994.5,
+          "minimum_ns": 4221506
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 315831267,
+          "median_ns": 313705257.5,
+          "minimum_ns": 311754527
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 1970017,
+          "median_ns": 1861365.5,
+          "minimum_ns": 1807158
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 4993847,
+          "median_ns": 4960525.5,
+          "minimum_ns": 4844280
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 54300,
+          "median_ns": 26537.0,
+          "minimum_ns": 25090
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 34070,
+          "median_ns": 28273.5,
+          "minimum_ns": 27370
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 69665,
+          "median_ns": 34434.0,
+          "minimum_ns": 27183
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 44543,
+          "median_ns": 36633.5,
+          "minimum_ns": 32695
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 5740234,
+          "median_ns": 5693006.0,
+          "minimum_ns": 5656728
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 5737321,
+          "median_ns": 5682822.5,
+          "minimum_ns": 5646858
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 3276030,
+          "median_ns": 3256055.5,
+          "minimum_ns": 3181527
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 3325196,
+          "median_ns": 3276059.0,
+          "minimum_ns": 3238267
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 6166700,
+          "median_ns": 6061572.0,
+          "minimum_ns": 6010356
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 6138187,
+          "median_ns": 6091222.5,
+          "minimum_ns": 6025949
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 3615462,
+          "median_ns": 3593135.5,
+          "minimum_ns": 3529374
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 3672974,
+          "median_ns": 3606940.5,
+          "minimum_ns": 3550888
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 1696555,
+          "median_ns": 1635051.0,
+          "minimum_ns": 1624880
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 24790,
+          "median_ns": 22218.5,
+          "minimum_ns": 22042
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 9652,
+          "median_ns": 9207.5,
+          "minimum_ns": 8666
+        }
+      }
+    },
+    "T-k8-d1024": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 1644587.5,
+          "canonical/float64": 1644812.0,
+          "dense/float32": 829989484.5,
+          "dense/float64": 829989709.0,
+          "dual/float32": 1422413.0,
+          "dual/float64": 1422637.5,
+          "thin/float32": 1780856.0,
+          "thin/float64": 1781080.5
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 3486046.0,
+          "canonical/float64": 3455140.5,
+          "dual/float32": 2946747.0,
+          "dual/float64": 2974163.5
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 1699.2924976640338,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 1966.5915891574973,
+                "median": 1699.2924976640338,
+                "minimum": 1465.2467593762872,
+                "ratio_of_medians_separately": 1700.2770760807355,
+                "ratios_in_repetition_order": [
+                  1825.6102616013486,
+                  1966.5915891574973,
+                  1576.3764014797964,
+                  1465.2467593762872,
+                  1723.8318208196486,
+                  1882.7464770059637,
+                  1549.2285147895432,
+                  1674.753174508419
+                ]
+              },
+              "thin": {
+                "maximum": 1.3857858549118345,
+                "median": 1.178322823663651,
+                "minimum": 1.0035957049675666,
+                "ratio_of_medians_separately": 1.2795429042667328,
+                "ratios_in_repetition_order": [
+                  1.3857858549118345,
+                  1.0035957049675666,
+                  1.2183172039556969,
+                  1.0676584604452113,
+                  1.3382532494950776,
+                  1.0154017413248058,
+                  1.138328443371605,
+                  1.3394796538040477
+                ]
+              }
+            },
+            "thin_over_method": 1.178322823663651
+          },
+          "dual": {
+            "dense_over_method": 3129.5283186885167,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 4216.908086265081,
+                "median": 3129.5283186885167,
+                "minimum": 1866.2410542727214,
+                "ratio_of_medians_separately": 3124.1973203364564,
+                "ratios_in_repetition_order": [
+                  3468.5687439389126,
+                  4216.908086265081,
+                  1866.2410542727214,
+                  2918.837959180799,
+                  2974.768044882034,
+                  3827.407503612868,
+                  1942.9988325128625,
+                  3284.2885924949996
+                ]
+              },
+              "thin": {
+                "maximum": 2.6329242353861573,
+                "median": 2.1394033136644195,
+                "minimum": 1.427659519156006,
+                "ratio_of_medians_separately": 2.3511135737830977,
+                "ratios_in_repetition_order": [
+                  2.6329242353861573,
+                  2.151982580903688,
+                  1.4423418042889387,
+                  2.126824046425151,
+                  2.3093859589299237,
+                  2.0641952017397527,
+                  1.427659519156006,
+                  2.626797676116702
+                ]
+              }
+            },
+            "thin_over_method": 2.1394033136644195
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 565709,
+          "median_ns": 487469.0,
+          "minimum_ns": 437483
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 873443955,
+          "median_ns": 828832366.0,
+          "minimum_ns": 822143039
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 447057,
+          "median_ns": 265294.5,
+          "minimum_ns": 207129
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 661932,
+          "median_ns": 623737.5,
+          "minimum_ns": 444221
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 8312,
+          "median_ns": 7984.5,
+          "minimum_ns": 7692
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 11026,
+          "median_ns": 8438.5,
+          "minimum_ns": 8095
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 8905,
+          "median_ns": 8011.0,
+          "minimum_ns": 7711
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 8530,
+          "median_ns": 7781.5,
+          "minimum_ns": 7470
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 1749036,
+          "median_ns": 1709232.5,
+          "minimum_ns": 1649097
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 1723276,
+          "median_ns": 1698706.0,
+          "minimum_ns": 1680195
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 1467162,
+          "median_ns": 1439374.0,
+          "minimum_ns": 1418798
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 1485783,
+          "median_ns": 1446084.0,
+          "minimum_ns": 1434868
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 1832855,
+          "median_ns": 1776813.5,
+          "minimum_ns": 1739569
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 1786963,
+          "median_ns": 1756434.5,
+          "minimum_ns": 1722334
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 1540472,
+          "median_ns": 1507373.0,
+          "minimum_ns": 1477573
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 1565201,
+          "median_ns": 1528079.5,
+          "minimum_ns": 1512836
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 1172368,
+          "median_ns": 1141123.0,
+          "minimum_ns": 1118191
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 9533,
+          "median_ns": 8311.0,
+          "minimum_ns": 8112
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 9419,
+          "median_ns": 8697.0,
+          "minimum_ns": 8144
+        }
+      }
+    },
+    "T-k8-d128": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 408497.5,
+          "canonical/float64": 408092.5,
+          "dense/float32": 2918493.5,
+          "dense/float64": 2918088.5,
+          "dual/float32": 344587.5,
+          "dual/float64": 344182.5,
+          "thin/float32": 383537.5,
+          "thin/float64": 383132.5
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 955417.0,
+          "canonical/float64": 917178.5,
+          "dual/float32": 753849.0,
+          "dual/float64": 746996.0
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 10.550012814374583,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 11.660323935312432,
+                "median": 10.550012814374583,
+                "minimum": 8.776967406161962,
+                "ratio_of_medians_separately": 10.417293705598421,
+                "ratios_in_repetition_order": [
+                  9.276528800982277,
+                  11.660323935312432,
+                  9.10757934739262,
+                  8.776967406161962,
+                  10.696904464299493,
+                  10.897618698507179,
+                  10.540671654284429,
+                  10.559353974464736
+                ]
+              },
+              "thin": {
+                "maximum": 0.9257788991250405,
+                "median": 0.9082368066612942,
+                "minimum": 0.7579426252570926,
+                "ratio_of_medians_separately": 0.9063521810824652,
+                "ratios_in_repetition_order": [
+                  0.9177777332906256,
+                  0.8324026515104407,
+                  0.9083521278271331,
+                  0.7802210143299941,
+                  0.9257788991250405,
+                  0.7579426252570926,
+                  0.9197095227288792,
+                  0.9081214854954552
+                ]
+              }
+            },
+            "thin_over_method": 0.9082368066612942
+          },
+          "dual": {
+            "dense_over_method": 13.7102351697162,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 16.844401974836757,
+                "median": 13.7102351697162,
+                "minimum": 10.987574942024152,
+                "ratio_of_medians_separately": 13.703087792202664,
+                "ratios_in_repetition_order": [
+                  14.911462942403716,
+                  16.25771640617775,
+                  12.06908664585378,
+                  14.654328726025929,
+                  12.47734718122255,
+                  16.844401974836757,
+                  10.987574942024152,
+                  12.766141613406472
+                ]
+              },
+              "thin": {
+                "maximum": 1.47527258880254,
+                "median": 1.1660740697959326,
+                "minimum": 0.9587033575578013,
+                "ratio_of_medians_separately": 1.192231289528947,
+                "ratios_in_repetition_order": [
+                  1.47527258880254,
+                  1.1605995098492554,
+                  1.203720562569666,
+                  1.302684024429444,
+                  1.0798698610411117,
+                  1.1715486297426096,
+                  0.9587033575578013,
+                  1.097908784386566
+                ]
+              }
+            },
+            "thin_over_method": 1.1660740697959326
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 311654,
+          "median_ns": 266530.5,
+          "minimum_ns": 241221
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 2833322,
+          "median_ns": 2776526.5,
+          "minimum_ns": 2717729
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 257866,
+          "median_ns": 202620.5,
+          "minimum_ns": 163254
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 275069,
+          "median_ns": 241570.5,
+          "minimum_ns": 191260
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 5735,
+          "median_ns": 4798.0,
+          "minimum_ns": 4287
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 5231,
+          "median_ns": 4712.0,
+          "minimum_ns": 4565
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 5249,
+          "median_ns": 4971.0,
+          "minimum_ns": 4771
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 32563,
+          "median_ns": 4652.0,
+          "minimum_ns": 4262
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 466114,
+          "median_ns": 449999.5,
+          "minimum_ns": 414746
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 493787,
+          "median_ns": 425277.5,
+          "minimum_ns": 406080
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 373646,
+          "median_ns": 356721.5,
+          "minimum_ns": 340465
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 440805,
+          "median_ns": 344415.5,
+          "minimum_ns": 335124
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 533825,
+          "median_ns": 505417.5,
+          "minimum_ns": 466259
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 527354,
+          "median_ns": 491901.0,
+          "minimum_ns": 472691
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 456981,
+          "median_ns": 397127.5,
+          "minimum_ns": 371944
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 439990,
+          "median_ns": 402580.5,
+          "minimum_ns": 378213
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 161209,
+          "median_ns": 132198.0,
+          "minimum_ns": 128897
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 7737,
+          "median_ns": 6155.0,
+          "minimum_ns": 5582
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 9258,
+          "median_ns": 8890.0,
+          "minimum_ns": 8422
+        }
+      }
+    },
+    "T-k8-d384": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 716501.5,
+          "canonical/float64": 716190.5,
+          "dense/float32": 36310563.0,
+          "dense/float64": 36310252.0,
+          "dual/float32": 604709.0,
+          "dual/float64": 604398.0,
+          "thin/float32": 721149.0,
+          "thin/float64": 720838.0
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 1639434.0,
+          "canonical/float64": 1623519.0,
+          "dual/float32": 1365115.5,
+          "dual/float64": 1348762.5
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 108.35119425270956,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 127.25846465907318,
+                "median": 108.35119425270956,
+                "minimum": 92.54815896430013,
+                "ratio_of_medians_separately": 108.27791574867463,
+                "ratios_in_repetition_order": [
+                  108.59763288520887,
+                  111.29662637227088,
+                  99.19671709204431,
+                  111.01849931163916,
+                  106.25115315907819,
+                  127.25846465907318,
+                  108.10475562021026,
+                  92.54815896430013
+                ]
+              },
+              "thin": {
+                "maximum": 1.082094261311624,
+                "median": 0.9696180253372708,
+                "minimum": 0.7824534353028247,
+                "ratio_of_medians_separately": 1.0140072273978054,
+                "ratios_in_repetition_order": [
+                  1.0515247235690857,
+                  0.7824534353028247,
+                  0.9623857679768408,
+                  1.0780841960994945,
+                  1.082094261311624,
+                  0.8703102171662009,
+                  0.9768502826977009,
+                  0.827472473797729
+                ]
+              }
+            },
+            "thin_over_method": 0.9696180253372708
+          },
+          "dual": {
+            "dense_over_method": 163.6042945515114,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 207.64095146069235,
+                "median": 163.6042945515114,
+                "minimum": 123.1609872948831,
+                "ratio_of_medians_separately": 163.29896750234658,
+                "ratios_in_repetition_order": [
+                  148.62849054335797,
+                  200.81385449993044,
+                  139.41883975665542,
+                  156.11240076221563,
+                  171.09618834080717,
+                  207.64095146069235,
+                  123.1609872948831,
+                  176.49941658086973
+                ]
+              },
+              "thin": {
+                "maximum": 1.7424959450434119,
+                "median": 1.4295866689205035,
+                "minimum": 1.1129005802390668,
+                "ratio_of_medians_separately": 1.5292715243828992,
+                "ratios_in_repetition_order": [
+                  1.4391338768709148,
+                  1.4117902350813742,
+                  1.352612375721554,
+                  1.5159843910739166,
+                  1.7424959450434119,
+                  1.420039460970092,
+                  1.1129005802390668,
+                  1.5780801098200716
+                ]
+              }
+            },
+            "thin_over_method": 1.4295866689205035
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 388993,
+          "median_ns": 331793.0,
+          "minimum_ns": 281996
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 36091270,
+          "median_ns": 35925854.5,
+          "minimum_ns": 35842353
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 292638,
+          "median_ns": 220000.5,
+          "minimum_ns": 172829
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 365262,
+          "median_ns": 336440.5,
+          "minimum_ns": 245424
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 6272,
+          "median_ns": 5503.0,
+          "minimum_ns": 5378
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 6444,
+          "median_ns": 5843.0,
+          "minimum_ns": 5279
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 6729,
+          "median_ns": 6135.0,
+          "minimum_ns": 5853
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 6721,
+          "median_ns": 5484.0,
+          "minimum_ns": 5302
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 841612,
+          "median_ns": 796404.5,
+          "minimum_ns": 735152
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 815259,
+          "median_ns": 783988.5,
+          "minimum_ns": 735697
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 690844,
+          "median_ns": 654964.0,
+          "minimum_ns": 617831
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 658674,
+          "median_ns": 642072.5,
+          "minimum_ns": 628503
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 896055,
+          "median_ns": 843029.5,
+          "minimum_ns": 792454
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 846946,
+          "median_ns": 839530.5,
+          "minimum_ns": 813890
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 722710,
+          "median_ns": 710151.5,
+          "minimum_ns": 669021
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 732878,
+          "median_ns": 706690.0,
+          "minimum_ns": 673537
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 417077,
+          "median_ns": 373070.5,
+          "minimum_ns": 363023
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 7863,
+          "median_ns": 6743.0,
+          "minimum_ns": 6572
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 34338,
+          "median_ns": 9086.0,
+          "minimum_ns": 8435
+        }
+      }
+    },
+    "T-k8-d768": {
+      "comparison": {
+        "accounting": "Direct=core+common postprocess+direct encode+direct decode; Gram=sender encoding including full preflight/postprocess+receiver decode. No extra core is added to Gram. These sums are not network or LLM timings.",
+        "direct_arithmetic_total_ns": {
+          "canonical/float32": 1290452.5,
+          "canonical/float64": 1290455.0,
+          "dense/float32": 306209591.5,
+          "dense/float64": 306209594.0,
+          "dual/float32": 1095259.0,
+          "dual/float64": 1095261.5,
+          "thin/float32": 1349909.5,
+          "thin/float64": 1349912.0
+        },
+        "gram_arithmetic_total_ns": {
+          "canonical/float32": 2710197.0,
+          "canonical/float64": 2663506.0,
+          "dual/float32": 2299837.5,
+          "dual/float64": 2287734.0
+        },
+        "ratios": {
+          "canonical": {
+            "dense_over_method": 711.6789304530292,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 795.7138859504219,
+                "median": 711.6789304530292,
+                "minimum": 625.6949267123498,
+                "ratio_of_medians_separately": 709.7228309945089,
+                "ratios_in_repetition_order": [
+                  707.7267365872965,
+                  789.4011970467325,
+                  727.2638280133397,
+                  640.2772635205482,
+                  710.5491543710679,
+                  795.7138859504219,
+                  625.6949267123498,
+                  712.8087065349906
+                ]
+              },
+              "thin": {
+                "maximum": 1.2303261940044363,
+                "median": 1.0809683185070542,
+                "minimum": 0.9040757577326527,
+                "ratio_of_medians_separately": 1.1381957639675762,
+                "ratios_in_repetition_order": [
+                  1.2303261940044363,
+                  0.9040757577326527,
+                  1.1425797999047165,
+                  1.0387344013898616,
+                  1.17099873424225,
+                  0.9226129370137416,
+                  1.0252916653863093,
+                  1.1232022356242468
+                ]
+              }
+            },
+            "thin_over_method": 1.0809683185070542
+          },
+          "dual": {
+            "dense_over_method": 1310.9628189342025,
+            "paired_ratios": {
+              "dense": {
+                "maximum": 1553.4190465516715,
+                "median": 1310.9628189342025,
+                "minimum": 902.7492145312458,
+                "ratio_of_medians_separately": 1299.1158102312759,
+                "ratios_in_repetition_order": [
+                  1270.4812982002486,
+                  1553.4190465516715,
+                  976.9708833863464,
+                  1374.1060996582964,
+                  1077.8685161436597,
+                  1524.938821367581,
+                  902.7492145312458,
+                  1351.4443396681565
+                ]
+              },
+              "thin": {
+                "maximum": 2.2292393595652196,
+                "median": 1.777714462202579,
+                "minimum": 1.479285201266208,
+                "ratio_of_medians_separately": 2.0834162965232044,
+                "ratios_in_repetition_order": [
+                  2.208629884050907,
+                  1.7790807853365802,
+                  1.534886176728469,
+                  2.2292393595652196,
+                  1.7763481390685778,
+                  1.7681333826011405,
+                  1.479285201266208,
+                  2.1295268838898416
+                ]
+              }
+            },
+            "thin_over_method": 1.777714462202579
+          }
+        },
+        "valid_core_measurement": true
+      },
+      "core": {
+        "canonical": {
+          "count": 8,
+          "maximum_ns": 488145,
+          "median_ns": 430237.5,
+          "minimum_ns": 383798
+        },
+        "dense": {
+          "count": 8,
+          "maximum_ns": 308127958,
+          "median_ns": 305349376.5,
+          "minimum_ns": 304258569
+        },
+        "dual": {
+          "count": 8,
+          "maximum_ns": 338333,
+          "median_ns": 235044.0,
+          "minimum_ns": 196298
+        },
+        "thin": {
+          "count": 8,
+          "maximum_ns": 534685,
+          "median_ns": 489694.5,
+          "minimum_ns": 349230
+        }
+      },
+      "direct_decode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 7284,
+          "median_ns": 6991.5,
+          "minimum_ns": 6754
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 7810,
+          "median_ns": 7119.0,
+          "minimum_ns": 6909
+        }
+      },
+      "direct_encode": {
+        "float32": {
+          "count": 8,
+          "maximum_ns": 7405,
+          "median_ns": 6924.0,
+          "minimum_ns": 6620
+        },
+        "float64": {
+          "count": 8,
+          "maximum_ns": 7606,
+          "median_ns": 6799.0,
+          "minimum_ns": 6558
+        }
+      },
+      "gram_decode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 1327643,
+          "median_ns": 1305545.5,
+          "minimum_ns": 1260726
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 1355418,
+          "median_ns": 1304750.0,
+          "minimum_ns": 1292806
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 1140866,
+          "median_ns": 1126977.0,
+          "minimum_ns": 1109911
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 1128624,
+          "median_ns": 1106014.0,
+          "minimum_ns": 1091962
+        }
+      },
+      "gram_encode": {
+        "canonical/float32": {
+          "count": 8,
+          "maximum_ns": 1425078,
+          "median_ns": 1404651.5,
+          "minimum_ns": 1381644
+        },
+        "canonical/float64": {
+          "count": 8,
+          "maximum_ns": 1420394,
+          "median_ns": 1358756.0,
+          "minimum_ns": 1331334
+        },
+        "dual/float32": {
+          "count": 8,
+          "maximum_ns": 1233879,
+          "median_ns": 1172860.5,
+          "minimum_ns": 1152044
+        },
+        "dual/float64": {
+          "count": 8,
+          "maximum_ns": 1205137,
+          "median_ns": 1181720.0,
+          "minimum_ns": 1177766
+        }
+      },
+      "postprocess": {
+        "common": {
+          "count": 8,
+          "maximum_ns": 882459,
+          "median_ns": 846299.5,
+          "minimum_ns": 806246
+        }
+      },
+      "token_decode": {
+        "embedding_lookup": {
+          "count": 8,
+          "maximum_ns": 33963,
+          "median_ns": 7772.0,
+          "minimum_ns": 7220
+        }
+      },
+      "token_encode": {
+        "uint32_ids": {
+          "count": 8,
+          "maximum_ns": 9854,
+          "median_ns": 8663.0,
+          "minimum_ns": 8340
+        }
+      }
+    }
+  },
+  "timing_coverage": {
+    "duplicates": [],
+    "error_count": 0,
+    "expected_rows": 2052,
+    "first_error_keys": [],
+    "first_order_error_keys": [],
+    "missing": [],
+    "observed_rows": 2052,
+    "order_error_count": 0,
+    "passed": true,
+    "unexpected": []
+  }
+}
+ALIGNMENT_RESULTS_END

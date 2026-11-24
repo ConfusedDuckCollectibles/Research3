@@ -1,0 +1,1457 @@
+{
+  "artifact_directory": "/home/runner/work/_temp/alignment-publication/artifact",
+  "audit_runtime": {
+    "numpy": "2.4.6",
+    "python": "3.11.18",
+    "script_sha256": "57a187dac045dd3294a6350cceb1e75a4e2d3829dee3e33fc27a83a7ef969e41"
+  },
+  "audit_status": "completed",
+  "data_integrity": {
+    "issues": [],
+    "status": "consistent"
+  },
+  "evidence": {
+    "algebra": {
+      "canonical_scope": "Feasibility/optimality only; no claim of the exact chosen nonunique completion.",
+      "counts": {
+        "A/canonical/audited": 120,
+        "A/canonical/unique": 120,
+        "A/dense/audited": 120,
+        "A/dense/unique": 120,
+        "A/dual/audited": 120,
+        "A/dual/unique": 120,
+        "A/thin/audited": 120,
+        "A/thin/unique": 120,
+        "B/canonical/audited": 27,
+        "B/canonical/nonunique_or_boundary": 18,
+        "B/canonical/unique": 9,
+        "B/dense/audited": 27,
+        "B/dense/nonunique_or_boundary": 18,
+        "B/dense/unique": 9,
+        "C/canonical/audited": 1,
+        "C/canonical/nonunique_or_boundary": 1,
+        "C/dense/audited": 8,
+        "C/dense/nonunique_or_boundary": 8,
+        "C/dual/audited": 2,
+        "C/dual/nonunique_or_boundary": 2,
+        "C/thin/audited": 1,
+        "C/thin/nonunique_or_boundary": 1,
+        "D/canonical/audited": 25,
+        "D/canonical/nonunique_or_boundary": 2,
+        "D/canonical/unique": 23,
+        "D/dense/audited": 30,
+        "D/dense/nonunique_or_boundary": 7,
+        "D/dense/unique": 23,
+        "D/dual/audited": 23,
+        "D/dual/unique": 23,
+        "D/thin/audited": 23,
+        "D/thin/unique": 23,
+        "E/canonical/audited": 56,
+        "E/canonical/nonunique_or_boundary": 42,
+        "E/canonical/unique": 14,
+        "E/dense/audited": 56,
+        "E/dense/nonunique_or_boundary": 42,
+        "E/dense/unique": 14,
+        "E/dual/audited": 14,
+        "E/dual/unique": 14,
+        "E/thin/audited": 14,
+        "E/thin/unique": 14,
+        "T/canonical/audited": 1,
+        "T/canonical/unique": 1,
+        "T/dense/audited": 1,
+        "T/dense/unique": 1,
+        "T/dual/audited": 1,
+        "T/dual/unique": 1,
+        "T/thin/audited": 1,
+        "T/thin/unique": 1
+      },
+      "proper_rotation_boundary": "SO(d) trace optimum subtracts twice the smallest singular value when needed; full source rank additionally requires reconstructed orthogonal Q with positive determinant.",
+      "unique_comparison_scope": "2<=K<d, non-stress, unambiguous ranks matching construction, cross rank equals sender rank.",
+      "worst_residuals": {
+        "A/canonical/gram": {
+          "absolute": 4.907404434302009e-11,
+          "case": "A-k16-seed202-spectrum1-lambda1e-08",
+          "passed": true,
+          "reference_norm": 61.96687666411107,
+          "relative": 7.919399360568704e-13
+        },
+        "A/canonical/proper_objective": {
+          "absolute": 2.063416104647331e-11,
+          "case": "A-k16-seed101-spectrum0-lambda1e-08",
+          "passed": true,
+          "reference_norm": 239.9999976000127,
+          "relative": 8.59756718867243e-14
+        },
+        "A/canonical/unique_pre": {
+          "absolute": 2.8671931242133514e-12,
+          "case": "A-k16-seed202-spectrum1-lambda1e-08",
+          "passed": true,
+          "reference_norm": 9.48430284647016,
+          "relative": 3.023093178936663e-13
+        },
+        "A/dense/gram": {
+          "absolute": 1.9705825824165868e-11,
+          "case": "A-k16-seed101-spectrum0-lambda1e-06",
+          "passed": true,
+          "reference_norm": 61.96767157164952,
+          "relative": 3.1800171483579466e-13
+        },
+        "A/dense/proper_objective": {
+          "absolute": 1.4665602066088468e-11,
+          "case": "A-k16-seed101-spectrum0-lambda1e-08",
+          "passed": true,
+          "reference_norm": 239.9999976000127,
+          "relative": 6.110667588643214e-14
+        },
+        "A/dense/unique_pre": {
+          "absolute": 1.1560477394881036e-12,
+          "case": "A-k16-seed101-spectrum0-lambda1e-06",
+          "passed": true,
+          "reference_norm": 16.64561634047777,
+          "relative": 6.9450581813357e-14
+        },
+        "A/dual/gram": {
+          "absolute": 4.8729496344081676e-11,
+          "case": "A-k16-seed202-spectrum1-lambda1e-08",
+          "passed": true,
+          "reference_norm": 61.96687666411107,
+          "relative": 7.863797397473803e-13
+        },
+        "A/dual/proper_objective": {
+          "absolute": 2.2282620193436742e-11,
+          "case": "A-k16-seed101-spectrum0-lambda1e-08",
+          "passed": true,
+          "reference_norm": 239.9999976000127,
+          "relative": 9.284425173442402e-14
+        },
+        "A/dual/unique_pre": {
+          "absolute": 2.852960058255416e-12,
+          "case": "A-k16-seed202-spectrum1-lambda1e-08",
+          "passed": true,
+          "reference_norm": 9.48430284647016,
+          "relative": 3.0080862077461206e-13
+        },
+        "A/thin/gram": {
+          "absolute": 4.882998844242689e-11,
+          "case": "A-k16-seed202-spectrum1-lambda1e-08",
+          "passed": true,
+          "reference_norm": 61.96687666411107,
+          "relative": 7.880014464357765e-13
+        },
+        "A/thin/proper_objective": {
+          "absolute": 1.8474111129762605e-11,
+          "case": "A-k16-seed101-spectrum0-lambda1e-08",
+          "passed": true,
+          "reference_norm": 239.9999976000127,
+          "relative": 7.697546381042808e-14
+        },
+        "A/thin/unique_pre": {
+          "absolute": 2.855805174238265e-12,
+          "case": "A-k16-seed202-spectrum1-lambda1e-08",
+          "passed": true,
+          "reference_norm": 9.48430284647016,
+          "relative": 3.0110860233666307e-13
+        },
+        "B/canonical/gram": {
+          "absolute": 4.775838873333139e-12,
+          "case": "B-geometry8-lambda1e-08",
+          "passed": true,
+          "reference_norm": 21.166004871781023,
+          "relative": 2.2563723774345298e-13
+        },
+        "B/canonical/proper_objective": {
+          "absolute": 1.941075130793492e-12,
+          "case": "B-geometry6-lambda1e-08",
+          "passed": true,
+          "reference_norm": 2.1771085458288e-12,
+          "relative": 0.8915839931419437
+        },
+        "B/canonical/unique_pre": {
+          "absolute": 2.3990905349478143e-13,
+          "case": "B-geometry3-lambda1e-08",
+          "passed": true,
+          "reference_norm": 3.9468903080264965,
+          "relative": 6.078432253536317e-14
+        },
+        "B/dense/gram": {
+          "absolute": 2.465085757189904e-12,
+          "case": "B-geometry8-lambda1e-08",
+          "passed": true,
+          "reference_norm": 21.166004871781023,
+          "relative": 1.164643857980213e-13
+        },
+        "B/dense/proper_objective": {
+          "absolute": 6.750155989720952e-13,
+          "case": "B-geometry5-lambda1e-08",
+          "passed": true,
+          "reference_norm": 15.999995520003038,
+          "relative": 4.218848674852423e-14
+        },
+        "B/dense/unique_pre": {
+          "absolute": 7.078288132586899e-14,
+          "case": "B-geometry3-lambda1e-08",
+          "passed": true,
+          "reference_norm": 3.9468903080264965,
+          "relative": 1.7933835450638982e-14
+        },
+        "C/canonical/gram": {
+          "absolute": 3.312056754221428e-13,
+          "case": "C-side0-ratio0.0001",
+          "passed": true,
+          "reference_norm": 12.473391948773573,
+          "relative": 2.6552975869142644e-14
+        },
+        "C/canonical/proper_objective": {
+          "absolute": 3.3931968346223584e-11,
+          "case": "C-side0-ratio0.0001",
+          "passed": true,
+          "reference_norm": 25.356467373722023,
+          "relative": 1.3381977799237411e-12
+        },
+        "C/dense/gram": {
+          "absolute": 1.0036833695682566e-13,
+          "case": "C-side1-ratio1e-08",
+          "passed": true,
+          "reference_norm": 20.64984221403223,
+          "relative": 4.860489291711012e-15
+        },
+        "C/dense/proper_objective": {
+          "absolute": 5.684341886080802e-14,
+          "case": "C-side1-ratio0.0001",
+          "passed": true,
+          "reference_norm": 25.231141420610953,
+          "relative": 2.252907148083814e-15
+        },
+        "C/dual/gram": {
+          "absolute": 3.307155452899456e-08,
+          "case": "C-side1-ratio0.0001",
+          "passed": true,
+          "reference_norm": 20.64984221403226,
+          "relative": 1.6015403016746213e-09
+        },
+        "C/dual/proper_objective": {
+          "absolute": 6.090772330935579e-11,
+          "case": "C-side1-ratio0.0001",
+          "passed": true,
+          "reference_norm": 25.231141420610953,
+          "relative": 2.413990009171807e-12
+        },
+        "C/thin/gram": {
+          "absolute": 8.630433670327577e-14,
+          "case": "C-side0-ratio0.0001",
+          "passed": true,
+          "reference_norm": 12.473391948773573,
+          "relative": 6.9190751848186335e-15
+        },
+        "C/thin/proper_objective": {
+          "absolute": 2.4868995751603507e-14,
+          "case": "C-side0-ratio0.0001",
+          "passed": true,
+          "reference_norm": 25.356467373722023,
+          "relative": 9.807752548912352e-16
+        },
+        "D/canonical/gram": {
+          "absolute": 3.1863400806741993e-13,
+          "case": "D-sign-lambda1e-08-bit-1",
+          "passed": true,
+          "reference_norm": 1.999999990000317,
+          "relative": 1.5931700483026975e-13
+        },
+        "D/canonical/proper_objective": {
+          "absolute": 1.5942802633617248e-13,
+          "case": "D-sign-lambda1e-08-bit-1",
+          "passed": true,
+          "reference_norm": 1.9999999850001586,
+          "relative": 7.971401376593502e-14
+        },
+        "D/canonical/unique_pre": {
+          "absolute": 1.124186200423205e-13,
+          "case": "D-sign-lambda1e-08-bit-1",
+          "passed": true,
+          "reference_norm": 1.4142135659087407,
+          "relative": 7.949196836482254e-14
+        },
+        "D/dense/gram": {
+          "absolute": 1.2325925822012106e-13,
+          "case": "D-isometry-202-rotation",
+          "passed": true,
+          "reference_norm": 20.649842214032205,
+          "relative": 5.969016951440074e-15
+        },
+        "D/dense/orientation_orthogonality": {
+          "absolute": 1.5573604818299741e-15,
+          "case": "D-dimension-k4-d3",
+          "passed": true,
+          "reference_norm": 1.7320508075688772,
+          "relative": 8.991424934098209e-16
+        },
+        "D/dense/orientation_reconstruction": {
+          "absolute": 7.687608270239667e-16,
+          "case": "D-dimension-k4-d3",
+          "passed": true,
+          "reference_norm": 2.9277002188455996,
+          "relative": 2.625818115104323e-16
+        },
+        "D/dense/proper_objective": {
+          "absolute": 4.263256414560601e-14,
+          "case": "D-isometry-202-translation",
+          "passed": true,
+          "reference_norm": 54.59753132199002,
+          "relative": 7.808514984712335e-16
+        },
+        "D/dense/raw_bypass": {
+          "absolute": 0.0,
+          "case": "D-one-row--1",
+          "passed": true,
+          "reference_norm": 1.4142135623730951,
+          "relative": 0.0
+        },
+        "D/dense/unique_pre": {
+          "absolute": 7.868427269695471e-15,
+          "case": "D-isometry-101-rotation",
+          "passed": true,
+          "reference_norm": 5.090133150253786,
+          "relative": 1.5458195370200018e-15
+        },
+        "D/dual/gram": {
+          "absolute": 3.1863400806741993e-13,
+          "case": "D-sign-lambda1e-08-bit-1",
+          "passed": true,
+          "reference_norm": 1.999999990000317,
+          "relative": 1.5931700483026975e-13
+        },
+        "D/dual/proper_objective": {
+          "absolute": 1.5942802633617248e-13,
+          "case": "D-sign-lambda1e-08-bit-1",
+          "passed": true,
+          "reference_norm": 1.9999999850001586,
+          "relative": 7.971401376593502e-14
+        },
+        "D/dual/unique_pre": {
+          "absolute": 1.124186200423205e-13,
+          "case": "D-sign-lambda1e-08-bit-1",
+          "passed": true,
+          "reference_norm": 1.4142135659087407,
+          "relative": 7.949196836482254e-14
+        },
+        "D/thin/gram": {
+          "absolute": 3.1863400806741993e-13,
+          "case": "D-sign-lambda1e-08-bit-1",
+          "passed": true,
+          "reference_norm": 1.999999990000317,
+          "relative": 1.5931700483026975e-13
+        },
+        "D/thin/proper_objective": {
+          "absolute": 1.5942802633617248e-13,
+          "case": "D-sign-lambda1e-08-bit-1",
+          "passed": true,
+          "reference_norm": 1.9999999850001586,
+          "relative": 7.971401376593502e-14
+        },
+        "D/thin/unique_pre": {
+          "absolute": 1.124186200423205e-13,
+          "case": "D-sign-lambda1e-08-bit-1",
+          "passed": true,
+          "reference_norm": 1.4142135659087407,
+          "relative": 7.949196836482254e-14
+        },
+        "E/canonical/gram": {
+          "absolute": 1.182952083106338e-09,
+          "case": "E-geometry1-eps0.0-lambda1e-06",
+          "passed": true,
+          "reference_norm": 21.16544886473647,
+          "relative": 5.5890715602882485e-11
+        },
+        "E/canonical/proper_objective": {
+          "absolute": 1.3145040611561853e-12,
+          "case": "E-geometry1-eps1e-06-lambda1e-08",
+          "passed": true,
+          "reference_norm": 23.999991506349133,
+          "relative": 5.4771021931755134e-14
+        },
+        "E/canonical/unique_pre": {
+          "absolute": 2.0231660819812482e-13,
+          "case": "E-geometry0-eps0.0-lambda1e-06",
+          "passed": true,
+          "reference_norm": 4.6158004207534455,
+          "relative": 4.3831316295322037e-14
+        },
+        "E/dense/gram": {
+          "absolute": 2.256610589112737e-12,
+          "case": "E-geometry1-eps0.0-lambda1e-06",
+          "passed": true,
+          "reference_norm": 21.16544886473647,
+          "relative": 1.0661765803003839e-13
+        },
+        "E/dense/proper_objective": {
+          "absolute": 2.8421709430404007e-13,
+          "case": "E-geometry0-eps0.0-lambda1e-06",
+          "passed": true,
+          "reference_norm": 55.99851403258572,
+          "relative": 5.0754399328998845e-15
+        },
+        "E/dense/unique_pre": {
+          "absolute": 1.4066195966003034e-13,
+          "case": "E-geometry0-eps1e-06-lambda1e-06",
+          "passed": true,
+          "reference_norm": 4.615800420753396,
+          "relative": 3.047401248710648e-14
+        },
+        "E/dual/gram": {
+          "absolute": 1.5637550616097482e-12,
+          "case": "E-geometry0-eps0.0-lambda1e-06",
+          "passed": true,
+          "reference_norm": 21.165448864737083,
+          "relative": 7.388244263579304e-14
+        },
+        "E/dual/proper_objective": {
+          "absolute": 5.755396159656812e-13,
+          "case": "E-geometry0-eps1e-06-lambda0.0",
+          "passed": true,
+          "reference_norm": 56.00000000000051,
+          "relative": 1.0277493142244213e-14
+        },
+        "E/dual/unique_pre": {
+          "absolute": 1.8333884166465823e-13,
+          "case": "E-geometry0-eps0.0-lambda1e-06",
+          "passed": true,
+          "reference_norm": 4.6158004207534455,
+          "relative": 3.971983728766407e-14
+        },
+        "E/thin/gram": {
+          "absolute": 1.895804041544894e-12,
+          "case": "E-geometry0-eps1e-06-lambda1e-08",
+          "passed": true,
+          "reference_norm": 21.166004871780306,
+          "relative": 8.95683457047903e-14
+        },
+        "E/thin/proper_objective": {
+          "absolute": 4.547473508864641e-13,
+          "case": "E-geometry0-eps0.0-lambda1e-06",
+          "passed": true,
+          "reference_norm": 55.99851403258572,
+          "relative": 8.120703892639815e-15
+        },
+        "E/thin/unique_pre": {
+          "absolute": 1.8073094139347582e-13,
+          "case": "E-geometry0-eps0.0-lambda1e-06",
+          "passed": true,
+          "reference_norm": 4.6158004207534455,
+          "relative": 3.915484312988879e-14
+        },
+        "T/canonical/gram": {
+          "absolute": 5.574318753936404e-12,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 497.51971135891506,
+          "relative": 1.120421689165003e-14
+        },
+        "T/canonical/proper_objective": {
+          "absolute": 1.0459189070388675e-11,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 3947.1705843054883,
+          "relative": 2.6497940352453725e-15
+        },
+        "T/canonical/unique_pre": {
+          "absolute": 1.6309199921908804e-13,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 59.46306151444896,
+          "relative": 2.742744740437864e-15
+        },
+        "T/dense/gram": {
+          "absolute": 4.070685886905749e-12,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 497.51971135891506,
+          "relative": 8.181959013819094e-15
+        },
+        "T/dense/proper_objective": {
+          "absolute": 1.0459189070388675e-11,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 3947.1705843054883,
+          "relative": 2.6497940352453725e-15
+        },
+        "T/dense/unique_pre": {
+          "absolute": 7.448154816997417e-14,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 59.46306151444896,
+          "relative": 1.2525683386126337e-15
+        },
+        "T/dual/gram": {
+          "absolute": 5.203863215118796e-12,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 497.51971135891506,
+          "relative": 1.0459612144622516e-14
+        },
+        "T/dual/proper_objective": {
+          "absolute": 1.1823431123048067e-11,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 3947.1705843054883,
+          "relative": 2.995419344190421e-15
+        },
+        "T/dual/unique_pre": {
+          "absolute": 1.5369613926376887e-13,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 59.46306151444896,
+          "relative": 2.584733031722932e-15
+        },
+        "T/thin/gram": {
+          "absolute": 5.321545445500081e-12,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 497.51971135891506,
+          "relative": 1.0696149969545774e-14
+        },
+        "T/thin/proper_objective": {
+          "absolute": 1.1368683772161603e-11,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 3947.1705843054883,
+          "relative": 2.880210907875405e-15
+        },
+        "T/thin/unique_pre": {
+          "absolute": 1.560227486078379e-13,
+          "case": "T-k64-d1024",
+          "passed": true,
+          "reference_norm": 59.46306151444896,
+          "relative": 2.6238600003789893e-15
+        }
+      }
+    },
+    "array_retention": {
+      "archive": {
+        "bytes": 9423338,
+        "sha256": "b84dfa41cbe171cb70dc4ed51d78717cadfb903481dd7e427ead463c737614d3"
+      },
+      "arrays": 861,
+      "mapped_cases": 243,
+      "phase": "all_algebraic_and_largest_timing_before_timing"
+    },
+    "coverage": {
+      "array_scope": "All retained algebraic fixtures and largest timing fixture; no regeneration.",
+      "complete_report": true,
+      "expected_counts": {
+        "A": 120,
+        "B": 27,
+        "C": 8,
+        "D": 31,
+        "E": 56,
+        "F": 2304,
+        "T": 12
+      },
+      "missing_case_ids": [],
+      "observed_counts": {
+        "A": 120,
+        "B": 27,
+        "C": 8,
+        "D": 31,
+        "E": 56,
+        "F": 2304,
+        "T": 12
+      },
+      "raw_failed_case_ids": [],
+      "raw_failed_required_checks": 0,
+      "raw_required_checks": 15758
+    },
+    "execution": {
+      "bytes": 3383,
+      "external_digest_supplied": true,
+      "failure": null,
+      "retained_file_count": 14,
+      "run_id": "45369667584",
+      "sha256": "92212ae75c46bbd8c0f866b963801be39dd212d0efa737d19cd3adb4280a262d",
+      "source_commit": "7aee330f7799751a6a9f4b2a8decb612abe9c266",
+      "worker_returncode": 0
+    },
+    "timing": {
+      "actual_exception_rows": 0,
+      "coverage_passed": true,
+      "duplicates": [],
+      "error_rows_including_unmeasured_after_failure": 0,
+      "expected_call_rows": 2052,
+      "missing": [],
+      "observed_call_rows": 2052,
+      "order_errors": [],
+      "paired_ratios": {
+        "T-k32-d1024": {
+          "canonical": {
+            "dense": {
+              "maximum": 408.19823350566384,
+              "median": 375.91558068411473,
+              "minimum": 366.8109921832101,
+              "ratio_of_medians_separately": 378.7326206583963,
+              "ratios_in_repetition_order": [
+                384.5622083520355,
+                408.19823350566384,
+                366.8109921832101,
+                378.81369211113304,
+                373.0174692570965,
+                404.0068899090712,
+                367.5665659979503,
+                372.04585182934784
+              ]
+            },
+            "thin": {
+              "maximum": 1.2450414671722063,
+              "median": 1.1705444039412487,
+              "minimum": 1.09790192481691,
+              "ratio_of_medians_separately": 1.1684142318841795,
+              "ratios_in_repetition_order": [
+                1.191230729709206,
+                1.122507433170542,
+                1.09790192481691,
+                1.174405507208974,
+                1.2450414671722063,
+                1.1281285724024053,
+                1.1666833006735233,
+                1.225122985338571
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 1028.0221595392386,
+              "median": 971.7758625175488,
+              "minimum": 795.9676258102354,
+              "ratio_of_medians_separately": 972.6019575836929,
+              "ratios_in_repetition_order": [
+                988.1222971486324,
+                1028.0221595392386,
+                858.235003238717,
+                989.3836694534016,
+                927.8530076550984,
+                1024.3248863827116,
+                795.9676258102354,
+                955.4294278864652
+              ]
+            },
+            "thin": {
+              "maximum": 3.1461674608577264,
+              "median": 2.960554445298512,
+              "minimum": 2.526459756719908,
+              "ratio_of_medians_separately": 3.000538921690073,
+              "ratios_in_repetition_order": [
+                3.06083546305408,
+                2.8269659710098103,
+                2.5687830574346786,
+                3.0673063153372477,
+                3.096947368904146,
+                2.8602734275429444,
+                2.526459756719908,
+                3.1461674608577264
+              ]
+            }
+          }
+        },
+        "T-k32-d128": {
+          "canonical": {
+            "dense": {
+              "maximum": 4.829539881336874,
+              "median": 4.6286589286174,
+              "minimum": 4.366284093830158,
+              "ratio_of_medians_separately": 4.6154679077280525,
+              "ratios_in_repetition_order": [
+                4.601225330654305,
+                4.829539881336874,
+                4.755766800084264,
+                4.653381498118385,
+                4.603936359116415,
+                4.778495653919237,
+                4.531437703972816,
+                4.366284093830158
+              ]
+            },
+            "thin": {
+              "maximum": 1.0949740748632715,
+              "median": 1.0331455325828736,
+              "minimum": 0.9784668891600278,
+              "ratio_of_medians_separately": 1.0356158169917913,
+              "ratios_in_repetition_order": [
+                1.0647231004056665,
+                0.9784668891600278,
+                1.0617773213491561,
+                1.014762563550758,
+                1.0949740748632715,
+                1.005378210847548,
+                1.051528501614989,
+                0.9992780612663462
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 7.235287201806574,
+              "median": 6.752556763508547,
+              "minimum": 5.872060257938658,
+              "ratio_of_medians_separately": 6.771896315938259,
+              "ratios_in_repetition_order": [
+                6.89885233164461,
+                7.1572869878145795,
+                5.872060257938658,
+                6.23960593690181,
+                6.664571226459714,
+                7.235287201806574,
+                5.899793559719183,
+                6.840542300557381
+              ]
+            },
+            "thin": {
+              "maximum": 1.5963937681671814,
+              "median": 1.486173870252415,
+              "minimum": 1.3110021314258877,
+              "ratio_of_medians_separately": 1.5194738813093092,
+              "ratios_in_repetition_order": [
+                1.5963937681671814,
+                1.450069469527585,
+                1.3110021314258877,
+                1.360670411105831,
+                1.5850637680086532,
+                1.5222782709772449,
+                1.3690580091722893,
+                1.5655426218762452
+              ]
+            }
+          }
+        },
+        "T-k32-d384": {
+          "canonical": {
+            "dense": {
+              "maximum": 37.07679483009468,
+              "median": 35.08212949092758,
+              "minimum": 32.192413428913284,
+              "ratio_of_medians_separately": 34.55354991839025,
+              "ratios_in_repetition_order": [
+                37.07679483009468,
+                35.96087217689488,
+                33.434139696949856,
+                32.409654099052695,
+                35.996613373468236,
+                36.3844335117016,
+                32.192413428913284,
+                34.203386804960275
+              ]
+            },
+            "thin": {
+              "maximum": 1.1322569349274147,
+              "median": 1.051628675640106,
+              "minimum": 0.989930280455702,
+              "ratio_of_medians_separately": 1.0655996053848833,
+              "ratios_in_repetition_order": [
+                1.1110125371762236,
+                1.0344055811753576,
+                1.0291001971353542,
+                0.989930280455702,
+                1.1322569349274147,
+                1.0690879978572174,
+                1.005868482826135,
+                1.0688517701048545
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 68.55242157222774,
+              "median": 66.1425277155522,
+              "minimum": 55.39675236235657,
+              "ratio_of_medians_separately": 65.09671480941654,
+              "ratios_in_repetition_order": [
+                65.67135087770743,
+                68.42041824225942,
+                55.39675236235657,
+                68.55242157222774,
+                64.02074113652962,
+                66.9218041926124,
+                59.84974355210907,
+                66.61370455339699
+              ]
+            },
+            "thin": {
+              "maximum": 2.0938859052771095,
+              "median": 1.9679748568057303,
+              "minimum": 1.705107692122264,
+              "ratio_of_medians_separately": 2.007522635925975,
+              "ratios_in_repetition_order": [
+                1.9678533296305816,
+                1.9680963839808787,
+                1.705107692122264,
+                2.0938859052771095,
+                2.0137429979581536,
+                1.9663710755387473,
+                1.8700359597837521,
+                2.0816703454294916
+              ]
+            }
+          }
+        },
+        "T-k32-d768": {
+          "canonical": {
+            "dense": {
+              "maximum": 202.42640017190644,
+              "median": 183.20303143579207,
+              "minimum": 170.33570128665187,
+              "ratio_of_medians_separately": 183.00803103975244,
+              "ratios_in_repetition_order": [
+                184.00362995235318,
+                194.651559179902,
+                175.63319495433387,
+                184.8762403286712,
+                182.402432919231,
+                202.42640017190644,
+                179.449349097048,
+                170.33570128665187
+              ]
+            },
+            "thin": {
+              "maximum": 1.2785235335431884,
+              "median": 1.1706122153669978,
+              "minimum": 1.0831788728632967,
+              "ratio_of_medians_separately": 1.171123627617219,
+              "ratios_in_repetition_order": [
+                1.167402226190006,
+                1.0831788728632967,
+                1.0989836483827253,
+                1.2785235335431884,
+                1.1705971018278183,
+                1.2018336685906656,
+                1.201893213684319,
+                1.1706273289061775
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 505.6178245662163,
+              "median": 432.7233925335536,
+              "minimum": 344.3175753991599,
+              "ratio_of_medians_separately": 431.1317866968628,
+              "ratios_in_repetition_order": [
+                433.14462099483393,
+                473.25654687525537,
+                351.19696378800563,
+                391.8212383361116,
+                432.3021640722733,
+                505.6178245662163,
+                344.3175753991599,
+                434.9711601424994
+              ]
+            },
+            "thin": {
+              "maximum": 3.0019232890927143,
+              "median": 2.7288651518668865,
+              "minimum": 2.197532879049607,
+              "ratio_of_medians_separately": 2.758942430826155,
+              "ratios_in_repetition_order": [
+                2.7480653231815704,
+                2.633533967974729,
+                2.197532879049607,
+                2.7096649805522026,
+                2.774369027199216,
+                3.0019232890927143,
+                2.306126822453305,
+                2.9893270964490237
+              ]
+            }
+          }
+        },
+        "T-k64-d1024": {
+          "canonical": {
+            "dense": {
+              "maximum": 158.66536059575506,
+              "median": 156.78125393203297,
+              "minimum": 152.95233031260085,
+              "ratio_of_medians_separately": 156.06357815070683,
+              "ratios_in_repetition_order": [
+                157.49507367800575,
+                156.01650118250907,
+                157.2075944570841,
+                157.85147976465885,
+                156.35491340698184,
+                158.66536059575506,
+                155.82350063661394,
+                152.95233031260085
+              ]
+            },
+            "thin": {
+              "maximum": 1.2701180938194956,
+              "median": 1.1785204569114458,
+              "minimum": 1.1490597765892643,
+              "ratio_of_medians_separately": 1.1751331712462132,
+              "ratios_in_repetition_order": [
+                1.190188188032994,
+                1.1490597765892643,
+                1.1793760734247858,
+                1.2701180938194956,
+                1.2061859636892873,
+                1.1633488247194448,
+                1.170236827973822,
+                1.1776648403981058
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 411.3371058013778,
+              "median": 393.5758855254612,
+              "minimum": 376.5896218320162,
+              "ratio_of_medians_separately": 391.0608211187645,
+              "ratios_in_repetition_order": [
+                403.75812311660866,
+                411.3371058013778,
+                377.02358972996666,
+                376.5896218320162,
+                397.2225403853976,
+                399.89193419151326,
+                379.1192622600787,
+                389.9292306655248
+              ]
+            },
+            "thin": {
+              "maximum": 3.0643376804330917,
+              "median": 3.0158873079013224,
+              "minimum": 2.8284422414823642,
+              "ratio_of_medians_separately": 2.944623904673433,
+              "ratios_in_repetition_order": [
+                3.0511947944367215,
+                3.0294931581762348,
+                2.8284422414823642,
+                3.0301476637824587,
+                3.0643376804330917,
+                2.932043956599616,
+                2.8471913484066804,
+                3.0022814576264105
+              ]
+            }
+          }
+        },
+        "T-k64-d128": {
+          "canonical": {
+            "dense": {
+              "maximum": 2.0763898625072565,
+              "median": 2.0095980098794555,
+              "minimum": 1.9741733429199309,
+              "ratio_of_medians_separately": 2.003671799683531,
+              "ratios_in_repetition_order": [
+                2.036261187578673,
+                1.9741733429199309,
+                1.9969114002913917,
+                1.986112815135702,
+                2.0763898625072565,
+                2.0136233901087848,
+                2.066888404005357,
+                2.005572629650126
+              ]
+            },
+            "thin": {
+              "maximum": 1.097594607349832,
+              "median": 1.0651392026702022,
+              "minimum": 1.0058838988962948,
+              "ratio_of_medians_separately": 1.054298975068914,
+              "ratios_in_repetition_order": [
+                1.0772308535599844,
+                1.0058838988962948,
+                1.05304755178042,
+                1.04732311999546,
+                1.0963288159317937,
+                1.0314671552291224,
+                1.0846683776696229,
+                1.097594607349832
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 2.9974693091947637,
+              "median": 2.911632915289754,
+              "minimum": 2.8081254560820943,
+              "ratio_of_medians_separately": 2.9103024344591417,
+              "ratios_in_repetition_order": [
+                2.9974693091947637,
+                2.9553085357506124,
+                2.850272143344009,
+                2.856413509194137,
+                2.885339484197464,
+                2.9379263463820444,
+                2.8081254560820943,
+                2.94987634637075
+              ]
+            },
+            "thin": {
+              "maximum": 1.6143859974246815,
+              "median": 1.5060231005505185,
+              "minimum": 1.4736571538351142,
+              "ratio_of_medians_separately": 1.5313530261170838,
+              "ratios_in_repetition_order": [
+                1.585732931590819,
+                1.5057934416161822,
+                1.5030572222775438,
+                1.5062527594848547,
+                1.5234522559514774,
+                1.5049360996008605,
+                1.4736571538351142,
+                1.6143859974246815
+              ]
+            }
+          }
+        },
+        "T-k64-d384": {
+          "canonical": {
+            "dense": {
+              "maximum": 14.36940823607755,
+              "median": 13.981596790209696,
+              "minimum": 13.660581460284877,
+              "ratio_of_medians_separately": 13.987061520982364,
+              "ratios_in_repetition_order": [
+                13.977917881497085,
+                14.004864383683008,
+                13.660581460284877,
+                14.048619807339676,
+                13.98527569892231,
+                14.36940823607755,
+                13.84737062232493,
+                13.811406529444394
+              ]
+            },
+            "thin": {
+              "maximum": 1.1375831934311065,
+              "median": 1.0995394292684963,
+              "minimum": 1.0807529880990583,
+              "ratio_of_medians_separately": 1.0995422933160848,
+              "ratios_in_repetition_order": [
+                1.101912829626325,
+                1.0971660289106677,
+                1.0906925465455,
+                1.1375831934311065,
+                1.0874317824242816,
+                1.1108515618373538,
+                1.0807529880990583,
+                1.1166719742032996
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 27.049402274108505,
+              "median": 25.773311476702904,
+              "minimum": 24.234659530659034,
+              "ratio_of_medians_separately": 25.770901664666937,
+              "ratios_in_repetition_order": [
+                26.264647035796617,
+                27.049402274108505,
+                25.1567840294325,
+                25.606777764733582,
+                25.939845188672226,
+                25.43182509243384,
+                24.234659530659034,
+                26.40561637711583
+              ]
+            },
+            "thin": {
+              "maximum": 2.134931855566422,
+              "median": 2.0437351130395727,
+              "minimum": 1.891455166304025,
+              "ratio_of_medians_separately": 2.0258863003271492,
+              "ratios_in_repetition_order": [
+                2.070505191095857,
+                2.1190983692828986,
+                2.0085760562775268,
+                2.0735019114025315,
+                2.016965034983288,
+                1.9660505262404788,
+                1.891455166304025,
+                2.134931855566422
+              ]
+            }
+          }
+        },
+        "T-k64-d768": {
+          "canonical": {
+            "dense": {
+              "maximum": 74.39843628077544,
+              "median": 73.74849064269574,
+              "minimum": 73.3142025884048,
+              "ratio_of_medians_separately": 73.76103061031469,
+              "ratios_in_repetition_order": [
+                73.84912564378683,
+                74.39843628077544,
+                73.65874136614677,
+                73.83823991924473,
+                73.62108903140789,
+                73.84278172789811,
+                73.3142025884048,
+                73.40640250570424
+              ]
+            },
+            "thin": {
+              "maximum": 1.1792263234968754,
+              "median": 1.1586566969740395,
+              "minimum": 1.1407652708202645,
+              "ratio_of_medians_separately": 1.1663606665844501,
+              "ratios_in_repetition_order": [
+                1.1792263234968754,
+                1.1419968891577388,
+                1.1637881089022715,
+                1.1722495089333638,
+                1.1717881368420164,
+                1.1460717054857312,
+                1.1535252850458073,
+                1.1407652708202645
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 173.6170002844245,
+              "median": 169.52935496612085,
+              "minimum": 160.19792824122837,
+              "ratio_of_medians_separately": 168.5350123336873,
+              "ratios_in_repetition_order": [
+                166.78785802025286,
+                170.26319256480627,
+                161.15679459874679,
+                172.94230866781498,
+                173.6170002844245,
+                171.71711274463865,
+                160.19792824122837,
+                168.79551736743542
+              ]
+            },
+            "thin": {
+              "maximum": 2.763370441322784,
+              "median": 2.6432135983623875,
+              "minimum": 2.5205533759353345,
+              "ratio_of_medians_separately": 2.664992716368709,
+              "ratios_in_repetition_order": [
+                2.6632763882112256,
+                2.6134962771699692,
+                2.546233586731168,
+                2.745617130518975,
+                2.763370441322784,
+                2.6651233832105445,
+                2.5205533759353345,
+                2.6231508085135493
+              ]
+            }
+          }
+        },
+        "T-k8-d1024": {
+          "canonical": {
+            "dense": {
+              "maximum": 1966.5915891574973,
+              "median": 1699.2924976640338,
+              "minimum": 1465.2467593762872,
+              "ratio_of_medians_separately": 1700.2770760807355,
+              "ratios_in_repetition_order": [
+                1825.6102616013486,
+                1966.5915891574973,
+                1576.3764014797964,
+                1465.2467593762872,
+                1723.8318208196486,
+                1882.7464770059637,
+                1549.2285147895432,
+                1674.753174508419
+              ]
+            },
+            "thin": {
+              "maximum": 1.3857858549118345,
+              "median": 1.178322823663651,
+              "minimum": 1.0035957049675666,
+              "ratio_of_medians_separately": 1.2795429042667328,
+              "ratios_in_repetition_order": [
+                1.3857858549118345,
+                1.0035957049675666,
+                1.2183172039556969,
+                1.0676584604452113,
+                1.3382532494950776,
+                1.0154017413248058,
+                1.138328443371605,
+                1.3394796538040477
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 4216.908086265081,
+              "median": 3129.5283186885167,
+              "minimum": 1866.2410542727214,
+              "ratio_of_medians_separately": 3124.1973203364564,
+              "ratios_in_repetition_order": [
+                3468.5687439389126,
+                4216.908086265081,
+                1866.2410542727214,
+                2918.837959180799,
+                2974.768044882034,
+                3827.407503612868,
+                1942.9988325128625,
+                3284.2885924949996
+              ]
+            },
+            "thin": {
+              "maximum": 2.6329242353861573,
+              "median": 2.1394033136644195,
+              "minimum": 1.427659519156006,
+              "ratio_of_medians_separately": 2.3511135737830977,
+              "ratios_in_repetition_order": [
+                2.6329242353861573,
+                2.151982580903688,
+                1.4423418042889387,
+                2.126824046425151,
+                2.3093859589299237,
+                2.0641952017397527,
+                1.427659519156006,
+                2.626797676116702
+              ]
+            }
+          }
+        },
+        "T-k8-d128": {
+          "canonical": {
+            "dense": {
+              "maximum": 11.660323935312432,
+              "median": 10.550012814374583,
+              "minimum": 8.776967406161962,
+              "ratio_of_medians_separately": 10.417293705598421,
+              "ratios_in_repetition_order": [
+                9.276528800982277,
+                11.660323935312432,
+                9.10757934739262,
+                8.776967406161962,
+                10.696904464299493,
+                10.897618698507179,
+                10.540671654284429,
+                10.559353974464736
+              ]
+            },
+            "thin": {
+              "maximum": 0.9257788991250405,
+              "median": 0.9082368066612942,
+              "minimum": 0.7579426252570926,
+              "ratio_of_medians_separately": 0.9063521810824652,
+              "ratios_in_repetition_order": [
+                0.9177777332906256,
+                0.8324026515104407,
+                0.9083521278271331,
+                0.7802210143299941,
+                0.9257788991250405,
+                0.7579426252570926,
+                0.9197095227288792,
+                0.9081214854954552
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 16.844401974836757,
+              "median": 13.7102351697162,
+              "minimum": 10.987574942024152,
+              "ratio_of_medians_separately": 13.703087792202664,
+              "ratios_in_repetition_order": [
+                14.911462942403716,
+                16.25771640617775,
+                12.06908664585378,
+                14.654328726025929,
+                12.47734718122255,
+                16.844401974836757,
+                10.987574942024152,
+                12.766141613406472
+              ]
+            },
+            "thin": {
+              "maximum": 1.47527258880254,
+              "median": 1.1660740697959326,
+              "minimum": 0.9587033575578013,
+              "ratio_of_medians_separately": 1.192231289528947,
+              "ratios_in_repetition_order": [
+                1.47527258880254,
+                1.1605995098492554,
+                1.203720562569666,
+                1.302684024429444,
+                1.0798698610411117,
+                1.1715486297426096,
+                0.9587033575578013,
+                1.097908784386566
+              ]
+            }
+          }
+        },
+        "T-k8-d384": {
+          "canonical": {
+            "dense": {
+              "maximum": 127.25846465907318,
+              "median": 108.35119425270956,
+              "minimum": 92.54815896430013,
+              "ratio_of_medians_separately": 108.27791574867463,
+              "ratios_in_repetition_order": [
+                108.59763288520887,
+                111.29662637227088,
+                99.19671709204431,
+                111.01849931163916,
+                106.25115315907819,
+                127.25846465907318,
+                108.10475562021026,
+                92.54815896430013
+              ]
+            },
+            "thin": {
+              "maximum": 1.082094261311624,
+              "median": 0.9696180253372708,
+              "minimum": 0.7824534353028247,
+              "ratio_of_medians_separately": 1.0140072273978054,
+              "ratios_in_repetition_order": [
+                1.0515247235690857,
+                0.7824534353028247,
+                0.9623857679768408,
+                1.0780841960994945,
+                1.082094261311624,
+                0.8703102171662009,
+                0.9768502826977009,
+                0.827472473797729
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 207.64095146069235,
+              "median": 163.6042945515114,
+              "minimum": 123.1609872948831,
+              "ratio_of_medians_separately": 163.29896750234658,
+              "ratios_in_repetition_order": [
+                148.62849054335797,
+                200.81385449993044,
+                139.41883975665542,
+                156.11240076221563,
+                171.09618834080717,
+                207.64095146069235,
+                123.1609872948831,
+                176.49941658086973
+              ]
+            },
+            "thin": {
+              "maximum": 1.7424959450434119,
+              "median": 1.4295866689205035,
+              "minimum": 1.1129005802390668,
+              "ratio_of_medians_separately": 1.5292715243828992,
+              "ratios_in_repetition_order": [
+                1.4391338768709148,
+                1.4117902350813742,
+                1.352612375721554,
+                1.5159843910739166,
+                1.7424959450434119,
+                1.420039460970092,
+                1.1129005802390668,
+                1.5780801098200716
+              ]
+            }
+          }
+        },
+        "T-k8-d768": {
+          "canonical": {
+            "dense": {
+              "maximum": 795.7138859504219,
+              "median": 711.6789304530292,
+              "minimum": 625.6949267123498,
+              "ratio_of_medians_separately": 709.7228309945089,
+              "ratios_in_repetition_order": [
+                707.7267365872965,
+                789.4011970467325,
+                727.2638280133397,
+                640.2772635205482,
+                710.5491543710679,
+                795.7138859504219,
+                625.6949267123498,
+                712.8087065349906
+              ]
+            },
+            "thin": {
+              "maximum": 1.2303261940044363,
+              "median": 1.0809683185070542,
+              "minimum": 0.9040757577326527,
+              "ratio_of_medians_separately": 1.1381957639675762,
+              "ratios_in_repetition_order": [
+                1.2303261940044363,
+                0.9040757577326527,
+                1.1425797999047165,
+                1.0387344013898616,
+                1.17099873424225,
+                0.9226129370137416,
+                1.0252916653863093,
+                1.1232022356242468
+              ]
+            }
+          },
+          "dual": {
+            "dense": {
+              "maximum": 1553.4190465516715,
+              "median": 1310.9628189342025,
+              "minimum": 902.7492145312458,
+              "ratio_of_medians_separately": 1299.1158102312759,
+              "ratios_in_repetition_order": [
+                1270.4812982002486,
+                1553.4190465516715,
+                976.9708833863464,
+                1374.1060996582964,
+                1077.8685161436597,
+                1524.938821367581,
+                902.7492145312458,
+                1351.4443396681565
+              ]
+            },
+            "thin": {
+              "maximum": 2.2292393595652196,
+              "median": 1.777714462202579,
+              "minimum": 1.479285201266208,
+              "ratio_of_medians_separately": 2.0834162965232044,
+              "ratios_in_repetition_order": [
+                2.208629884050907,
+                1.7790807853365802,
+                1.534886176728469,
+                2.2292393595652196,
+                1.7763481390685778,
+                1.7681333826011405,
+                1.479285201266208,
+                2.1295268838898416
+              ]
+            }
+          }
+        }
+      },
+      "remeasurements": 0,
+      "scope": "Arithmetic from recorded durations only; no performance counter or benchmark invocation.",
+      "unexpected": []
+    }
+  },
+  "limits": [
+    "This recalculates algebra on original saved inputs; it does not repeat the study or its timings.",
+    "Valid nonunique outputs need not equal a particular SVD completion; the canonical basis choice is not reimplemented.",
+    "No independent postprocessing, vocabulary-search, packet decoding, or transport-byte execution is performed.",
+    "Synthetic applicability embeddings and smaller timing arrays were not regenerated.",
+    "Timing checks cover recorded call coverage, per-arm summaries and paired ratios; composed direct/Gram total fields are not independently recomputed.",
+    "Reported required-check aggregation is checked separately from independently recalculated matrix properties.",
+    "An external execution digest authenticates the caller-selected execution block, not arbitrary source history.",
+    "Wall-clock chronology, physical clock accuracy, and host performance are not independently established."
+  ],
+  "model_imports_or_inference": 0,
+  "new_fixture_generations": 0,
+  "notes": [],
+  "optimization_invocations": 0,
+  "report_consistency": {
+    "issues": [],
+    "status": "consistent"
+  },
+  "scientific_validation": {
+    "complete_case_coverage": true,
+    "issues": [],
+    "original_recorded_failed_required_checks": 0,
+    "original_study_status": "verified",
+    "required_matrix_failures_detected": false,
+    "scientific_failures_do_not_invalidate_authentic_original_bytes": true,
+    "scope": "Retained pre-calibration outputs: feasibility, proper objective, scoped unique-product equivalence."
+  },
+  "timing_measurements": 0
+}

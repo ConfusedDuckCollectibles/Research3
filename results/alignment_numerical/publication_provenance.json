@@ -1,0 +1,125 @@
+{
+  "archive_zip_independently_rehashed_by_publisher": false,
+  "artifact_retention_days": 90,
+  "audit_outcome": {
+    "audit_status": "completed",
+    "data_integrity": {
+      "issues": [],
+      "status": "consistent"
+    },
+    "report_consistency": {
+      "issues": [],
+      "status": "consistent"
+    },
+    "scientific_validation": {
+      "complete_case_coverage": true,
+      "issues": [],
+      "original_recorded_failed_required_checks": 0,
+      "original_study_status": "verified",
+      "required_matrix_failures_detected": false,
+      "scientific_failures_do_not_invalidate_authentic_original_bytes": true,
+      "scope": "Retained pre-calibration outputs: feasibility, proper objective, scoped unique-product equivalence."
+    }
+  },
+  "audit_receipt": {
+    "bytes": 51403,
+    "sha256": "7c3cade741f70f108590342b0e924bfe3d304d36cb82e23f685b86ef8ef3a88d"
+  },
+  "audit_script": {
+    "file": {
+      "bytes": 38750,
+      "sha256": "57a187dac045dd3294a6350cceb1e75a4e2d3829dee3e33fc27a83a7ef969e41"
+    },
+    "path": "scripts/audit_alignment_outputs.py"
+  },
+  "classification": "complete_study",
+  "fixed_publication_manifest_sha256": "5eb8fd5c15dcb7c374b2784bf5b82066fb540d1957bc377b6e01caa91d351a13",
+  "frozen_design_commit": "e7c467f2b097666dc474a3dbb6e273bf253e785f",
+  "kind": "packaging_original_alignment_evidence_without_remeasurement",
+  "models_imported_or_executed": 0,
+  "omission_rule": "Only an independently rehashed exact gzip replaces a redundant raw file in Git; raw bytes remain in the original artifact.",
+  "omitted_raw_records": {
+    "cases.jsonl": {
+      "gzip": "cases.jsonl.gz",
+      "raw": {
+        "bytes": 8793847,
+        "sha256": "b924ff3b480044525c33a6996a71915fe96cb0d7685b5c59cf11e8a7f8a4bda2"
+      }
+    },
+    "timings.jsonl": {
+      "gzip": "timings.jsonl.gz",
+      "raw": {
+        "bytes": 423721,
+        "sha256": "bf8d4243cccd29b3f9bc55ef81e30ac8b419639f42eca123169f088a7029eb48"
+      }
+    }
+  },
+  "original_artifact": {
+    "digest": "sha256:3032e4558d77c708f94aefd702cae803e6cb0d6b0dcecafcdb9ab656f2e1ffde",
+    "id": 14907778274,
+    "name": "alignment-numerical-45369667584-attempt-1",
+    "size_in_bytes": 11479164
+  },
+  "original_execution_failure": null,
+  "original_execution_sha256": "92212ae75c46bbd8c0f866b963801be39dd212d0efa737d19cd3adb4280a262d",
+  "original_file_bytes_preserved": true,
+  "original_source_files_rehashed": {
+    ".github/workflows/alignment-numerical-v1.yml": {
+      "bytes": 2304,
+      "sha256": "9a274e79cf71ae394f58b471453934b5ffebf70204fea0a4ef2e68e58ed65cae"
+    },
+    "docs/alignment_geometry.md": {
+      "bytes": 21631,
+      "sha256": "06fa7747aa96db8719ce7ae930789daee6291c65cab6752fcadb1364f0f6f2ff"
+    },
+    "docs/alignment_numerical_design.md": {
+      "bytes": 26025,
+      "sha256": "c785e3fef3af9c8fac3bb7a04ccd7980ddfa51c121f3f11a9068eda3b7a70a5e"
+    },
+    "latent_bridge/__init__.py": {
+      "bytes": 111,
+      "sha256": "740c636a9ebbfc9c219c7b9d590a84f130ea7ef2239407877e9ade07af95f8fa"
+    },
+    "latent_bridge/alignment_core.py": {
+      "bytes": 15305,
+      "sha256": "de8909692a928266c03e22d12b13c800b14e2495a8acad39ae6b95dfc46bfa53"
+    },
+    "latent_bridge/alignment_numerical.py": {
+      "bytes": 64129,
+      "sha256": "46267bbdbebd30399398811deaacc342372f06d96448296d59e9f6bc2bc63f50"
+    },
+    "latent_bridge/alignment_packet.py": {
+      "bytes": 13218,
+      "sha256": "6ae2c169b843007dd9793894676d8ce4a933c5f82fd2ce4063b83dea389c74fd"
+    },
+    "pyproject.toml": {
+      "bytes": 523,
+      "sha256": "4613df28c5bd415544437224eb4ac5e3e01d48def6dd727d70045878e955e85b"
+    },
+    "scripts/run_alignment_numerical.py": {
+      "bytes": 9515,
+      "sha256": "40f806d39f24a721009d4d7599c8902f1b6720956065daa82e0f4b747ab7a4d4"
+    },
+    "tests/test_alignment_core.py": {
+      "bytes": 6799,
+      "sha256": "91cb5d1c0846fdcef385fce2f2cab33623fe86acd373dfa2243248b713f21c1a"
+    },
+    "tests/test_alignment_execution.py": {
+      "bytes": 3997,
+      "sha256": "2894c0bd146a2d234352ccba2374c9331da0d5e99ec0e6d68fe6e5d99330c963"
+    },
+    "tests/test_alignment_packet.py": {
+      "bytes": 21998,
+      "sha256": "29016ef3ae9e8ba97265a9ffa20cd3d472efb3d3c77220b66e2f180a36c4c06d"
+    }
+  },
+  "original_worker_returncode": 0,
+  "publication_configuration_commit": "74aac18db278a72107f4baff0628d40b609783b3",
+  "publication_run_id": "45372752216",
+  "published_study_files_independently_rehashed": true,
+  "study_commit": "7aee330f7799751a6a9f4b2a8decb612abe9c266",
+  "study_grid_invocations": 0,
+  "study_job_id": 138360349493,
+  "study_run_id": 45369667584,
+  "timing_remeasurements": 0
+}

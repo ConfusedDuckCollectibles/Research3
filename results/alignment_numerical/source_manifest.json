@@ -1,0 +1,42 @@
+{
+  "design_commit": "e7c467f2b097666dc474a3dbb6e273bf253e785f",
+  "design_sha256": "c785e3fef3af9c8fac3bb7a04ccd7980ddfa51c121f3f11a9068eda3b7a70a5e",
+  "files": {
+    "docs/alignment_geometry.md": {
+      "bytes": 21631,
+      "sha256": "06fa7747aa96db8719ce7ae930789daee6291c65cab6752fcadb1364f0f6f2ff"
+    },
+    "docs/alignment_numerical_design.md": {
+      "bytes": 26025,
+      "sha256": "c785e3fef3af9c8fac3bb7a04ccd7980ddfa51c121f3f11a9068eda3b7a70a5e"
+    },
+    "latent_bridge/alignment_core.py": {
+      "bytes": 15305,
+      "sha256": "de8909692a928266c03e22d12b13c800b14e2495a8acad39ae6b95dfc46bfa53"
+    },
+    "latent_bridge/alignment_numerical.py": {
+      "bytes": 64129,
+      "sha256": "46267bbdbebd30399398811deaacc342372f06d96448296d59e9f6bc2bc63f50"
+    },
+    "latent_bridge/alignment_packet.py": {
+      "bytes": 13218,
+      "sha256": "6ae2c169b843007dd9793894676d8ce4a933c5f82fd2ce4063b83dea389c74fd"
+    },
+    "tests/test_alignment_core.py": {
+      "bytes": 6799,
+      "sha256": "91cb5d1c0846fdcef385fce2f2cab33623fe86acd373dfa2243248b713f21c1a"
+    },
+    "tests/test_alignment_execution.py": {
+      "bytes": 3997,
+      "sha256": "2894c0bd146a2d234352ccba2374c9331da0d5e99ec0e6d68fe6e5d99330c963"
+    },
+    "tests/test_alignment_packet.py": {
+      "bytes": 21998,
+      "sha256": "29016ef3ae9e8ba97265a9ffa20cd3d472efb3d3c77220b66e2f180a36c4c06d"
+    }
+  },
+  "launcher_source_manifest": {
+    "bytes": 2175,
+    "sha256": "8fae9d2383abecb1033ade58f33bac7ac2b5e037541b17050f6f9bf5e0f0aaeb"
+  }
+}

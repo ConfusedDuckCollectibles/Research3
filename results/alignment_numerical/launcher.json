@@ -1,0 +1,23 @@
+{
+  "artifact_retention_days": 90,
+  "budget_seconds": 300,
+  "command": [
+    "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+    "-m",
+    "latent_bridge.alignment_numerical",
+    "--output",
+    "/home/runner/work/Research3/Research3/checkpoints/alignment-numerical"
+  ],
+  "design_sha256": "c785e3fef3af9c8fac3bb7a04ccd7980ddfa51c121f3f11a9068eda3b7a70a5e",
+  "frozen_design_commit": "e7c467f2b097666dc474a3dbb6e273bf253e785f",
+  "github_commit": "7aee330f7799751a6a9f4b2a8decb612abe9c266",
+  "github_run_attempt": 1,
+  "github_run_id": "45369667584",
+  "github_run_number": 1,
+  "scope": "fixed_numerical_study_no_models_or_network",
+  "threads": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

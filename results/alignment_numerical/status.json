@@ -1,0 +1,14 @@
+{
+  "failed_required_checks": 0,
+  "observed_counts": {
+    "A": 120,
+    "B": 27,
+    "C": 8,
+    "D": 31,
+    "E": 56,
+    "F": 2304,
+    "T": 12
+  },
+  "stage": "complete",
+  "status": "verified"
+}
