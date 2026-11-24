@@ -8,3 +8,9 @@ local_data/
 *.npz
 *.pt
 *.safetensors
+
+# Bounded audited exports required by the frozen readout retention design.
+!/results/readout_study/normalization.npz
+!/results/readout_study/exports/bridge_weights.npz
+!/results/readout_study/exports/message_features.npz
+!/results/readout_study/exports/small_probe_weights.npz

@@ -27,6 +27,21 @@ jobs:
           ref: ${{ github.sha }}
           fetch-depth: 1
           persist-credentials: true
+      - name: Verify that the four bounded exports are trackable
+        run: |
+          python3 - <<'PY'
+          import subprocess
+          paths = (
+              "results/readout_study/normalization.npz",
+              "results/readout_study/exports/bridge_weights.npz",
+              "results/readout_study/exports/message_features.npz",
+              "results/readout_study/exports/small_probe_weights.npz",
+          )
+          for path in paths:
+              code = subprocess.run(["git", "check-ignore", "--quiet", path], check=False).returncode
+              if code != 1:
+                  raise SystemExit("Required audited export is ignored or could not be checked: " + path)
+          PY
       - name: Download the completed audited artifact
         uses: actions/download-artifact@v4
         with:
