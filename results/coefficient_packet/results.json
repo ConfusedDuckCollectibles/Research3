@@ -1,0 +1,5097 @@
+{
+  "analysis": {
+    "aggregates": {
+      "cold_constrained": {
+        "comparisons": {
+          "dual_direct": {
+            "available_only_descriptive_geometric_mean": 6.229016066505879,
+            "case_median_max": 7.537745991733345,
+            "case_median_min": 4.913005798737048,
+            "complete": true,
+            "completed_cases": 3,
+            "geometric_mean_case_median": 6.229016066505879
+          },
+          "gram_guard": {
+            "available_only_descriptive_geometric_mean": 0.999818467857799,
+            "case_median_max": 1.0002336207557962,
+            "case_median_min": 0.9994347582390697,
+            "complete": true,
+            "completed_cases": 3,
+            "geometric_mean_case_median": 0.999818467857799
+          },
+          "gram_original": {
+            "available_only_descriptive_geometric_mean": 0.9992734982732426,
+            "case_median_max": 0.9994528919784706,
+            "case_median_min": 0.9989986257313633,
+            "complete": true,
+            "completed_cases": 3,
+            "geometric_mean_case_median": 0.9992734982732426
+          },
+          "hindsight_reference": {
+            "available_only_descriptive_geometric_mean": 6.229016066505879,
+            "case_median_max": 7.537745991733345,
+            "case_median_min": 4.913005798737048,
+            "complete": true,
+            "completed_cases": 3,
+            "geometric_mean_case_median": 6.229016066505879
+          },
+          "thin_direct": {
+            "available_only_descriptive_geometric_mean": 6.200733584870064,
+            "case_median_max": 7.529031476206622,
+            "case_median_min": 4.875838605563381,
+            "complete": true,
+            "completed_cases": 3,
+            "geometric_mean_case_median": 6.200733584870064
+          }
+        },
+        "expected_cases": 3,
+        "observed_cases": 3
+      },
+      "loopback_warm": {
+        "comparisons": {
+          "dual_direct": {
+            "available_only_descriptive_geometric_mean": 1.2098053452463209,
+            "case_median_max": 1.4859810966717295,
+            "case_median_min": 1.0295309012412197,
+            "complete": true,
+            "completed_cases": 9,
+            "geometric_mean_case_median": 1.2098053452463209
+          },
+          "gram_guard": {
+            "available_only_descriptive_geometric_mean": 0.8839423378481759,
+            "case_median_max": 0.9065985422050583,
+            "case_median_min": 0.8612471286405341,
+            "complete": true,
+            "completed_cases": 9,
+            "geometric_mean_case_median": 0.8839423378481759
+          },
+          "gram_original": {
+            "available_only_descriptive_geometric_mean": 0.6112369520780865,
+            "case_median_max": 0.6789990868861056,
+            "case_median_min": 0.5764068820323328,
+            "complete": true,
+            "completed_cases": 9,
+            "geometric_mean_case_median": 0.6112369520780865
+          },
+          "hindsight_reference": {
+            "available_only_descriptive_geometric_mean": 1.2098053452463209,
+            "case_median_max": 1.4859810966717295,
+            "case_median_min": 1.0295309012412197,
+            "complete": true,
+            "completed_cases": 9,
+            "geometric_mean_case_median": 1.2098053452463209
+          },
+          "thin_direct": {
+            "available_only_descriptive_geometric_mean": 0.8138744890832719,
+            "case_median_max": 1.2491390009544943,
+            "case_median_min": 0.5906008320117171,
+            "complete": true,
+            "completed_cases": 9,
+            "geometric_mean_case_median": 0.8138744890832719
+          }
+        },
+        "expected_cases": 9,
+        "observed_cases": 9
+      },
+      "shaped_warm": {
+        "comparisons": {
+          "dual_direct": {
+            "available_only_descriptive_geometric_mean": 0.2726673364062676,
+            "case_median_max": 0.8110181203067217,
+            "case_median_min": 0.08073407363859482,
+            "complete": true,
+            "completed_cases": 18,
+            "geometric_mean_case_median": 0.2726673364062676
+          },
+          "gram_guard": {
+            "available_only_descriptive_geometric_mean": 0.9802991311030891,
+            "case_median_max": 0.9965958396025915,
+            "case_median_min": 0.9461117886798904,
+            "complete": true,
+            "completed_cases": 18,
+            "geometric_mean_case_median": 0.9802991311030891
+          },
+          "gram_original": {
+            "available_only_descriptive_geometric_mean": 0.8961407085302706,
+            "case_median_max": 0.9817152163388962,
+            "case_median_min": 0.7611413285846627,
+            "complete": true,
+            "completed_cases": 18,
+            "geometric_mean_case_median": 0.8961407085302706
+          },
+          "hindsight_reference": {
+            "available_only_descriptive_geometric_mean": 0.9802991311030891,
+            "case_median_max": 0.9965958396025915,
+            "case_median_min": 0.9461117886798904,
+            "complete": true,
+            "completed_cases": 18,
+            "geometric_mean_case_median": 0.9802991311030891
+          },
+          "thin_direct": {
+            "available_only_descriptive_geometric_mean": 0.2664673563401076,
+            "case_median_max": 0.7984090532728108,
+            "case_median_min": 0.08019386169950476,
+            "complete": true,
+            "completed_cases": 18,
+            "geometric_mean_case_median": 0.2664673563401076
+          }
+        },
+        "expected_cases": 18,
+        "observed_cases": 18
+      }
+    },
+    "all_warm_hindsight_complete": true,
+    "cases": [
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              413591,
+              413591,
+              413591,
+              413591
+            ],
+            "median_wall_ns": 461192622.5,
+            "wall_ns": [
+              462292822,
+              460946403,
+              461019956,
+              461365289
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18745,
+              18745,
+              18745,
+              18745
+            ],
+            "median_wall_ns": 61184465.0,
+            "wall_ns": [
+              61557357,
+              60789772,
+              61119751,
+              61249179
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              413590,
+              413590,
+              413590,
+              413590
+            ],
+            "median_wall_ns": 461290784.0,
+            "wall_ns": [
+              462809667,
+              460900009,
+              461143641,
+              461437927
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              413593,
+              413593,
+              413593,
+              413593
+            ],
+            "median_wall_ns": 461651571.5,
+            "wall_ns": [
+              462600531,
+              461199861,
+              461295237,
+              462007906
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18745,
+              18745,
+              18745,
+              18745
+            ],
+            "median_wall_ns": 61311924.5,
+            "wall_ns": [
+              61375208,
+              61248641,
+              61077098,
+              61535473
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              413064,
+              413064,
+              413064,
+              413064
+            ],
+            "median_wall_ns": 459402517.5,
+            "wall_ns": [
+              460954831,
+              459381895,
+              459423140,
+              459272751
+            ]
+          }
+        },
+        "fixture_id": "primary-k12-d192-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            7.509952417222851,
+            7.582630890604426,
+            7.542896501656232,
+            7.532595481810458
+          ],
+          "complete": true,
+          "median_ratio": 7.537745991733345,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "cold",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              7.509952417222851,
+              7.582630890604426,
+              7.542896501656232,
+              7.532595481810458
+            ],
+            "complete": true,
+            "median_ratio": 7.537745991733345
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9988832450208954,
+              1.000100659577119,
+              0.9997317863914771,
+              0.999842583377417
+            ],
+            "complete": true,
+            "median_ratio": 0.9997871848844471
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.999334827827943,
+              0.9994504378222265,
+              0.9994032433506354,
+              0.9986090779147836
+            ],
+            "complete": true,
+            "median_ratio": 0.9993690355892892
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              7.532240412122106,
+              7.525822540291139,
+              7.548164059792101,
+              7.497550055396503
+            ],
+            "complete": true,
+            "median_ratio": 7.529031476206622
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              1202584,
+              1202584,
+              1202584,
+              1202584
+            ],
+            "median_wall_ns": 1260432196.5,
+            "wall_ns": [
+              1259746407,
+              1260061830,
+              1262900259,
+              1260802563
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147769,
+              147769,
+              147769,
+              147769
+            ],
+            "median_wall_ns": 193247440.5,
+            "wall_ns": [
+              193430933,
+              193008859,
+              193243508,
+              193251373
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              1202583,
+              1202583,
+              1202583,
+              1202583
+            ],
+            "median_wall_ns": 1260559010.0,
+            "wall_ns": [
+              1259975332,
+              1261200485,
+              1261133101,
+              1259984919
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              1202586,
+              1202586,
+              1202586,
+              1202586
+            ],
+            "median_wall_ns": 1261122187.0,
+            "wall_ns": [
+              1260899582,
+              1261182088,
+              1262753872,
+              1261062286
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147769,
+              147769,
+              147769,
+              147769
+            ],
+            "median_wall_ns": 194119911.5,
+            "wall_ns": [
+              194448363,
+              194025986,
+              194107668,
+              194132155
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              1197545,
+              1197545,
+              1197545,
+              1197545
+            ],
+            "median_wall_ns": 1252377642.0,
+            "wall_ns": [
+              1252297849,
+              1252457435,
+              1252207009,
+              1252854177
+            ]
+          }
+        },
+        "fixture_id": "primary-k36-d512-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            6.512641941296948,
+            6.528518102891847,
+            6.535279099777054,
+            6.524158371697571
+          ],
+          "complete": true,
+          "median_ratio": 6.526338237294709,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "cold",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              6.512641941296948,
+              6.528518102891847,
+              6.535279099777054,
+              6.524158371697571
+            ],
+            "complete": true,
+            "median_ratio": 6.526338237294709
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9998183099349758,
+              0.9990971657452224,
+              1.0014012462273798,
+              1.0006489315766167
+            ],
+            "complete": true,
+            "median_ratio": 1.0002336207557962
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9990854347035544,
+              0.9991117396840162,
+              1.000115926787671,
+              0.999794044272925
+            ],
+            "complete": true,
+            "median_ratio": 0.9994528919784706
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              6.478565247679663,
+              6.494294171503398,
+              6.506184284280825,
+              6.494558116866317
+            ],
+            "complete": true,
+            "median_ratio": 6.494426144184858
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              2442648,
+              2442648,
+              2442648,
+              2442648
+            ],
+            "median_wall_ns": 2516727879.5,
+            "wall_ns": [
+              2516796385,
+              2516659374,
+              2515710446,
+              2517414668
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              461113,
+              461113,
+              461113,
+              461113
+            ],
+            "median_wall_ns": 512218356.5,
+            "wall_ns": [
+              512187558,
+              512249155,
+              512046365,
+              514340147
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              2442647,
+              2442647,
+              2442647,
+              2442647
+            ],
+            "median_wall_ns": 2517852557.5,
+            "wall_ns": [
+              2518360133,
+              2517344982,
+              2516992966,
+              2523624476
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              2442650,
+              2442650,
+              2442650,
+              2442650
+            ],
+            "median_wall_ns": 2519342019.0,
+            "wall_ns": [
+              2519163200,
+              2519073739,
+              2519520838,
+              2520046390
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              461113,
+              461113,
+              461113,
+              461113
+            ],
+            "median_wall_ns": 516051763.0,
+            "wall_ns": [
+              515471474,
+              516253312,
+              515850214,
+              516419433
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              2428489,
+              2428489,
+              2428489,
+              2428489
+            ],
+            "median_wall_ns": 2497798302.5,
+            "wall_ns": [
+              2498257584,
+              2496919265,
+              2497339021,
+              2499292365
+            ]
+          }
+        },
+        "fixture_id": "primary-k60-d960-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            4.913817888953874,
+            4.912959542119694,
+            4.9130520553544015,
+            4.894454929647948
+          ],
+          "complete": true,
+          "median_ratio": 4.913005798737048,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "cold",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              4.913817888953874,
+              4.912959542119694,
+              4.9130520553544015,
+              4.894454929647948
+            ],
+            "complete": true,
+            "median_ratio": 4.913005798737048
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.999379061008984,
+              0.9997276463874033,
+              0.9994904554691553,
+              0.9975393296193407
+            ],
+            "complete": true,
+            "median_ratio": 0.9994347582390697
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9990604757166983,
+              0.9990415663651996,
+              0.9984876521191923,
+              0.9989556850975271
+            ],
+            "complete": true,
+            "median_ratio": 0.9989986257313633
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              4.882513411401694,
+              4.874853711350137,
+              4.8768234997766235,
+              4.8747481352042765
+            ],
+            "complete": true,
+            "median_ratio": 4.875838605563381
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 22022277.5,
+            "wall_ns": [
+              22009668,
+              22034887,
+              21960257,
+              22072215
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 39673052.0,
+            "wall_ns": [
+              39716404,
+              39629700,
+              39555802,
+              39757766
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 22119685.5,
+            "wall_ns": [
+              22148436,
+              21915238,
+              22090935,
+              22162681
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 22450157.0,
+            "wall_ns": [
+              22539043,
+              22414528,
+              22366819,
+              22485786
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 39824290.0,
+            "wall_ns": [
+              39822862,
+              39857922,
+              39716983,
+              39825718
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              152,
+              152,
+              152,
+              152
+            ],
+            "median_wall_ns": 20614781.5,
+            "wall_ns": [
+              20627779,
+              20601784,
+              20589206,
+              20657700
+            ]
+          }
+        },
+        "fixture_id": "primary-k12-d192-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9937346366127161,
+            1.0054596258548505,
+            0.9940845419173068,
+            0.995918093122398
+          ],
+          "complete": true,
+          "median_ratio": 0.9950013175198524,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.5541707149519377,
+              0.5560195257597206,
+              0.555171577610789,
+              0.5551673854109408
+            ],
+            "complete": true,
+            "median_ratio": 0.5551694815108649
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9937346366127161,
+              1.0054596258548505,
+              0.9940845419173068,
+              0.995918093122398
+            ],
+            "complete": true,
+            "median_ratio": 0.9950013175198524
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9765129779467566,
+              0.9830627261033559,
+              0.9818229851996388,
+              0.9816074474781535
+            ],
+            "complete": true,
+            "median_ratio": 0.9817152163388962
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.5526892567390058,
+              0.5528358201915293,
+              0.552918558793854,
+              0.5542201398603787
+            ],
+            "complete": true,
+            "median_ratio": 0.5528771894926916
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 931400.0,
+            "wall_ns": [
+              902537,
+              1093604,
+              960263,
+              899119
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 688758.0,
+            "wall_ns": [
+              707854,
+              666811,
+              669662,
+              718330
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 1052164.0,
+            "wall_ns": [
+              1099012,
+              1059551,
+              1044777,
+              1024055
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 1462122.5,
+            "wall_ns": [
+              1436430,
+              1400172,
+              1516797,
+              1487815
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 757775.0,
+            "wall_ns": [
+              732872,
+              786975,
+              775659,
+              739891
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              152,
+              152,
+              152,
+              152
+            ],
+            "median_wall_ns": 216636.0,
+            "wall_ns": [
+              221163,
+              212109,
+              231964,
+              211786
+            ]
+          }
+        },
+        "fixture_id": "primary-k12-d192-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            1.275032704484258,
+            1.6400509289738772,
+            1.4339517547658371,
+            1.2516795901605111
+          ],
+          "complete": true,
+          "median_ratio": 1.3544922296250475,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              1.275032704484258,
+              1.6400509289738772,
+              1.4339517547658371,
+              1.2516795901605111
+            ],
+            "complete": true,
+            "median_ratio": 1.3544922296250475
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.8212257918930822,
+              1.0321390853295405,
+              0.919108096751747,
+              0.8779987403020345
+            ],
+            "complete": true,
+            "median_ratio": 0.8985534185268907
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.6283195143515521,
+              0.7810497567441714,
+              0.6330860359032883,
+              0.6043217738764565
+            ],
+            "complete": true,
+            "median_ratio": 0.6307027751274201
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              1.231507002587082,
+              1.3896299120048285,
+              1.2379963360187918,
+              1.2152046720395302
+            ],
+            "complete": true,
+            "median_ratio": 1.2347516693029368
+          }
+        },
+        "profile": "loopback"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 6310423.5,
+            "wall_ns": [
+              6340299,
+              6281061,
+              6276887,
+              6339786
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 7774244.0,
+            "wall_ns": [
+              7844430,
+              7764950,
+              7719346,
+              7783538
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 6400714.0,
+            "wall_ns": [
+              6437980,
+              6397595,
+              6243467,
+              6403833
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 6718436.5,
+            "wall_ns": [
+              6641942,
+              6745984,
+              6690889,
+              6769593
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 7914187.0,
+            "wall_ns": [
+              7941646,
+              7853833,
+              7888330,
+              7940044
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              152,
+              152,
+              152,
+              152
+            ],
+            "median_wall_ns": 5422939.0,
+            "wall_ns": [
+              5472084,
+              5424607,
+              5421271,
+              5415917
+            ]
+          }
+        },
+        "fixture_id": "primary-k12-d192-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9848273837445907,
+            0.9817847175383875,
+            1.005352795169735,
+            0.9899986461233452
+          ],
+          "complete": true,
+          "median_ratio": 0.9874130149339679,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.8082549018857966,
+              0.80889909143008,
+              0.8131371491833634,
+              0.8145121151846371
+            ],
+            "complete": true,
+            "median_ratio": 0.8110181203067217
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9848273837445907,
+              0.9817847175383875,
+              1.005352795169735,
+              0.9899986461233452
+            ],
+            "complete": true,
+            "median_ratio": 0.9874130149339679
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9545851198339281,
+              0.9310815145722255,
+              0.9381245152923625,
+              0.9365091815711816
+            ],
+            "complete": true,
+            "median_ratio": 0.937316848431772
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.7983608183996114,
+              0.7997446597094693,
+              0.7957181050995584,
+              0.7984572881460102
+            ],
+            "complete": true,
+            "median_ratio": 0.7984090532728108
+          }
+        },
+        "profile": "moderate"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 21976002.5,
+            "wall_ns": [
+              21949256,
+              21969819,
+              21982186,
+              22086464
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 39571344.0,
+            "wall_ns": [
+              39557194,
+              39585494,
+              39729572,
+              39533589
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 22051906.0,
+            "wall_ns": [
+              22025303,
+              22142900,
+              22056198,
+              22047614
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 22424472.5,
+            "wall_ns": [
+              22367567,
+              22462771,
+              22515559,
+              22386174
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 39695957.0,
+            "wall_ns": [
+              39658274,
+              39767596,
+              39676573,
+              39715341
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              152,
+              152,
+              152,
+              152
+            ],
+            "median_wall_ns": 20675357.0,
+            "wall_ns": [
+              20736673,
+              20659129,
+              20600788,
+              20691585
+            ]
+          }
+        },
+        "fixture_id": "primary-k12-d192-seed17027",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9965472892699819,
+            0.9921834538384764,
+            0.996644389935201,
+            1.0017620954358144
+          ],
+          "complete": true,
+          "median_ratio": 0.9965958396025915,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.5548739377216695,
+              0.5549967116742309,
+              0.5532953136268369,
+              0.5586759148024734
+            ],
+            "complete": true,
+            "median_ratio": 0.5549353246979503
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9965472892699819,
+              0.9921834538384764,
+              0.996644389935201,
+              1.0017620954358144
+            ],
+            "complete": true,
+            "median_ratio": 0.9965958396025915
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9812983235950518,
+              0.9780547110594682,
+              0.9763109145991001,
+              0.9866118256741863
+            ],
+            "complete": true,
+            "median_ratio": 0.9796765173272599
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.5534596891433047,
+              0.552455295512457,
+              0.5540343920327998,
+              0.5561192084439108
+            ],
+            "complete": true,
+            "median_ratio": 0.5537470405880522
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 971277.0,
+            "wall_ns": [
+              970347,
+              972207,
+              1656131,
+              924139
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 670773.5,
+            "wall_ns": [
+              661389,
+              818338,
+              671190,
+              670357
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 1117918.0,
+            "wall_ns": [
+              1153489,
+              1103193,
+              1039273,
+              1132643
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 1431095.0,
+            "wall_ns": [
+              1460704,
+              1401486,
+              1401448,
+              1498993
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 799098.0,
+            "wall_ns": [
+              788077,
+              785259,
+              810119,
+              903569
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              152,
+              152,
+              152,
+              152
+            ],
+            "median_wall_ns": 232588.0,
+            "wall_ns": [
+              253826,
+              231484,
+              220642,
+              233692
+            ]
+          }
+        },
+        "fixture_id": "primary-k12-d192-seed17027",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            1.467135074819811,
+            1.1880262189950852,
+            2.4674548190527275,
+            1.3785773848859637
+          ],
+          "complete": true,
+          "median_ratio": 1.4228562298528873,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              1.467135074819811,
+              1.1880262189950852,
+              2.4674548190527275,
+              1.3785773848859637
+            ],
+            "complete": true,
+            "median_ratio": 1.4228562298528873
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.841227788041325,
+              0.8812664692397432,
+              1.59354760491228,
+              0.8159137521708075
+            ],
+            "complete": true,
+            "median_ratio": 0.8612471286405341
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.6643009124367428,
+              0.6936972613354682,
+              1.181728469411637,
+              0.6165065480625994
+            ],
+            "complete": true,
+            "median_ratio": 0.6789990868861056
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              1.231284506463201,
+              1.2380717699510608,
+              2.044305836549939,
+              1.0227652785786143
+            ],
+            "complete": true,
+            "median_ratio": 1.2346781382071308
+          }
+        },
+        "profile": "loopback"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 6275669.5,
+            "wall_ns": [
+              6320339,
+              6170327,
+              6285059,
+              6266280
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 7800281.0,
+            "wall_ns": [
+              7750098,
+              7786748,
+              7813814,
+              8117844
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 6298510.0,
+            "wall_ns": [
+              6278256,
+              6298380,
+              6298640,
+              6402536
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 6687748.0,
+            "wall_ns": [
+              6677756,
+              6614835,
+              6697740,
+              6698621
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 7883665.5,
+            "wall_ns": [
+              7877330,
+              7882732,
+              7884599,
+              7919246
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              152,
+              152,
+              152,
+              152
+            ],
+            "median_wall_ns": 5418255.0,
+            "wall_ns": [
+              5416140,
+              5420370,
+              5402242,
+              5444675
+            ]
+          }
+        },
+        "fixture_id": "primary-k12-d192-seed17027",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            1.0067029761131117,
+            0.9796688989867236,
+            0.997843820253261,
+            0.9787184328209947
+          ],
+          "complete": true,
+          "median_ratio": 0.9887563596199923,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.8155173005554253,
+              0.7924138549237756,
+              0.8043522663836125,
+              0.7719143161657208
+            ],
+            "complete": true,
+            "median_ratio": 0.798383060653694
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              1.0067029761131117,
+              0.9796688989867236,
+              0.997843820253261,
+              0.9787184328209947
+            ],
+            "complete": true,
+            "median_ratio": 0.9887563596199923
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9464764810214689,
+              0.9328013472747242,
+              0.9383850373409538,
+              0.9354582084879858
+            ],
+            "complete": true,
+            "median_ratio": 0.9369216229144698
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.8023453378238565,
+              0.7827650362843745,
+              0.7971310906236322,
+              0.7912723004184994
+            ],
+            "complete": true,
+            "median_ratio": 0.7942016955210658
+          }
+        },
+        "profile": "moderate"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 21959233.0,
+            "wall_ns": [
+              22060417,
+              21986726,
+              21886555,
+              21931740
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 39684979.0,
+            "wall_ns": [
+              39715769,
+              39763557,
+              39654189,
+              39573889
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 22069629.0,
+            "wall_ns": [
+              22315706,
+              22125031,
+              22014227,
+              21943538
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 22474247.0,
+            "wall_ns": [
+              22656210,
+              22421040,
+              22511183,
+              22437311
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 39721794.0,
+            "wall_ns": [
+              39789930,
+              39869834,
+              39645416,
+              39653658
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              152,
+              152,
+              152,
+              152
+            ],
+            "median_wall_ns": 20610204.5,
+            "wall_ns": [
+              20629328,
+              20599180,
+              20583377,
+              20621229
+            ]
+          }
+        },
+        "fixture_id": "primary-k12-d192-seed17041",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9885601199442222,
+            0.9937489353122262,
+            0.994200477718341,
+            0.9994623474117984
+          ],
+          "complete": true,
+          "median_ratio": 0.9939747065152835,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.5554573801655458,
+              0.5529365997111375,
+              0.5519355092598162,
+              0.5541972384872258
+            ],
+            "complete": true,
+            "median_ratio": 0.5535669190991817
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9885601199442222,
+              0.9937489353122262,
+              0.994200477718341,
+              0.9994623474117984
+            ],
+            "complete": true,
+            "median_ratio": 0.9939747065152835
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9737028832271594,
+              0.9806291768802874,
+              0.9722525466564773,
+              0.97746739794265
+            ],
+            "complete": true,
+            "median_ratio": 0.9755851405849048
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.5544221113231413,
+              0.5514626923202138,
+              0.5520576452016546,
+              0.5530823915412797
+            ],
+            "complete": true,
+            "median_ratio": 0.5525700183714671
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 989115.5,
+            "wall_ns": [
+              959662,
+              946303,
+              1018569,
+              1214188
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 650163.0,
+            "wall_ns": [
+              643448,
+              639167,
+              732084,
+              656878
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 1075092.0,
+            "wall_ns": [
+              1099063,
+              1051121,
+              1218355,
+              1027971
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 1431997.5,
+            "wall_ns": [
+              1436700,
+              1398413,
+              1545639,
+              1427295
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 786859.5,
+            "wall_ns": [
+              892792,
+              794746,
+              778973,
+              761354
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              152,
+              152,
+              152,
+              152
+            ],
+            "median_wall_ns": 234447.5,
+            "wall_ns": [
+              231528,
+              237367,
+              246805,
+              205276
+            ]
+          }
+        },
+        "fixture_id": "primary-k12-d192-seed17041",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            1.4914367594584177,
+            1.480525433885041,
+            1.3913280443227827,
+            1.848422385892053
+          ],
+          "complete": true,
+          "median_ratio": 1.4859810966717295,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              1.4914367594584177,
+              1.480525433885041,
+              1.3913280443227827,
+              1.848422385892053
+            ],
+            "complete": true,
+            "median_ratio": 1.4859810966717295
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.8731637767807668,
+              0.9002797965219989,
+              0.836019879263433,
+              1.1811500518983513
+            ],
+            "complete": true,
+            "median_ratio": 0.8867217866513828
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.6679626922809215,
+              0.6766977995770921,
+              0.6589954057836274,
+              0.8506916930277203
+            ],
+            "complete": true,
+            "median_ratio": 0.6723302459290068
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              1.0748998646941281,
+              1.1906986634723546,
+              1.3075793384366339,
+              1.5947745726692182
+            ],
+            "complete": true,
+            "median_ratio": 1.2491390009544943
+          }
+        },
+        "profile": "loopback"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 6276660.5,
+            "wall_ns": [
+              6213056,
+              6307392,
+              6318358,
+              6245929
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 7761581.5,
+            "wall_ns": [
+              7739362,
+              7773874,
+              7832591,
+              7749289
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 6396118.5,
+            "wall_ns": [
+              6344914,
+              6387791,
+              6404446,
+              6435344
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              680,
+              680,
+              680,
+              680
+            ],
+            "median_wall_ns": 6783182.0,
+            "wall_ns": [
+              6851887,
+              6772351,
+              6794013,
+              6687072
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              18536,
+              18536,
+              18536,
+              18536
+            ],
+            "median_wall_ns": 7920200.0,
+            "wall_ns": [
+              7892362,
+              7841194,
+              7990445,
+              7948038
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              152,
+              152,
+              152,
+              152
+            ],
+            "median_wall_ns": 5477513.5,
+            "wall_ns": [
+              5420053,
+              5447298,
+              5546545,
+              5507729
+            ]
+          }
+        },
+        "fixture_id": "primary-k12-d192-seed17041",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.979218315646201,
+            0.98741364581277,
+            0.9865580879282924,
+            0.9705664530132344
+          ],
+          "complete": true,
+          "median_ratio": 0.9828882017872467,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.8027865862845025,
+              0.8113576319863173,
+              0.8066753389778683,
+              0.806000266605104
+            ],
+            "complete": true,
+            "median_ratio": 0.8063378027914861
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.979218315646201,
+              0.98741364581277,
+              0.9865580879282924,
+              0.9705664530132344
+            ],
+            "complete": true,
+            "median_ratio": 0.9828882017872467
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9067656836722497,
+              0.9313445212748128,
+              0.9299890948103867,
+              0.9340304695388355
+            ],
+            "complete": true,
+            "median_ratio": 0.9306668080425997
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.7872239007790063,
+              0.8043917801294037,
+              0.790739189119004,
+              0.7858453872515456
+            ],
+            "complete": true,
+            "median_ratio": 0.7889815449490052
+          }
+        },
+        "profile": "moderate"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 27817208.0,
+            "wall_ns": [
+              27578354,
+              27901458,
+              27735673,
+              27898743
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 170973755.5,
+            "wall_ns": [
+              170911167,
+              170963945,
+              170986824,
+              170983566
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 28150542.0,
+            "wall_ns": [
+              28109243,
+              28191841,
+              28003906,
+              28285596
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 29383916.0,
+            "wall_ns": [
+              29225430,
+              29475030,
+              29298803,
+              29469029
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 172097848.0,
+            "wall_ns": [
+              172032526,
+              172144232,
+              172051464,
+              172419398
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              248,
+              248,
+              248,
+              248
+            ],
+            "median_wall_ns": 20766774.0,
+            "wall_ns": [
+              20753378,
+              20810301,
+              20751153,
+              20780170
+            ]
+          }
+        },
+        "fixture_id": "primary-k36-d512-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9811133654506455,
+            0.989699750363944,
+            0.9904215861887267,
+            0.9863233215944963
+          ],
+          "complete": true,
+          "median_ratio": 0.9880115359792201,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.16136074947051296,
+              0.16320083161394058,
+              0.1622094167910856,
+              0.16316622499264052
+            ],
+            "complete": true,
+            "median_ratio": 0.16268782089186307
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9811133654506455,
+              0.989699750363944,
+              0.9904215861887267,
+              0.9863233215944963
+            ],
+            "complete": true,
+            "median_ratio": 0.9880115359792201
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9436423689916624,
+              0.9466133876708522,
+              0.946648673667658,
+              0.9467140230511158
+            ],
+            "complete": true,
+            "median_ratio": 0.9466310306692551
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.16030895227336253,
+              0.16208186400343638,
+              0.16120567855208717,
+              0.1618074492987152
+            ],
+            "complete": true,
+            "median_ratio": 0.1615065639254012
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 2143927.5,
+            "wall_ns": [
+              2258425,
+              2128182,
+              2156732,
+              2131123
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 1838425.0,
+            "wall_ns": [
+              2004269,
+              1828371,
+              1848479,
+              1776550
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 2442798.5,
+            "wall_ns": [
+              2712638,
+              2497977,
+              2387620,
+              2329261
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 3620933.0,
+            "wall_ns": [
+              3814952,
+              3570561,
+              3638631,
+              3603235
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 2895597.5,
+            "wall_ns": [
+              3033593,
+              2828945,
+              2915914,
+              2875281
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              248,
+              248,
+              248,
+              248
+            ],
+            "median_wall_ns": 341172.5,
+            "wall_ns": [
+              397869,
+              331408,
+              347222,
+              335123
+            ]
+          }
+        },
+        "fixture_id": "primary-k36-d512-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            1.1268073297546388,
+            1.1639771140539859,
+            1.166760347290935,
+            1.1995851509949058
+          ],
+          "complete": true,
+          "median_ratio": 1.1653687306724603,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              1.1268073297546388,
+              1.1639771140539859,
+              1.166760347290935,
+              1.1995851509949058
+            ],
+            "complete": true,
+            "median_ratio": 1.1653687306724603
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.8325567215382222,
+              0.8519622078185668,
+              0.9032978447156582,
+              0.914935251996234
+            ],
+            "complete": true,
+            "median_ratio": 0.8776300262671125
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.5919930316292316,
+              0.5960357490041481,
+              0.5927317169561849,
+              0.5914471301483251
+            ],
+            "complete": true,
+            "median_ratio": 0.5923623742927082
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.7444719842114614,
+              0.7522882205203707,
+              0.739641841288872,
+              0.7411877308687395
+            ],
+            "complete": true,
+            "median_ratio": 0.7428298575401004
+          }
+        },
+        "profile": "loopback"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 7933399.5,
+            "wall_ns": [
+              7977774,
+              7832542,
+              8087099,
+              7889025
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 22487282.5,
+            "wall_ns": [
+              22460457,
+              22286043,
+              22514108,
+              22690711
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 8196776.5,
+            "wall_ns": [
+              8105166,
+              8099994,
+              8288387,
+              8419311
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 9531170.5,
+            "wall_ns": [
+              9290357,
+              9394542,
+              9667799,
+              9861938
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 23647583.5,
+            "wall_ns": [
+              23597066,
+              23507300,
+              23698101,
+              23753837
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              248,
+              248,
+              248,
+              248
+            ],
+            "median_wall_ns": 5551263.5,
+            "wall_ns": [
+              5557816,
+              5544711,
+              5512975,
+              5572916
+            ]
+          }
+        },
+        "fixture_id": "primary-k36-d512-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9842826167903286,
+            0.9669812101095383,
+            0.9757144544529593,
+            0.9370155111267419
+          ],
+          "complete": true,
+          "median_ratio": 0.9713478322812488,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.3551919713833071,
+              0.35145503398696665,
+              0.3592013949653257,
+              0.34767641260778476
+            ],
+            "complete": true,
+            "median_ratio": 0.3533235026851369
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9842826167903286,
+              0.9669812101095383,
+              0.9757144544529593,
+              0.9370155111267419
+            ],
+            "complete": true,
+            "median_ratio": 0.9713478322812488
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.8587155477448283,
+              0.8337332463892332,
+              0.8364984625766423,
+              0.799946724467341
+            ],
+            "complete": true,
+            "median_ratio": 0.8351158544829378
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.3380833023902209,
+              0.3331961560876834,
+              0.3412551495159886,
+              0.3321158177518857
+            ],
+            "complete": true,
+            "median_ratio": 0.33563972923895213
+          }
+        },
+        "profile": "moderate"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 27799602.0,
+            "wall_ns": [
+              27785215,
+              27729373,
+              27912055,
+              27813989
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 170978614.0,
+            "wall_ns": [
+              170751905,
+              171066867,
+              171063692,
+              170893536
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 28122260.0,
+            "wall_ns": [
+              28093047,
+              28297396,
+              28144451,
+              28100069
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 29290922.0,
+            "wall_ns": [
+              29135777,
+              29453376,
+              29345616,
+              29236228
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 171976300.0,
+            "wall_ns": [
+              171893101,
+              171960711,
+              172190856,
+              171991889
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              248,
+              248,
+              248,
+              248
+            ],
+            "median_wall_ns": 20849032.5,
+            "wall_ns": [
+              20877310,
+              20826629,
+              20859959,
+              20838106
+            ]
+          }
+        },
+        "fixture_id": "primary-k36-d512-seed17027",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9890424132348478,
+            0.9799266688708742,
+            0.9917427417575138,
+            0.9898192420808647
+          ],
+          "complete": true,
+          "median_ratio": 0.9894308276578563,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.16272272335702492,
+              0.16209669052979148,
+              0.16316761712356823,
+              0.16275623789538768
+            ],
+            "complete": true,
+            "median_ratio": 0.1627394806262063
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9890424132348478,
+              0.9799266688708742,
+              0.9917427417575138,
+              0.9898192420808647
+            ],
+            "complete": true,
+            "median_ratio": 0.9894308276578563
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9536459247337046,
+              0.9414667099622128,
+              0.9511490574946527,
+              0.9513535398615718
+            ],
+            "complete": true,
+            "median_ratio": 0.9512512986781123
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.16164240937162452,
+              0.161254119262161,
+              0.1620995193844672,
+              0.16171686445050906
+            ],
+            "complete": true,
+            "median_ratio": 0.1616796369110668
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 2167765.0,
+            "wall_ns": [
+              2143763,
+              2161259,
+              2265836,
+              2174271
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 1827732.5,
+            "wall_ns": [
+              1799115,
+              1849050,
+              1806415,
+              1966532
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 2421187.5,
+            "wall_ns": [
+              2492147,
+              2385026,
+              2399096,
+              2443279
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 3662685.5,
+            "wall_ns": [
+              3631209,
+              3621875,
+              3694162,
+              3784556
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 2990300.0,
+            "wall_ns": [
+              3020090,
+              2954862,
+              2960510,
+              3041645
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              248,
+              248,
+              248,
+              248
+            ],
+            "median_wall_ns": 333162.5,
+            "wall_ns": [
+              353662,
+              320793,
+              318959,
+              345532
+            ]
+          }
+        },
+        "fixture_id": "primary-k36-d512-seed17027",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            1.191565297382324,
+            1.1688483275195372,
+            1.2543274939590294,
+            1.1056372334648
+          ],
+          "complete": true,
+          "median_ratio": 1.1802068124509306,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              1.191565297382324,
+              1.1688483275195372,
+              1.2543274939590294,
+              1.1056372334648
+            ],
+            "complete": true,
+            "median_ratio": 1.1802068124509306
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.8602072831177294,
+              0.9061783812838937,
+              0.9444540777026013,
+              0.8898987794680837
+            ],
+            "complete": true,
+            "median_ratio": 0.8980385803759887
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.590371691632181,
+              0.5967237963761863,
+              0.6133558842303072,
+              0.5745115146928729
+            ],
+            "complete": true,
+            "median_ratio": 0.5935477440041836
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.7098341440155757,
+              0.7314246824386385,
+              0.7653532668357816,
+              0.714833913885414
+            ],
+            "complete": true,
+            "median_ratio": 0.7231292981620262
+          }
+        },
+        "profile": "loopback"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 8026936.5,
+            "wall_ns": [
+              7959119,
+              8115961,
+              7967529,
+              8086344
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 22342963.0,
+            "wall_ns": [
+              22359338,
+              22599754,
+              22326588,
+              22208818
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 8125655.0,
+            "wall_ns": [
+              8153128,
+              8250420,
+              8047499,
+              8098182
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 9360750.0,
+            "wall_ns": [
+              9353375,
+              9553210,
+              9368125,
+              9306349
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 23514738.5,
+            "wall_ns": [
+              23605173,
+              23494519,
+              23527053,
+              23502424
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              248,
+              248,
+              248,
+              248
+            ],
+            "median_wall_ns": 5536109.0,
+            "wall_ns": [
+              5528380,
+              5543121,
+              5607040,
+              5529097
+            ]
+          }
+        },
+        "fixture_id": "primary-k36-d512-seed17027",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9762043475829154,
+            0.9837027690711503,
+            0.9900627511727557,
+            0.9985381904234802
+          ],
+          "complete": true,
+          "median_ratio": 0.986882760121953,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.35596398247568867,
+              0.3591172275592026,
+              0.35686281307291556,
+              0.36410510455801837
+            ],
+            "complete": true,
+            "median_ratio": 0.3579900203160591
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9762043475829154,
+              0.9837027690711503,
+              0.9900627511727557,
+              0.9985381904234802
+            ],
+            "complete": true,
+            "median_ratio": 0.986882760121953
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.8509355179280206,
+              0.8495532915114397,
+              0.8504934552004804,
+              0.8689061628786972
+            ],
+            "complete": true,
+            "median_ratio": 0.8507144865642504
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.33717689762324554,
+              0.34544061106337187,
+              0.3386539317100191,
+              0.3440642548189923
+            ],
+            "complete": true,
+            "median_ratio": 0.3413590932645057
+          }
+        },
+        "profile": "moderate"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 27805011.0,
+            "wall_ns": [
+              27911602,
+              27779248,
+              27810622,
+              27799400
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 171454372.5,
+            "wall_ns": [
+              171203339,
+              171964012,
+              171705406,
+              170909016
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 28197118.5,
+            "wall_ns": [
+              28201317,
+              28181035,
+              28192920,
+              28447563
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 29463451.5,
+            "wall_ns": [
+              29560943,
+              29397606,
+              29529297,
+              29227025
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 172096595.5,
+            "wall_ns": [
+              172029992,
+              172163199,
+              172342729,
+              171826835
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              248,
+              248,
+              248,
+              248
+            ],
+            "median_wall_ns": 20839658.5,
+            "wall_ns": [
+              20827112,
+              20783051,
+              21691278,
+              20852205
+            ]
+          }
+        },
+        "fixture_id": "primary-k36-d512-seed17041",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9897268982154274,
+            0.9857426457190093,
+            0.9864399288899482,
+            0.9772155175471445
+          ],
+          "complete": true,
+          "median_ratio": 0.9860912873044787,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.16303187871820654,
+              0.1615410554622324,
+              0.1619670728363672,
+              0.1626561351216252
+            ],
+            "complete": true,
+            "median_ratio": 0.1623116039789962
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9897268982154274,
+              0.9857426457190093,
+              0.9864399288899482,
+              0.9772155175471445
+            ],
+            "complete": true,
+            "median_ratio": 0.9860912873044787
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9442053996721281,
+              0.9449493268261367,
+              0.9417976323649019,
+              0.9511539405738354
+            ],
+            "complete": true,
+            "median_ratio": 0.9445773632491324
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.16224846420965944,
+              0.16135415792314595,
+              0.1613681189880659,
+              0.1617873017331664
+            ],
+            "complete": true,
+            "median_ratio": 0.16157771036061616
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 2138896.0,
+            "wall_ns": [
+              2068960,
+              2255240,
+              2151073,
+              2126719
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 1874886.0,
+            "wall_ns": [
+              1813219,
+              1949998,
+              1936553,
+              1779617
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 2498034.0,
+            "wall_ns": [
+              2433543,
+              2535775,
+              2460293,
+              2588043
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 3624186.0,
+            "wall_ns": [
+              3615393,
+              3921248,
+              3632979,
+              3541537
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 2875105.5,
+            "wall_ns": [
+              2877424,
+              3184697,
+              2872787,
+              2861545
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              248,
+              248,
+              248,
+              248
+            ],
+            "median_wall_ns": 311073.5,
+            "wall_ns": [
+              302190,
+              345321,
+              319957,
+              301583
+            ]
+          }
+        },
+        "fixture_id": "primary-k36-d512-seed17041",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            1.1410425326449811,
+            1.1565345195225842,
+            1.1107741435426761,
+            1.195043090732444
+          ],
+          "complete": true,
+          "median_ratio": 1.1487885260837827,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              1.1410425326449811,
+              1.1565345195225842,
+              1.1107741435426761,
+              1.195043090732444
+            ],
+            "complete": true,
+            "median_ratio": 1.1487885260837827
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.8501842786422923,
+              0.8893691277814475,
+              0.8743157827136849,
+              0.8217479385002491
+            ],
+            "complete": true,
+            "median_ratio": 0.8622500306779886
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.572264204748972,
+              0.5751332228923036,
+              0.5920961833250343,
+              0.6005073503396972
+            ],
+            "complete": true,
+            "median_ratio": 0.5836147031086689
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.719032023087317,
+              0.7081490013021647,
+              0.7487756662780777,
+              0.7432065545011524
+            ],
+            "complete": true,
+            "median_ratio": 0.7311192887942346
+          }
+        },
+        "profile": "loopback"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 7933174.0,
+            "wall_ns": [
+              7963082,
+              7896819,
+              7910491,
+              7955857
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 22442661.0,
+            "wall_ns": [
+              22451023,
+              22582971,
+              22434299,
+              22367277
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 8087085.5,
+            "wall_ns": [
+              8126196,
+              8083499,
+              8090672,
+              8079193
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              5288,
+              5288,
+              5288,
+              5288
+            ],
+            "median_wall_ns": 9319679.5,
+            "wall_ns": [
+              10125963,
+              9275462,
+              9296497,
+              9342862
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              147560,
+              147560,
+              147560,
+              147560
+            ],
+            "median_wall_ns": 23516144.0,
+            "wall_ns": [
+              23555943,
+              23522403,
+              23382456,
+              23509885
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              248,
+              248,
+              248,
+              248
+            ],
+            "median_wall_ns": 5534251.5,
+            "wall_ns": [
+              5552758,
+              5524410,
+              5514433,
+              5544093
+            ]
+          }
+        },
+        "fixture_id": "primary-k36-d512-seed17041",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9799273854580913,
+            0.9769060403174418,
+            0.9777297856098974,
+            0.9847341188655847
+          ],
+          "complete": true,
+          "median_ratio": 0.9788285855339944,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.35468682206597,
+              0.34968025243445605,
+              0.3526070059064471,
+              0.3556917992297408
+            ],
+            "complete": true,
+            "median_ratio": 0.35364691398620857
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9799273854580913,
+              0.9769060403174418,
+              0.9777297856098974,
+              0.9847341188655847
+            ],
+            "complete": true,
+            "median_ratio": 0.9788285855339944
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.7864024389581514,
+              0.851366648906545,
+              0.8509109398948873,
+              0.8515438845184699
+            ],
+            "complete": true,
+            "median_ratio": 0.8511387944007162
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.3380498076430224,
+              0.3357148077090593,
+              0.3383088158061754,
+              0.3384047603805803
+            ],
+            "complete": true,
+            "median_ratio": 0.3381793117245989
+          }
+        },
+        "profile": "moderate"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 39613577.0,
+            "wall_ns": [
+              39659585,
+              39534559,
+              39757518,
+              39567569
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 489305833.0,
+            "wall_ns": [
+              489403346,
+              489208320,
+              490041738,
+              489086883
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 40269905.0,
+            "wall_ns": [
+              39998083,
+              40270606,
+              40317738,
+              40269204
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 43104373.5,
+            "wall_ns": [
+              43282122,
+              43218871,
+              42989876,
+              42814534
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 492843285.0,
+            "wall_ns": [
+              492930194,
+              492756376,
+              495019118,
+              492713679
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              344,
+              344,
+              344,
+              344
+            ],
+            "median_wall_ns": 21187337.5,
+            "wall_ns": [
+              21257809,
+              21206029,
+              21165079,
+              21168646
+            ]
+          }
+        },
+        "fixture_id": "primary-k60-d960-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9915371444176462,
+            0.9817224751969216,
+            0.9861048752288633,
+            0.9825763876534535
+          ],
+          "complete": true,
+          "median_ratio": 0.9843406314411584,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.08103660370152026,
+              0.08081334144112676,
+              0.08113088114139372,
+              0.08090089997363516
+            ],
+            "complete": true,
+            "median_ratio": 0.08096875183757771
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9915371444176462,
+              0.9817224751969216,
+              0.9861048752288633,
+              0.9825763876534535
+            ],
+            "complete": true,
+            "median_ratio": 0.9843406314411584
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9163040804699918,
+              0.9147522386690758,
+              0.9248111811255283,
+              0.924162084772428
+            ],
+            "complete": true,
+            "median_ratio": 0.92023308262121
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.08045679790514111,
+              0.08023145092697898,
+              0.08031511623355121,
+              0.08030539984257266
+            ],
+            "complete": true,
+            "median_ratio": 0.08031025803806194
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 4868816.5,
+            "wall_ns": [
+              4943552,
+              4831185,
+              4790951,
+              4906448
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 4457096.5,
+            "wall_ns": [
+              4462449,
+              4451744,
+              4406463,
+              4485023
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 5412576.5,
+            "wall_ns": [
+              5453437,
+              5556290,
+              5283972,
+              5371716
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 8260290.5,
+            "wall_ns": [
+              8269309,
+              8404949,
+              8019043,
+              8251272
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 8161438.5,
+            "wall_ns": [
+              8262588,
+              8135510,
+              7863038,
+              8187367
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              344,
+              344,
+              344,
+              344
+            ],
+            "median_wall_ns": 642553.5,
+            "wall_ns": [
+              658796,
+              570785,
+              634724,
+              650383
+            ]
+          }
+        },
+        "fixture_id": "primary-k60-d960-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            1.1078114282090394,
+            1.0852342362903167,
+            1.0872554699767139,
+            1.0939627288421931
+          ],
+          "complete": true,
+          "median_ratio": 1.0906090994094535,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              1.1078114282090394,
+              1.0852342362903167,
+              1.0872554699767139,
+              1.0939627288421931
+            ],
+            "complete": true,
+            "median_ratio": 1.0906090994094535
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9065020829982999,
+              0.8694983523178236,
+              0.9066950014118167,
+              0.9133855922390536
+            ],
+            "complete": true,
+            "median_ratio": 0.9065985422050583
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.5978192373752148,
+              0.5748024170045529,
+              0.5974467277454429,
+              0.5946292886720981
+            ],
+            "complete": true,
+            "median_ratio": 0.5960380082087705
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.5983055188035517,
+              0.5938392307304643,
+              0.6093002475633463,
+              0.5992705591431287
+            ],
+            "complete": true,
+            "median_ratio": 0.5987880389733402
+          }
+        },
+        "profile": "loopback"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 11323889.0,
+            "wall_ns": [
+              11305747,
+              11408381,
+              11342031,
+              11246848
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 57516787.0,
+            "wall_ns": [
+              57535790,
+              57406493,
+              57503514,
+              57530060
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 11968448.5,
+            "wall_ns": [
+              11984087,
+              11952810,
+              11885799,
+              12000087
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 14839906.5,
+            "wall_ns": [
+              14941663,
+              14738150,
+              14965040,
+              14657209
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 60997494.0,
+            "wall_ns": [
+              61116042,
+              60814600,
+              60878946,
+              61170475
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              344,
+              344,
+              344,
+              344
+            ],
+            "median_wall_ns": 5796521.5,
+            "wall_ns": [
+              5795372,
+              5797671,
+              5746904,
+              5801136
+            ]
+          }
+        },
+        "fixture_id": "primary-k60-d960-seed17011",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.943396605849073,
+            0.9544517983637321,
+            0.9542506145358843,
+            0.9372305384119298
+          ],
+          "complete": true,
+          "median_ratio": 0.9488236101924787,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.1964993789083282,
+              0.19872980221941097,
+              0.19724065906650504,
+              0.19549515505459233
+            ],
+            "complete": true,
+            "median_ratio": 0.19687001898741663
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.943396605849073,
+              0.9544517983637321,
+              0.9542506145358843,
+              0.9372305384119298
+            ],
+            "complete": true,
+            "median_ratio": 0.9488236101924787
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.7566592152426407,
+              0.7740714404453748,
+              0.7579018165003234,
+              0.7673253482296664
+            ],
+            "complete": true,
+            "median_ratio": 0.7626135823649949
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.18498820653340084,
+              0.18759279843984833,
+              0.18630465448596958,
+              0.1838607269274924
+            ],
+            "complete": true,
+            "median_ratio": 0.1856464305096852
+          }
+        },
+        "profile": "moderate"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 39495058.5,
+            "wall_ns": [
+              39350322,
+              39523227,
+              39484104,
+              39506013
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 489120753.5,
+            "wall_ns": [
+              489067108,
+              489103683,
+              489260979,
+              489137824
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 40088811.5,
+            "wall_ns": [
+              40029355,
+              40243911,
+              40139530,
+              40038093
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 42715647.5,
+            "wall_ns": [
+              42716696,
+              42714599,
+              43059382,
+              42711520
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 492536353.5,
+            "wall_ns": [
+              492516136,
+              492556571,
+              492647703,
+              492295017
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              344,
+              344,
+              344,
+              344
+            ],
+            "median_wall_ns": 21195813.5,
+            "wall_ns": [
+              21088072,
+              21230560,
+              21183604,
+              21208023
+            ]
+          }
+        },
+        "fixture_id": "primary-k60-d960-seed17027",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9830366239975638,
+            0.9820920983549536,
+            0.9836713085579228,
+            0.9867106557747394
+          ],
+          "complete": true,
+          "median_ratio": 0.9833539662777433,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.08045996419779676,
+              0.08080746143144459,
+              0.08070151860608528,
+              0.08076662867110436
+            ],
+            "complete": true,
+            "median_ratio": 0.08073407363859482
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9830366239975638,
+              0.9820920983549536,
+              0.9836713085579228,
+              0.9867106557747394
+            ],
+            "complete": true,
+            "median_ratio": 0.9833539662777433
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9211930154897747,
+              0.9252861533360058,
+              0.9169686643435803,
+              0.9249498261827254
+            ],
+            "complete": true,
+            "median_ratio": 0.92307142083625
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.07989651327890707,
+              0.0802409902272931,
+              0.08014673317171642,
+              0.08024865504580153
+            ],
+            "complete": true,
+            "median_ratio": 0.08019386169950476
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 4661986.0,
+            "wall_ns": [
+              4698549,
+              4570490,
+              4674377,
+              4649595
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 4479390.5,
+            "wall_ns": [
+              4634995,
+              4373844,
+              4329388,
+              4584937
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 5334602.5,
+            "wall_ns": [
+              5351416,
+              5273827,
+              5366948,
+              5317789
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 8019634.5,
+            "wall_ns": [
+              8586499,
+              7961806,
+              8076512,
+              7962757
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 7787220.5,
+            "wall_ns": [
+              8235168,
+              7793754,
+              7780687,
+              7770539
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              344,
+              344,
+              344,
+              344
+            ],
+            "median_wall_ns": 596906.0,
+            "wall_ns": [
+              591837,
+              588104,
+              601975,
+              603748
+            ]
+          }
+        },
+        "fixture_id": "primary-k60-d960-seed17027",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            1.0137117731518588,
+            1.0449595367370212,
+            1.0796853966426663,
+            1.0141022657454182
+          ],
+          "complete": true,
+          "median_ratio": 1.0295309012412197,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              1.0137117731518588,
+              1.0449595367370212,
+              1.0796853966426663,
+              1.0141022657454182
+            ],
+            "complete": true,
+            "median_ratio": 1.0295309012412197
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.8780010748557018,
+              0.8666363155257084,
+              0.8709562678826029,
+              0.8743474026517412
+            ],
+            "complete": true,
+            "median_ratio": 0.872651835267172
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.5472019504107553,
+              0.574051917366487,
+              0.5787618466981787,
+              0.5839177310069866
+            ],
+            "complete": true,
+            "median_ratio": 0.5764068820323328
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.5705468303743166,
+              0.5864298513912551,
+              0.6007666161098628,
+              0.5983619669111757
+            ],
+            "complete": true,
+            "median_ratio": 0.5923959091512154
+          }
+        },
+        "profile": "loopback"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 11455840.0,
+            "wall_ns": [
+              11604678,
+              11281851,
+              12016228,
+              11307002
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 57614716.0,
+            "wall_ns": [
+              58180344,
+              57343630,
+              57783217,
+              57446215
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 11983850.5,
+            "wall_ns": [
+              12167813,
+              11756875,
+              12125530,
+              11842171
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 14889868.0,
+            "wall_ns": [
+              15178021,
+              14621715,
+              15158021,
+              14451995
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 61243014.0,
+            "wall_ns": [
+              61505831,
+              60851667,
+              61649019,
+              60980197
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              344,
+              344,
+              344,
+              344
+            ],
+            "median_wall_ns": 5817437.5,
+            "wall_ns": [
+              5891306,
+              5783299,
+              5842454,
+              5792421
+            ]
+          }
+        },
+        "fixture_id": "primary-k60-d960-seed17027",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9537192920371146,
+            0.9595960661315188,
+            0.9909857960847896,
+            0.9548082019758033
+          ],
+          "complete": true,
+          "median_ratio": 0.9572021340536611,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.19946045695432807,
+              0.19674113759453316,
+              0.2079536000911822,
+              0.19682762389132163
+            ],
+            "complete": true,
+            "median_ratio": 0.19814404042282485
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9537192920371146,
+              0.9595960661315188,
+              0.9909857960847896,
+              0.9548082019758033
+            ],
+            "complete": true,
+            "median_ratio": 0.9572021340536611
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.7645712178155505,
+              0.7715819245553617,
+              0.792730660552588,
+              0.7823834702406138
+            ],
+            "complete": true,
+            "median_ratio": 0.7769826973979878
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.1886760622744858,
+              0.18539921018104566,
+              0.19491353138968845,
+              0.18542088343860222
+            ],
+            "complete": true,
+            "median_ratio": 0.18704847285654402
+          }
+        },
+        "profile": "moderate"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 39525096.0,
+            "wall_ns": [
+              39454720,
+              39687011,
+              39562543,
+              39487649
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 489397960.0,
+            "wall_ns": [
+              489406297,
+              490408639,
+              489389623,
+              489074039
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 40237236.5,
+            "wall_ns": [
+              40027331,
+              40492367,
+              40335274,
+              40139199
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 43016357.5,
+            "wall_ns": [
+              42705275,
+              43247648,
+              43162319,
+              42870396
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 492804096.5,
+            "wall_ns": [
+              492604024,
+              493882704,
+              493004169,
+              492602867
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              344,
+              344,
+              344,
+              344
+            ],
+            "median_wall_ns": 21202647.5,
+            "wall_ns": [
+              21190299,
+              21259380,
+              21190603,
+              21214692
+            ]
+          }
+        },
+        "fixture_id": "primary-k60-d960-seed17041",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9856944995907921,
+            0.9801109181886057,
+            0.9808423019513888,
+            0.9837677378664184
+          ],
+          "complete": true,
+          "median_ratio": 0.9823050199089036,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.08061751604311704,
+              0.08092641084163282,
+              0.08084058414945182,
+              0.08073961374179585
+            ],
+            "complete": true,
+            "median_ratio": 0.08079009894562383
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9856944995907921,
+              0.9801109181886057,
+              0.9808423019513888,
+              0.9837677378664184
+            ],
+            "complete": true,
+            "median_ratio": 0.9823050199089036
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.9238839932537608,
+              0.917668655645736,
+              0.9165991058080082,
+              0.9210936376701535
+            ],
+            "complete": true,
+            "median_ratio": 0.9193811466579447
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.08009418940516004,
+              0.08035715905532095,
+              0.08024788731553302,
+              0.08016122447781043
+            ],
+            "complete": true,
+            "median_ratio": 0.08020455589667172
+          }
+        },
+        "profile": "constrained"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 4678885.0,
+            "wall_ns": [
+              4598514,
+              5346610,
+              4497295,
+              4759256
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 4281645.0,
+            "wall_ns": [
+              4216609,
+              4510100,
+              4159907,
+              4346681
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 5239037.5,
+            "wall_ns": [
+              5183313,
+              5527357,
+              5181754,
+              5294762
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 8050117.0,
+            "wall_ns": [
+              7866257,
+              8372712,
+              8018222,
+              8082012
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 7974773.0,
+            "wall_ns": [
+              7728780,
+              8237511,
+              7830940,
+              8118606
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              344,
+              344,
+              344,
+              344
+            ],
+            "median_wall_ns": 583916.5,
+            "wall_ns": [
+              536997,
+              616794,
+              551039,
+              623088
+            ]
+          }
+        },
+        "fixture_id": "primary-k60-d960-seed17041",
+        "hindsight_reference": {
+          "chosen_arm": "dual_direct",
+          "coefficient_over_comparator": [
+            1.0905715943783263,
+            1.1854748231746524,
+            1.0811046977732917,
+            1.0949172483556995
+          ],
+          "complete": true,
+          "median_ratio": 1.092744421367013,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              1.0905715943783263,
+              1.1854748231746524,
+              1.0811046977732917,
+              1.0949172483556995
+            ],
+            "complete": true,
+            "median_ratio": 1.092744421367013
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.887176599213669,
+              0.9672995610741264,
+              0.8679097849878632,
+              0.8988611763852653
+            ],
+            "complete": true,
+            "median_ratio": 0.8930188877994671
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.584587307533939,
+              0.6385756490847888,
+              0.560884320738438,
+              0.5888701971736741
+            ],
+            "complete": true,
+            "median_ratio": 0.5867287523538065
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.5949857545434079,
+              0.6490564929139396,
+              0.5742982323961108,
+              0.5862159094800264
+            ],
+            "complete": true,
+            "median_ratio": 0.5906008320117171
+          }
+        },
+        "profile": "loopback"
+      },
+      {
+        "arms": {
+          "coefficient": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 11318008.0,
+            "wall_ns": [
+              11389771,
+              11234080,
+              11334544,
+              11301472
+            ]
+          },
+          "dual_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 57514087.5,
+            "wall_ns": [
+              57651071,
+              57390642,
+              57637533,
+              57364557
+            ]
+          },
+          "gram_guard": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 11968536.5,
+            "wall_ns": [
+              11997060,
+              11877857,
+              11995829,
+              11941244
+            ]
+          },
+          "gram_original": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              14504,
+              14504,
+              14504,
+              14504
+            ],
+            "median_wall_ns": 14870103.0,
+            "wall_ns": [
+              15076771,
+              14592339,
+              14811360,
+              14928846
+            ]
+          },
+          "thin_direct": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              460904,
+              460904,
+              460904,
+              460904
+            ],
+            "median_wall_ns": 61152738.5,
+            "wall_ns": [
+              61507434,
+              60878555,
+              60925233,
+              61380244
+            ]
+          },
+          "token_lookup": {
+            "completed_repetitions": 4,
+            "logical_wire_bytes": [
+              344,
+              344,
+              344,
+              344
+            ],
+            "median_wall_ns": 5827909.5,
+            "wall_ns": [
+              5807722,
+              5889554,
+              5825493,
+              5830326
+            ]
+          }
+        },
+        "fixture_id": "primary-k60-d960-seed17041",
+        "hindsight_reference": {
+          "chosen_arm": "gram_guard",
+          "coefficient_over_comparator": [
+            0.9493801814777953,
+            0.9458002398917582,
+            0.9448737557029198,
+            0.9464233374680225
+          ],
+          "complete": true,
+          "median_ratio": 0.9461117886798904,
+          "selection": "smallest four-run median among fixed comparators; hindsight only"
+        },
+        "mode": "warm",
+        "paired": {
+          "dual_direct": {
+            "coefficient_over_comparator": [
+              0.19756390995754441,
+              0.19574759243850243,
+              0.1966521363778703,
+              0.19701140549207066
+            ],
+            "complete": true,
+            "median_ratio": 0.19683177093497048
+          },
+          "gram_guard": {
+            "coefficient_over_comparator": [
+              0.9493801814777953,
+              0.9458002398917582,
+              0.9448737557029198,
+              0.9464233374680225
+            ],
+            "complete": true,
+            "median_ratio": 0.9461117886798904
+          },
+          "gram_original": {
+            "coefficient_over_comparator": [
+              0.7554516149379731,
+              0.7698615006134383,
+              0.7652601786736667,
+              0.7570224784956586
+            ],
+            "complete": true,
+            "median_ratio": 0.7611413285846627
+          },
+          "thin_direct": {
+            "coefficient_over_comparator": [
+              0.18517714460336615,
+              0.18453263222164193,
+              0.18604022408908966,
+              0.18412230489015324
+            ],
+            "complete": true,
+            "median_ratio": 0.18485488841250403
+          }
+        },
+        "profile": "moderate"
+      }
+    ],
+    "ratio_direction": "coefficient wall time divided by comparator wall time; smaller is faster",
+    "worst_warm_case_paired_median_ratio": 1.4859810966717295
+  },
+  "criteria": {
+    "all_nine_primary_all_row_fidelity_gates": true,
+    "complete_correct_720_slots_and_required_diagnostics": true,
+    "loopback_at_most_1.10_and_worst_warm_case_at_most_1.25": false,
+    "shaped_warm_against_all_three_and_hindsight_at_most_0.97": false
+  },
+  "descriptive_final_error_maxima": {
+    "primary/coefficient/float32/native": {
+      "fixture_id": "primary-k12-d192-seed17011",
+      "internal_snap_changes": 0,
+      "relative_error": 1.8095303103106583e-08
+    },
+    "primary/coefficient/float64/native": {
+      "fixture_id": "primary-k60-d960-seed17041",
+      "internal_snap_changes": 0,
+      "relative_error": 2.698100728858727e-16
+    },
+    "primary/dual_direct/float32/native": {
+      "fixture_id": "primary-k60-d960-seed17011",
+      "internal_snap_changes": 0,
+      "relative_error": 2.5572628511877826e-08
+    },
+    "primary/dual_direct/float64/native": {
+      "fixture_id": "primary-k12-d192-seed17011",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0
+    },
+    "primary/gram_guard/float32/native": {
+      "fixture_id": "primary-k60-d960-seed17011",
+      "internal_snap_changes": 0,
+      "relative_error": 9.753039537272827e-09
+    },
+    "primary/gram_guard/float64/native": {
+      "fixture_id": "primary-k12-d192-seed17011",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0
+    },
+    "primary/gram_original/float32/native": {
+      "fixture_id": "primary-k60-d960-seed17011",
+      "internal_snap_changes": 0,
+      "relative_error": 9.753039537272827e-09
+    },
+    "primary/gram_original/float64/native": {
+      "fixture_id": "primary-k12-d192-seed17011",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0
+    },
+    "primary/thin_direct/float32/native": {
+      "fixture_id": "primary-k60-d960-seed17011",
+      "internal_snap_changes": 0,
+      "relative_error": 2.557262851954182e-08
+    },
+    "primary/thin_direct/float64/native": {
+      "fixture_id": "primary-k12-d192-seed17011",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0
+    },
+    "primary/token_lookup/float32/native": {
+      "fixture_id": "primary-k12-d192-seed17011",
+      "internal_snap_changes": null,
+      "relative_error": 0.0
+    },
+    "primary/token_lookup/float64/native": {
+      "fixture_id": "primary-k12-d192-seed17011",
+      "internal_snap_changes": null,
+      "relative_error": 0.0
+    },
+    "stress/coefficient/float32/fallback": {
+      "fixture_id": "stress-k6-d24-seed19001-g6",
+      "internal_snap_changes": 0,
+      "relative_error": 3.21006013006317e-08
+    },
+    "stress/coefficient/float32/native": {
+      "fixture_id": "stress-k6-d24-seed19001-g8",
+      "internal_snap_changes": 0,
+      "relative_error": 1.6797081198202513e-09
+    },
+    "stress/coefficient/float64/fallback": {
+      "fixture_id": "stress-k6-d24-seed19001-g1",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0
+    },
+    "stress/coefficient/float64/native": {
+      "fixture_id": "stress-k6-d24-seed19013-g8",
+      "internal_snap_changes": 0,
+      "relative_error": 4.959867276342895e-15
+    },
+    "stress/dual_direct/float32/fallback": {
+      "fixture_id": "stress-k6-d24-seed19001-g6",
+      "internal_snap_changes": 0,
+      "relative_error": 3.21006013006317e-08
+    },
+    "stress/dual_direct/float32/native": {
+      "fixture_id": "stress-k6-d24-seed19013-g8",
+      "internal_snap_changes": 0,
+      "relative_error": 2.872225157059119e-08
+    },
+    "stress/dual_direct/float64/fallback": {
+      "fixture_id": "stress-k6-d24-seed19001-g1",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0
+    },
+    "stress/dual_direct/float64/native": {
+      "fixture_id": "stress-k6-d24-seed19001-g8",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0
+    },
+    "stress/gram_guard/float32/fallback": {
+      "fixture_id": "stress-k6-d24-seed19013-g8",
+      "internal_snap_changes": 0,
+      "relative_error": 2.872240167965247e-08
+    },
+    "stress/gram_guard/float32/native": {
+      "fixture_id": "stress-k6-d24-seed19001-g1",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0008871187172941772
+    },
+    "stress/gram_guard/float64/fallback": {
+      "fixture_id": "stress-k6-d24-seed19001-g1",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0
+    },
+    "stress/gram_original/float32/fallback": {
+      "fixture_id": "stress-k6-d24-seed19001-g5",
+      "internal_snap_changes": null,
+      "relative_error": 2.8224253327345196e-08
+    },
+    "stress/gram_original/float32/native": {
+      "fixture_id": "stress-k6-d24-seed19001-g1",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0008871187172941772
+    },
+    "stress/gram_original/float64/fallback": {
+      "fixture_id": "stress-k6-d24-seed19001-g1",
+      "internal_snap_changes": null,
+      "relative_error": 0.0
+    },
+    "stress/gram_original/float64/native": {
+      "fixture_id": "stress-k6-d24-seed19001-g8",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0
+    },
+    "stress/thin_direct/float32/fallback": {
+      "fixture_id": "stress-k6-d24-seed19001-g6",
+      "internal_snap_changes": 0,
+      "relative_error": 3.21006013006317e-08
+    },
+    "stress/thin_direct/float32/native": {
+      "fixture_id": "stress-k6-d24-seed19013-g8",
+      "internal_snap_changes": 0,
+      "relative_error": 2.8722401296473323e-08
+    },
+    "stress/thin_direct/float64/fallback": {
+      "fixture_id": "stress-k6-d24-seed19001-g1",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0
+    },
+    "stress/thin_direct/float64/native": {
+      "fixture_id": "stress-k6-d24-seed19001-g8",
+      "internal_snap_changes": 0,
+      "relative_error": 0.0
+    },
+    "stress/token_lookup/float32/native": {
+      "fixture_id": "stress-k6-d24-seed19001-g1",
+      "internal_snap_changes": null,
+      "relative_error": 0.0
+    },
+    "stress/token_lookup/float64/native": {
+      "fixture_id": "stress-k6-d24-seed19001-g1",
+      "internal_snap_changes": null,
+      "relative_error": 0.0
+    }
+  },
+  "design_commit": "49cfba7261326d58e174e51c8ddf5abba6f4a966",
+  "design_sha256": "b8307677f5320c3413b5a1007bdfe26230a844c57503d53b4443e5fc542647ba",
+  "diagnostic_route_counts": {
+    "primary/coefficient/float32/native": 9,
+    "primary/coefficient/float64/native": 9,
+    "primary/dual_direct/float32/native": 9,
+    "primary/dual_direct/float64/native": 9,
+    "primary/gram_guard/float32/native": 9,
+    "primary/gram_guard/float64/native": 9,
+    "primary/gram_original/float32/native": 9,
+    "primary/gram_original/float64/native": 9,
+    "primary/thin_direct/float32/native": 9,
+    "primary/thin_direct/float64/native": 9,
+    "primary/token_lookup/float32/native": 9,
+    "primary/token_lookup/float64/native": 9,
+    "stress/coefficient/float32/fallback": 14,
+    "stress/coefficient/float32/native": 2,
+    "stress/coefficient/float64/fallback": 14,
+    "stress/coefficient/float64/native": 2,
+    "stress/dual_direct/float32/fallback": 14,
+    "stress/dual_direct/float32/native": 2,
+    "stress/dual_direct/float64/fallback": 14,
+    "stress/dual_direct/float64/native": 2,
+    "stress/gram_guard/float32/fallback": 14,
+    "stress/gram_guard/float32/native": 2,
+    "stress/gram_guard/float64/fallback": 16,
+    "stress/gram_original/float32/fallback": 12,
+    "stress/gram_original/float32/native": 4,
+    "stress/gram_original/float64/fallback": 14,
+    "stress/gram_original/float64/native": 2,
+    "stress/thin_direct/float32/fallback": 14,
+    "stress/thin_direct/float32/native": 2,
+    "stress/thin_direct/float64/fallback": 14,
+    "stress/thin_direct/float64/native": 2,
+    "stress/token_lookup/float32/native": 16,
+    "stress/token_lookup/float64/native": 16
+  },
+  "diagnostic_rows": 300,
+  "eligible_primary_routes": 54,
+  "engineering_success": false,
+  "failed_diagnostic_checks": 0,
+  "fatal_error": null,
+  "limits": [
+    "Synthetic CPU matrices, fixed loopback TCP and imposed application service conditions only.",
+    "No model inference, quality assessment, production-network or cross-host bitwise claim.",
+    "Float32 fidelity is descriptive and cannot establish the primary f64 success claim.",
+    "Hindsight comparator selection is not a deployable policy.",
+    "Cold setup is a real first-message cost; it is not silently amortized into warm timing.",
+    "All ratios use paired original wall times; no timing values are synthesized or retried."
+  ],
+  "phase_ns": {
+    "fixture_construction_and_retention_ns": 727715018,
+    "functional_warmup_ns": 125454429,
+    "reference_and_diagnostic_ns": 3296505967,
+    "transport_and_post_timing_retention_ns": 102938714742
+  },
+  "planned_trials": 720,
+  "practical_gates_passed": 9,
+  "status": "complete",
+  "study": "coefficient_packet_v2",
+  "trial_status_counts": {
+    "completed": 720
+  },
+  "warmup_count": 18,
+  "worker_elapsed_ns_before_final_report": 107112098194
+}

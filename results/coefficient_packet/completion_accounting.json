@@ -1,0 +1,17 @@
+{
+  "all_slots_recorded": true,
+  "all_trials_completed_successfully": true,
+  "duplicate_ids": [],
+  "expected_trials": 720,
+  "invalid_completed_wall_times": [],
+  "plan_status": "valid",
+  "planned_slots": 720,
+  "read_errors": [],
+  "recorded_slots": 720,
+  "status_counts": {
+    "completed": 720
+  },
+  "unexecuted_slots": [],
+  "unique_recorded_slots": 720,
+  "unknown_ids": []
+}
