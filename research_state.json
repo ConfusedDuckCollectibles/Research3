@@ -2,23 +2,23 @@
   "schema_version": 1,
   "status": "active",
   "worker_id": "chatgpt-active-research-20261124T052021Z",
-  "updated_at_utc": "2026-11-24T11:48:08Z",
-  "lease_expires_at_utc": "2026-11-24T13:48:08Z",
-  "current_task": "Freeze a bounded authentic-state inverse-conditioning assay after the reviewed information characterization",
-  "stage": "information_recovery_theory_reviewed_contextual_assay_design_in_review",
-  "next_action": "Review and freeze docs/contextual_information_design.md before implementing any new assay. The analytical note docs/statebridge_information_recovery.md is independently reviewed in exact arithmetic. It conditionally recovers centered source Gram from known-reference outputs, including final postprocessing when actual pre-prefix rows are independent. It does not decode the upstream prefix-only channel without the reference IDs. The planned assay uses fixed public probe IDs and one pinned small homogeneous CPU model. No new model execution or empirical outcome exists yet.",
+  "updated_at_utc": "2026-11-24T12:08:08Z",
+  "lease_expires_at_utc": "2026-11-24T14:08:08Z",
+  "current_task": "Implement and independently review the fixed contextual information assay",
+  "stage": "contextual_information_design_frozen_before_implementation",
+  "next_action": "Implement the pure inverse/exact-Gram routines, fixed dataset/authentic cached extraction and author forward worker, supervisor, and independent offline tests. Publish all source before CI; after the complete test gate passes, activate exactly one 600-second public CPU study. Do not run the pretrained cohort before activation, tune against its outcomes, rerun it, or overwrite previous studies. The owner's existing autonomous research authorization applies; internal design/source/test gates do not require another user confirmation.",
   "last_completed_study": "docs/coefficient_results.md",
   "last_completed_commit": "6172944a3d90180e1e95f521eed79a9ba02c6c25",
   "known_result": "Independently audited original coefficient TCP study:720/720 trials and300 diagnostics,9/9 all-row f64 fidelity gates. Both performance criteria failed:shaped coefficient/optimized Gram0.9802991311;loopback/hindsight1.2098053452;worst warm1.4859810967;cold/hindsight6.2290160665. Audit found0issues across233297integrity,106829report and17025scientific checks within its stated scope. Engineering success and breakthrough remain false.",
   "breakthrough_claimed": false,
   "active_workflow_run": null,
   "resume_instructions": "docs/continuation.md",
-  "design_path": "docs/coefficient_packet_design.md",
-  "design_blob_sha": "226abb67f12b22c290e4deefe76e6c463e42ab95",
-  "design_sha256": "b8307677f5320c3413b5a1007bdfe26230a844c57503d53b4443e5fc542647ba",
-  "frozen_design_commit": "49cfba7261326d58e174e51c8ddf5abba6f4a966",
-  "source_commit": "5e158fb8ecd9e4f70f532aeb93cc253bbea7741f",
-  "workflow_path": ".github/workflows/coefficient-packet-v2.yml",
+  "design_path": "docs/contextual_information_design.md",
+  "design_blob_sha": null,
+  "design_sha256": "6f50e1d3faad3240033748d7434f088ec26b7ac6716511923892e66ac0e78a09",
+  "frozen_design_commit": null,
+  "source_commit": null,
+  "workflow_path": ".github/workflows/contextual-information-v1.yml",
   "execution_environment": "Workspace disconnected before results publication; GitHub API and standard CPU Actions remain available",
   "completed_alignment": {
     "design_commit": "e7c467f2b097666dc474a3dbb6e273bf253e785f",
@@ -63,53 +63,14 @@
   },
   "closed_lossless_predictor_assessment": "docs/lossless_predictor_feasibility.md",
   "validation_workflow_path": ".github/workflows/tests.yml",
-  "planned_study_workflow_path": ".github/workflows/coefficient-packet-v2.yml",
+  "planned_study_workflow_path": ".github/workflows/contextual-information-v1.yml",
   "execution_note": "docs/coefficient_execution_notes.md",
-  "source_commit_note": "Recovered from the completed original workflow and byte-verified execution record.",
-  "reviewed_source_files": {
-    "latent_bridge/coefficient_packet.py": {
-      "blob_sha": "fef093170faa5d5ff98fc771d5a3ad32c089c614",
-      "sha256": "5399f5e30af6df264aae445380a07a7be3146bea2b70cff372de01448bc054cd",
-      "bytes": 31176
-    },
-    "latent_bridge/coefficient_transport.py": {
-      "blob_sha": "c092107c2ec453b25c01a253de78ee501de70772",
-      "sha256": "d898d7471e74c1401b09132d21290c193def5a141bc4e2ddbb8290008741c22d",
-      "bytes": 21442
-    },
-    "latent_bridge/coefficient_study.py": {
-      "blob_sha": "61faff44e95b154e3d44a5cfb06a0c7bd5f10dcb",
-      "sha256": "d378236f91bc6673f2066ac170dac16b5d9010d002336b6c5fc99c69c8d56e2d",
-      "bytes": 51999
-    },
-    "scripts/run_coefficient_study.py": {
-      "blob_sha": "8c81084c3f7b454e1cd82be776bdb7a797a7d80c",
-      "sha256": "686c6ac74ca9d62a527e469bc1872f974079af7755cacceba750d3e420ad6843",
-      "bytes": 12724
-    },
-    "tests/test_coefficient_packet.py": {
-      "blob_sha": "4a72e283884a94a6151b90ddce0fcd7e71cffc7e",
-      "sha256": "15774145cec70ea64763e5bb9783f3af44f95681724f74df81150982e88b190b",
-      "bytes": 17613
-    },
-    "tests/test_coefficient_transport.py": {
-      "blob_sha": "4cebfb9d46981cc729d785b27389e51ed7368ccd",
-      "sha256": "656219ea1e94b55c32f84f80497d0d9d3fc343267d0157b743ff77f318ceb8ca",
-      "bytes": 24498
-    },
-    "tests/test_coefficient_execution.py": {
-      "blob_sha": "b518451b28eba78faae6b8563fb56e008a5202bc",
-      "sha256": "1095e587ee1e2d91cb89e2b7b818ca6f22f41edfcbfee9c33c95932377d98c4f",
-      "bytes": 4510
-    }
-  },
   "source_review_scope": "Static implementation/contract reviews and executed162-test pre-execution CI. Original scientific execution completed once. Separate retained-byte/array/statistical audit completed; its solver reuse and nonprimary limitations remain explicit.",
   "validated_python_source_commit": "367d81a6306e670ff39397c0747848cfd5a1de13",
   "last_validation_run": 45380063999,
   "last_validation_job": 138396467220,
   "last_validation_result": "All 162 repository tests passed in12.513seconds with0skips/errors/failures before the scientific workflow was activated.",
-  "validation_receipt": "results/coefficient_validation.json",
-  "publication_workflow_path": ".github/workflows/publish-coefficient-results.yml",
+  "publication_workflow_path": null,
   "coefficient_original": {
     "design_commit": "49cfba7261326d58e174e51c8ddf5abba6f4a966",
     "source_commit": "5e158fb8ecd9e4f70f532aeb93cc253bbea7741f",
@@ -150,5 +111,21 @@
   "information_recovery_note": "docs/statebridge_information_recovery.md",
   "information_recovery_note_sha256": "f78a41cee2b1ee90b349bcbee0fe00a588b9738863034172a8c8c09ddc3992d7",
   "information_recovery_status": "independently_reviewed_exact_arithmetic_no_measurement",
-  "current_assay_design_status": "drafting_and_review_only"
+  "current_assay_design_status": "frozen_before_code_and_outcomes",
+  "design_commit_note": "This checkpoint's containing commit freezes the design; record its exact SHA in the launcher and next checkpoint.",
+  "current_assay": {
+    "model": "EleutherAI/pythia-14m",
+    "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+    "planned_records": 256,
+    "primary_records": 128,
+    "planned_pair_groups_per_probe": 64,
+    "budget_seconds": 600,
+    "precision": "CPU float32 source and actual author method; fixed float64 inverse and mathematical controls",
+    "theory_commit": "ac53603c20de1d28e01cb697cb81b94f6c06db40",
+    "theory_sha256": "f78a41cee2b1ee90b349bcbee0fe00a588b9738863034172a8c8c09ddc3992d7",
+    "state": "not_executed",
+    "model_calls_observed": 0,
+    "success_target": "At least 122 of all 128 primary records at relative Gram error <= 1e-3; a numerical reporting target only",
+    "evidence_destination": "results/contextual_information"
+  }
 }
