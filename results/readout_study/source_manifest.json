@@ -1,0 +1,50 @@
+{
+  "frozen_commit": "fb793ba31d7a10975a9e5c6032b44ecb5eb5774f",
+  "files": {
+    "latent_bridge/query_conditioned.py": {
+      "expected_sha256": "7eb5b129b1ceb96cf5e7a92388019579765d3af392bf163c8bee943ed8b73849",
+      "actual_sha256": "7eb5b129b1ceb96cf5e7a92388019579765d3af392bf163c8bee943ed8b73849"
+    },
+    "latent_bridge/query_conditioned_data.py": {
+      "expected_sha256": "211b71d497ec83c6f91481557ef18bc498024fb51e4ada433e5aa6f05777d4fc",
+      "actual_sha256": "211b71d497ec83c6f91481557ef18bc498024fb51e4ada433e5aa6f05777d4fc"
+    },
+    "latent_bridge/counterfactual_runner.py": {
+      "expected_sha256": "4bf35ae4844777a2ea0c6d48d1e8da146f1b29a1788d8c00f4b1bd06a5bb47cb",
+      "actual_sha256": "4bf35ae4844777a2ea0c6d48d1e8da146f1b29a1788d8c00f4b1bd06a5bb47cb"
+    },
+    "latent_bridge/private_counterfactual.py": {
+      "expected_sha256": "af127ff0743664bea4b9b71a65943d3bf830c30e61b361be5b410adc31892b1f",
+      "actual_sha256": "af127ff0743664bea4b9b71a65943d3bf830c30e61b361be5b410adc31892b1f"
+    },
+    "latent_bridge/transformers_runner.py": {
+      "expected_sha256": "997ca1a94b113e44cdbb2df3f35e1a95b71360ea5b985a2e504a5d0a6d4ad920",
+      "actual_sha256": "997ca1a94b113e44cdbb2df3f35e1a95b71360ea5b985a2e504a5d0a6d4ad920"
+    },
+    "latent_bridge/private_lookup.py": {
+      "expected_sha256": "7542ee3f652e015eeb5f589550b5d448c70e24c45dbf12a1e4121cff8a5efe70",
+      "actual_sha256": "7542ee3f652e015eeb5f589550b5d448c70e24c45dbf12a1e4121cff8a5efe70"
+    }
+  },
+  "reference_results_commit": "97846d07118361d7548ff13f94eab1b276ddf9e9",
+  "reference_files": {
+    "results/query_conditioned_study/results.json": {
+      "expected_sha256": "c3f3e3050cb248d407b3d652519a2375f5e895856d50b49a8198532f0e5ef592",
+      "actual_sha256": "c3f3e3050cb248d407b3d652519a2375f5e895856d50b49a8198532f0e5ef592"
+    },
+    "results/query_conditioned_study/predictions.jsonl.gz": {
+      "expected_sha256": "b57c09e0b3afa8e12b357ea74055047f8414213421df729c9eaac54198bf5a8c",
+      "actual_sha256": "b57c09e0b3afa8e12b357ea74055047f8414213421df729c9eaac54198bf5a8c"
+    },
+    "results/query_conditioned_study/dataset_manifest.json": {
+      "expected_sha256": "9edd34fb4bfa60771570940fdc18a018135ced1a0299b8c3555b963b00f1ba0a",
+      "actual_sha256": "9edd34fb4bfa60771570940fdc18a018135ced1a0299b8c3555b963b00f1ba0a"
+    },
+    "results/query_conditioned_study/model_manifest.json": {
+      "expected_sha256": "afa940aef646164d8d31d84f2997240bfbea383d5a57f176c7717bce82839637",
+      "actual_sha256": "afa940aef646164d8d31d84f2997240bfbea383d5a57f176c7717bce82839637"
+    }
+  },
+  "all_match": true,
+  "expected_source": "git show of the published immutable historical commit"
+}

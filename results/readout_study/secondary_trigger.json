@@ -1,0 +1,11 @@
+{
+  "triggered": true,
+  "threshold": 0.8,
+  "criterion": "any selected linear-aware validation paired accuracy below 80%",
+  "per_seed_validation_pair_accuracy": {
+    "101": 0.0703125,
+    "202": 0.140625,
+    "303": 0.109375
+  },
+  "decision_uses_fresh_test": false
+}
