@@ -1,0 +1,74 @@
+{
+  "generator_command": [
+    "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+    "-m",
+    "latent_bridge.query_conditioned_data",
+    "--output",
+    "/home/runner/work/Research3/Research3/local_data/query_conditioned",
+    "--seed",
+    "20261125",
+    "--train-families",
+    "128",
+    "--validation-families",
+    "32",
+    "--test-families",
+    "32"
+  ],
+  "runner_command": [
+    "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+    "-m",
+    "latent_bridge.query_conditioned",
+    "--sender-model",
+    "/home/runner/work/Research3/Research3/local_models/sender",
+    "--receiver-model",
+    "/home/runner/work/Research3/Research3/local_models/receiver",
+    "--data-dir",
+    "/home/runner/work/Research3/Research3/local_data/query_conditioned",
+    "--output",
+    "/home/runner/work/Research3/Research3/checkpoints/query-conditioned-study",
+    "--seeds",
+    "101",
+    "202",
+    "303",
+    "--epochs",
+    "8",
+    "--batch-size",
+    "16",
+    "--slots",
+    "2",
+    "--bottleneck",
+    "8",
+    "--learning-rate",
+    "0.001",
+    "--weight-decay",
+    "0.01",
+    "--max-length",
+    "192",
+    "--threads",
+    "2",
+    "--model-manifest",
+    "/home/runner/work/Research3/Research3/checkpoints/query-conditioned-study/model_manifest.json"
+  ],
+  "wall_seconds_including_downloads": 166.03324762300002,
+  "models": {
+    "sender": {
+      "id": "distilbert/distilgpt2",
+      "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+    },
+    "receiver": {
+      "id": "EleutherAI/pythia-14m",
+      "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac"
+    }
+  },
+  "run_kind": "prespecified_fresh_world_query_conditioning_study",
+  "design_sha256": "25701024eaf35d112e2f4eae80f094370154abc041018e2e973233f9438f33c0",
+  "raw_predictions": {
+    "sha256": "324d8184f7730507da651eea0c49e16b646563d0746bc4d54f5747dfa798757c",
+    "bytes": 9734416
+  },
+  "compressed_predictions": {
+    "sha256": "b57c09e0b3afa8e12b357ea74055047f8414213421df729c9eaac54198bf5a8c",
+    "bytes": 657171
+  },
+  "report_sha256": "1ee0d9f761e057add0533d0455b8a411afd69a66b8d0423dec625e83253454c9"
+}

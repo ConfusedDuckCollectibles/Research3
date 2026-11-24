@@ -8,14 +8,29 @@ of LatentMAS or Interlat.
 
 ## What is working
 
-The latest [three-seed fact-change study](results/counterfactual_study/README.md)
-finds a small source-specific effect: correct latent messages achieve 3.65%
-paired accuracy versus 0.78% for wrong-family messages. The primary difference
-is +2.86 percentage points, with a family-bootstrap interval of +0.52 to +5.47
-points conditional on three fixed seeds. Adapted full text reaches 100%, while
-irrelevant fact edits frequently disrupt the latent method. This is a narrow
-controlled finding, not useful general communication or an efficiency claim.
-The earlier negative pilot remains unchanged below.
+The latest [public-query-conditioning study](results/query_conditioned_study/README.md)
+misses its predeclared practical targets. Query-aware paired accuracy is
+**7.81%**, versus **5.73%** for the matched query-blind arm. The primary
+difference is **+2.08 percentage points**, with a descriptive family-bootstrap
+interval of **[-0.52, +4.95] points** conditional on three fixed seeds. The
+interval includes zero. Adapted full text reaches **100%**, while latent
+nuisance stability is only **61.98%** against the 90% target.
+
+Wrong-family private sources reduce paired accuracy to 1.82%, so a small
+source-specific signal remains. Giving the sender the wrong public question
+leaves paired accuracy unchanged in every seed and changes only 2 of 1,152
+original-view predictions. This provides little behavioral evidence that the
+new query path learned useful selection. The study excludes all 1,042 worlds
+from the previous pretrained experiments; its 7.81% cannot be treated as a
+controlled improvement over the earlier study's 3.65% because both data and
+architecture changed. The matched arms within each study are the valid
+comparisons.
+
+The [preceding fact-change study](results/counterfactual_study/README.md) and
+[first negative pilot](results/pretrained_pilot/README.md) remain unchanged.
+No executed study establishes useful general communication or an efficiency
+advantage. Designs, all seeds and controls, raw predictions, model/data hashes
+and interpretation limits are retained with each result.
 
 - A NumPy sender/compressor/receiver bridge with manual gradients and Adam.
 - Distinct frozen sender and receiver coordinate systems, a learned bottleneck,
@@ -29,6 +44,11 @@ The earlier negative pilot remains unchanged below.
   the receiver. It now measures generated-answer exact match as well as NLL,
   trains an equal-budget constant-information bridge, and tests unseen-world
   paraphrases. Optional transformer tests skip when dependencies are absent.
+- Paired single-fact and nuisance interventions, eight-choice scoring,
+  equally adapted text/symbolic controls, and a fresh-world public-query
+  follow-up with a matched query-blind bridge and explicit question-feedback
+  accounting. See the [fixed design](docs/query_conditioned_design.md) and
+  [execution guide](docs/query_conditioned_study.md).
 
 ## Actual initial result
 

@@ -18,6 +18,16 @@ below the adapted full-text baseline and reacts poorly to irrelevant edits.
 Its design, primary contrast, family-cluster uncertainty and all outcomes are
 preserved separately. This does not change the first pilot's negative result.
 
+The subsequent [public-query-conditioning follow-up](../results/query_conditioned_study/README.md)
+also misses its predeclared practical targets. Query-aware paired accuracy is
+7.8125%, versus 5.7292% for the matched query-blind arm. Their primary
+difference is +2.0833 percentage points, with a descriptive fixed-seed
+family-bootstrap interval of [-0.5208, +4.9479] points. All adapted-text
+validation gates pass at 100%, but latent nuisance stability is only 61.9792%.
+Wrong public questions leave paired accuracy unchanged in every seed. The
+results do not support advancing to efficiency claims or declaring successful
+query-specific selection.
+
 The long-term objective is a better tradeoff between task success and total
 computation/communication. Merely avoiding English does not establish that
 tradeoff.
@@ -117,12 +127,89 @@ across partitions, including paraphrases. Four questions share one world and
 are correlated. This experiment is still synthetic and model-pair-specific;
 it is not a reproduction of the cited systems or a novel method claim.
 
+## Completed public-query-conditioning follow-up
+
+The [design](query_conditioned_design.md) was published before the new results.
+It tests one hypothesis suggested by the previous failure: a public question
+may help sender pooling retain the relevant private fact. The source and
+public question are encoded separately by frozen DistilGPT2. A normalized
+mean question state enters each attention query through one learned scalar
+gate initialized to zero. Pythia-14M remains frozen; only the bridge adapts.
+
+Five arms share architecture, initialization, training order and budget:
+query-aware, query-blind, private-constant with the true public question,
+adapted complete text and adapted complete symbolic facts. The fixed-question
+and fixed-private-state controls use nonzero random inputs so the controls
+retain adaptation capacity. The query vectors use nonparametric
+zero-mean/unit-variance normalization, epsilon 1e-5, rather than unit-L2
+normalization. Wrong-source, wrong-public-question, zero-message and
+frozen-no-channel interventions are evaluated separately.
+
+Data seed 20261125 reserves the union of 960 prior counterfactual worlds and
+112 first-pilot worlds, totaling 1,042 unique exclusions. The new 128/32/32
+train/validation/test families reserve 960 distinct base/variant worlds.
+Four views reuse the same 32 test families. Eight epochs, three seeds, batch
+size 16, two slots of eight float32 coordinates and all other settings remain
+as preregistered. No test-driven architecture or threshold changes were made.
+
+The primary comparison is original-view query-aware minus query-blind paired
+both-correct accuracy. It is small, varies across seeds and has an interval
+including zero. Correct sources outperform wrong-family sources by a
+secondary 5.9896 percentage points, but query-aware absolute accuracy is poor
+and below the 23.4375% symbolic and 100% text paired scores. Targeted edits
+change the latent prediction 35.6771% of the time; irrelevant edits change it
+38.0208%. The channel is not selective enough to meet the practical targets.
+
+A descriptive post-run row comparison finds that wrong public questions
+change 2/1,152 original-view predictions and 7/4,608 across all four correlated
+views. Only one of the 768 original-view target records changes its predicted
+choice, and both choices are wrong. Nonzero learned gates alone do not
+establish useful question-specific binding. These diagnostics add no new
+training, model selection or held-out runs.
+
+The unchanged advancement targets require at least 80% paired accuracy,
+90% nuisance stability, and every seed's adapted-text validation accuracy at
+least 80%. The competence gates passed; the two latent-performance targets
+failed. A future bounded diagnostic could freeze the learned messages and
+test whether a small controlled readout recovers the relevant fact, to help
+locate the loss in sender compression versus receiver use. This proposed next
+experiment would freeze the selected query-aware, query-blind and
+private-constant message generators, then train identical readout probes
+with the same public-question input, initialization rules, examples, update
+budget and validation selection. It would retain wrong-source and nuisance
+controls and evaluate paired correctness on newly reserved worlds. The
+original frozen receiver and the probes must be compared on those same worlds.
+
+Reliable probe recovery with poor original-receiver performance would show
+that the message contains information accessible to that readout, directing
+attention to receiver integration. Probe failure would only establish that
+the prespecified readout failed to recover the fact; it would not prove the
+message contains no information. A result that fails wrong-source or nuisance
+controls would not establish useful selective transfer. This is a diagnostic,
+not a new communication mechanism or a novelty claim. It needs a separate
+fixed design, verified fresh data and retained negative outcomes; it has not
+been executed here.
+
+The 64-byte latent reply additionally requires a public-question request,
+averaging 24 UTF-8 bytes on the original templates. The conservative total is
+88 payload bytes before framing. Question-specific messages cannot be reused
+across different questions. Cached question encoding calls, time, vector
+storage and logical uncached work are recorded separately. Equal update
+budgets do not imply equal FLOPs, and this task's two-byte packed facts remain
+a strong communication-size bound.
+
+The previous 3.65% and current 7.81% paired scores are not a controlled
+cross-study improvement: the data and bridge architecture differ. Causal
+comparisons must use the matched arms within each study. All raw reports and
+predictions from both studies are preserved without retrospective changes.
+
 Before claims about efficient LLM collaboration:
 
-- Replicate the preliminary trained-pair experiment with stronger receiver
-  competence checks, equal-budget text adaptation, multiple seeds and direct
-  counterfactual changes to private facts. Retain exact model revisions, data
-  manifests and package versions, as in the initial executed pilot.
+- Meet the fixed competence, paired-accuracy and nuisance-stability gates
+  under a controlled mechanism comparison. The completed multi-seed studies
+  already include equal-budget text adaptation and private-fact edits, but
+  their latent results fail the practical gates. Retain exact model revisions,
+  data manifests, source revisions and package versions for each next study.
 - Extend generated-answer correctness to executable agent tasks, multiple seeds,
   and held-out task families. Review for leakage beyond exact strings/world IDs.
 - Compare strong concise-text and structured protocols with equivalent facts,
