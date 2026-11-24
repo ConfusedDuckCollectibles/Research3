@@ -53,3 +53,18 @@ not empirical computation or scientific scope.
 Both corrections were independently reviewed before another offline validation
 and before any pretrained binding-study outcome. The original failed validation
 and its retained logs remain part of the execution history.
+
+## Successful offline launch gate
+
+[Validation run 45355078679](https://github.com/ConfusedDuckCollectibles/Research3/actions/runs/45355078679),
+job 138310779485, passed **all 90 tests**, with no errors, failures or skips,
+in 16.412 seconds on source commit `701f7310a12a81c8be7329b369becf3cda8e3cbd`.
+The ordinary repository test workflow also passed. The exact validation
+receipt and artifact metadata are retained in
+[`results/binding_validation.json`](../results/binding_validation.json).
+
+Only after this successful gate was the empirical workflow published.
+It permits its first run and first attempt only, repeats the complete tests
+before starting the study, and gives all download/data/model work one global
+1,800-second deadline inside a 35-minute CPU job. Later workflow attempts are
+rejected. No empirical outcome was inspected to choose these source changes.
