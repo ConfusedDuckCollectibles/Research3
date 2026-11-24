@@ -6,15 +6,19 @@ and **executed pretrained-model studies with explicit causal controls**. It does
 claim a new universal language, an LLM efficiency breakthrough, or a replication
 of LatentMAS or Interlat.
 
-## Latest: audited alignment results
+## Latest: audited coefficient transport results
 
-The [complete alignment report](docs/alignment_results.md) found a **1.17–3.02× faster alignment core** than the efficient thin-SVD baseline across twelve fixed CPU fixtures. All 15,759 required checks passed, and an independent audit of the retained matrices and timing records passed. The [permanent evidence](results/alignment_numerical/) preserves the original arrays, case records, timings and provenance.
+The [complete coefficient-packet report](docs/coefficient_results.md) preserves a completed, negative engineering result. All **720 actual TCP trials**, **300 numerical diagnostics**, and **nine primary float64 full-vector fidelity gates** passed their correctness checks. Both performance criteria failed: the shaped warm gain over the strong optimized Gram codec was only **1.97%**; unshaped warm time was **20.98% higher** than the retrospective best comparator, and cold first-message time was **6.23×** that comparator. The shared-table setup cost is charged explicitly.
 
-The full packet result is mixed: the largest float64 Gram packet was 31.89× smaller than a direct prefix, but the original Gram route used 1.86–2.29× the arithmetic time of the fast dual-direct route. A nonunique canonical float32 packet also showed **35.89% relative vector error despite unchanged nearest token IDs**. This is a bounded numerical result, with material rank, setup and precision limits.
+The independent audit found no issues within its scope across **233,297 integrity**, **106,829 report-consistency**, and **17,025 scientific validation** checks. Actual packets, setup/ACK streams, arrays, timings, audit limitations and all original results are permanently retained in [the evidence directory](results/coefficient_packet/). The shaped profiles impose application pacing and reply holdoff on physical loopback; this is not a WAN, language-model-quality or complete agent-speed result. No breakthrough is claimed.
 
-The [preregistered coefficient-packet study](docs/coefficient_packet_design.md) has now completed its one original execution: **720/720 actual TCP trials and 300 numerical diagnostics**, with all nine primary float64 fidelity gates passing. It **failed both performance criteria**: the shaped warm gain over the strong optimized Gram codec was only **1.97%**, while loopback time was **20.98% higher** than the retrospective best comparator. Cold first-message time was **6.23×** that comparator. These are paired aggregates on fixed synthetic fixtures; shaped profiles use imposed application pacing and holdoff on physical loopback. The independent byte/array/statistical audit and permanent evidence publication are queued. No breakthrough or model-quality gain is established.
+## Earlier alignment result and current mathematical leads
 
-The separate [lossless-predictor feasibility assessment](docs/lossless_predictor_feasibility.md) records why a further model study on vocabulary-byte XOR compression is not justified by the current artifacts.
+The [complete alignment report](docs/alignment_results.md) found a **1.17–3.02× faster alignment core** than the efficient thin-SVD baseline across twelve fixed CPU fixtures. All 15,759 required checks passed, and the retained-array audit passed. The [original evidence](results/alignment_numerical/) is unchanged. The original Gram packet was smaller but used 1.86–2.29× the arithmetic time of fast dual-direct. A nonunique canonical float32 packet also showed **35.89% relative vector error despite unchanged nearest token IDs**.
+
+The new [rank-deficient feasibility note](docs/rank_deficient_feasibility.md) derives a representation of the sender's chosen legacy output using a reference-space coefficient plus explicit residual coordinates. It compares strong generic low-rank representations and established prior art. It is an analytical note with no new measurement, bitwise-equivalence or novelty claim. Further work is assessing exactly which source information the full alignment preserves, including normalization and finite-precision limitations.
+
+The separate [lossless-predictor feasibility assessment](docs/lossless_predictor_feasibility.md) records why another model study on vocabulary-byte XOR compression is not justified by the current artifacts.
 
 ## Previous binding-sensitive training
 

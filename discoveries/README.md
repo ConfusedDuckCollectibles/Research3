@@ -30,4 +30,11 @@ loss, a useful communication method, or scientific novelty.
 
 ## Alignment computation and packet limits
 
-[Complete audited findings](../docs/alignment_results.md): the guarded dual core was 1.17–3.02x faster than the efficient thin-SVD baseline over twelve CPU fixtures. All 15,759 required checks passed. The original Gram packet reduced warm bytes but cost 1.86–2.29x the arithmetic time of fast dual-direct; one accepted nonunique canonical float32 packet had 35.89% relative vector error despite unchanged nearest IDs. The independent audit and every original outcome are preserved. This is a scoped numerical implementation result, with no model-quality, complete agent-speed or novelty claim. The next [coefficient-packet TCP design](../docs/coefficient_packet_design.md) is separately preregistered before outcomes.
+[Complete audited findings](../docs/alignment_results.md): the guarded dual core was 1.17–3.02x faster than the efficient thin-SVD baseline over twelve CPU fixtures. All 15,759 required checks passed. The original Gram packet reduced warm bytes but cost 1.86–2.29x the arithmetic time of fast dual-direct; one accepted nonunique canonical float32 packet had 35.89% relative vector error despite unchanged nearest IDs. The independent audit and every original outcome are preserved. This is a scoped numerical implementation result, with no model-quality, complete agent-speed or novelty claim. The separately preregistered coefficient-packet follow-up is now complete.
+
+
+## Complete coefficient TCP exchanges
+
+[Complete audited findings](../docs/coefficient_results.md): all720 network trials and300 diagnostics completed correctly, but both performance criteria failed. Coefficient packets used1.97% less aggregate shaped warm time than the strong optimized Gram baseline, below the required3%; loopback overhead was20.98%, worst warm overhead48.60%, and cold first-message time6.23× the retrospective best comparator. The [original evidence and independent audit](../results/coefficient_packet/) preserve every packet, array, timing and gate. These fixed single-host application-pacing results do not establish a practical agent-efficiency breakthrough.
+
+The [rank-deficient feasibility note](../docs/rank_deficient_feasibility.md) is an analytical comparison, not a measured discovery or novelty claim.
