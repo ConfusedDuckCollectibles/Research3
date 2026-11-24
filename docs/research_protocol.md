@@ -4,8 +4,12 @@
 
 Initial milestone: a reproducible learned channel, explicit receiver
 interventions, exact byte accounting, and a path to accessible transformer
-models. The NumPy run is an executed engineering experiment. The local-model
-runner is implemented but unexecuted. No novel scientific result is claimed.
+models. Both the NumPy experiment and a pinned DistilGPT2-to-Pythia-14M pilot
+have now executed. The [pretrained pilot report](../results/pretrained_pilot/README.md)
+records a negative result: the informative bridge did not outperform an
+equally trained control with no private facts. No novel scientific result is
+claimed. Its posthoc formatting diagnosis is separate from the original
+primary outcome.
 
 The long-term objective is a better tradeoff between task success and total
 computation/communication. Merely avoiding English does not establish that
@@ -108,8 +112,10 @@ it is not a reproduction of the cited systems or a novel method claim.
 
 Before claims about efficient LLM collaboration:
 
-- Run the optional gradient test and then train/evaluate on accessible model
-  pairs, retaining exact model revisions, data manifests, and package versions.
+- Replicate the preliminary trained-pair experiment with stronger receiver
+  competence checks, equal-budget text adaptation, multiple seeds and direct
+  counterfactual changes to private facts. Retain exact model revisions, data
+  manifests and package versions, as in the initial executed pilot.
 - Extend generated-answer correctness to executable agent tasks, multiple seeds,
   and held-out task families. Review for leakage beyond exact strings/world IDs.
 - Compare strong concise-text and structured protocols with equivalent facts,
