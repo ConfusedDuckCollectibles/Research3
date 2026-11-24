@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+checkpoints/
+local_models/
+local_data/
+*.npz
+*.pt
+*.safetensors

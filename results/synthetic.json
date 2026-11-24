@@ -1,0 +1,783 @@
+{
+  "experiment": "synthetic_private_attribute_latent_bridge_v1",
+  "status": "executed_synthetic_experiment_not_pretrained_llm_evaluation",
+  "config": {
+    "seeds": [
+      101,
+      202,
+      303
+    ],
+    "latent_widths": [
+      4,
+      8,
+      16
+    ],
+    "epochs": 180,
+    "split_seed": 23,
+    "frozen_agents_seed": 11,
+    "fields": 4,
+    "values_per_field": 8,
+    "sender_dim": 48,
+    "receiver_dim": 40,
+    "bridge_hidden_dim": 64,
+    "learning_rate": 0.003,
+    "batch_size": 128
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "splits": {
+    "train": {
+      "worlds": 2457,
+      "attribute_queries": 9828,
+      "sha256_uint8_rows": "3f079a97d61c7d1dce99c9641beae468d8f1409b46ba20cd53350af0669457b9"
+    },
+    "validation": {
+      "worlds": 819,
+      "attribute_queries": 3276,
+      "sha256_uint8_rows": "a014a2063c0f239048cd44ac790d34b212384c8a64863bd88dd583d806fb0e41"
+    },
+    "test": {
+      "worlds": 820,
+      "attribute_queries": 3280,
+      "sha256_uint8_rows": "6f97b713cea48d33301bc0ff1bcf5b774adbadc2f89cbe66d76eb2f3503f838b"
+    }
+  },
+  "baselines": {
+    "no_message_train_prior": {
+      "attribute_accuracy": 0.11128048780487805,
+      "all_attributes_accuracy": 0.0012195121951219512,
+      "nll": 2.0808505178097105
+    },
+    "least_squares_full_sender_state": {
+      "attribute_accuracy": 1.0,
+      "all_attributes_accuracy": 1.0,
+      "nll": 1.3513990859092169
+    },
+    "uint8_symbols": {
+      "attribute_accuracy": 1.0,
+      "payload_bytes": 4,
+      "framed_bytes": 12
+    },
+    "packed_symbols": {
+      "attribute_accuracy": 1.0,
+      "payload_bytes": 2,
+      "framed_bytes": 10
+    },
+    "fixed_grammar_english": {
+      "payload_bytes_mean": 34.0,
+      "framed_bytes_mean": 42.0,
+      "task_accuracy_evaluated": false
+    }
+  },
+  "setup_accounting": {
+    "frozen_agent_weights_float32_bytes": 11264,
+    "raw_training_worlds_uint8_bytes": 9828,
+    "raw_validation_worlds_uint8_bytes": 3276,
+    "raw_test_worlds_uint8_bytes": 3280,
+    "cached_train_sender_states_float64_bytes": 943488,
+    "common_frame_header_bytes": 8,
+    "shared_schema": "four attributes a,b,c,d, each an integer from 0 through 7; receiver knows query index",
+    "network_transfer_measured": false,
+    "training_storage_is_not_total_training_io_or_energy": true
+  },
+  "summary": [
+    {
+      "latent_dim": 4,
+      "matched_accuracy_mean": 0.9013211382113822,
+      "zero_message_accuracy_mean": 0.12825203252032522,
+      "permuted_message_accuracy_mean": 0.12002032520325204,
+      "matched_accuracy_std_across_initializations": 0.07998406512676053,
+      "payload_bytes": 16,
+      "framed_bytes": 24
+    },
+    {
+      "latent_dim": 8,
+      "matched_accuracy_mean": 0.998780487804878,
+      "zero_message_accuracy_mean": 0.12398373983739837,
+      "permuted_message_accuracy_mean": 0.11890243902439024,
+      "matched_accuracy_std_across_initializations": 0.0006097560975609762,
+      "payload_bytes": 32,
+      "framed_bytes": 40
+    },
+    {
+      "latent_dim": 16,
+      "matched_accuracy_mean": 0.9989837398373984,
+      "zero_message_accuracy_mean": 0.12489837398373983,
+      "permuted_message_accuracy_mean": 0.11869918699186992,
+      "matched_accuracy_std_across_initializations": 0.0015039277019256677,
+      "payload_bytes": 64,
+      "framed_bytes": 72
+    }
+  ],
+  "runs": [
+    {
+      "seed": 101,
+      "latent_dim": 4,
+      "train_seconds": 3.711844613999915,
+      "validation_selection": {
+        "best_epoch": 180,
+        "best_validation_nll": 0.36587350529763546,
+        "optimizer_steps": 3600,
+        "history": [
+          {
+            "epoch": 1,
+            "validation_nll": 1.7759947969157284
+          },
+          {
+            "epoch": 20,
+            "validation_nll": 1.1387294432751383
+          },
+          {
+            "epoch": 40,
+            "validation_nll": 0.8800675741026536
+          },
+          {
+            "epoch": 60,
+            "validation_nll": 0.7673793431693494
+          },
+          {
+            "epoch": 80,
+            "validation_nll": 0.7100405286040553
+          },
+          {
+            "epoch": 100,
+            "validation_nll": 0.6463941765449029
+          },
+          {
+            "epoch": 120,
+            "validation_nll": 0.5767293598007922
+          },
+          {
+            "epoch": 140,
+            "validation_nll": 0.49412246084179356
+          },
+          {
+            "epoch": 160,
+            "validation_nll": 0.4250237110532766
+          },
+          {
+            "epoch": 180,
+            "validation_nll": 0.36587350529763546
+          }
+        ]
+      },
+      "matched": {
+        "attribute_accuracy": 0.8585365853658536,
+        "all_attributes_accuracy": 0.4609756097560976,
+        "nll": 0.36262155463878865
+      },
+      "zero_message": {
+        "attribute_accuracy": 0.12347560975609756,
+        "all_attributes_accuracy": 0.0,
+        "nll": 14.016391636692598
+      },
+      "permuted_message": {
+        "attribute_accuracy": 0.1198170731707317,
+        "all_attributes_accuracy": 0.0012195121951219512,
+        "nll": 17.552759093297293
+      },
+      "permutation_shift": 465,
+      "latent_payload_bytes": 16,
+      "latent_framed_bytes": 24,
+      "bridge_parameter_count": 6316,
+      "bridge_checkpoint_float32_bytes": 25264,
+      "training_parameters_and_adam_moments_float64_bytes": 151584
+    },
+    {
+      "seed": 202,
+      "latent_dim": 4,
+      "train_seconds": 3.1734379380000064,
+      "validation_selection": {
+        "best_epoch": 179,
+        "best_validation_nll": 0.38419390838794804,
+        "optimizer_steps": 3600,
+        "history": [
+          {
+            "epoch": 1,
+            "validation_nll": 1.7485516653507893
+          },
+          {
+            "epoch": 20,
+            "validation_nll": 1.0876874778262742
+          },
+          {
+            "epoch": 40,
+            "validation_nll": 0.854849326656707
+          },
+          {
+            "epoch": 60,
+            "validation_nll": 0.7464992966221102
+          },
+          {
+            "epoch": 80,
+            "validation_nll": 0.6904508120294415
+          },
+          {
+            "epoch": 100,
+            "validation_nll": 0.6440593760324272
+          },
+          {
+            "epoch": 120,
+            "validation_nll": 0.554043045163238
+          },
+          {
+            "epoch": 140,
+            "validation_nll": 0.47939727568972507
+          },
+          {
+            "epoch": 160,
+            "validation_nll": 0.43203870744438516
+          },
+          {
+            "epoch": 180,
+            "validation_nll": 0.38525144351604645
+          }
+        ]
+      },
+      "matched": {
+        "attribute_accuracy": 0.8518292682926829,
+        "all_attributes_accuracy": 0.4378048780487805,
+        "nll": 0.3743844925187999
+      },
+      "zero_message": {
+        "attribute_accuracy": 0.12804878048780488,
+        "all_attributes_accuracy": 0.0,
+        "nll": 12.741942899776502
+      },
+      "permuted_message": {
+        "attribute_accuracy": 0.12347560975609756,
+        "all_attributes_accuracy": 0.0,
+        "nll": 17.006910865556303
+      },
+      "permutation_shift": 134,
+      "latent_payload_bytes": 16,
+      "latent_framed_bytes": 24,
+      "bridge_parameter_count": 6316,
+      "bridge_checkpoint_float32_bytes": 25264,
+      "training_parameters_and_adam_moments_float64_bytes": 151584
+    },
+    {
+      "seed": 303,
+      "latent_dim": 4,
+      "train_seconds": 2.9225974040000438,
+      "validation_selection": {
+        "best_epoch": 180,
+        "best_validation_nll": 0.06254903787285786,
+        "optimizer_steps": 3600,
+        "history": [
+          {
+            "epoch": 1,
+            "validation_nll": 1.768434600885175
+          },
+          {
+            "epoch": 20,
+            "validation_nll": 0.9449867259041574
+          },
+          {
+            "epoch": 40,
+            "validation_nll": 0.6343234500965275
+          },
+          {
+            "epoch": 60,
+            "validation_nll": 0.461162465807165
+          },
+          {
+            "epoch": 80,
+            "validation_nll": 0.3292768069578285
+          },
+          {
+            "epoch": 100,
+            "validation_nll": 0.23876482307612673
+          },
+          {
+            "epoch": 120,
+            "validation_nll": 0.16800101315512864
+          },
+          {
+            "epoch": 140,
+            "validation_nll": 0.11951089865471973
+          },
+          {
+            "epoch": 160,
+            "validation_nll": 0.08396295209843142
+          },
+          {
+            "epoch": 180,
+            "validation_nll": 0.06254903787285786
+          }
+        ]
+      },
+      "matched": {
+        "attribute_accuracy": 0.9935975609756098,
+        "all_attributes_accuracy": 0.974390243902439,
+        "nll": 0.06535395173997095
+      },
+      "zero_message": {
+        "attribute_accuracy": 0.13323170731707318,
+        "all_attributes_accuracy": 0.0,
+        "nll": 19.520062746726005
+      },
+      "permuted_message": {
+        "attribute_accuracy": 0.11676829268292684,
+        "all_attributes_accuracy": 0.0,
+        "nll": 23.54619806795869
+      },
+      "permutation_shift": 43,
+      "latent_payload_bytes": 16,
+      "latent_framed_bytes": 24,
+      "bridge_parameter_count": 6316,
+      "bridge_checkpoint_float32_bytes": 25264,
+      "training_parameters_and_adam_moments_float64_bytes": 151584
+    },
+    {
+      "seed": 101,
+      "latent_dim": 8,
+      "train_seconds": 2.875200145000008,
+      "validation_selection": {
+        "best_epoch": 180,
+        "best_validation_nll": 0.010235465536121487,
+        "optimizer_steps": 3600,
+        "history": [
+          {
+            "epoch": 1,
+            "validation_nll": 1.5979996129020955
+          },
+          {
+            "epoch": 20,
+            "validation_nll": 0.5404743892014109
+          },
+          {
+            "epoch": 40,
+            "validation_nll": 0.21790947056754362
+          },
+          {
+            "epoch": 60,
+            "validation_nll": 0.0853028911145896
+          },
+          {
+            "epoch": 80,
+            "validation_nll": 0.04753761565041437
+          },
+          {
+            "epoch": 100,
+            "validation_nll": 0.03126197153749865
+          },
+          {
+            "epoch": 120,
+            "validation_nll": 0.02267892990332755
+          },
+          {
+            "epoch": 140,
+            "validation_nll": 0.017192650430217355
+          },
+          {
+            "epoch": 160,
+            "validation_nll": 0.01342050770216242
+          },
+          {
+            "epoch": 180,
+            "validation_nll": 0.010235465536121487
+          }
+        ]
+      },
+      "matched": {
+        "attribute_accuracy": 0.999390243902439,
+        "all_attributes_accuracy": 0.9975609756097561,
+        "nll": 0.008461033518508368
+      },
+      "zero_message": {
+        "attribute_accuracy": 0.12164634146341463,
+        "all_attributes_accuracy": 0.0,
+        "nll": 12.332117351744689
+      },
+      "permuted_message": {
+        "attribute_accuracy": 0.12195121951219512,
+        "all_attributes_accuracy": 0.0,
+        "nll": 17.575878102553027
+      },
+      "permutation_shift": 465,
+      "latent_payload_bytes": 32,
+      "latent_framed_bytes": 40,
+      "bridge_parameter_count": 6832,
+      "bridge_checkpoint_float32_bytes": 27328,
+      "training_parameters_and_adam_moments_float64_bytes": 163968
+    },
+    {
+      "seed": 202,
+      "latent_dim": 8,
+      "train_seconds": 4.235119226999927,
+      "validation_selection": {
+        "best_epoch": 177,
+        "best_validation_nll": 0.009809502428076898,
+        "optimizer_steps": 3600,
+        "history": [
+          {
+            "epoch": 1,
+            "validation_nll": 1.5740722235551445
+          },
+          {
+            "epoch": 20,
+            "validation_nll": 0.521588549463314
+          },
+          {
+            "epoch": 40,
+            "validation_nll": 0.14622766430170914
+          },
+          {
+            "epoch": 60,
+            "validation_nll": 0.06200631577318343
+          },
+          {
+            "epoch": 80,
+            "validation_nll": 0.03826944518570569
+          },
+          {
+            "epoch": 100,
+            "validation_nll": 0.025743303750302277
+          },
+          {
+            "epoch": 120,
+            "validation_nll": 0.019370489699238297
+          },
+          {
+            "epoch": 140,
+            "validation_nll": 0.014993921048670797
+          },
+          {
+            "epoch": 160,
+            "validation_nll": 0.012187129164571313
+          },
+          {
+            "epoch": 180,
+            "validation_nll": 0.010101048690382001
+          }
+        ]
+      },
+      "matched": {
+        "attribute_accuracy": 0.998780487804878,
+        "all_attributes_accuracy": 0.9951219512195122,
+        "nll": 0.009745906786344382
+      },
+      "zero_message": {
+        "attribute_accuracy": 0.12195121951219512,
+        "all_attributes_accuracy": 0.0,
+        "nll": 12.396638933060599
+      },
+      "permuted_message": {
+        "attribute_accuracy": 0.11859756097560975,
+        "all_attributes_accuracy": 0.0,
+        "nll": 17.482603076111438
+      },
+      "permutation_shift": 134,
+      "latent_payload_bytes": 32,
+      "latent_framed_bytes": 40,
+      "bridge_parameter_count": 6832,
+      "bridge_checkpoint_float32_bytes": 27328,
+      "training_parameters_and_adam_moments_float64_bytes": 163968
+    },
+    {
+      "seed": 303,
+      "latent_dim": 8,
+      "train_seconds": 2.529789826999945,
+      "validation_selection": {
+        "best_epoch": 180,
+        "best_validation_nll": 0.007390246339448654,
+        "optimizer_steps": 3600,
+        "history": [
+          {
+            "epoch": 1,
+            "validation_nll": 1.5888896303836342
+          },
+          {
+            "epoch": 20,
+            "validation_nll": 0.41935485019883445
+          },
+          {
+            "epoch": 40,
+            "validation_nll": 0.11351069172434952
+          },
+          {
+            "epoch": 60,
+            "validation_nll": 0.05309797266105082
+          },
+          {
+            "epoch": 80,
+            "validation_nll": 0.030450445652389597
+          },
+          {
+            "epoch": 100,
+            "validation_nll": 0.019988630782906178
+          },
+          {
+            "epoch": 120,
+            "validation_nll": 0.014159431820790928
+          },
+          {
+            "epoch": 140,
+            "validation_nll": 0.011329155071094717
+          },
+          {
+            "epoch": 160,
+            "validation_nll": 0.009254821934971472
+          },
+          {
+            "epoch": 180,
+            "validation_nll": 0.007390246339448654
+          }
+        ]
+      },
+      "matched": {
+        "attribute_accuracy": 0.9981707317073171,
+        "all_attributes_accuracy": 0.9939024390243902,
+        "nll": 0.008778646322845819
+      },
+      "zero_message": {
+        "attribute_accuracy": 0.12835365853658537,
+        "all_attributes_accuracy": 0.0,
+        "nll": 11.16319639538991
+      },
+      "permuted_message": {
+        "attribute_accuracy": 0.11615853658536586,
+        "all_attributes_accuracy": 0.0,
+        "nll": 18.229995856576554
+      },
+      "permutation_shift": 43,
+      "latent_payload_bytes": 32,
+      "latent_framed_bytes": 40,
+      "bridge_parameter_count": 6832,
+      "bridge_checkpoint_float32_bytes": 27328,
+      "training_parameters_and_adam_moments_float64_bytes": 163968
+    },
+    {
+      "seed": 101,
+      "latent_dim": 16,
+      "train_seconds": 2.3663930829999344,
+      "validation_selection": {
+        "best_epoch": 180,
+        "best_validation_nll": 0.0025033805346570044,
+        "optimizer_steps": 3600,
+        "history": [
+          {
+            "epoch": 1,
+            "validation_nll": 1.408434267668432
+          },
+          {
+            "epoch": 20,
+            "validation_nll": 0.093758335709104
+          },
+          {
+            "epoch": 40,
+            "validation_nll": 0.03397045820798963
+          },
+          {
+            "epoch": 60,
+            "validation_nll": 0.01802772506229021
+          },
+          {
+            "epoch": 80,
+            "validation_nll": 0.011411124459015518
+          },
+          {
+            "epoch": 100,
+            "validation_nll": 0.007875428147693356
+          },
+          {
+            "epoch": 120,
+            "validation_nll": 0.005594618790833478
+          },
+          {
+            "epoch": 140,
+            "validation_nll": 0.004214054600009418
+          },
+          {
+            "epoch": 160,
+            "validation_nll": 0.0032219702174028225
+          },
+          {
+            "epoch": 180,
+            "validation_nll": 0.0025033805346570044
+          }
+        ]
+      },
+      "matched": {
+        "attribute_accuracy": 0.9996951219512196,
+        "all_attributes_accuracy": 0.998780487804878,
+        "nll": 0.003498665796905929
+      },
+      "zero_message": {
+        "attribute_accuracy": 0.1298780487804878,
+        "all_attributes_accuracy": 0.0,
+        "nll": 2.2935466106930145
+      },
+      "permuted_message": {
+        "attribute_accuracy": 0.12225609756097561,
+        "all_attributes_accuracy": 0.0,
+        "nll": 12.904087303299823
+      },
+      "permutation_shift": 465,
+      "latent_payload_bytes": 64,
+      "latent_framed_bytes": 72,
+      "bridge_parameter_count": 7864,
+      "bridge_checkpoint_float32_bytes": 31456,
+      "training_parameters_and_adam_moments_float64_bytes": 188736
+    },
+    {
+      "seed": 202,
+      "latent_dim": 16,
+      "train_seconds": 2.3686958480000158,
+      "validation_selection": {
+        "best_epoch": 180,
+        "best_validation_nll": 0.009192984847656935,
+        "optimizer_steps": 3600,
+        "history": [
+          {
+            "epoch": 1,
+            "validation_nll": 1.3472352030559884
+          },
+          {
+            "epoch": 20,
+            "validation_nll": 0.08089591455077597
+          },
+          {
+            "epoch": 40,
+            "validation_nll": 0.03189448227350747
+          },
+          {
+            "epoch": 60,
+            "validation_nll": 0.020821910891408082
+          },
+          {
+            "epoch": 80,
+            "validation_nll": 0.01563024367444921
+          },
+          {
+            "epoch": 100,
+            "validation_nll": 0.013189811036786512
+          },
+          {
+            "epoch": 120,
+            "validation_nll": 0.011661661146718539
+          },
+          {
+            "epoch": 140,
+            "validation_nll": 0.010722853599368058
+          },
+          {
+            "epoch": 160,
+            "validation_nll": 0.009926271858204392
+          },
+          {
+            "epoch": 180,
+            "validation_nll": 0.009192984847656935
+          }
+        ]
+      },
+      "matched": {
+        "attribute_accuracy": 0.9972560975609757,
+        "all_attributes_accuracy": 0.9902439024390244,
+        "nll": 0.008628676991173888
+      },
+      "zero_message": {
+        "attribute_accuracy": 0.12134146341463414,
+        "all_attributes_accuracy": 0.0,
+        "nll": 2.344222239034849
+      },
+      "permuted_message": {
+        "attribute_accuracy": 0.11768292682926829,
+        "all_attributes_accuracy": 0.0,
+        "nll": 13.336485379689018
+      },
+      "permutation_shift": 134,
+      "latent_payload_bytes": 64,
+      "latent_framed_bytes": 72,
+      "bridge_parameter_count": 7864,
+      "bridge_checkpoint_float32_bytes": 31456,
+      "training_parameters_and_adam_moments_float64_bytes": 188736
+    },
+    {
+      "seed": 303,
+      "latent_dim": 16,
+      "train_seconds": 2.415359178000017,
+      "validation_selection": {
+        "best_epoch": 180,
+        "best_validation_nll": 0.002516311192343668,
+        "optimizer_steps": 3600,
+        "history": [
+          {
+            "epoch": 1,
+            "validation_nll": 1.36470008251912
+          },
+          {
+            "epoch": 20,
+            "validation_nll": 0.07440962039016072
+          },
+          {
+            "epoch": 40,
+            "validation_nll": 0.023425670832041053
+          },
+          {
+            "epoch": 60,
+            "validation_nll": 0.012794558599676212
+          },
+          {
+            "epoch": 80,
+            "validation_nll": 0.008618592553153743
+          },
+          {
+            "epoch": 100,
+            "validation_nll": 0.0060616084726145105
+          },
+          {
+            "epoch": 120,
+            "validation_nll": 0.004671215803739595
+          },
+          {
+            "epoch": 140,
+            "validation_nll": 0.0037305530822236512
+          },
+          {
+            "epoch": 160,
+            "validation_nll": 0.003065844974691565
+          },
+          {
+            "epoch": 180,
+            "validation_nll": 0.002516311192343668
+          }
+        ]
+      },
+      "matched": {
+        "attribute_accuracy": 1.0,
+        "all_attributes_accuracy": 1.0,
+        "nll": 0.00236948661051866
+      },
+      "zero_message": {
+        "attribute_accuracy": 0.12347560975609756,
+        "all_attributes_accuracy": 0.0,
+        "nll": 2.5080738645693246
+      },
+      "permuted_message": {
+        "attribute_accuracy": 0.11615853658536586,
+        "all_attributes_accuracy": 0.0,
+        "nll": 13.32198926818504
+      },
+      "permutation_shift": 43,
+      "latent_payload_bytes": 64,
+      "latent_framed_bytes": 72,
+      "bridge_parameter_count": 7864,
+      "bridge_checkpoint_float32_bytes": 31456,
+      "training_parameters_and_adam_moments_float64_bytes": 188736
+    }
+  ],
+  "interpretation": [
+    "Held-out worlds are unseen combinations of familiar values; this is not a domain-shift test.",
+    "Frozen coordinates are deliberately related to known attribute semantics. This is a favorable bridge smoke test, not a discovery of a universal representation.",
+    "The symbolic baselines are exact codecs, not language models; fixed-grammar English bytes are counted but its task accuracy is not evaluated.",
+    "Float latents use more payload bytes than the lossless packed-symbol baseline. No bandwidth, token, or end-to-end speed advantage is claimed.",
+    "Multiple seeds vary bridge initialization and minibatch order, not the fixed train/test split. Standard deviations are not confidence intervals over independent tasks.",
+    "Zero and permuted messages intervene on the receiver channel. Test labels and sender states are not otherwise accessible to the receiver.",
+    "No pretrained model has been trained or evaluated in this experiment."
+  ]
+}
