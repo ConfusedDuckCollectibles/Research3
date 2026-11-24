@@ -1,0 +1,46 @@
+name: Pinned pretrained pilot
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/pretrained-pilot.yml'
+      - 'scripts/run_pretrained_pilot.py'
+
+permissions:
+  contents: read
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OPENBLAS_NUM_THREADS: '2'
+      OMP_NUM_THREADS: '2'
+      TOKENIZERS_PARALLELISM: 'false'
+      HF_HUB_DISABLE_IMPLICIT_TOKEN: '1'
+      HF_HUB_DISABLE_TELEMETRY: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - name: Install CPU experiment dependencies
+        run: |
+          python -m pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install transformers==4.48.2 -e .
+      - name: Run fixed pretrained model experiment
+        run: python scripts/run_pretrained_pilot.py
+      - name: Preserve public reports without model weights
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pretrained-pilot-reports
+          retention-days: 7
+          if-no-files-found: warn
+          path: |
+            checkpoints/pretrained-pilot/*.json
+            checkpoints/pretrained-pilot/predictions.jsonl

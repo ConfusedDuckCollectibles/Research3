@@ -8,6 +8,7 @@ import numpy as np
 
 from latent_bridge.core import Bridge, FrozenAgents, decode_latent, decode_packed, decode_symbols, encode_latent, encode_packed, encode_symbols, make_splits, train
 from latent_bridge.transformers_runner import different_observation_indices, read_partitions
+from latent_bridge.private_lookup import make_tasks
 
 
 class DataTests(unittest.TestCase):
@@ -38,6 +39,41 @@ class DataTests(unittest.TestCase):
         self.assertTrue(all(rows[i]["sender"] != rows[j]["sender"] for i, j in enumerate(indices)))
         with self.assertRaisesRegex(ValueError, "derangement"):
             different_observation_indices([{"sender": "a"}, {"sender": "a"}])
+        with self.assertRaisesRegex(ValueError, "derangement"):
+            different_observation_indices([{"sender": "a red box", "world_id": "one"}, {"sender": "the box is red", "world_id": "one"}])
+
+    def test_private_lookup_worlds_disjoint_and_answers_private(self):
+        partitions = make_tasks()
+        seen = set()
+        for name, rows in partitions.items():
+            worlds = {row["world_id"] for row in rows}
+            self.assertFalse(worlds & seen)
+            seen |= worlds
+            self.assertEqual(len(rows), 4 * len(worlds))
+            for row in rows:
+                self.assertNotIn(row["answer"].strip(), row["query"])
+                self.assertIn(row["answer"].strip(), row["sender"])
+            if name in ("test", "generalization"):
+                indices = different_observation_indices(rows)
+                self.assertTrue(all(rows[i]["world_id"] != rows[j]["world_id"] for i, j in enumerate(indices)))
+        self.assertEqual(partitions, make_tasks())
+
+    def test_world_id_blocks_cross_split_paraphrases(self):
+        with tempfile.TemporaryDirectory() as directory:
+            paths = {}
+            for i, name in enumerate(("train", "test")):
+                path = Path(directory) / (name + ".jsonl")
+                row = {"id": str(i), "world_id": "same-world", "sender": "red box" if i == 0 else "the box is red", "query": "color?", "answer": "red"}
+                path.write_text(json.dumps(row) + "\n")
+                paths[name] = path
+            with self.assertRaisesRegex(ValueError, "world identities"):
+                read_partitions(paths)
+
+    def test_exact_match_does_not_hide_additional_content(self):
+        from latent_bridge.transformers_runner import normalize_answer
+        self.assertEqual(normalize_answer(" Red\n"), "red")
+        self.assertNotEqual(normalize_answer("red."), "red")
+        self.assertNotEqual(normalize_answer("red or blue"), "red")
 
 
 class CodecTests(unittest.TestCase):
@@ -128,6 +164,37 @@ class TransformerSmokeTests(unittest.TestCase):
         loss.backward()
         self.assertTrue(any(p.grad is not None and p.grad.abs().sum() > 0 for p in bridge.parameters()))
         self.assertTrue(all(p.grad is None for p in receiver.parameters()))
+
+    def test_greedy_generation_uses_prompt_only_and_fixed_stopping(self):
+        import torch
+        from types import SimpleNamespace
+        from latent_bridge.transformers_runner import greedy_answer
+
+        class Tokenizer:
+            eos_token_id = 7
+            def decode(self, ids, skip_special_tokens=True):
+                return "".join({5: " red", 6: "\n"}.get(i, "?") for i in ids)
+
+        class Receiver(torch.nn.Module):
+            def __init__(self):
+                super().__init__()
+                self.embedding = torch.nn.Embedding(8, 8)
+                self.calls = []
+            def get_input_embeddings(self):
+                return self.embedding
+            def forward(self, inputs_embeds, **kwargs):
+                self.calls.append(inputs_embeds.detach().clone())
+                logits = torch.zeros((1, inputs_embeds.shape[1], 8))
+                logits[:, -1, 5 if len(self.calls) == 1 else 6] = 1
+                return SimpleNamespace(logits=logits)
+
+        receiver = Receiver()
+        prompt = torch.tensor([[1, 2]])
+        answer, count = greedy_answer(receiver, None, None, None, prompt, Tokenizer(), condition="no_channel", max_new_tokens=4)
+        self.assertEqual(answer, " red")
+        self.assertEqual(count, 2)
+        torch.testing.assert_close(receiver.calls[0], receiver.embedding(prompt))
+        self.assertEqual(len(receiver.calls), 2)
 
 
 if __name__ == "__main__":

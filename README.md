@@ -17,7 +17,9 @@ of LatentMAS or Interlat.
   lossless **2-byte packed-symbol baseline**.
 - A local-only Hugging Face training runner that freezes two base models,
   compresses sender hidden states, and injects continuous prefix embeddings into
-  the receiver. Its optional smoke test is skipped when dependencies are absent.
+  the receiver. It now measures generated-answer exact match as well as NLL,
+  trains an equal-budget constant-information bridge, and tests unseen-world
+  paraphrases. Optional transformer tests skip when dependencies are absent.
 
 ## Actual initial result
 
@@ -38,8 +40,10 @@ accurate. Both must also carry the same 8-byte experimental frame header. The
 task is deliberately favorable to semantic reconstruction, and a train-only
 least-squares decoder is included to make that limitation visible.
 
-No pretrained-model experiments were run for this release: this environment
-did not have PyTorch, Transformers, local model weights, or provider API keys.
+No pretrained-model result is implied by these initial NumPy measurements.
+The local environment lacked PyTorch, Transformers, and model weights. A
+separately documented pretrained pilot must finish before its results can be
+reported; a passing random-model gradient test is not that experiment.
 
 ## Run the executed experiment
 
@@ -68,17 +72,21 @@ The [local-model guide](docs/local_models.md) describes installation, JSONL
 input format, exact metric semantics, and the command. The implementation is in
 `latent_bridge/transformers_runner.py`.
 
-It requires existing local model/tokenizer directories. Model downloads and
+The training module requires existing local model/tokenizer directories. Downloads and
 remote model code are disabled. The sender and receiver can use different
-hidden dimensions and tokenizers. Only the bridge is trained. Evaluation
-compares the correct message, zeros, a genuinely different observation,
-no message, and the full sender observation supplied as text.
+hidden dimensions and tokenizers. Evaluation compares the correct message,
+zeros, a genuinely different observation, no message, full sender text,
+compact symbolic facts, and a separately trained constant-information bridge.
+The last control receives the same architecture, initial weights, training
+examples, update count, and optimizer as the matched bridge, while its fixed
+zero input has no private facts or source-length information.
 
-**The runner measures teacher-forced answer-token negative log likelihood,
-not generated-answer accuracy.** Its existence is not evidence that it works
-well on a pretrained pair. Run its tiny optional gradient smoke test first,
-then use independently curated tasks and measure generated results before any
-performance claim.
+**The upgraded runner reports both answer-token NLL and bounded greedy
+generated-answer exact match.** Generation uses query tokens only, with global
+newline/EOS/max-token stopping. It does not read target tokens or target length.
+`private_lookup.py` generates a reproducible small task with complete-world
+splits and an unseen-world paraphrase/order partition. This is still controlled
+synthetic data; even success would not establish useful general agent reasoning.
 
 ## Research question and prior work
 
@@ -90,6 +98,10 @@ research area; primary references include:
 - Lowe et al., [On the Pitfalls of Measuring Emergent Communication](https://arxiv.org/abs/1903.05168) (2019).
 - [LatentMAS](https://arxiv.org/abs/2511.20639).
 - [Interlat](https://arxiv.org/abs/2511.09149).
+- [PLatour / PACT-Check](https://arxiv.org/abs/2611.06976), which motivates
+  comparing against a trained bridge with no informative sender input.
+- [A causal audit of relayed KV caches](https://arxiv.org/abs/2608.04893), which
+  motivates testing whether sender-specific information actually matters.
 
 This repository is an independent initial implementation for controlled
 experiments, not a claim to have invented latent communication. Its companion

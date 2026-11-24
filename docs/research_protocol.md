@@ -82,18 +82,33 @@ the autograd graph, allowing answer loss to train the bridge. Sender extraction
 is detached and cached. Labels for prefix and query are -100; only the answer
 is supervised, with the causal model performing its own label shift.
 
-Validation loss selects a checkpoint; the held-out set is evaluated once under
-matched, zero, different-observation, no-channel, and full-text conditions.
-The output metric is answer-token NLL, weighted by the number of answer tokens.
-It is not answer correctness. This is an adapter experiment inspired by prior
-work, not a reproduction of either cited system.
+Validation loss selects a checkpoint. The upgraded runner additionally trains
+a separate bridge on a fixed all-zero sequence of length eight, with the same
+architecture, initial weights, training order, examples, update count, and
+optimizer. It gets its own validation-selected checkpoint. PLatour/PACT-Check
+shows why a trainable bridge may improve a task even with uninformative sender
+signals, so an evaluation-time zero ablation alone is inadequate.
+
+The held-out partitions are evaluated under matched, trained-constant, zero,
+different-observation, no-channel, full-text, and compact-symbolic conditions.
+Both NLL and generated exact match are reported. Generation receives the query
+only and uses a global newline/EOS/token-budget stopping rule, never target
+length. Whitespace/case normalization is permitted; punctuation or extra words
+remain errors. NLL and exact match answer different questions.
+
+The private-lookup generator assigns complete worlds to train, validation,
+test, and generalization. The last partition uses unseen worlds with changed
+fact order and source/query wording. Shared `world_id` values are rejected
+across partitions, including paraphrases. Four questions share one world and
+are correlated. This experiment is still synthetic and model-pair-specific;
+it is not a reproduction of the cited systems or a novel method claim.
 
 Before claims about efficient LLM collaboration:
 
 - Run the optional gradient test and then train/evaluate on accessible model
   pairs, retaining exact model revisions, data manifests, and package versions.
-- Add generated-answer/executable-task correctness, multiple seeds, and held-out
-  task families. Review for leakage beyond exact duplicate strings.
+- Extend generated-answer correctness to executable agent tasks, multiple seeds,
+  and held-out task families. Review for leakage beyond exact strings/world IDs.
 - Compare strong concise-text and structured protocols with equivalent facts,
   task budgets, receiver adaptation, and validation tuning budgets.
 - Include all sender inference, receiver prefill/generation, adapter compute,
@@ -122,3 +137,9 @@ Before claims about efficient LLM collaboration:
 6. Hugging Face Auto classes:
    https://huggingface.co/docs/transformers/model_doc/auto. Local loading and
    model selection. Consult the documentation for the installed version.
+7. Shen et al., *On the Opportunities and Challenges of Prefill-to-Autoregressive
+   Cross-Model Transfer*, 2026: https://arxiv.org/abs/2611.06976. PLatour and
+   PACT-Check motivate the independently trained no-information control.
+8. Cheng et al., *When Does Latent Communication Pay? A Causal Audit of Relayed
+   KV Caches in Multi-Agent LLMs*, 2026: https://arxiv.org/abs/2608.04893.
+   Motivation for private-information-required tasks and mismatched messages.
