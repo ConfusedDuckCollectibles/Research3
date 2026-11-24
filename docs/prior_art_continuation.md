@@ -93,3 +93,38 @@ checked through its official proceedings page and arXiv v5 full text instead.
 The search is neither an exhaustive novelty proof nor an independent replication
 of those papers' experimental claims. The proposed question has not been tested
 in this repository, and no performance or novelty result is asserted here.
+
+
+## Additional checks before a binding-controlled training study
+
+Checked on 24 November 2026 (America/Chicago). A proposed contrastive or
+counterfactual auxiliary loss must be described as a controlled training
+experiment, not as the invention of contrastive agent communication.
+
+- [CACL, ICLR 2024](https://proceedings.iclr.cc/paper_files/paper/2024/hash/de2ad3ed44ee4e675b3be42aa0b615d0-Abstract-Conference.html)
+  already trains multi-agent communication through contrastive alignment of
+  messages. Its official abstract supports that overlap; this is not a
+  reproduction of its reinforcement-learning experiments.
+- [Object constancy pressures, EMNLP 2020](https://aclanthology.org/2020.findings-emnlp.397/)
+  already vary object position and other nuisance properties to encourage
+  more conceptual, generalizable emergent communication. Removing position
+  shortcuts is a necessary control, not an originality claim.
+- [XBridge](https://arxiv.org/abs/2608.11676), with
+  [author code](https://github.com/WooseongYang/XBridge), explicitly addresses
+  entity grounding across heterogeneous language models using discrete lexical
+  anchors and a latent enrichment bridge queried by the receiver. The primary
+  abstract and author repository were checked. Our tiny common-color task is
+  neither a replication nor a refutation of its broader reported experiments.
+- [Hidden Messages](https://arxiv.org/abs/2610.28905) already reports private-fact
+  tasks, wrong-example messages and targeted substitutions for diffusion-model
+  communication. The primary abstract was checked. Those controls alone cannot
+  support a claim that causal latent communication is newly demonstrated here.
+
+These checks strengthen the next question: can a fixed auxiliary objective
+improve this particular bridge on disjoint worlds with identical token bags
+and randomized fact positions, relative to an otherwise identical model that
+sees all the same augmented examples? Auxiliary pair relationships provide
+extra relational supervision and must be disclosed. Even success would first
+establish bounded causal competence. Eight-color bijections also admit an
+exact two-byte complete-world permutation code (8! = 40,320), which prevents
+mistaking a 64-byte continuous message for a bandwidth advance on that task.

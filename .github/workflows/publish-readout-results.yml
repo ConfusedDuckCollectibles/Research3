@@ -1,0 +1,49 @@
+name: Publish audited readout results
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-readout-results.yml'
+      - 'scripts/publish_readout_results.py'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: publish-readout-results-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'ConfusedDuckCollectibles/Research3' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the exact publication revision
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: true
+      - name: Download the completed audited artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: readout-study-complete
+          run-id: 45335536056
+          repository: ConfusedDuckCollectibles/Research3
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/readout-publication/artifact
+      - name: Check the fixed byte allowlist without mutations
+        run: >-
+          python3 scripts/publish_readout_results.py
+          --artifact-dir "$RUNNER_TEMP/readout-publication/artifact"
+          --check-only
+      - name: Verify live identity and publish with one guarded push
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python3 scripts/publish_readout_results.py
+          --artifact-dir "$RUNNER_TEMP/readout-publication/artifact"
+          --publish

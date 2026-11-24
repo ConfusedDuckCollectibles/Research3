@@ -6,9 +6,27 @@ and **executed pretrained-model studies with explicit causal controls**. It does
 claim a new universal language, an LLM efficiency breakthrough, or a replication
 of LatentMAS or Interlat.
 
-## What is working
+## Latest frozen-message diagnostic
 
-The latest [public-query-conditioning study](results/query_conditioned_study/README.md)
+The [readout diagnostic](docs/readout_results.md) reproduced all 41,472 earlier
+prediction records exactly, then tested additional readers on 32 fresh families.
+A small linear reader of the frozen message reached **9.90% paired correctness**,
+versus **7.81%** for the original receiver. The primary gap was **+2.08 percentage
+points**, with a descriptive family interval of **[-0.78, +4.95] points**.
+The prespecified small MLP reached only **13.54%**. Neither met the practical
+accuracy and nuisance-stability targets.
+
+A much larger full-source reader reached 82.03% on the original template but
+**0% when the source wording and fact order changed**; adapted full text remained
+at 100% under that source shift. The larger reader has more parameters and
+positional access, so its advantage cannot prove irreversible information loss
+in the compressed message. This is a measured diagnostic, not a breakthrough.
+The complete predictions, selected-state records and bounded NPZ exports are
+retained in [the result directory](results/readout_study/).
+
+## Previous query study and implemented controls
+
+The preceding [public-query-conditioning study](results/query_conditioned_study/README.md)
 misses its predeclared practical targets. Query-aware paired accuracy is
 **7.81%**, versus **5.73%** for the matched query-blind arm. The primary
 difference is **+2.08 percentage points**, with a descriptive family-bootstrap
