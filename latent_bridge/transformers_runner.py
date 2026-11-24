@@ -100,6 +100,19 @@ def make_bridge(sender_dim, receiver_dim, bottleneck=16, slots=4):
     return SoftPrefixBridge()
 
 
+def constant_observation(sender_dim, seed, device="cpu"):
+    """One seeded nonzero input shared by all rows; it carries no private facts.
+
+    Distinct fixed positions retain attention-query/slot adaptation capacity,
+    unlike all-zero positions which force identical pooled slots.
+    """
+    import torch
+
+    generator = torch.Generator(device=device).manual_seed(seed + 9841)
+    hidden = torch.randn((1, 8, sender_dim), generator=generator, device=device)
+    return hidden, torch.ones((1, 8), device=device)
+
+
 def answer_batch(tokenizer, query, answer, max_length, device):
     """Tokenize prompt and answer separately to make the label boundary exact."""
     import torch
@@ -262,9 +275,9 @@ def run(args):
     bridge = make_bridge(sender_dim, receiver_dim, args.bottleneck, args.slots).to(args.device)
     constant_bridge = make_bridge(sender_dim, receiver_dim, args.bottleneck, args.slots).to(args.device)
     constant_bridge.load_state_dict(copy.deepcopy(bridge.state_dict()))
-    # Fixed length and values: neither private facts nor source lengths leak.
-    constant_hidden = torch.zeros((1, 8, sender_dim), device=args.device)
-    constant_mask = torch.ones((1, 8), device=args.device)
+    # Fixed seeded nonzero positions preserve adaptation capacity while leaking
+    # neither private facts nor source lengths. Same tensor for every row.
+    constant_hidden, constant_mask = constant_observation(sender_dim, args.seed, args.device)
     models = {"matched": bridge, "trained_constant": constant_bridge}
     optimizers = {name: torch.optim.AdamW(model.parameters(), lr=args.learning_rate) for name, model in models.items()}
     predictions = []
@@ -361,7 +374,10 @@ def run(args):
         "config": {"slots": args.slots, "bottleneck": args.bottleneck, "epochs": args.epochs,
                    "learning_rate": args.learning_rate, "max_length": args.max_length, "device": args.device,
                    "max_new_tokens": args.max_new_tokens, "threads": args.threads,
-                   "constant_hidden_shape": [1, 8, sender_dim], "sender_dim": sender_dim, "receiver_dim": receiver_dim},
+                   "constant_hidden_shape": [1, 8, sender_dim],
+                   "constant_hidden_generation": "One fixed standard-normal tensor, generator seed = experiment seed + 9841, reused for every example",
+                   "constant_hidden_sha256_float32": hashlib.sha256(constant_hidden.cpu().numpy().tobytes()).hexdigest(),
+                   "sender_dim": sender_dim, "receiver_dim": receiver_dim},
         "split_sha256": {name: hashlib.sha256(Path(path).read_bytes()).hexdigest() for name, path in paths.items()},
         "history": history, "selected_epochs": best_epochs,
         "optimizer_steps_per_trained_condition": args.epochs * len(cache["train"]),

@@ -78,8 +78,10 @@ hidden dimensions and tokenizers. Evaluation compares the correct message,
 zeros, a genuinely different observation, no message, full sender text,
 compact symbolic facts, and a separately trained constant-information bridge.
 The last control receives the same architecture, initial weights, training
-examples, update count, and optimizer as the matched bridge, while its fixed
-zero input has no private facts or source-length information.
+examples, update count, and optimizer as the matched bridge. Its one fixed,
+seeded nonzero input is reused for every example and has no private facts or
+source-length information. Distinct fixed positions retain attention-query
+and slot adaptation capacity; an all-zero input would weaken that control.
 
 **The upgraded runner reports both answer-token NLL and bounded greedy
 generated-answer exact match.** Generation uses query tokens only, with global

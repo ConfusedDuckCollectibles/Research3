@@ -51,18 +51,31 @@ pilot is retained, with its limitations, rather than relabeled as success.
 | Condition | Receiver receives | What it checks |
 |---|---|---|
 | `matched` | Trained message from the correct sender observation | Candidate information channel |
-| `trained_constant` | Independently trained bridge fed the same fixed zero tensor for every record | Whether adaptation alone explains gains |
+| `trained_constant` | Independently trained bridge fed the same fixed seeded random tensor for every record | Whether adaptation alone explains gains |
 | `zero` | Informative bridge's message replaced with zero before decoding | Dependence on learned message values |
 | `permuted` | Message from a different private world | Dependence on the correct source information |
 | `no_channel` | Only the query | Frozen receiver and answer-prior baseline |
 | `text` | Complete source facts in ordinary text | Direct readable communication baseline |
 | `symbolic` | Same facts as compact key/value text | Strong simple representation baseline |
 
-The fixed zero input always has shape `1 x 8 x sender_dim`. It cannot reveal
-private facts through input length. A cyclic permutation uses a different
+The fixed input always has shape `1 x 8 x sender_dim`. Its seeded random
+values are independent of all worlds and labels and remain identical across
+records. It cannot reveal private facts through input values or length.
+Nonzero, varied positions let the attention queries learn and allow prefix
+slots to differ. A cyclic permutation uses a different
 sender observation for every evaluated record. A different world can still
 share an individual queried color, so permutation is not an instruction that
 every answer must be wrong.
+
+### Design correction before reviewing outcomes
+
+The first workflow launch used an all-zero constant tensor. Independent review
+identified that zeros also force identical pooled slots and zero gradients for
+the attention queries, reducing the control's effective adaptation capacity.
+This was corrected to a fixed seeded nonzero tensor without examining any model
+outcomes or changing data, training budget, seeds, or scoring. The first launch
+is superseded; only the corrected design is the primary pilot. Both revisions
+remain in commit and workflow history.
 
 Text and symbolic baselines use the frozen receiver without separate task
 adaptation. Their comparisons describe this pilot only; superior adapted

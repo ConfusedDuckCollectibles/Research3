@@ -147,6 +147,21 @@ class LearningTests(unittest.TestCase):
 
 @unittest.skipUnless(importlib.util.find_spec("torch") and importlib.util.find_spec("transformers"), "optional torch/transformers unavailable")
 class TransformerSmokeTests(unittest.TestCase):
+    def test_constant_control_keeps_attention_trainable_without_private_input(self):
+        import torch
+        from latent_bridge.transformers_runner import constant_observation, make_bridge
+        torch.manual_seed(7)
+        bridge = make_bridge(12, 16, bottleneck=4, slots=2)
+        hidden, mask = constant_observation(12, 101)
+        repeated, repeated_mask = constant_observation(12, 101)
+        torch.testing.assert_close(hidden, repeated)
+        torch.testing.assert_close(mask, repeated_mask)
+        output = bridge(hidden, mask)
+        self.assertFalse(torch.allclose(output[:, 0], output[:, 1]))
+        output.square().mean().backward()
+        self.assertIsNotNone(bridge.queries.grad)
+        self.assertGreater(float(bridge.queries.grad.abs().sum()), 0)
+
     def test_answer_gradients_reach_bridge_without_updating_base(self):
         import torch
         from transformers import GPT2Config, GPT2LMHeadModel

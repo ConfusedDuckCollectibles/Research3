@@ -95,10 +95,13 @@ disable autograd through the receiver**. The sender is run under `no_grad()`;
 its states are detached.
 
 Two bridges are trained: one receives genuine hidden states; the other always
-receives a fixed all-zero sequence of length eight. They have identical
+receives the same seeded standard-normal sequence of length eight. They have identical
 architecture and initial weights, see the same examples in the same order,
 and receive the same update count, learning rate, optimizer, and clipping.
-The constant input conveys no facts or source-length information. Each bridge
+The constant input conveys no facts or source-length information. Its distinct
+fixed positions retain trainable attention queries and different slot outputs;
+all-zero positions would collapse that adaptation capacity. The seed and input
+tensor hash are recorded. Each bridge
 selects its own lowest-validation-NLL checkpoint. This distinguishes useful
 communication from task adaptation through a learned prefix.
 

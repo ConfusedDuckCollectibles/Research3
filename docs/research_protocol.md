@@ -83,9 +83,12 @@ is detached and cached. Labels for prefix and query are -100; only the answer
 is supervised, with the causal model performing its own label shift.
 
 Validation loss selects a checkpoint. The upgraded runner additionally trains
-a separate bridge on a fixed all-zero sequence of length eight, with the same
+a separate bridge on one fixed seeded standard-normal sequence of length eight, with the same
 architecture, initial weights, training order, examples, update count, and
-optimizer. It gets its own validation-selected checkpoint. PLatour/PACT-Check
+optimizer. This exact tensor is reused for every example, independent of all
+facts/labels. Unlike all-zero positions, distinct nonzero positions preserve
+attention-query gradients and distinct slot outputs. It gets its own
+validation-selected checkpoint. PLatour/PACT-Check
 shows why a trainable bridge may improve a task even with uninformative sender
 signals, so an evaluation-time zero ablation alone is inadequate.
 
