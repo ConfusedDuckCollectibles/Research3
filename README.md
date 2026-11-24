@@ -32,7 +32,7 @@ retained in [the result directory](results/readout_study/).
 
 ## Current investigation: compact alignment
 
-A separate numerical study is being specified to investigate a small-matrix implementation and compact representation of per-message alignment. The [mathematical note](docs/alignment_geometry.md) gives the assumptions, counterexample and known prior art. Numerical equivalence, timing and packet-size claims remain unverified until the specified study executes. A canonical solution can differ from an author's chosen SVD completion when the optimal output is nonunique. This is a bounded implementation investigation, not an assertion of faster or more capable language models.
+The [frozen numerical study](docs/alignment_numerical_design.md) investigates a small-matrix implementation and compact representation of per-message alignment. The [mathematical note](docs/alignment_geometry.md) gives the assumptions, counterexample and known prior art. Numerical equivalence, timing and packet-size claims remain unverified until the specified study executes. A canonical solution can differ from an author's chosen SVD completion when the optimal output is nonunique. This is a bounded implementation investigation, not an assertion of faster or more capable language models.
 
 ## Previous query study and implemented controls
 
