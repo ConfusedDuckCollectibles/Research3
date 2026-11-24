@@ -1,0 +1,98 @@
+{
+  "task": "private_object_color_lookup_v1",
+  "status": "generated_synthetic_task_data_not_model_results",
+  "seed": 20261123,
+  "objects": [
+    "apple",
+    "book",
+    "cup",
+    "lamp"
+  ],
+  "colors": [
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "black",
+    "white",
+    "purple",
+    "orange"
+  ],
+  "partitions": {
+    "train": {
+      "examples": 256,
+      "distinct_worlds": 64,
+      "answer_counts": {
+        "red": 23,
+        "blue": 38,
+        "green": 42,
+        "yellow": 28,
+        "black": 31,
+        "white": 27,
+        "purple": 33,
+        "orange": 34
+      },
+      "sha256": "9e1c12e5f4ee7b65e2c35a4d3a2cdb0cb2cfb553097f19c561454c1f7033c68f",
+      "utf8_bytes": 79971
+    },
+    "validation": {
+      "examples": 64,
+      "distinct_worlds": 16,
+      "answer_counts": {
+        "red": 9,
+        "blue": 3,
+        "green": 7,
+        "yellow": 9,
+        "black": 10,
+        "white": 7,
+        "purple": 6,
+        "orange": 13
+      },
+      "sha256": "2a7c86f07c582c943ff2e0aa2bfccf2e19f14a19c3dcf7880cbc486d349a864d",
+      "utf8_bytes": 20351
+    },
+    "test": {
+      "examples": 64,
+      "distinct_worlds": 16,
+      "answer_counts": {
+        "red": 8,
+        "blue": 11,
+        "green": 9,
+        "yellow": 10,
+        "black": 7,
+        "white": 6,
+        "purple": 9,
+        "orange": 4
+      },
+      "sha256": "b19836ba3c9f2c784e31649ea47511ca22ca68056060a99879c72d43e010b5b9",
+      "utf8_bytes": 19868
+    },
+    "generalization": {
+      "examples": 64,
+      "distinct_worlds": 16,
+      "answer_counts": {
+        "red": 5,
+        "blue": 6,
+        "green": 10,
+        "yellow": 8,
+        "black": 14,
+        "white": 7,
+        "purple": 6,
+        "orange": 8
+      },
+      "sha256": "2cb92a5704b39557fb8d9fe50d4f358152babf5f916eb6f08739b43f4ed6fa5a",
+      "utf8_bytes": 28214
+    }
+  },
+  "generation": "Enumerate all 8^4 worlds, shuffle once with Python random.Random(seed), assign complete worlds to partitions in train/validation/test/generalization order, ask all four object queries.",
+  "generalization_shift": "Unseen worlds, reversed source fact order, new source phrasing, and a changed query template; colors and objects remain familiar.",
+  "source_visibility": "Only sender sees object-color assignments; receiver sees object query and the condition-specific message.",
+  "stopping_rule": "Answers end with newline; generate at most a global fixed token budget or stop on newline/EOS, never use gold answer length.",
+  "accuracy_definition": "Normalize by stripping/collapsing whitespace and case-folding, then require entire generated answer equal entire gold answer. Punctuation is not removed.",
+  "limits": [
+    "A deliberately small lookup task, not coding, open-ended reasoning, or universal transfer.",
+    "Four queries in one world are statistically dependent; report world count as well as example count.",
+    "The symbolic baseline has access to the same complete facts, serialized compactly.",
+    "No-info baselines can exploit label priors; report actual answer distributions."
+  ]
+}

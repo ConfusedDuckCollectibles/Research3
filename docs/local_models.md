@@ -1,10 +1,10 @@
 # Running a real local-model bridge
 
-**Status:** implemented, syntax checked, and data-validation tests executed.
-The initial local environment lacks PyTorch, Transformers, and pretrained
-weights. CI can execute the tiny random-model tests; those tests alone are not
-pretrained-model research results. Consult an executed pilot report for any
-subsequently completed pretrained run.
+**Status:** implemented and executed with pinned pretrained DistilGPT2 and
+Pythia-14M models on a standard CPU runner. The [pilot report](../results/pretrained_pilot/README.md)
+records a negative result: the informative bridge did not beat an equally
+trained constant-information control. CI also passes all 15 tests, including
+the optional transformer tests. Those tests alone are not research results.
 
 ## Install and validate
 

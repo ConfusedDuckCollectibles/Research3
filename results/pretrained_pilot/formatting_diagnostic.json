@@ -1,0 +1,110 @@
+{
+  "status": "posthoc_descriptive_formatting_diagnostic_not_primary_outcome",
+  "definition": "Extract an allowed color only at the start of generated text, ignoring leading whitespace and case; require a word boundary. Additional words and punctuation do not invalidate this diagnostic.",
+  "reason": "The frozen text baseline often generated the right initial color followed by a period and more words, failing prespecified full-answer exact match.",
+  "warning": "Chosen after inspecting predictions; do not use as preregistered success evidence or replace the primary results.",
+  "splits": {
+    "generalization": {
+      "matched": {
+        "first_color_correct": 0,
+        "examples": 64,
+        "first_color_accuracy": 0.0,
+        "leading_color_present": 0,
+        "extraction_coverage": 0.0
+      },
+      "no_channel": {
+        "first_color_correct": 0,
+        "examples": 64,
+        "first_color_accuracy": 0.0,
+        "leading_color_present": 0,
+        "extraction_coverage": 0.0
+      },
+      "permuted": {
+        "first_color_correct": 0,
+        "examples": 64,
+        "first_color_accuracy": 0.0,
+        "leading_color_present": 0,
+        "extraction_coverage": 0.0
+      },
+      "symbolic": {
+        "first_color_correct": 0,
+        "examples": 64,
+        "first_color_accuracy": 0.0,
+        "leading_color_present": 0,
+        "extraction_coverage": 0.0
+      },
+      "text": {
+        "first_color_correct": 0,
+        "examples": 64,
+        "first_color_accuracy": 0.0,
+        "leading_color_present": 0,
+        "extraction_coverage": 0.0
+      },
+      "trained_constant": {
+        "first_color_correct": 0,
+        "examples": 64,
+        "first_color_accuracy": 0.0,
+        "leading_color_present": 0,
+        "extraction_coverage": 0.0
+      },
+      "zero": {
+        "first_color_correct": 0,
+        "examples": 64,
+        "first_color_accuracy": 0.0,
+        "leading_color_present": 0,
+        "extraction_coverage": 0.0
+      }
+    },
+    "test": {
+      "matched": {
+        "first_color_correct": 6,
+        "examples": 64,
+        "first_color_accuracy": 0.09375,
+        "leading_color_present": 64,
+        "extraction_coverage": 1.0
+      },
+      "no_channel": {
+        "first_color_correct": 0,
+        "examples": 64,
+        "first_color_accuracy": 0.0,
+        "leading_color_present": 0,
+        "extraction_coverage": 0.0
+      },
+      "permuted": {
+        "first_color_correct": 5,
+        "examples": 64,
+        "first_color_accuracy": 0.078125,
+        "leading_color_present": 64,
+        "extraction_coverage": 1.0
+      },
+      "symbolic": {
+        "first_color_correct": 0,
+        "examples": 64,
+        "first_color_accuracy": 0.0,
+        "leading_color_present": 0,
+        "extraction_coverage": 0.0
+      },
+      "text": {
+        "first_color_correct": 32,
+        "examples": 64,
+        "first_color_accuracy": 0.5,
+        "leading_color_present": 64,
+        "extraction_coverage": 1.0
+      },
+      "trained_constant": {
+        "first_color_correct": 7,
+        "examples": 64,
+        "first_color_accuracy": 0.109375,
+        "leading_color_present": 64,
+        "extraction_coverage": 1.0
+      },
+      "zero": {
+        "first_color_correct": 0,
+        "examples": 64,
+        "first_color_accuracy": 0.0,
+        "leading_color_present": 0,
+        "extraction_coverage": 0.0
+      }
+    }
+  }
+}

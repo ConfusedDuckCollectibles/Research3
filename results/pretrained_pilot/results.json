@@ -1,0 +1,365 @@
+{
+  "status": "executed_local_pretrained_model_experiment",
+  "seed": 101,
+  "sender_model": "/home/runner/work/Research3/Research3/local_models/sender",
+  "receiver_model": "/home/runner/work/Research3/Research3/local_models/receiver",
+  "model_files": {
+    "sender": {
+      "config.json": {
+        "sha256": "4ec5947c1d59fee6212cdf3b0ec1a53eac02092554c5ff0a733488cbd2c64f3a",
+        "bytes": 762
+      },
+      "generation_config.json": {
+        "sha256": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+        "bytes": 124
+      },
+      "merges.txt": {
+        "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+        "bytes": 456318
+      },
+      "model.safetensors": {
+        "sha256": "e1ff18884359fe8beb795a5f414feb85a6ce3d929ad019c0d958c039d2b94a1b",
+        "bytes": 352824413
+      },
+      "tokenizer.json": {
+        "sha256": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+        "bytes": 1355256
+      },
+      "tokenizer_config.json": {
+        "sha256": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+        "bytes": 26
+      },
+      "vocab.json": {
+        "sha256": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783",
+        "bytes": 1042301
+      }
+    },
+    "receiver": {
+      "config.json": {
+        "sha256": "f97f966a66c444890ed461fff2a51eefb15d74303df05b948124719f199b0b17",
+        "bytes": 698
+      },
+      "generation_config.json": {
+        "sha256": "494cbba887cc299273f0c54d7612596918e74c7881a27cbd95e4e7e2464ea090",
+        "bytes": 111
+      },
+      "model.safetensors": {
+        "sha256": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1",
+        "bytes": 28143920
+      },
+      "special_tokens_map.json": {
+        "sha256": "10b8c8852c1e1f70b54d9aff61728408c28971c0e97a6c5a7b2debbd1d3e9c0c",
+        "bytes": 441
+      },
+      "tokenizer.json": {
+        "sha256": "870f4e2baa6b683221fa52004d5d6f40ab8c9d31961617304b78c910c2c3caf2",
+        "bytes": 2114042
+      },
+      "tokenizer_config.json": {
+        "sha256": "eee017c5bd133137f45907bd0a6e781e2ccd1a533734b7ed2a2f2f4446659809",
+        "bytes": 4834
+      }
+    }
+  },
+  "versions": {
+    "torch": "2.6.0+cpu",
+    "transformers": "4.48.2"
+  },
+  "config": {
+    "slots": 2,
+    "bottleneck": 8,
+    "epochs": 3,
+    "learning_rate": 0.001,
+    "max_length": 128,
+    "device": "cpu",
+    "max_new_tokens": 4,
+    "threads": 2,
+    "constant_hidden_shape": [
+      1,
+      8,
+      768
+    ],
+    "constant_hidden_generation": "One fixed standard-normal tensor, generator seed = experiment seed + 9841, reused for every example",
+    "constant_hidden_sha256_float32": "1a76c6313d0b4c92b270b07f5f624a2003500079d9529c04e9161712ee16598f",
+    "sender_dim": 768,
+    "receiver_dim": 128
+  },
+  "split_sha256": {
+    "train": "9e1c12e5f4ee7b65e2c35a4d3a2cdb0cb2cfb553097f19c561454c1f7033c68f",
+    "validation": "2a7c86f07c582c943ff2e0aa2bfccf2e19f14a19c3dcf7880cbc486d349a864d",
+    "test": "b19836ba3c9f2c784e31649ea47511ca22ca68056060a99879c72d43e010b5b9",
+    "generalization": "2cb92a5704b39557fb8d9fe50d4f358152babf5f916eb6f08739b43f4ed6fa5a"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "matched_validation_answer_token_nll": 1.4466200433671474,
+      "trained_constant_validation_answer_token_nll": 1.3074379973113537
+    },
+    {
+      "epoch": 2,
+      "matched_validation_answer_token_nll": 1.3218856966122985,
+      "trained_constant_validation_answer_token_nll": 1.237548436038196
+    },
+    {
+      "epoch": 3,
+      "matched_validation_answer_token_nll": 1.2281208727508783,
+      "trained_constant_validation_answer_token_nll": 1.1649161223322153
+    }
+  ],
+  "selected_epochs": {
+    "matched": 3,
+    "trained_constant": 3
+  },
+  "optimizer_steps_per_trained_condition": 768,
+  "test": {
+    "matched": {
+      "answer_token_nll": 1.1987504940479994,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.09375,
+      "correct": 6,
+      "generated_tokens": 128
+    },
+    "trained_constant": {
+      "answer_token_nll": 1.1443997528403997,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.109375,
+      "correct": 7,
+      "generated_tokens": 128
+    },
+    "zero": {
+      "answer_token_nll": 4.920661803334951,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.0,
+      "correct": 0,
+      "generated_tokens": 256
+    },
+    "permuted": {
+      "answer_token_nll": 1.210280212573707,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.078125,
+      "correct": 5,
+      "generated_tokens": 128
+    },
+    "no_channel": {
+      "answer_token_nll": 5.221768863499165,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.0,
+      "correct": 0,
+      "generated_tokens": 256
+    },
+    "text": {
+      "answer_token_nll": 4.016621820628643,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.0,
+      "correct": 0,
+      "generated_tokens": 256
+    },
+    "symbolic": {
+      "answer_token_nll": 3.916993323713541,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.0,
+      "correct": 0,
+      "generated_tokens": 256
+    }
+  },
+  "generalization": {
+    "matched": {
+      "answer_token_nll": 4.386146001517773,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.0,
+      "correct": 0,
+      "generated_tokens": 256
+    },
+    "trained_constant": {
+      "answer_token_nll": 2.874929007142782,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.0,
+      "correct": 0,
+      "generated_tokens": 256
+    },
+    "zero": {
+      "answer_token_nll": 5.306036248803139,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.0,
+      "correct": 0,
+      "generated_tokens": 256
+    },
+    "permuted": {
+      "answer_token_nll": 4.3856199868023396,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.0,
+      "correct": 0,
+      "generated_tokens": 256
+    },
+    "no_channel": {
+      "answer_token_nll": 6.1419763416051865,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.0,
+      "correct": 0,
+      "generated_tokens": 256
+    },
+    "text": {
+      "answer_token_nll": 6.275528974831104,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.0,
+      "correct": 0,
+      "generated_tokens": 256
+    },
+    "symbolic": {
+      "answer_token_nll": 5.116838611662388,
+      "answer_tokens": 128,
+      "examples": 64,
+      "distinct_worlds": 16,
+      "generated_exact_match": 0.0,
+      "correct": 0,
+      "generated_tokens": 256
+    }
+  },
+  "latent_payload_bytes": 64,
+  "bridge_parameter_bytes": 41504,
+  "constant_bridge_parameter_bytes": 41504,
+  "cached_sender_hidden_bytes": 7864320,
+  "timings_seconds": {
+    "model_load": 0.3644609939999981,
+    "source_preparation_and_cache": 1.6128829409999952,
+    "both_bridges_training_and_validation": 12.542077789000004,
+    "all_test_conditions_nll_and_uncached_generation": 14.14076995699999,
+    "entire_runner_excluding_downloads": 28.914477133999995
+  },
+  "generated_answer_accuracy_measured": true,
+  "generation_stopping": "Greedy global max_new_tokens or first newline/EOS; target tokens and target length are not inputs to generation.",
+  "generated_exact_match_normalization": "Strip/collapse whitespace and case-fold only; punctuation remains significant.",
+  "production_latency_measured": false,
+  "limitations": [
+    "The private-lookup task remains synthetic; results are not real-world coding or general agent task performance.",
+    "One seed is exploratory. Multiple questions per world are correlated; example counts are not independent world counts.",
+    "The latent and constant bridges receive equal training budgets; text and symbolic baselines use the frozen receiver without separate task adaptation.",
+    "Zero/permuted controls alone do not rule out receiver adaptation; compare against the separately trained constant-information bridge.",
+    "The bridge is specific to this model pair; the generalization partition changes task phrasing/order, not model identity.",
+    "Teacher-forced NLL and greedy generated exact match are distinct outcomes.",
+    "Exact-string/world-id checks cannot detect every form of leakage in user-provided data.",
+    "Timing includes uncached reference decoding and is not an optimized production latency comparison.",
+    "No real network traffic, API bill, energy use, or amortized training break-even is measured."
+  ],
+  "download_manifest": {
+    "status": "downloaded_pinned_public_pretrained_models",
+    "models": {
+      "sender": {
+        "id": "distilbert/distilgpt2",
+        "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+        "files": {
+          "config.json": {
+            "sha256": "4ec5947c1d59fee6212cdf3b0ec1a53eac02092554c5ff0a733488cbd2c64f3a",
+            "bytes": 762
+          },
+          "generation_config.json": {
+            "sha256": "b90eadacf585a743a30ea51e8b5c88b8d282a2a34dc0c7e556d0987cdbd68805",
+            "bytes": 124
+          },
+          "merges.txt": {
+            "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+            "bytes": 456318
+          },
+          "model.safetensors": {
+            "sha256": "e1ff18884359fe8beb795a5f414feb85a6ce3d929ad019c0d958c039d2b94a1b",
+            "bytes": 352824413
+          },
+          "tokenizer.json": {
+            "sha256": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6",
+            "bytes": 1355256
+          },
+          "tokenizer_config.json": {
+            "sha256": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f",
+            "bytes": 26
+          },
+          "vocab.json": {
+            "sha256": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783",
+            "bytes": 1042301
+          }
+        },
+        "download_seconds": 3.035836629000002
+      },
+      "receiver": {
+        "id": "EleutherAI/pythia-14m",
+        "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+        "files": {
+          "config.json": {
+            "sha256": "f97f966a66c444890ed461fff2a51eefb15d74303df05b948124719f199b0b17",
+            "bytes": 698
+          },
+          "generation_config.json": {
+            "sha256": "494cbba887cc299273f0c54d7612596918e74c7881a27cbd95e4e7e2464ea090",
+            "bytes": 111
+          },
+          "model.safetensors": {
+            "sha256": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1",
+            "bytes": 28143920
+          },
+          "special_tokens_map.json": {
+            "sha256": "10b8c8852c1e1f70b54d9aff61728408c28971c0e97a6c5a7b2debbd1d3e9c0c",
+            "bytes": 441
+          },
+          "tokenizer.json": {
+            "sha256": "870f4e2baa6b683221fa52004d5d6f40ab8c9d31961617304b78c910c2c3caf2",
+            "bytes": 2114042
+          },
+          "tokenizer_config.json": {
+            "sha256": "eee017c5bd133137f45907bd0a6e781e2ccd1a533734b7ed2a2f2f4446659809",
+            "bytes": 4834
+          }
+        },
+        "download_seconds": 0.8676149219999871
+      }
+    },
+    "python": "3.11.18",
+    "platform": "Linux-7.0.0-1016-aws-x86_64-with-glibc2.43",
+    "github_commit": "5ea60e25e771275ddf3fac9ae3f6e6d5aa70bfc2",
+    "github_run_id": "45322539575",
+    "remote_code_allowed": false,
+    "hub_credentials_used": false
+  },
+  "setup_accounting": {
+    "sender_parameter_bytes": 327650304,
+    "receiver_parameter_bytes": 56270848,
+    "raw_jsonl_bytes": {
+      "train": 79971,
+      "validation": 20351,
+      "test": 19868,
+      "generalization": 28214
+    },
+    "bridge_checkpoint_file_bytes": 44025,
+    "constant_bridge_checkpoint_file_bytes": 44508,
+    "text_test_payload_utf8_bytes_mean": 74.75,
+    "symbolic_test_payload_utf8_bytes_mean": 42.75,
+    "text_test_receiver_prefix_tokens_mean": 21.0,
+    "latent_receiver_prefix_positions": 2,
+    "excludes_transient_activations_and_optimizer_storage": true
+  }
+}

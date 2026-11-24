@@ -1,0 +1,51 @@
+{
+  "command": [
+    "/opt/hostedtoolcache/Python/3.11.18/x64/bin/python",
+    "-m",
+    "latent_bridge.transformers_runner",
+    "--sender-model",
+    "/home/runner/work/Research3/Research3/local_models/sender",
+    "--receiver-model",
+    "/home/runner/work/Research3/Research3/local_models/receiver",
+    "--train",
+    "/home/runner/work/Research3/Research3/local_data/private_lookup/train.jsonl",
+    "--validation",
+    "/home/runner/work/Research3/Research3/local_data/private_lookup/validation.jsonl",
+    "--test",
+    "/home/runner/work/Research3/Research3/local_data/private_lookup/test.jsonl",
+    "--generalization-test",
+    "/home/runner/work/Research3/Research3/local_data/private_lookup/generalization.jsonl",
+    "--model-manifest",
+    "/home/runner/work/Research3/Research3/checkpoints/pretrained-pilot/model_manifest.json",
+    "--slots",
+    "2",
+    "--bottleneck",
+    "8",
+    "--epochs",
+    "3",
+    "--seed",
+    "101",
+    "--max-length",
+    "128",
+    "--threads",
+    "2",
+    "--max-new-tokens",
+    "4",
+    "--learning-rate",
+    "0.001",
+    "--output",
+    "/home/runner/work/Research3/Research3/checkpoints/pretrained-pilot"
+  ],
+  "wall_seconds_including_downloads": 34.76061734300001,
+  "models": {
+    "sender": {
+      "id": "distilbert/distilgpt2",
+      "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+    },
+    "receiver": {
+      "id": "EleutherAI/pythia-14m",
+      "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac"
+    }
+  },
+  "run_kind": "one_seed_bounded_exploratory_pilot"
+}

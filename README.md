@@ -2,7 +2,7 @@
 
 A research prototype for passing a small continuous message between a sender
 and a receiver. This repository contains **an executed synthetic experiment**
-and **an implemented, unexecuted local transformer experiment**. It does not
+and **an executed pretrained-model pilot with a negative result**. It does not
 claim a new universal language, an LLM efficiency breakthrough, or a replication
 of LatentMAS or Interlat.
 
@@ -41,9 +41,15 @@ task is deliberately favorable to semantic reconstruction, and a train-only
 least-squares decoder is included to make that limitation visible.
 
 No pretrained-model result is implied by these initial NumPy measurements.
-The local environment lacked PyTorch, Transformers, and model weights. A
-separately documented pretrained pilot must finish before its results can be
-reported; a passing random-model gradient test is not that experiment.
+The separate [executed pretrained pilot](results/pretrained_pilot/README.md)
+used DistilGPT2 and Pythia-14M. The learned message answered 6/64 test questions
+correctly, versus 7/64 for an equally trained bridge receiving no private facts;
+all conditions failed strict exact match under the wording/order shift.
+This does not demonstrate a useful communication advantage. A posthoc formatting
+diagnostic also exposed why strict exact match understated the frozen text
+baseline: it often began with the right color and continued with extra words.
+The [fixed design](docs/pilot_design.md), raw predictions, all controls, model
+hashes, and execution details are preserved with the report.
 
 ## Run the executed experiment
 
