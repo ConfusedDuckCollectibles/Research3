@@ -1,0 +1,123 @@
+# Package the original run only; no new study, model, or timing execution.
+name: Publish original alignment evidence and audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-alignment-results.yml'
+      - 'scripts/publish_alignment_results.py'
+      - 'scripts/alignment_publication_manifest.json'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: publish-alignment-results-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'ConfusedDuckCollectibles/Research3' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - name: Check out the exact publication configuration
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 1
+          persist-credentials: true
+      - name: Set up the independent numerical audit runtime
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11.18'
+      - name: Install only the auditor's numerical dependency
+        run: python -m pip install numpy==2.4.6
+      - name: Verify source syntax
+        run: python -m py_compile scripts/audit_alignment_outputs.py scripts/publish_alignment_results.py
+      - name: Verify fixed config and trackability
+        id: metadata
+        run: >-
+          python scripts/publish_alignment_results.py
+          --metadata --github-output "$GITHUB_OUTPUT"
+      - name: Download the single original numerical artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ steps.metadata.outputs.artifact_name }}
+          run-id: ${{ steps.metadata.outputs.study_run_id }}
+          repository: ConfusedDuckCollectibles/Research3
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/alignment-publication/artifact
+      - name: Verify exact original bytes and inventory
+        id: original
+        run: >-
+          python scripts/publish_alignment_results.py
+          --artifact-dir "$RUNNER_TEMP/alignment-publication/artifact"
+          --check-only
+      - name: Check the independent algebra auditor's elementary controls
+        run: python scripts/audit_alignment_outputs.py --self-test
+      - name: Audit retained arrays and timing arithmetic without remeasurement
+        id: audit
+        env:
+          EXPECTED_EXECUTION_SHA256: ${{ steps.metadata.outputs.execution_sha256 }}
+        run: >-
+          python scripts/audit_alignment_outputs.py
+          --artifact "$RUNNER_TEMP/alignment-publication/artifact"
+          --receipt "$RUNNER_TEMP/alignment-publication/audit/alignment_audit.json"
+          --expected-execution-sha256 "$EXPECTED_EXECUTION_SHA256"
+      - name: Expose bounded audit diagnostics including negative findings
+        if: always()
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import Path
+          import sys
+          path = Path(os.environ["RUNNER_TEMP"]) / "alignment-publication/audit/alignment_audit.json"
+          if not path.is_file():
+              print(json.dumps({"audit_receipt": "not_created", "original_evidence_modified": False}))
+              raise SystemExit(0)
+          raw = path.read_bytes()
+          value = json.loads(raw)
+          summary = {
+              "audit_status": value.get("audit_status"),
+              "data_integrity": value.get("data_integrity", {}).get("status"),
+              "report_consistency": value.get("report_consistency", {}).get("status"),
+              "required_matrix_failures_detected": value.get("scientific_validation", {}).get("required_matrix_failures_detected"),
+              "receipt_bytes": len(raw), "receipt_sha256": hashlib.sha256(raw).hexdigest(),
+              "model_imports_or_inference": value.get("model_imports_or_inference"),
+              "timing_measurements": value.get("timing_measurements"),
+          }
+          print(json.dumps(summary, sort_keys=True), flush=True)
+          if len(raw) <= 300000:
+              print("ALIGNMENT_AUDIT_RECEIPT_BEGIN " + summary["receipt_sha256"], flush=True)
+              sys.stdout.write(raw.decode("utf-8"))
+              if not raw.endswith(b"\n"):
+                  sys.stdout.write("\n")
+              print("ALIGNMENT_AUDIT_RECEIPT_END", flush=True)
+          PY
+      - name: Publish authenticated original bytes and completed audit findings
+        if: always() && steps.original.outcome == 'success' && steps.audit.outcome != 'skipped'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          python scripts/publish_alignment_results.py
+          --artifact-dir "$RUNNER_TEMP/alignment-publication/artifact"
+          --audit-receipt "$RUNNER_TEMP/alignment-publication/audit/alignment_audit.json"
+          --publish
+      - name: Retain the independent audit receipt even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: alignment-publication-audit-${{ github.run_id }}-attempt-${{ github.run_attempt }}
+          retention-days: 90
+          if-no-files-found: warn
+          path: ${{ runner.temp }}/alignment-publication/audit/

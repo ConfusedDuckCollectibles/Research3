@@ -31,3 +31,15 @@ The source identity is the workflow's `GITHUB_SHA`, recorded in `launch_source_m
 A successful process exit is insufficient for numerical support. Every required well-conditioned comparison must pass, unexpected unsupported cases must remain visible, and canonical nonunique outputs require feasibility and objective checks rather than an inappropriate equality claim. Timing is reported against both dense and thin-SVD references, after correctness checks. Packet results include receiver reconstruction, sender preflight, fallback, metadata, precision effects, and cold table requirements.
 
 Established Procrustes, Bures and Gram geometry underlies the derivation. Any successful result is initially a computational/transport specialization for this particular interface. It does not by itself establish a new semantic language, a faster complete agent system, a novel general matrix theorem, or a breakthrough.
+
+## Original execution recovered
+
+The original source commit is `7aee330f7799751a6a9f4b2a8decb612abe9c266`. Workflow [45369667584](https://github.com/ConfusedDuckCollectibles/Research3/actions/runs/45369667584), job `138360349493`, completed its first run/attempt successfully. All 36 focused tests passed before the numerical child. The independent repository CI, run `45369667483`, job `138360348426`, passed 126 tests in 17.523 seconds with no skips, errors or failures.
+
+The numerical child completed in 41.611000184 seconds including imports, with 15,759 required checks and zero failed required checks. All 242 algebraic, 2,304 applicability and 12 timing-validation records completed. All 2,052 timed calls, including warmups, were retained with exact frozen coverage and order. This is the original runner's result; the separate retained-array audit is pending.
+
+The recovered `execution.json` is 3,383 bytes with SHA256 `92212ae75c46bbd8c0f866b963801be39dd212d0efa737d19cd3adb4280a262d`. The recovered `results.json` is 141,386 bytes with SHA256 `8118b4994b5de1434e44dabf5692337c19112e469567be7c1c48d59a0ab51675`. Both were independently rehashed from their emitted log blocks. The original artifact is `14907778274`, named `alignment-numerical-45369667584-attempt-1`, with GitHub-reported ZIP digest `3032e4558d77c708f94aefd702cae803e6cb0d6b0dcecafcdb9ab656f2e1ffde` and size 11,479,164 bytes. The ZIP itself has not been independently rehashed here; permanent publication verifies every original file.
+
+Runtime: Python 3.11.18, NumPy 2.4.6, OpenBLAS 0.3.31.188.0, Linux x86_64, with one BLAS/OpenMP thread. The manifest reports four available logical CPUs but does not identify the exact processor model. Hardware generalization is untested.
+
+The [validation receipt](../results/alignment_validation.json) preserves the observed gate counts and retrieved-log hashes. Packaging must preserve the original 15-file inventory, replacing only duplicate raw case/timing JSONL in Git with their independently verified exact gzip representations. No fit, fixture generation, model inference or timing remeasurement is authorized by the packaging step.

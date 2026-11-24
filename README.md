@@ -32,7 +32,11 @@ retained in [the result directory](results/readout_study/).
 
 ## Current investigation: compact alignment
 
-The [frozen numerical study](docs/alignment_numerical_design.md) investigates a small-matrix implementation and compact representation of per-message alignment. The [mathematical note](docs/alignment_geometry.md) gives the assumptions, counterexample and known prior art. The reviewed [implementation and execution record](docs/alignment_execution_notes.md) is published for a single bounded CPU run, with 36 focused tests before the worker. Numerical equivalence, timing and packet-size claims remain unverified until the specified study executes. A canonical solution can differ from an author's chosen SVD completion when the optimal output is nonunique. This is a bounded implementation investigation, not an assertion of faster or more capable language models.
+The [original numerical run](https://github.com/ConfusedDuckCollectibles/Research3/actions/runs/45369667584) completed all 242 algebraic cases, 2,304 synthetic applicability sequences and 12 timing fixtures. Its 15,759 required checks passed, after all 36 focused tests passed. The complete repository CI also passed all 126 tests at the same source commit. The independent retained-array audit and permanent evidence publication are now pending.
+
+The guarded dual calculation was 1.17–3.02 times faster than the efficient thin-SVD baseline across the twelve fixed sizes, using medians of eight paired timing ratios per size on one CPU host. The packet experiment also exposes a cost: sender preflight repeats substantial reconstruction/postprocessing later performed by the receiver. Core acceleration alone is not a communication-latency result.
+
+See the [fixed design](docs/alignment_numerical_design.md), [mathematical assumptions and prior art](docs/alignment_geometry.md), and [execution record](docs/alignment_execution_notes.md). Canonical nonunique outputs may differ from the original SVD completion. These numerical results do not establish model accuracy, a new semantic language, general novelty, or a breakthrough.
 
 The separate [lossless-predictor feasibility assessment](docs/lossless_predictor_feasibility.md) records why a further model study on vocabulary-byte XOR compression is not justified by the current evidence.
 

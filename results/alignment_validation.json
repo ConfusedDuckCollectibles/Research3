@@ -1,0 +1,61 @@
+{
+  "schema": "alignment-validation-receipt-v1",
+  "source_commit": "7aee330f7799751a6a9f4b2a8decb612abe9c266",
+  "scope": "Log-derived test-gate receipt; not a substitute for the independent retained-array audit.",
+  "focused_gate": {
+    "run_id": 45369667584,
+    "job_id": 138360349493,
+    "run_attempt": 1,
+    "workflow_conclusion": "success",
+    "job_conclusion": "success",
+    "tests": 36,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "groups": [
+      {
+        "file": "tests/test_alignment_execution.py",
+        "tests": 4,
+        "seconds": 1.319
+      },
+      {
+        "file": "tests/test_alignment_packet.py",
+        "tests": 28,
+        "seconds": 0.028
+      },
+      {
+        "file": "tests/test_alignment_core.py",
+        "tests": 4,
+        "seconds": 0.016
+      }
+    ],
+    "retrieved_job_log_utf8_sha256": "6abd3fd2c936155a9d991eed902ed58a506acd39f57775d8636f707c127456f9"
+  },
+  "repository_ci": {
+    "run_id": 45369667483,
+    "job_id": 138360348426,
+    "run_attempt": 1,
+    "workflow_conclusion": "success",
+    "job_conclusion": "success",
+    "tests": 126,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "seconds": 17.523,
+    "retrieved_job_log_utf8_sha256": "4db18ce22f096d407a3d3d38289fd01fa952048727c01a7f9eb80caa64982641"
+  },
+  "numerical_execution": {
+    "run_id": 45369667584,
+    "job_id": 138360349493,
+    "execution_sha256": "92212ae75c46bbd8c0f866b963801be39dd212d0efa737d19cd3adb4280a262d",
+    "results_sha256": "8118b4994b5de1434e44dabf5692337c19112e469567be7c1c48d59a0ab51675",
+    "declared_status": "verified",
+    "required_checks": 15759,
+    "failed_required_checks": 0,
+    "child_wall_seconds": 41.611000184000034
+  },
+  "limitations": [
+    "The log hashes refer to the UTF-8 text returned by the GitHub connector, not an independently downloaded log ZIP.",
+    "Passing tests and matrix checks does not establish language-model accuracy, production performance, or novelty."
+  ]
+}
