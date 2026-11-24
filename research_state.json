@@ -2,11 +2,11 @@
   "schema_version": 1,
   "status": "active",
   "worker_id": "chatgpt-active-research-20261124T052021Z",
-  "updated_at_utc": "2026-11-24T10:35:00Z",
-  "lease_expires_at_utc": "2026-11-24T12:35:00Z",
-  "current_task": "Implement and review the preregistered coefficient packet study before one bounded CPU/TCP run",
-  "stage": "coefficient_packet_design_frozen",
-  "next_action": "Read docs/coefficient_packet_design.md. Implement new v2 files without changing the original alignment source or evidence; review six-arm fairness, numerical guards, receiver-only interfaces, cold setup, exact grid and all failure retention. Publish reviewed implementation before any new empirical outcomes. Do not duplicate an active worker or rerun completed studies.",
+  "updated_at_utc": "2026-11-24T10:59:31Z",
+  "lease_expires_at_utc": "2026-11-24T12:59:31Z",
+  "current_task": "Run the complete repository CI gate on reviewed coefficient source before activating the one-shot study",
+  "stage": "coefficient_source_published_for_validation",
+  "next_action": "Inspect the Tests workflow for the commit introducing these source blobs. Recover its completed logs and test count. No coefficient measurement workflow is active yet. Fix any source/test issues before outcomes, preserving failed CI. After the source gate passes, publish and activate the reviewed coefficient-packet-v2 workflow once; retain its complete/partial original artifact. Never rerun the completed alignment or prior model studies.",
   "last_completed_study": "docs/alignment_results.md",
   "last_completed_commit": "9bd33818226839934d04c8275d6e205672f83f6e",
   "known_result": "Original alignment study passed 15,759 required checks and the independent retained-array audit. Dual core paired speedups versus thin-SVD were 1.17–3.02x on 12 fixed CPU fixtures. Original Gram total arithmetic was 1.86–2.29x dual-direct. One accepted nonunique canonical float32 packet had 35.89% final relative error despite unchanged nearest IDs. No model-quality, complete communication-latency or breakthrough claim.",
@@ -61,5 +61,47 @@
     "artifact_sha256": "04b07caadf59babdafa900f54193931cc7a637b64c36181817459507738c20cc",
     "execution_sha256": "5d3c5e45edf8ab147881493f5274bcfc06ab80eea74220b9e2731fb849a97dc3"
   },
-  "closed_lossless_predictor_assessment": "docs/lossless_predictor_feasibility.md"
+  "closed_lossless_predictor_assessment": "docs/lossless_predictor_feasibility.md",
+  "validation_workflow_path": ".github/workflows/tests.yml",
+  "planned_study_workflow_path": ".github/workflows/coefficient-packet-v2.yml",
+  "execution_note": "docs/coefficient_execution_notes.md",
+  "source_commit_note": "This checkpoint accompanies source publication; the exact source commit is recoverable from this commit and its Tests run. Record the validated commit before activating measurement.",
+  "reviewed_source_files": {
+    "latent_bridge/coefficient_packet.py": {
+      "blob_sha": "fef093170faa5d5ff98fc771d5a3ad32c089c614",
+      "sha256": "5399f5e30af6df264aae445380a07a7be3146bea2b70cff372de01448bc054cd",
+      "bytes": 31176
+    },
+    "latent_bridge/coefficient_transport.py": {
+      "blob_sha": "c092107c2ec453b25c01a253de78ee501de70772",
+      "sha256": "d898d7471e74c1401b09132d21290c193def5a141bc4e2ddbb8290008741c22d",
+      "bytes": 21442
+    },
+    "latent_bridge/coefficient_study.py": {
+      "blob_sha": "61faff44e95b154e3d44a5cfb06a0c7bd5f10dcb",
+      "sha256": "d378236f91bc6673f2066ac170dac16b5d9010d002336b6c5fc99c69c8d56e2d",
+      "bytes": 51999
+    },
+    "scripts/run_coefficient_study.py": {
+      "blob_sha": "8c81084c3f7b454e1cd82be776bdb7a797a7d80c",
+      "sha256": "686c6ac74ca9d62a527e469bc1872f974079af7755cacceba750d3e420ad6843",
+      "bytes": 12724
+    },
+    "tests/test_coefficient_packet.py": {
+      "blob_sha": "4a72e283884a94a6151b90ddce0fcd7e71cffc7e",
+      "sha256": "15774145cec70ea64763e5bb9783f3af44f95681724f74df81150982e88b190b",
+      "bytes": 17613
+    },
+    "tests/test_coefficient_transport.py": {
+      "blob_sha": "4cebfb9d46981cc729d785b27389e51ed7368ccd",
+      "sha256": "656219ea1e94b55c32f84f80497d0d9d3fc343267d0157b743ff77f318ceb8ca",
+      "bytes": 24498
+    },
+    "tests/test_coefficient_execution.py": {
+      "blob_sha": "b518451b28eba78faae6b8563fb56e008a5202bc",
+      "sha256": "1095e587ee1e2d91cb89e2b7b818ca6f22f41edfcbfee9c33c95932377d98c4f",
+      "bytes": 4510
+    }
+  },
+  "source_review_scope": "Independent static code/contract reviews only at this checkpoint; no local test pass or coefficient study outcome is asserted."
 }

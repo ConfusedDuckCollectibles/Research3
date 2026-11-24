@@ -59,3 +59,7 @@ local_data/
 
 # Bounded original arrays from the frozen alignment numerical study.
 !/results/alignment_numerical/arrays.npz
+
+
+# Bounded synthetic inputs for the separately frozen coefficient TCP study.
+!/results/coefficient_packet/fixtures.npz
