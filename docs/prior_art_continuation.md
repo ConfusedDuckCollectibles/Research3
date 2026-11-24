@@ -128,3 +128,16 @@ extra relational supervision and must be disclosed. Even success would first
 establish bounded causal competence. Eight-color bijections also admit an
 exact two-byte complete-world permutation code (8! = 40,320), which prevents
 mistaking a 64-byte continuous message for a bandwidth advance on that task.
+
+## Further direct overlaps checked before binding implementation
+
+Three additional primary abstracts further constrain any originality claim:
+
+- [Do Latent Channels Actually Communicate?](https://arxiv.org/abs/2607.26773)
+  applies controlled message replacements to separate message presence, example-specific content, and information supplied by another agent. Our wrong-source and zero-message conditions are established kinds of causal controls.
+- [When Does Latent Communication Pay?](https://arxiv.org/abs/2608.04893)
+  audits relayed caches using mismatched, zeroed and moment-matched messages, and explicitly distinguishes tasks that need a sender's private information from tasks that do not. Its primary abstract reports that requiring private information is not sufficient for every learned projector to transfer it. A private-fact benchmark or a failed bridge is therefore not itself a novel finding.
+- [Semantics and Spatiality of Emergent Communication, NeurIPS 2024](https://proceedings.neurips.cc/paper_files/paper/2024/hash/c6f83c27a2223d817f9f1ade48d281a2-Abstract-Conference.html)
+  formalizes semantic consistency and studies how reconstruction and distance-based objectives encourage it. Encouraging nearby messages for related states is not a new general principle.
+
+These checks used the authors' arXiv abstracts and the official NeurIPS proceedings abstract. Their experimental results have not been independently reproduced here. The binding study's contribution, if any, must be its measured comparison on its exact preregistered task and controls, not the invention of latent communication, counterfactual auditing, or representation invariance. No settings or success criteria were changed as a result of this literature check.

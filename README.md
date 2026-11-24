@@ -24,6 +24,16 @@ in the compressed message. This is a measured diagnostic, not a breakthrough.
 The complete predictions, selected-state records and bounded NPZ exports are
 retained in [the result directory](results/readout_study/).
 
+## Current preregistered follow-up
+
+The [binding study](docs/binding_design.md) tests a fixed auxiliary training loss
+against an otherwise identical bridge with the same edited examples. Eight
+objects carry all eight colors in every world, with randomized fact positions
+and disjoint families. A full-text competence gate precedes latent fitting.
+Its implementation is published for a separate CPU validation gate before the
+first empirical execution. See the [current checkpoint](research_state.json)
+for execution status; no binding-study model outcome is asserted here.
+
 ## Previous query study and implemented controls
 
 The preceding [public-query-conditioning study](results/query_conditioned_study/README.md)
