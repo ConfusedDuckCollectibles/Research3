@@ -55,6 +55,33 @@ class BindingExecutionGuardTests(unittest.TestCase):
                     with self.assertRaises(RuntimeError):
                         WRAPPER.require_first_attempt()
 
+    def test_existing_recorded_gzip_is_preserved_byte_for_byte(self):
+        raw = b'{"complete":true}\n'
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            (output / "predictions.jsonl").write_bytes(raw)
+            path = output / "predictions.jsonl.gz"
+            recorded = gzip.compress(raw, compresslevel=9, mtime=0)
+            path.write_bytes(recorded)
+            before = WRAPPER.file_digest(path)
+            with mock.patch.object(WRAPPER, "OUTPUT", output):
+                receipt = WRAPPER.compress_partial_predictions()
+            self.assertEqual(path.read_bytes(), recorded)
+            self.assertEqual(receipt["predictions.jsonl"]["gzip"], before)
+            self.assertTrue(receipt["predictions.jsonl"]["round_trip_verified"])
+
+    def test_existing_mismatched_gzip_is_rejected_without_rewriting_evidence(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory)
+            (output / "predictions.jsonl").write_bytes(b'{"actual":true}\n')
+            path = output / "predictions.jsonl.gz"
+            recorded = gzip.compress(b'{"different":true}\n', mtime=0)
+            path.write_bytes(recorded)
+            with mock.patch.object(WRAPPER, "OUTPUT", output):
+                with self.assertRaisesRegex(RuntimeError, "both preserved"):
+                    WRAPPER.compress_partial_predictions()
+            self.assertEqual(path.read_bytes(), recorded)
+
     @unittest.skipUnless(os.name == "posix" and Path("/proc").exists(), "Linux process-group contract")
     def test_global_timeout_kills_descendants_and_preserves_partial_prediction_bytes(self):
         original_popen = subprocess.Popen

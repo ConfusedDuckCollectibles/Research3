@@ -222,19 +222,23 @@ def compress_partial_predictions() -> dict:
         if not path.is_file():
             continue
         compressed = path.with_name(path.name + ".gz")
-        # Preserve exact raw bytes, even a final incomplete line after a hard
-        # timeout. The execution status never treats those as a complete study.
-        with path.open("rb") as source, compressed.open("wb") as target:
-            with gzip.GzipFile(filename="", fileobj=target, mode="wb", compresslevel=9, mtime=0) as z:
-                for chunk in iter(lambda: source.read(1024 * 1024), b""):
-                    z.write(chunk)
+        # The runner may already have recorded this gzip's exact file hash.
+        # Preserve those bytes: gzip.compress and GzipFile can emit different
+        # headers on the pinned Python version despite identical raw content.
+        if not compressed.exists():
+            with path.open("rb") as source, compressed.open("wb") as target:
+                with gzip.GzipFile(filename="", fileobj=target, mode="wb", compresslevel=9, mtime=0) as z:
+                    for chunk in iter(lambda: source.read(1024 * 1024), b""):
+                        z.write(chunk)
         digest = hashlib.sha256()
         with gzip.open(compressed, "rb") as source:
             for chunk in iter(lambda: source.read(1024 * 1024), b""):
                 digest.update(chunk)
         raw = file_digest(path)
         if digest.hexdigest() != raw["sha256"]:
-            raise RuntimeError("Compressed prediction bytes did not round-trip")
+            # Never conceal a truncated/mismatched previously recorded file.
+            # Raw and compressed bytes both remain available for inspection.
+            raise RuntimeError("Existing compressed prediction bytes differ from raw; both preserved")
         receipts[name] = {"raw": raw, "gzip": file_digest(compressed), "round_trip_verified": True}
     return receipts
 

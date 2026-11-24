@@ -317,24 +317,32 @@ class BindingTransformerTests(unittest.TestCase):
     def test_eight_selected_logits_and_gradients_match_full_head_with_bias(self):
         import torch
         from transformers import GPT2Config, GPT2LMHeadModel
-        torch.manual_seed(29)
-        config = GPT2Config(vocab_size=64, n_embd=16, n_layer=1, n_head=2,
-                            n_positions=32, resid_pdrop=0., embd_pdrop=0., attn_pdrop=0.)
-        receiver = GPT2LMHeadModel(config).double().eval()
-        receiver.set_output_embeddings(torch.nn.Linear(16, 64, bias=True).double())
-        embedding = torch.randn(2, 7, 16, dtype=torch.float64, requires_grad=True)
-        mask = torch.tensor([[1] * 7, [1] * 4 + [0] * 3])
-        ids = torch.tensor([1, 9, 3, 12, 4, 15, 6, 21])
-        selected = core.selected_logits(receiver, embedding, mask, ids)
-        full = receiver(inputs_embeds=embedding, attention_mask=mask,
-                        use_cache=False, return_dict=True).logits
-        expected = full[torch.arange(2), mask.sum(dim=1) - 1][:, ids]
-        self.assertTrue(torch.allclose(selected, expected, atol=1e-10, rtol=1e-10))
-        head = receiver.get_output_embeddings()
-        left = torch.autograd.grad(selected.square().sum(), (embedding, head.weight, head.bias), retain_graph=True)
-        right = torch.autograd.grad(expected.square().sum(), (embedding, head.weight, head.bias))
-        for actual, reference in zip(left, right):
-            self.assertTrue(torch.allclose(actual, reference, atol=1e-10, rtol=1e-10))
+        # Transformers 4.48.2 creates an SDPA mask with torch.full without
+        # an explicit dtype. Match that factory to this double fixture, then
+        # restore the process default even if an assertion or forward fails.
+        previous_dtype = torch.get_default_dtype()
+        try:
+            torch.set_default_dtype(torch.float64)
+            torch.manual_seed(29)
+            config = GPT2Config(vocab_size=64, n_embd=16, n_layer=1, n_head=2,
+                                n_positions=32, resid_pdrop=0., embd_pdrop=0., attn_pdrop=0.)
+            receiver = GPT2LMHeadModel(config).double().eval()
+            receiver.set_output_embeddings(torch.nn.Linear(16, 64, bias=True).double())
+            embedding = torch.randn(2, 7, 16, dtype=torch.float64, requires_grad=True)
+            mask = torch.tensor([[1] * 7, [1] * 4 + [0] * 3])
+            ids = torch.tensor([1, 9, 3, 12, 4, 15, 6, 21])
+            selected = core.selected_logits(receiver, embedding, mask, ids)
+            full = receiver(inputs_embeds=embedding, attention_mask=mask,
+                            use_cache=False, return_dict=True).logits
+            expected = full[torch.arange(2), mask.sum(dim=1) - 1][:, ids]
+            self.assertTrue(torch.allclose(selected, expected, atol=1e-10, rtol=1e-10))
+            head = receiver.get_output_embeddings()
+            left = torch.autograd.grad(selected.square().sum(), (embedding, head.weight, head.bias), retain_graph=True)
+            right = torch.autograd.grad(expected.square().sum(), (embedding, head.weight, head.bias))
+            for actual, reference in zip(left, right):
+                self.assertTrue(torch.allclose(actual, reference, atol=1e-10, rtol=1e-10))
+        finally:
+            torch.set_default_dtype(previous_dtype)
 
     def test_frozen_receiver_passes_ce_gradients_to_actual_bridge(self):
         import torch
